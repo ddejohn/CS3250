@@ -21,7 +21,7 @@ Place class
     items/objects/clues
     enemies/NPCs as instances of Player
     loot (separate from items/objects?)
-    adjacency list `(N, S, E, W, NE, NW, SE, SW, up, down)` as a `dict`, maybe?
+    adjacency list (N, S, E, W, NE, NW, SE, SW, up, down) as a dict, maybe?
     transitions allowed (are some directions blocked by clues yet to be discovered? Locked doors?)
 ```
 
