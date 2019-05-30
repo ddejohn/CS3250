@@ -1,7 +1,6 @@
 # CS-3250 Notes
-#### Devon DeJohn Summer 2019
 
-## 5/29/19 first thoughts on classes
+### 5/29/19 first thoughts on classes
 
 ```
 Player class
