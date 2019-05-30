@@ -5,7 +5,7 @@
 ```
 Player class
     name
-    currrent position as instance of **Place**
+    currrent position as instance of Place
     health/damage
     inventory
         equipped?
@@ -16,25 +16,26 @@ Place class
     description
     triggers - a method that modifies description field (adds clues as they are discovered)
     items/objects/clues
-    enemies/NPCs as instances of **Player**
+    enemies/NPCs as instances of Player
     loot (separate from items/objects?)
     adjacency list `(N, S, E, W, NE, NW, SE, SW, up, down)` as a `dict`, maybe?
-        do we need to distinguish between entrances and exits (trap doors; can only fall through?)
     transitions allowed (are some directions blocked by clues yet to be discovered? Locked doors?)
 ```
 
 
-perhaps the adjacency list can be a dict with direction names as keys, and tuples consisting of (Place, bool) for an instance of place (or null), and a boolean to tell us if we can enter. Something like:
+> Perhaps the adjacency list can be a dict with direction names as keys, and tuples consisting of `(Place, bool)` for an instance of place (or `null`), and a `boolean` to tell us if we can enter. Something like:
+>
+>
+> `{"N", (placeToNorth, true), "S", (placeToSouth, false), "E", (null, false), ...}`
 
 
-`{"N", (placeToNorth, true), "S", (placeToSouth, false), "E", (null, false), "W", (placeToWest, true), ... etc.}`
+Gameplay loop:
 
 
-gameplay loop:
-    methods for actions like movement, equipping, inspecting, using... etc.
+> methods for actions like movement, equipping, inspecting, using... etc.
 
 
-Movement
+**Movement**
 * get player's movement command (e.g.: "N" entered into CLI)
 * get player's current position
 * get current position's adjacency list
