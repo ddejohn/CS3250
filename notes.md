@@ -38,4 +38,4 @@ Movement
 * get player's movement command (e.g.: "N" entered into CLI)
 * get player's current position
 * get current position's adjacency list
-* change player's current position to Place.adj("N") if able, error if not
+* change player's current position to currentPlace.adj("N") if able, error if not
