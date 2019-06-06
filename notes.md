@@ -54,7 +54,7 @@ Gameplay loop:
 
 **TODO:**
 * read scrum guide
-* buy books
+* ~~get books~~
 * VENV
 * ***5 dysfunctions, Design patterns (FOR FIRST TEST)***
 
@@ -80,10 +80,10 @@ Bit of a learning curve. Not sure if there's a `help` function of any sort, but 
 
 ### Graph theory research notes
 
-Mostly review for me, although the video^1 I watched contained some interesting worked examples:
+Mostly review for me, although the video I watched contained some interesting worked examples:
 
-* Lecturer introduces the results of two studies considering the relative promiscuity between men and women with opposite gender partners. Both results are mathematically proven erroneous using graph theory
-* The Coloring Problem is discussed in the context of final exam scheduling for classes with overlapping enrollment
+* The lecturer introduces the results of two studies considering the relative promiscuity between men and women with opposite gender partners. Both results are mathematically proven erroneous using only basic graph theory properties.
+* The Graph Coloring Problem is discussed in the context of final exam scheduling for classes with overlapping enrollment.
 
-^1 [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https://youtu.be/h9wxtqoa1jY)
+Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https://youtu.be/h9wxtqoa1jY)
 
