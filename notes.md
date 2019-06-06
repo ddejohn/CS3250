@@ -49,3 +49,41 @@ Gameplay loop:
 * `get` player's inventory
 * `get` player's equipped (equip multiple? Lantern + knife? Do we need to break Item classes into utilities and weapons)
 * `set` player's equipped to `inventory.Items("knife")` if applicable
+
+### 6/3/19 class notes
+
+**TODO:**
+* read scrum guide
+* buy books
+* VENV
+* ***5 dysfunctions, Design patterns (FOR FIRST TEST)***
+
+### Zork notes
+
+Bit of a learning curve. Not sure if there's a `help` function of any sort, but that sort of added to the appeal for me personally.
+
+
+**Things I like:**
+* The simplicity—seriously, this game is charming as heck
+* The writing is short and sweet—some of the descriptions are a little bland, but in general I've really enjoyed it
+* There's a definite rush of excitement when you uncover a clue
+
+**Things I don't like:**
+* Some commands don't seem to have enough aliases
+* Sometimes movement seems unable to be reversed (i.e., go east, then go west, sometimes you end up somewhere other than where you previously were)
+
+### 6/6/19 class notes
+
+**TODO:**
+* ~~VENV, unit tests~~
+* read *The Cathedral and the Bazaar*
+
+### Graph theory research notes
+
+Mostly review for me, although the video^1 I watched contained some interesting worked examples:
+
+* Lecturer introduces the results of two studies considering the relative promiscuity between men and women with opposite gender partners. Both results are mathematically proven erroneous using graph theory
+* The Coloring Problem is discussed in the context of final exam scheduling for classes with overlapping enrollment
+
+^1 [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https://youtu.be/h9wxtqoa1jY)
+
