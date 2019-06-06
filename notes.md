@@ -82,8 +82,28 @@ Bit of a learning curve. Not sure if there's a `help` function of any sort, but 
 
 Mostly review for me, although the video I watched contained some interesting worked examples:
 
-* The lecturer introduces the results of two studies considering the relative promiscuity between men and women with opposite gender partners. Both results are mathematically proven erroneous using only basic graph theory properties.
+* The lecturer introduces the results of two studies considering the relati ve promiscuity between men and women with opposite gender partners. Both results are mathematically proven erroneous using only basic graph theory properties.
 * The Graph Coloring Problem is discussed in the context of final exam scheduling for classes with overlapping enrollment.
 
 Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https://youtu.be/h9wxtqoa1jY)
 
+### 6/6/19 class notes
+
+
+* Program requirements
+- statements that define and quantify what the program needs to do
+- the work requirements aren't used in the same way as elsewhere
+- software requirements tend to be negotiable
+
+* Functional requirements
+- what a program *needs* to do
+- binary; yes or no
+
+* Non-functional requirements
+- the manner in which the functional requirements need to be achieved
+- performance, usability, maintainability
+- tend to be on scale
+
+* Design constraints
+- statements that constrain the ways in which the software can be designed and implemented
+- platform, language, database, webapp, GUI, etc.
