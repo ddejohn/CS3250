@@ -91,19 +91,19 @@ Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https:
 
 
 * Program requirements
-- statements that define and quantify what the program needs to do
-- the work requirements aren't used in the same way as elsewhere
-- software requirements tend to be negotiable
+    * statements that define and quantify what the program needs to do
+    * the work requirements aren't used in the same way as elsewhere
+    * software requirements tend to be negotiable
 
 * Functional requirements
-- what a program *needs* to do
-- binary; yes or no
+    * what a program *needs* to do
+    * binary; yes or no
 
 * Non-functional requirements
-- the manner in which the functional requirements need to be achieved
-- performance, usability, maintainability
-- tend to be on scale
+    * the manner in which the functional requirements need to be achieved
+    * performance, usability, maintainability
+    * tend to be on scale
 
 * Design constraints
-- statements that constrain the ways in which the software can be designed and implemented
-- platform, language, database, webapp, GUI, etc.
+    * statements that constrain the ways in which the software can be designed and implemented
+    * platform, language, database, webapp, GUI, etc.
