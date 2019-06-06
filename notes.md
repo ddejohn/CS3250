@@ -56,7 +56,7 @@ Gameplay loop:
 * read scrum guide
 * ~~get books~~
 * VENV
-* ***5 dysfunctions, Design patterns (FOR FIRST TEST)***
+* ***5 dysfunctions, design patterns (FOR FIRST TEST)***
 
 ### Zork notes
 
