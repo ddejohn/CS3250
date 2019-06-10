@@ -107,3 +107,13 @@ Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https:
 * Design constraints
     * statements that constrain the ways in which the software can be designed and implemented
     * platform, language, database, webapp, GUI, etc.
+
+### 6/10/19 class notes
+
+
+* Graphs
+    * connected: can we reach every vertex
+    * fully connected: can we reach every vertex via only one edge traversal
+    * Dijkstra: if a path exists, there exists a shortest path between two verticies
+    * [NetworkX](https://networkx.github.io)
+        * graphs, digraphs, multigraphs
