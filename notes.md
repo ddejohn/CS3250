@@ -89,7 +89,6 @@ Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https:
 
 ### 6/6/19 class notes
 
-
 * Program requirements
     * statements that define and quantify what the program needs to do
     * the work requirements aren't used in the same way as elsewhere
@@ -110,10 +109,33 @@ Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https:
 
 ### 6/10/19 class notes
 
-
 * Graphs
     * connected: can we reach every vertex
     * fully connected: can we reach every vertex via only one edge traversal
     * Dijkstra: if a path exists, there exists a shortest path between two verticies
     * [NetworkX](https://networkx.github.io)
         * graphs, digraphs, multigraphs
+
+### 6/12/19 class notes
+
+* Non-functional examples
+    * performance
+    * real-time performance
+    * maintainability
+        * readability
+        * modularity
+        * debugability
+        * traceability
+    * modifiabiity
+* Analysis
+    * static — analyzing the non-running code
+        * linters, cyclomatic complexity, method length
+        * style guide
+    * dynamic — analyzing a running program
+        * code smells, bugs, security vulnerabilities
+* Testing
+    * Acceptance
+    * Unit: method-level testing
+    * Integration: class-level testing
+    * System (does the program work?!)
+
