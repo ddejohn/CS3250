@@ -208,3 +208,28 @@ Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https:
             * Not an interface
             * Must inherit
             * `setChanged()` is protected
+
+### Mocking
+
+* **Input Output Unit Testing**
+    * Want to add `conftest`
+    * Mocking used for any application using *any* input (network cards, typed user input, mouse movement)
+    * Go to `requirements-dev.txt`, add `pytest-mock`
+    * `fixture` an argument passed into a test
+
+```python
+@pytest.fixture
+def run(capsys, mocker):
+    def _do_run(method, *args, **kwargs):
+        mocked_input = mocker.patch('builtins.input')
+        if 'input_values' in kwargs:
+            mocked_input.side_effect = kwargs['input_values']
+            del kwargs['input_values']
+        else:
+            mocked_input.side_effect = ['whatever']
+        method(*args, **kwargs)
+        captured = capsys.readouterr()
+        return captured.out, captured.err
+
+    return _do_run
+```
