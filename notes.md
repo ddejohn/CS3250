@@ -138,4 +138,73 @@ Sources: [Lec 6 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https:
     * Unit: method-level testing
     * Integration: class-level testing
     * System (does the program work?!)
+    * Mutation testing (making small random changes and watching test coverage)
 
+### 6/19/19 class notes
+
+* **Design patterns**
+    * Formalized best practices applicable to common application problems
+    * OO design patterns generally show relationships and interactions between classes and patterns
+    * Creates a shared vocabulary
+        * Developers can interact in more concise ways
+    * Keeps thinking/designing at the abstract (pattern) level
+    * Originated as an architectural concept by Christopher Alexander (1977/79)
+        * In 1987, Kent Back and Ward Cunningham began experimenting with the idea of applying patterns to programming—specifically pattern languages—and presented their results at the OOPSLA conference that yeah
+        * In software, Alexander is regarded as the father of the pattern language movement
+        * Wiki came from Alexander's philosophy
+        * A Pattern Language: *Towns, Buildings, Construction* (1977)
+        * *The Timeless Way of Building* (1979)
+        * ~98% of the US population lives within six turns of a major highway (US roads form a fractal grid)
+        * *Notes on the Synthesis of Form*
+    * Groups and Concepts
+        * Design patterns were originally grouped into categories:
+            * Creational
+            * Structural
+            * Behavioral
+        * Described using the concepts:
+            * Delegation
+            * Aggregation
+            * Consultation
+    * First Design Principle
+        * Identify and separate dynamic and static elements
+        * Alter or extend without affecting other parts
+        * Basis of almost every design pattern
+        * Conducive to more easily reusable objects
+        * Objects delegate behavior to other objects
+    * Second Design Principle
+        * Program to an interface, not an implementation
+            * Not necessarily a Java interface
+            * Program to a supertype
+                * `private Map<String, Boolean> urls = new ConcurrentHashMap<String, Boolean>();`
+            * Can then better use polymorphism
+            * Can more easily change implementation
+    * Third Design Principle
+        * Favor composition over inheritance
+        * Favor *has-a* relationships over *is-a* relationships (cat *is a* mammal *is an* animal; platypus inherits from other "classes")
+        * Inheritance limits resusability
+* **Strategy Pattern**
+    * Defines a family of algorithms, encapsulates each one, and makes them interchangeable (sorting algorithms for different situations)
+    * Strategy lets the algorithm vary independently from the clients that use it
+    * `Context` *decides* which algorithm is required → `Strategy` *returns* the algorithm chosen by `Context`
+* **Observer Pattern**
+    * Defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and update automatically
+    * An object, called the `Subject` maintains a list of its dependents, called `Observers`, and notifies them automatically of any state changes
+    * Mainly used to implement distributed event handling systems in "event-driven" software
+    * Key part in the familiar model-view-controller (MVC) architecture
+    * Design principle
+        * Strive for loosley-coupled designs between objects that interact
+            * Highly cohesive objects/methods (highly specialized, do only one thing)
+        * Objects have very little information about each other
+        * No shared state
+    * Helps decouple objects
+    * Subject knows only that the observer implements the `Observer` interface
+    * New observers can be added at any time
+    * New types of observers can be added
+    * Can reuse subjects and observers independently
+    * Changes have no affect on each other
+    * **WARNINGS**
+        * Doesn't depend on order of evaluation of notifications
+        * Java `Observable` is a class
+            * Not an interface
+            * Must inherit
+            * `setChanged()` is protected
