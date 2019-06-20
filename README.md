@@ -233,3 +233,26 @@ def run(capsys, mocker):
 
     return _do_run
 ```
+
+### 6/20/19
+
+* Add `Player.previous_room()`
+* Add `Player.adjacent()`
+* Store room data as tuple:
+    * `(Player.adjacent(direction_request), Boolean)`
+* Write actual navigation method to:
+    1. set `Player.previous_room()` to `Player.current_room()`
+    2. check `Player.adjacent(direction_request)[1]` is True, else we can't move 
+    3. if `2. == True` set `Player.current_room()` to `Player.adjacent(direction_request)`
+
+**Example map data:**
+
+```yaml
+Rooms:
+    Boss:
+        north: "whatever"
+        south: "whatever"
+        east: "whatever"
+        west: "whatever"
+        open: True/False
+```
