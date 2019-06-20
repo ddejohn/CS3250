@@ -250,9 +250,10 @@ def run(capsys, mocker):
 ```yaml
 Rooms:
     Boss:
-        north: "whatever"
-        south: "whatever"
-        east: "whatever"
-        west: "whatever"
         open: True/False
+        adjacent:
+            north: "whatever"
+            south: "whatever"
+            east: "whatever"
+            west: "whatever"
 ```
