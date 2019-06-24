@@ -248,14 +248,152 @@ def run(capsys, mocker):
 **Example map data:**
 
 ```yaml
-Rooms:
-    Boss:
-        north: "whatever"
-            open: True/False
-        south: "whatever"
-            open: True/False
-        east: "whatever"
-            open: True/False
-        west: "whatever"
-            open: True/False
+Boss:
+    adjacent:
+        north: ["Gold", True]
+        south: ["Entrance", False]
+        east: ["Cave", False]
+        west: ["Armory", False]
+    description:
+    items:
+    clues:
+Entrance:
+    adjacent:
+        north: ["Boss", True]
+        south: [null, False]
+        east: ["Cave", True]
+        west: ["Armory", True]
+    description:
+    items:
+    clues:
+Armory:
+    adjacent:
+        north: ["Boss", True]
+        south: [null, False]
+        east: ["Entrance", True]
+        west: [null, False]
+    description:
+    items:
+    clues:
+Cave:
+    adjacent:
+        north: ["Boss", True]
+        south: [null, False]
+        east: [null, False]
+        west: ["Entrance", True]
+    description:
+    items:
+    clues:
+Gold:
+    adjacent:
+        north: [null, False]
+        south: ["Boss", True]
+        east: [null, False]
+        west: [null, False]
+    description:
+    items:
+    clues:
 ```
+
+
+### 6/24/19 class notes
+
+* Open/Close principle
+* Decorators
+    * Have the same super type of the objects they decorate
+    * Can have one or more decorators
+    * Can pass wrapped object anywhere original could be passed
+    * Adds behavior before and/or after delegating object
+    * Objects can be decorated at runtime
+**Decorator Pattern**
+* Attaches additional responsibilities to an object dynamically
+* Provide a flexible alternative to sub-classing for extending functionality
+* Inheritance
+    * Using inheritance to get type matching but not behavior
+        * Java requires this, other languages don't
+**Factory pattern**
+* Handles the details of object creation
+    * Encapsulates the creation in a subclass
+    * Decouples interface from creation
+* Can return a variety of types
+* Client doesn't care which types
+* Can add additional types easily
+* If static, can't subtype to extend
+* Helps create objects without having to specify the exact class of the object that will be created
+* Don't have to be abstract
+    * Can have default and that can call down if necessary
+* **Dependency Inversion Principle**
+    * Depend upon abstractions
+    * Do not depend upon concrete classes
+    * High-level modules should not depend on low-level modules
+        * Both should depend on abstractions
+    * Abstractions should not depend on details
+    * No variable should hold a reference to a concrete class
+    * No class should derive from a concrete class
+    * No method should override an implemented method of any of its base classes
+* **Dependency Injection**
+    * One object supplies the dependencies of another object
+    * Passing of a dependency to a dependent object
+    * Values produces within the class from new or static methods is prohibited
+    * Should accept values passed in from outside
+    * Allows the client to make acquiring dependencies someone else's problem
+    * Intended to decouple objects to the extent that no client code has to be changed simply because an object it depends on needs to be changed to a different one
+* **Inversion of Control**
+    * A design principle in which custom-written portions of a computer program receive the flow of control from a generic framework
+    * A software architecture with this design inverts control as compared to traditional procedural programming
+        * In traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks
+        * With inversion of control, it is the framework that calls into the custom, or task-specific, code
+* **Abstract Factory Pattern**
+    * Provides an interface for creating families of related or dependent objects
+**Abstract vs non-**
+* Factory
+    * Creation through an interface
+    * Creates objects of a single type
+* Abstract Factory
+    * Creation through composition
+    * Instantiated via new and passed
+    * Creates families of related objects via factories
+**The Singleton**
+* Need only one of
+    * Thread pools, caches, dialog boxes, prefernces, logging, device drivers, I/O
+    * But: might not need each time, so lazy initialization
+
+    ```Java
+    // NOTE: This is not thread safe!
+    public class Singleton {
+        private static Singleton uniqueInstance;
+        
+        private Singleton() {}
+
+        // public static synchronized fixes race condition here
+        public static Singleton getInstance() {
+            if (uniqueInstace == null) {
+                uniqueInstance = new Singleton();
+            }
+            return uniqueInstance;
+        }
+
+        public String getDescription() {
+            return "I'm a classic Singleton!";
+        }
+    }```
+
+* Threading
+    * Synchronize `getInstance`
+    * Eagerly create
+* Visibility and Synchronization
+    * Visibility assures that all threads read the same value of a variable
+    * Synchronization makes sure that only one thread can write to a variable
+    * These are two different things!
+* Volatile
+    * Reads and writes happen to main memory
+        * Not from individual CPU caches
+    * Writes to a volatile also write all the thread-visible variables to main memory
+    * Reads from a volatile re-read all thread-visible ...
+* Atomic
+    * Reads and writes are atomic for reference variables and for most primitive variables (except long and double)
+    * Reads and writes are atomic for all variables declared volatile (including long and double)
+    * And there are `AtomicInt`, `AtomicLong`, ...
+* Volatile is not always enough
+    * If there is a read/modify/write such as variable++
+    * Must use synchronized keyword is to remove ...
