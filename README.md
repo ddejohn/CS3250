@@ -397,3 +397,66 @@ Gold:
 * Volatile is not always enough
     * If there is a read/modify/write such as variable++
     * Must use synchronized keyword is to remove ...
+
+### 6/26/19 class notes
+
+**Command Pattern**
+
+* Behavioral design pattern in which an object is used to encapsulated all the information needed to perform an action or trigger an event at a later time
+* Client is responsible for creating a concrete command and setting its receiver
+* Invoker holds a command object and at some point calls its `execute()` method
+* Command declares an interface that has at least an `execute()`
+
+**Adapter and Facade**
+
+* Adapter converts the interface of a class into another interface the clients expect
+    * Lets classes work together that couldn't otherwise because of incompatible interfaces
+    * Two types
+        * Object adapters use composition
+        * Class adapters use inheritance
+* Facade provides a unified interface to a set of interfaces in a subsystem
+    * Defines a higher-level interface that makes the subsystem easier to use
+* Adapter alters an interface to make it usable
+* Facade makes a complicated interface easier to use
+
+**Principle of Least Knowledge**
+
+* Talk to only immediate friends
+* Decouples
+* Law of Demeter
+* Methods may talk to
+    * Their own object
+    * Objects passed as parameters
+    * Objects they instantiate
+    * Instance variables
+
+**Template method**
+
+* Behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses
+* Lets one redefine certain steps of an algorithm without changing the algorithm's structure
+
+**Hot beverage**
+
+* For both coffee and tea
+    * boil water (same, in base class)
+    * use hot water to extract (different abstract in base class)
+    * pour into cup (same)
+    * add condiments (different)
+* prepareRecipe is template method
+    * all steps present
+    * some are handled by base class
+    * some by subclass
+* Hooks
+    * Can define concrete methods that do nothing unless subclass overrides them
+    * Use abstract when subclass must implement, hooks when optional
+* Hollywood principle
+    * Don't call us, we'll call you
+    * Low-level hooks into system, high-level calls at the appropriate time
+    * Java `Arrays.sort` calls `compareTo()`
+* **Summary**
+    * To prevent subclasses from changing the algorithm, make the template method final
+    * Both the strategy and template patterns encapsulate algorithms
+        * Strategy via composition
+        * Template via inheritance
+    * Factory is a very specialized template
+        * Returns result from subclass
