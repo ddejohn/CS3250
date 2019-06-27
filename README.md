@@ -358,26 +358,26 @@ Gold:
     * Thread pools, caches, dialog boxes, prefernces, logging, device drivers, I/O
     * But: might not need each time, so lazy initialization
 
-    ```Java
-    // NOTE: This is not thread safe!
-    public class Singleton {
-        private static Singleton uniqueInstance;
-        
-        private Singleton() {}
+```Java
+// NOTE: This is not thread safe!
+public class Singleton {
+    private static Singleton uniqueInstance;
+    
+    private Singleton() {}
 
-        // public static synchronized fixes race condition here
-        public static Singleton getInstance() {
-            if (uniqueInstace == null) {
-                uniqueInstance = new Singleton();
-            }
-            return uniqueInstance;
+    // public static synchronized fixes race condition here
+    public static Singleton getInstance() {
+        if (uniqueInstace == null) {
+            uniqueInstance = new Singleton();
         }
-
-        public String getDescription() {
-            return "I'm a classic Singleton!";
-        }
+        return uniqueInstance;
     }
-    ```
+
+    public String getDescription() {
+        return "I'm a classic Singleton!";
+    }
+}
+```
 
 * Threading
     * Synchronize `getInstance`
