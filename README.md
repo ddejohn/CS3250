@@ -376,7 +376,8 @@ Gold:
         public String getDescription() {
             return "I'm a classic Singleton!";
         }
-    }```
+    }
+    ```
 
 * Threading
     * Synchronize `getInstance`
