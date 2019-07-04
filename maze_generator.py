@@ -1,12 +1,15 @@
 import matplotlib.pyplot as plt
 from numpy import zeros as npz
+from numpy import where as npw
 from random import shuffle
 from random import choice
+from random import randint
 from functools import reduce
 
 
 def main(size):
-    moves = [(2,0),(0,2),(-2,0),(0,-2)]
+    moves = [(0,2),(0,-2),(-2,0),(2,0)]
+    neighbors = [(0,1),(0,-1),(-1,0),(1,0)] # U, D, L, R
     maze = npz((size+1,size+1), dtype=int)
     el = [(a,b) for a in range(1,size+1,2) for b in range(1,size+1,2)]
     vis = [choice(el)]
@@ -28,6 +31,60 @@ def main(size):
         inter = tuple(sum(x) for x in zip(k, tuple(con)))
         return inter, a
 
+    def get_rooms(m):
+        rules = [
+            [0,0,0,1],  # left end-cap
+            [0,0,1,0],  # right end-cap
+            [0,1,0,0],  # top end-cap
+            [1,0,0,0],  # bottom end-cap
+            [1,1,1,0],  # left 3-way
+            [1,1,0,1],  # right 3-way
+            [1,0,1,1],  # top 3-way
+            [0,1,1,1],  # bottom 3-way
+            [1,1,1,1],  # 4-way
+            [1,0,1,0],  # up-left corner
+            [1,0,0,1],  # up-right corner
+            [0,1,1,0],  # down-left corner
+            [0,1,0,1],  # down-right corner
+        ]
+
+        dim = m.shape[0]
+        rnge = range(1, dim-1)
+        rooms = []
+        top_rooms = []
+        bottom_rooms = []
+        for i in rnge:
+            for j in rnge:
+                if m[i,j] == 1:
+                    udlr = [m[i-1,j], m[i+1,j], m[i,j-1], m[i,j+1]]
+                    if udlr in rules:
+                        rooms.append((i,j))
+        for room in rooms:
+            if room[0] == 1:
+                top_rooms.append(room)
+            elif room[0] == dim-2:
+                bottom_rooms.append(room)
+
+        return m, [rooms, top_rooms, bottom_rooms]
+
+    def make_soln(m, top_rooms, bottom_rooms):
+        dim = m.shape[0]
+        
+        while True:
+            ct = choice(top_rooms)
+            if ct in rooms:
+                print((1, ct[1]))
+                m[0, ct[1]] = -1
+                break
+        while True:
+            cb = choice(bottom_rooms)
+            if cb in rooms:
+                print((dim-2, cb[1]))
+                m[dim-1, cb[1]] = -1
+                break
+
+        return m
+
     while len(el) > 0:
         n = len(vis)
         nsew = [tuple(sum(x) for x in zip(moves[i], k)) for i in range(4)]
@@ -44,6 +101,10 @@ def main(size):
         else:
             k = vis[len(vis)-1]
 
+    maze, rooms = get_rooms(maze)
+    rooms, top_rooms, bottom_rooms = rooms
+    maze = make_soln(maze, top_rooms, bottom_rooms)
+
     plt.figure(figsize=(10, 10))
     plt.box(False)
     plt.pcolormesh(maze) # cmap=plt.cm.binary)
@@ -53,4 +114,4 @@ def main(size):
 
 
 if __name__ == "__main__":
-    main(12)
+    main(100)
