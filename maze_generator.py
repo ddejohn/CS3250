@@ -7,7 +7,7 @@ from random import randint
 from functools import reduce
 
 
-def main(size):
+def main(size, id_rooms=False):
     moves = [(0,2),(0,-2),(-2,0),(2,0)]
     neighbors = [(0,1),(0,-1),(-1,0),(1,0)] # U, D, L, R
     maze = npz((size+1,size+1), dtype=int)
@@ -58,6 +58,8 @@ def main(size):
                 if m[i,j] == 1:
                     udlr = [m[i-1,j], m[i+1,j], m[i,j-1], m[i,j+1]]
                     if udlr in rules:
+                        if id_rooms:
+                            m[i,j] = -1
                         rooms.append((i,j))
         for room in rooms:
             if room[0] == 1:
@@ -73,13 +75,11 @@ def main(size):
         while True:
             ct = choice(top_rooms)
             if ct in rooms:
-                print((1, ct[1]))
                 m[0, ct[1]] = -1
                 break
         while True:
             cb = choice(bottom_rooms)
             if cb in rooms:
-                print((dim-2, cb[1]))
                 m[dim-1, cb[1]] = -1
                 break
 
@@ -105,13 +105,13 @@ def main(size):
     rooms, top_rooms, bottom_rooms = rooms
     maze = make_soln(maze, top_rooms, bottom_rooms)
 
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(7, 7))
     plt.box(False)
-    plt.pcolormesh(maze) # cmap=plt.cm.binary)
+    plt.pcolormesh(maze)    # cmap=plt.cm.magma
     plt.xticks([])
     plt.yticks([])
     plt.show()
 
 
 if __name__ == "__main__":
-    main(100)
+    main(10, id_rooms=False)
