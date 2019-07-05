@@ -55,19 +55,17 @@ def main(size, id_rooms=False):
             udlr = [m[i-1, j], m[i+1, j], m[i, j-1], m[i, j+1]]
             if udlr in rules:
                 if id_rooms:
-                    m[coord] = -1
+                    m[coord] = 2
                 rooms.append(coord)
         for room in rooms:
             if room[0] == 1:
                 top_rooms.append(room)
             elif room[0] == m.shape[0]-2:
                 bottom_rooms.append(room)
-
         return m, rooms, top_rooms, bottom_rooms
 
     def make_soln(m, top_rooms, bottom_rooms):
         dim = m.shape[0]
-
         while True:
             ct = choice(top_rooms)
             if ct in rooms:
@@ -78,7 +76,6 @@ def main(size, id_rooms=False):
             if cb in rooms:
                 m[dim-1, cb[1]] = 1
                 break
-
         return m
 
     def draw_maze(m):
@@ -117,4 +114,4 @@ def main(size, id_rooms=False):
 
 
 if __name__ == "__main__":
-    main(100, id_rooms=False)
+    main(20, id_rooms=True)
