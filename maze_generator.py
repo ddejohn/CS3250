@@ -48,23 +48,20 @@ def main(size, id_rooms=False):
             [0,1,0,1],  # down-right corner
         ]
 
-        dim = m.shape[0]
-        rnge = range(1, dim-1)
         rooms = []
         top_rooms = []
         bottom_rooms = []
-        for i in rnge:
-            for j in rnge:
-                if m[i,j] == 1:
-                    udlr = [m[i-1,j], m[i+1,j], m[i,j-1], m[i,j+1]]
-                    if udlr in rules:
-                        if id_rooms:
-                            m[i,j] = -1
-                        rooms.append((i,j))
+        for coord in vis:
+            i, j = coord
+            udlr = [m[i-1,j], m[i+1,j], m[i,j-1], m[i,j+1]]
+            if udlr in rules:
+                if id_rooms:
+                    m[coord] = -1
+                rooms.append(coord)
         for room in rooms:
             if room[0] == 1:
                 top_rooms.append(room)
-            elif room[0] == dim-2:
+            elif room[0] == m.shape[0]-2:
                 bottom_rooms.append(room)
 
         return m, rooms, top_rooms, bottom_rooms
@@ -121,4 +118,4 @@ def main(size, id_rooms=False):
 
 
 if __name__ == "__main__":
-    main(38, id_rooms=False)
+    main(100, id_rooms=False)
