@@ -1,9 +1,7 @@
 import matplotlib.pyplot as plt
 from numpy import zeros as npz
-from numpy import where as npw
 from random import shuffle
 from random import choice
-from random import randint
 from functools import reduce
 
 
