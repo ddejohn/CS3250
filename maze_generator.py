@@ -8,52 +8,51 @@ from functools import reduce
 
 
 def main(size, id_rooms=False):
-    moves = [(0,2),(0,-2),(-2,0),(2,0)]
-    neighbors = [(0,1),(0,-1),(-1,0),(1,0)] # U, D, L, R
-    maze = npz((size+1,size+1), dtype=int)
-    el = [(a,b) for a in range(1,size+1,2) for b in range(1,size+1,2)]
-    vis = [choice(el)]
+    moves = [(0, 2), (0, -2), (-2, 0), (2, 0)]
+    neighbors = [(0, 1), (0, -1), (-1, 0), (1, 0)]  # U, D, L, R
+    maze = npz((size+1, size+1), dtype=int)
+    el = [(a, b) for a in range(1, size+1, 2) for b in range(1, size+1, 2)]
+    rules = [
+        [0, 0, 0, 1],  # left end-cap
+        [0, 0, 1, 0],  # right end-cap
+        [0, 1, 0, 0],  # top end-cap
+        [1, 0, 0, 0],  # bottom end-cap
+        [1, 1, 1, 0],  # left 3-way
+        [1, 1, 0, 1],  # right 3-way
+        [1, 0, 1, 1],  # top 3-way
+        [0, 1, 1, 1],  # bottom 3-way
+        [1, 1, 1, 1],  # 4-way
+        [1, 0, 1, 0],  # up-left corner
+        [1, 0, 0, 1],  # up-right corner
+        [0, 1, 1, 0],  # down-left corner
+        [0, 1, 0, 1],  # down-right corner
+    ]
 
+    vis = [choice(el)]
     k = vis[0]
     maze[k] = 1
     el.remove(k)
 
-    def delta(t1,t2):
+    def delta(t1, t2):
         x1, y1 = t1
         x2, y2 = t2
         return (x2-x1, y2-y1)
 
     def get_links(a, k):
-        con = [0,0]
+        con = [0, 0]
         dxdy = delta(k, a)
-        z = reduce(lambda x,y: x if abs(x) > abs(y) else y, dxdy)
+        z = reduce(lambda x, y: x if abs(x) > abs(y) else y, dxdy)
         con[dxdy.index(z)] = z//2
         inter = tuple(sum(x) for x in zip(k, tuple(con)))
         return inter, a
 
     def get_rooms(m):
-        rules = [
-            [0,0,0,1],  # left end-cap
-            [0,0,1,0],  # right end-cap
-            [0,1,0,0],  # top end-cap
-            [1,0,0,0],  # bottom end-cap
-            [1,1,1,0],  # left 3-way
-            [1,1,0,1],  # right 3-way
-            [1,0,1,1],  # top 3-way
-            [0,1,1,1],  # bottom 3-way
-            [1,1,1,1],  # 4-way
-            [1,0,1,0],  # up-left corner
-            [1,0,0,1],  # up-right corner
-            [0,1,1,0],  # down-left corner
-            [0,1,0,1],  # down-right corner
-        ]
-
         rooms = []
         top_rooms = []
         bottom_rooms = []
         for coord in vis:
             i, j = coord
-            udlr = [m[i-1,j], m[i+1,j], m[i,j-1], m[i,j+1]]
+            udlr = [m[i-1, j], m[i+1, j], m[i, j-1], m[i, j+1]]
             if udlr in rules:
                 if id_rooms:
                     m[coord] = -1
@@ -68,7 +67,7 @@ def main(size, id_rooms=False):
 
     def make_soln(m, top_rooms, bottom_rooms):
         dim = m.shape[0]
-        
+
         while True:
             ct = choice(top_rooms)
             if ct in rooms:
