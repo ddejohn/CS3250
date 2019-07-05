@@ -8,8 +8,16 @@ from functools import reduce
 
 
 def main(size, id_rooms=False):
-    moves = [(0, 2), (0, -2), (-2, 0), (2, 0)]
-    neighbors = [(0, 1), (0, -1), (-1, 0), (1, 0)]  # U, D, L, R
+    # moves = [(0, 2), (0, -2), (-2, 0), (2, 0)]
+    # neighbors = [(0, 1), (0, -1), (-1, 0), (1, 0)]  # U, D, L, R
+
+    moves = [
+        [(0, 2), (0, 1)],
+        [(0, -2), (0, -1)],
+        [(-2, 0), (-1, 0)],
+        [(2, 0), (1, 0)]
+    ]
+
     maze = npz((size+1, size+1), dtype=int)
     el = [(a, b) for a in range(1, size+1, 2) for b in range(1, size+1, 2)]
     rules = [
@@ -32,19 +40,6 @@ def main(size, id_rooms=False):
     k = vis[0]
     maze[k] = 1
     el.remove(k)
-
-    def delta(t1, t2):
-        x1, y1 = t1
-        x2, y2 = t2
-        return (x2-x1, y2-y1)
-
-    def get_links(a, k):
-        con = [0, 0]
-        dxdy = delta(k, a)
-        z = reduce(lambda x, y: x if abs(x) > abs(y) else y, dxdy)
-        con[dxdy.index(z)] = z//2
-        inter = tuple(sum(x) for x in zip(k, tuple(con)))
-        return inter, a
 
     def get_rooms(m):
         rooms = []
@@ -79,11 +74,11 @@ def main(size, id_rooms=False):
         return m
 
     def draw_maze(m):
-        fig = plt.figure(figsize=(15, 15))
-        plt.pcolormesh(m, cmap=plt.cm.tab20b)
-        plt.axes().set_aspect('equal')
+        fig, ax = plt.subplots(figsize=(10, 10))
         plt.xticks([])
         plt.yticks([])
+        ax.pcolormesh(m, cmap=plt.cm.tab20b)
+        ax.set_aspect(1.0)
         fig.savefig(
             f"{size}x{size}.png",
             dpi=300,
@@ -93,14 +88,18 @@ def main(size, id_rooms=False):
 
     while len(el) > 0:
         n = len(vis)
-        nsew = [tuple(sum(x) for x in zip(moves[i], k)) for i in range(4)]
+        nsew = []
+        for i in range(4):
+            probe = tuple(sum(x) for x in zip(moves[i][0], k))
+            link = tuple(sum(x) for x in zip(moves[i][1], k))
+            nsew.append([probe, link])
         shuffle(nsew)
         for a in nsew:
-            if a in el:
-                inter, a = get_links(a, k)
-                vis.extend([inter, a])
-                maze[inter], maze[a] = 1, 1
-                el.remove(a)
+            if a[0] in el:
+                probe, link = a
+                vis.extend(a)
+                maze[probe], maze[link] = 1, 1
+                el.remove(probe)
                 break
         if n == len(vis):
             k = vis[max(vis.index(k)-1, 1)]
@@ -114,4 +113,4 @@ def main(size, id_rooms=False):
 
 
 if __name__ == "__main__":
-    main(20, id_rooms=True)
+    main(10, id_rooms=True)
