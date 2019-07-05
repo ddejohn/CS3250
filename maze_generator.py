@@ -21,7 +21,6 @@ def main(size=10, draw=False, rooms=False, save=False):
             rooms {list of tuple}: a {list} of room coordinates as {tuple}
     """
 
-
     moves = [
         [(0, 2), (0, 1)], [(0, -2), (0, -1)],
         [(-2, 0), (-1, 0)], [(2, 0), (1, 0)]
