@@ -75,12 +75,12 @@ def main(size, id_rooms=False):
         while True:
             ct = choice(top_rooms)
             if ct in rooms:
-                m[0, ct[1]] = -1
+                m[0, ct[1]] = 1
                 break
         while True:
             cb = choice(bottom_rooms)
             if cb in rooms:
-                m[dim-1, cb[1]] = -1
+                m[dim-1, cb[1]] = 1
                 break
 
         return m
@@ -104,14 +104,21 @@ def main(size, id_rooms=False):
     maze, rooms = get_rooms(maze)
     rooms, top_rooms, bottom_rooms = rooms
     maze = make_soln(maze, top_rooms, bottom_rooms)
+    print(len(rooms))
 
-    plt.figure(figsize=(7, 7))
+    fig = plt.figure(figsize=(20, 20))
     plt.box(False)
     plt.pcolormesh(maze)    # cmap=plt.cm.magma
     plt.xticks([])
     plt.yticks([])
+    plt.axes().set_aspect('equal')
+    fig.savefig(
+        f"{size}x{size}.png",
+        dpi=300,
+        bbox_inches="tight",
+        pad_inches=0)
     plt.show()
 
 
 if __name__ == "__main__":
-    main(10, id_rooms=False)
+    main(50, id_rooms=False)

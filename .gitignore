@@ -21,6 +21,9 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+# Pyplot outputs
+*.png
+
 # Dump file
 *.stackdump
 
@@ -44,3 +47,4 @@ $RECYCLE.BIN/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+maze_generator.py
