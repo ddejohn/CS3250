@@ -37,6 +37,7 @@ def main(size=10, draw=False, rooms=False, save=False):
         maze, nodes = None, None
     else:
         maze, nodes = _generate_maze(size, rooms, moves, rules)
+        print(f"Maze contains {len(nodes)} rooms")
         if draw:
             _draw_maze(maze, size, save)
     return maze, nodes
@@ -100,4 +101,4 @@ def _draw_maze(m, size, save):
 
 
 if __name__ == "__main__":
-    main(draw=True)
+    main(size=16, draw=True)
