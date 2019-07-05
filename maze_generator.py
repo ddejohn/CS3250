@@ -67,7 +67,7 @@ def main(size, id_rooms=False):
             elif room[0] == dim-2:
                 bottom_rooms.append(room)
 
-        return m, [rooms, top_rooms, bottom_rooms]
+        return m, rooms, top_rooms, bottom_rooms
 
     def make_soln(m, top_rooms, bottom_rooms):
         dim = m.shape[0]
@@ -85,6 +85,19 @@ def main(size, id_rooms=False):
 
         return m
 
+    def draw_maze(m):
+        fig = plt.figure(figsize=(15, 15))
+        plt.pcolormesh(m, cmap=plt.cm.tab20b)
+        plt.axes().set_aspect('equal')
+        plt.xticks([])
+        plt.yticks([])
+        fig.savefig(
+            f"{size}x{size}.png",
+            dpi=300,
+            bbox_inches="tight",
+            pad_inches=0)
+        plt.show()
+
     while len(el) > 0:
         n = len(vis)
         nsew = [tuple(sum(x) for x in zip(moves[i], k)) for i in range(4)]
@@ -101,24 +114,11 @@ def main(size, id_rooms=False):
         else:
             k = vis[len(vis)-1]
 
-    maze, rooms = get_rooms(maze)
-    rooms, top_rooms, bottom_rooms = rooms
+    maze, rooms, top_rooms, bottom_rooms = get_rooms(maze)
     maze = make_soln(maze, top_rooms, bottom_rooms)
-    print(len(rooms))
-
-    fig = plt.figure(figsize=(20, 20))
-    plt.box(False)
-    plt.pcolormesh(maze)    # cmap=plt.cm.magma
-    plt.xticks([])
-    plt.yticks([])
-    plt.axes().set_aspect('equal')
-    fig.savefig(
-        f"{size}x{size}.png",
-        dpi=300,
-        bbox_inches="tight",
-        pad_inches=0)
-    plt.show()
+    print(f"{len(rooms)} rooms")
+    draw_maze(maze)
 
 
 if __name__ == "__main__":
-    main(50, id_rooms=False)
+    main(38, id_rooms=False)
