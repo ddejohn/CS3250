@@ -69,7 +69,7 @@ def main(size, id_rooms=False):
             f"{size}x{size}.png",
             dpi=300,
             bbox_inches="tight",
-            pad_inches=0)
+            pad_inches=-0.1)
         plt.show()
 
     maze, rooms = generate_maze(maze)
@@ -78,4 +78,4 @@ def main(size, id_rooms=False):
 
 
 if __name__ == "__main__":
-    main(10)
+    main(20)
