@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from os import sys
 from numpy import zeros as npz
 from random import shuffle
 from random import choice
@@ -101,4 +102,4 @@ def _draw_maze(m, size, save):
 
 
 if __name__ == "__main__":
-    main(size=16, draw=True)
+    main(size=10, draw=True, rooms=False, save=False)
