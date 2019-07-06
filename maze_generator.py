@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-from os import sys
 from numpy import zeros as npz
 from random import shuffle
 from random import choice
