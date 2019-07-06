@@ -5,15 +5,15 @@ from random import choice
 from functools import reduce
 
 
-def main(size=10, draw=False, rooms=False, save=False):
-    """Generate a square maze with 'rooms' on intersections, corners, and dead-ends.
+def main(dims=(10, 10), draw=False, rooms=False, save=False):
+    """Generate a maze with 'rooms' on intersections, corners, and dead-ends.
 
     Keyword Arguments:
 
-            size {int, default: 10} (where size % 2 == 0): unit width of maze
+            dims {tuple, default: (10,10)} (where x + y % 2 == 0): unit dimensions of maze
             draw {bool, default: False}: show maze as pyplot figure
             rooms {bool, default: False}: show rooms on figure
-            save {bool, default: False}: save figure to working directory as '{size}x{size}.png'
+            save {bool, default: False}: save figure to working directory as '{dims}x{dims}.png'
 
     Returns:
 
@@ -32,20 +32,21 @@ def main(size=10, draw=False, rooms=False, save=False):
         [0, 1, 0, 1]
     ]
 
-    if size % 2 != 0:
-        print("Maze size must be an even integer!")
+    if sum(dims) % 2 != 0:
+        print("Maze dimensions must be even integers!")
         maze, nodes = None, None
     else:
-        maze, nodes = _generate_maze(size, rooms, moves, rules)
+        maze, nodes = _generate_maze(dims, rooms, moves, rules)
         print(f"Maze contains {len(nodes)} rooms")
         if draw:
-            _draw_maze(maze, size, save)
+            _draw_maze(maze, len(nodes), save)
     return maze, nodes
 
 
-def _generate_maze(size, rooms, moves, rules):
-    m = npz((size+1, size+1), dtype=int)
-    grid = [(a, b) for a in range(1, size+1, 2) for b in range(1, size+1, 2)]
+def _generate_maze(dims, rooms, moves, rules):
+    x, y = dims
+    m = npz((x+1, y+1), dtype=int)
+    grid = [(a, b) for a in range(1, x+1, 2) for b in range(1, y+1, 2)]
     visited = [choice(grid)]
     k = visited[0]
     grid.remove(k)
@@ -85,7 +86,7 @@ def _get_rooms(m, visited, rooms, rules):
     return m, nodes
 
 
-def _draw_maze(m, size, save):
+def _draw_maze(m, rooms, save):
     fig, ax = plt.subplots(figsize=(10, 10))
     ax.set_aspect(1.0)
     plt.xticks([])
@@ -93,7 +94,7 @@ def _draw_maze(m, size, save):
     plt.pcolormesh(m, cmap=plt.cm.tab20b)
     if save:
         fig.savefig(
-            f"{size}x{size}.png",
+            f"{m.shape[0]-1}x{m.shape[1]-1}_{rooms}_rooms.png",
             dpi=300,
             bbox_inches="tight",
             pad_inches=-0.1)
@@ -101,4 +102,4 @@ def _draw_maze(m, size, save):
 
 
 if __name__ == "__main__":
-    main(size=10, draw=True, rooms=False, save=False)
+    main(dims=(6, 20), draw=True, rooms=False, save=True)
