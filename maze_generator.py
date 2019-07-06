@@ -10,15 +10,25 @@ def main(dims=(10, 10), draw=False, rooms=False, save=False):
 
     Keyword Arguments:
 
-            dims {tuple, default: (10,10)} (where x + y % 2 == 0): unit dimensions of maze
-            draw {bool, default: False}: show maze as pyplot figure
-            rooms {bool, default: False}: show rooms on figure
-            save {bool, default: False}: save figure to working directory as '{dims}x{dims}.png'
+            dims {tuple, default: (x=10, y=10)} (where x + y % 2 == 0):
+                unit dimensions of maze
+            
+            draw {bool, default: False}:
+                show maze as pyplot figure
+            
+            rooms {bool, default: False}:
+                highlight rooms on figure
+            
+            save {bool, default: False}:
+                save figure to working directory as png
 
     Returns:
 
-            maze {list of list of int}: a numpy integer matrix
-            rooms {list of tuple}: a {list} of room coordinates as {tuple}
+            maze {list of list of int}:
+                a numpy integer matrix
+
+            rooms {list of tuple}:
+                a {list} of room coordinates as {tuple}
     """
 
     moves = [
