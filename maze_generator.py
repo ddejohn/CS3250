@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 from numpy import zeros as npz
 from random import shuffle
 from random import choice
-from functools import reduce
 
 
 def main(dims=(10, 10), draw=False, rooms=False, save=False):
