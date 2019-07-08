@@ -41,7 +41,7 @@ def main(dims=(10, 10), draw=False, rooms=False, save=False):
         [0, 1, 0, 1]
     ]
 
-    if sum(dims) % 2 != 0:
+    if dims[0] % 2 != 0 or dims[1] %2 != 0:
         print("Maze dimensions must be even integers!")
         maze, nodes = None, None
     else:
@@ -111,4 +111,4 @@ def _draw_maze(m, rooms, save):
 
 
 if __name__ == "__main__":
-    main(dims=(6, 20), draw=True, rooms=False, save=False)
+    main(dims=(6, 20), draw=True, rooms=True, save=False)
