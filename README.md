@@ -454,10 +454,12 @@ public class Singleton {
     * Don't call us, we'll call you
     * Low-level hooks into system, high-level calls at the appropriate time
     * Java `Arrays.sort` calls `compareTo()`
-* **Summary**
-    * To prevent subclasses from changing the algorithm, make the template method final
-    * Both the strategy and template patterns encapsulate algorithms
-        * Strategy via composition
-        * Template via inheritance
-    * Factory is a very specialized template
-        * Returns result from subclass
+
+**Summary**
+
+* To prevent subclasses from changing the algorithm, make the template method final
+* Both the strategy and template patterns encapsulate algorithms
+    * Strategy via composition
+    * Template via inheritance
+* Factory is a very specialized template
+    * Returns result from subclass
