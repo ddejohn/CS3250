@@ -463,3 +463,29 @@ public class Singleton {
     * Template via inheritance
 * Factory is a very specialized template
     * Returns result from subclass
+
+### 7/10/19 class notes
+
+**Static Factory Methods over Constructors**
+
+* One advantage, they have names
+* A class can have only one constructor with a given name
+* Static factory methods don't have to create a new object
+* Constructors always do
+* Helps with immutable classes and pre-constructed instances
+* Singletons, flyweights, non-instantiable
+* Can return a subtype
+* Polymorphic
+* Returned class doesn't need to exist at the time the class is written
+* Disadvantages
+    * Classes without public or protected constructors cannot be sub-classed
+
+**Consider a Builder when faced with many constructor parameters**
+
+* Create empty instance and have many sets
+    * Problem: instance in inconsistent state
+* Builder pattern
+* `build()` is a parameter-less static method
+* Required parameters passed into constructor
+    * Optionals `set()`
+    * Other languages have optional parameters instead
