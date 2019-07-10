@@ -1,240 +1,260 @@
 0:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 1:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 2:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 3:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 4:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 5:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 6:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 7:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 8:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 9:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 10:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 11:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 12:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 13:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 14:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 15:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 16:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 17:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 18:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null
 19:
+  description: null
+  items:
     description: null
-    items:
-        description: null
-        name: null
-        stats:
-            amount: null
-            attack: null
-            equipable: null
-            strength: null
-            weight: null
     name: null
+    stats:
+      amount: null
+      attack: null
+      equipable: null
+      strength: null
+      type: null
+      weight: null
+  name: null

@@ -19,6 +19,7 @@ def item():
         "name": None,
         "description": None,
         "stats": {
+            "type": None,
             "attack": None,
             "weight": None,
             "amount": None,
