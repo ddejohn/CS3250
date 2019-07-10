@@ -1,25 +1,17 @@
-import matplotlib.pyplot as plt
-from numpy import zeros as npz
+"""Random maze generator
+"""
 from random import shuffle
 from random import choice
+import matplotlib.pyplot as plt
+from numpy import zeros as npz
 
 
-def main(dims=(10, 10), draw=False, rooms=False, save=False):
+def main(debug=False):
     """Generate a maze with 'rooms' on intersections, corners, and dead-ends.
 
     Keyword Arguments:
 
-            dims {tuple, default: (x=10, y=10)} (where x + y % 2 == 0):
-                unit dimensions of maze
-            
-            draw {bool, default: False}:
-                show maze as pyplot figure
-            
-            rooms {bool, default: False}:
-                highlight rooms on figure
-            
-            save {bool, default: False}:
-                save figure to working directory as png
+            debug {bool}: toggles whether the maze is drawn or not
 
     Returns:
 
@@ -29,7 +21,8 @@ def main(dims=(10, 10), draw=False, rooms=False, save=False):
             rooms {list of tuple}:
                 a {list} of room coordinates as {tuple}
     """
-
+    x_dims = [6, 8, 10]
+    y_dims = [10, 12, 14]
     moves = [
         [(0, 2), (0, 1)], [(0, -2), (0, -1)],
         [(-2, 0), (-1, 0)], [(2, 0), (1, 0)]
@@ -41,18 +34,15 @@ def main(dims=(10, 10), draw=False, rooms=False, save=False):
         [0, 1, 0, 1]
     ]
 
-    if dims[0] % 2 != 0 or dims[1] %2 != 0:
-        print("Maze dimensions must be even integers!")
-        maze, nodes = None, None
-    else:
-        maze, nodes = _generate_maze(dims, rooms, moves, rules)
-        print(f"Maze contains {len(nodes)} rooms")
-        if draw:
-            _draw_maze(maze, len(nodes), save)
-    return maze, nodes
+    dims = (choice(x_dims), choice(y_dims))
+    maze, rooms = _generate_maze(dims, moves, rules)
+    print(f"maze is {maze.shape[0]-1}x{maze.shape[1]-1} and has {len(rooms)} rooms")
+    if debug:
+        _draw_maze(maze)
+    return maze, rooms
 
 
-def _generate_maze(dims, rooms, moves, rules):
+def _generate_maze(dims, moves, rules):
     x, y = dims
     m = npz((x+1, y+1), dtype=int)
     grid = [(a, b) for a in range(1, x+1, 2) for b in range(1, y+1, 2)]
@@ -60,7 +50,7 @@ def _generate_maze(dims, rooms, moves, rules):
     k = visited[0]
     grid.remove(k)
 
-    while len(grid) > 0:
+    while grid:
         n = len(visited)
         nsew = []
         for i in range(4):
@@ -79,39 +69,31 @@ def _generate_maze(dims, rooms, moves, rules):
             k = visited[max(visited.index(k)-1, 1)]
         else:
             k = visited[-1]
-    return _get_rooms(m, visited, rooms, rules)
+    return _get_rooms(m, visited, rules)
 
 
-def _get_rooms(m, visited, rooms, rules):
-    nodes = []
+def _get_rooms(m, visited, rules):
+    rooms = []
     m[visited[0]], m[visited[-2]] = 2, 2
     for coord in visited:
         i, j = coord
         neighbors = [m[i-1, j], m[i+1, j], m[i, j-1], m[i, j+1]]
         if neighbors in rules:
-            nodes.append(coord)
-            if rooms:
-                m[coord] = 2
-    return m, nodes
+            rooms.append(coord)
+            m[coord] = 2
+    return m, rooms
 
 
-def _draw_maze(m, rooms, save):
-    fig, ax = plt.subplots(figsize=(10, 10))
-    ax.set_aspect(1.0)
+def _draw_maze(m):
+    _, m_ax = plt.subplots(figsize=(10, 10))
+    m_ax.set_aspect(1.0)
     plt.xticks([])
     plt.yticks([])
-    plt.pcolormesh(m, cmap=plt.cm.tab20b)
-    if save:
-        fig.savefig(
-            f"{m.shape[0]-1}x{m.shape[1]-1}_{rooms}_rooms.png",
-            dpi=300,
-            bbox_inches="tight",
-            pad_inches=-0.1)
+    plt.pcolormesh(m, cmap=plt.cm.get_cmap("tab20b"))
     plt.show()
 
 
-if __name__ == "__main__":
-    m, n = main(dims=(8, 12), draw=True, rooms=False, save=False)
-    for r in m:
-        print(r)
-    # print(n)
+# if __name__ == "__main__":
+#     m, n = main(debug=True)
+#     for r in m:
+#         print(r)
