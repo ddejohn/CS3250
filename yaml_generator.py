@@ -4,7 +4,6 @@ import yaml
 def room():
     return {
         "description": None,
-        "coordinates": None
     }
 
 def player():
@@ -37,6 +36,6 @@ def yaml_writer(types, num):
             default_flow_style=False
         )
 
-yaml_writer(room, 100)
+yaml_writer(room, 50)
 yaml_writer(player, 20)
 yaml_writer(item, 50)
