@@ -2,22 +2,9 @@ import os
 import yaml
 
 def room():
-    return {"description": None}
-
-def stats():
     return {
-        "attack": None,
-        "weight": None,
-        "amount": None,
-        "strength": None,
-        "equipable": None
-    }
-
-def item():
-    return {
-        "name": None,
         "description": None,
-        "stats": stats()
+        "coordinates": None
     }
 
 def player():
@@ -25,6 +12,19 @@ def player():
         "name": None,
         "description": None,
         "items": item()
+    }
+
+def item():
+    return {
+        "name": None,
+        "description": None,
+        "stats": {
+            "attack": None,
+            "weight": None,
+            "amount": None,
+            "strength": None,
+            "equipable": None
+        }
     }
 
 def yaml_writer(types, num):

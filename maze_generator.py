@@ -111,4 +111,7 @@ def _draw_maze(m, rooms, save):
 
 
 if __name__ == "__main__":
-    main(dims=(6, 20), draw=True, rooms=True, save=False)
+    m, n = main(dims=(8, 12), draw=True, rooms=False, save=False)
+    for r in m:
+        print(r)
+    # print(n)
