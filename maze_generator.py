@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from numpy import zeros as npz
 
 
-def main(debug=False):
+def main(dims=None, debug=False):
     """Generate a maze with 'rooms' on intersections, corners, and dead-ends.
 
     Keyword Arguments:
@@ -21,8 +21,6 @@ def main(debug=False):
             rooms {list of tuple}:
                 a {list} of room coordinates as {tuple}
     """
-    x_dims = [6, 8, 10]
-    y_dims = [10, 12, 14]
     moves = [
         [(0, 2), (0, 1)], [(0, -2), (0, -1)],
         [(-2, 0), (-1, 0)], [(2, 0), (1, 0)]
@@ -34,9 +32,10 @@ def main(debug=False):
         [0, 1, 0, 1]
     ]
 
-    dims = (choice(x_dims), choice(y_dims))
+    x_dims = choice([6, 8, 10, 12, 14, 18])
+    y_dims = 148//x_dims
+    dims = (x_dims, y_dims)
     maze, rooms = _generate_maze(dims, moves, rules)
-    print(f"maze is {maze.shape[0]-1}x{maze.shape[1]-1} and has {len(rooms)} rooms")
     if debug:
         _draw_maze(maze)
     return maze, rooms
@@ -93,7 +92,16 @@ def _draw_maze(m):
     plt.show()
 
 
-# if __name__ == "__main__":
-#     m, n = main(debug=True)
-#     for r in m:
-#         print(r)
+if __name__ == "__main__":
+    lens = []
+    shps = []
+    for _ in range(50000):
+        m, r = main(debug=False)
+        x = m.shape[0]
+        y = m.shape[1]
+        lens.append(len(r))
+        shps.append((x-1,y-1))
+        max_ind = lens.index(max(lens))
+        min_ind = lens.index(min(lens))
+    print(f"max: {shps[max_ind]}, {max(lens)} rooms")
+    print(f"min: {shps[min_ind]}, {min(lens)} rooms")
