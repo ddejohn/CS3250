@@ -32,7 +32,7 @@ def main(dims=None, debug=False):
         [0, 1, 0, 1]
     ]
 
-    x_dims = choice([6, 8, 10, 12, 14, 18])
+    x_dims = choice([10, 12, 14, 18])
     y_dims = 148//x_dims
     dims = (x_dims, y_dims)
     maze, rooms = _generate_maze(dims, moves, rules)
@@ -95,7 +95,7 @@ def _draw_maze(m):
 if __name__ == "__main__":
     lens = []
     shps = []
-    for _ in range(50000):
+    for _ in range(10000):
         m, r = main(debug=False)
         x = m.shape[0]
         y = m.shape[1]
