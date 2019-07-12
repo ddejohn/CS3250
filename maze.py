@@ -30,6 +30,7 @@ class Maze:
         self.grid = [(i, j) for i in rng_x for j in rng_y]
         self.path = [choice(self.grid)]
         self.rooms = []
+        self.build()
 
     def __call__(self, *args):
         x, y, *val = args
