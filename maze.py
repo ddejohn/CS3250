@@ -31,6 +31,8 @@ class Maze:
             return self.maze[x][y]
 
     def rebuild(self):
+        """Generate a new maze
+        """
         x = choice([10, 12, 14, 18])
         y = 148//x
         rng_x = range(1, x+1, 2)
@@ -43,12 +45,16 @@ class Maze:
         self._generate()
 
     def reroom(self, obj):
+        """Reassign maze rooms as obj
+        """
         for room in self.rooms:
             self(*room, obj)
 
     def draw(self):
-        _, ax = plt.subplots(figsize=(10, 10))
-        ax.set_aspect(1.0)
+        """Show an image of the generated maze
+        """
+        _, axes = plt.subplots(figsize=(10, 10))
+        axes.set_aspect(1.0)
         plt.xticks([])
         plt.yticks([])
         plt.pcolormesh(self.maze, cmap=plt.cm.get_cmap("tab20b"))
@@ -62,7 +68,7 @@ class Maze:
             nsew = self._prb_lnk(k)
             shuffle(nsew)
             for prb_lnk in nsew:
-                probe, link = prb_lnk
+                probe, _ = prb_lnk
                 if probe in self.grid:
                     self._walk(prb_lnk)
                     self.grid.remove(probe)
