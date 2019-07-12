@@ -27,8 +27,7 @@ class Maze:
         x, y, *val = args
         if val:
             self.maze[x][y] = val.pop()
-        else:
-            return self.maze[x][y]
+        return self.maze[x][y]
 
     def rebuild(self):
         """Generate a new maze
