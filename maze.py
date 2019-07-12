@@ -21,6 +21,16 @@ class Maze:
     ]
 
     def __init__(self):
+        self.rebuild()
+
+    def __call__(self, *args):
+        x, y, *val = args
+        if val:
+            self.maze[x][y] = val.pop()
+        else:
+            return self.maze[x][y]
+
+    def rebuild(self):
         x = choice([10, 12, 14, 18])
         y = 148//x
         rng_x = range(1, x+1, 2)
@@ -30,16 +40,6 @@ class Maze:
         self.grid = [(i, j) for i in rng_x for j in rng_y]
         self.path = [choice(self.grid)]
         self.rooms = []
-        self.build()
-
-    def __call__(self, *args):
-        x, y, *val = args
-        if val:
-            self.maze[x][y] = val.pop()
-        else:
-            return self.maze[x][y]
-
-    def build(self):
         self._generate()
 
     def reroom(self, obj):
