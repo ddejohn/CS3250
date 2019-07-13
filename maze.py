@@ -1,8 +1,7 @@
-import matplotlib.pyplot as plt
 from random import shuffle
 from random import choice
 from operator import add
-
+import matplotlib.pyplot as plt
 
 class Maze:
     """Generate a maze with 'rooms' on intersections, corners, and dead-ends.
@@ -26,8 +25,8 @@ class Maze:
     def __call__(self, *args):
         x, y, *val = args
         if val:
-            self.maze[x][y] = val.pop()
-        return self.maze[x][y]
+            self.maze[y][x] = val.pop()
+        return self.maze[y][x]
 
     def rebuild(self):
         """Generate a new maze
@@ -37,7 +36,7 @@ class Maze:
         rng_x = range(1, x+1, 2)
         rng_y = range(1, y+1, 2)
 
-        self.maze = [[0 for j in range(y+1)] for i in range(x+1)]
+        self.maze = [[0 for i in range(x+1)] for j in range(y+1)]
         self.grid = [(i, j) for i in rng_x for j in rng_y]
         self.path = [choice(self.grid)]
         self.rooms = []
@@ -87,10 +86,6 @@ class Maze:
         self(*self.path[0], 2)
         self(*self.path[-2], 2)
 
-    # def _set_rooms(self, obj):
-    #     for room in self.rooms:
-    #         self(*room, obj)
-
     def _prb_lnk(self, coord):
         nsew = []
         for move in self.moves:
@@ -107,14 +102,3 @@ class Maze:
         prb, lnk = coords
         self(*prb, 1)
         self(*lnk, 1)
-
-
-# class Worldmap:
-#     """Build a maze, get adjacencies
-#     """
-
-#     def __init__(self):
-#         self.maze = Maze()
-#         self._get_adj()
-
-#     def _get_adj(self):
