@@ -1,0 +1,59 @@
+0:
+  name: weeping orb of twilight
+  stats:
+    amount: 11
+    attack: 37
+    luck: 13
+1:
+  name: mended faulds of mediocrity
+  stats:
+    luck: 18
+    strength: 18
+    weight: 25
+2:
+  name: ruined crystal of smite
+  stats:
+    amount: 10
+    attack: 27
+    luck: 13
+3:
+  name: golden shard of ruining
+  stats:
+    amount: 11
+    attack: 45
+    luck: 7
+4:
+  name: golden gem of pity
+  stats:
+    amount: 13
+    attack: 32
+    luck: 13
+5:
+  name: ornate horn of disintegrating
+  stats:
+    amount: 11
+    attack: 15
+    luck: 6
+6:
+  name: valorous scythe of valor
+  stats:
+    attack: 21
+    luck: 9
+    weight: 20
+7:
+  name: untouched ivory
+  stats:
+    luck: -9
+    weight: 43
+8:
+  name: dirty sabatons of calming
+  stats:
+    luck: 8
+    strength: 18
+    weight: 24
+9:
+  name: cobwebbed dagger of ruin
+  stats:
+    attack: 13
+    luck: 23
+    weight: 11

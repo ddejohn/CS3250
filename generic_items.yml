@@ -1,500 +1,8745 @@
 0:
   description: null
-  name: null
+  holder: null
+  name: jade shortsword of scorching
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 25
+    luck: 14
+    weight: 10
+  type: weapon
 1:
   description: null
-  name: null
+  holder: null
+  name: fearful gem of grace
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 9
+    attack: 41
+    luck: 14
+  type: magic
 2:
   description: null
-  name: null
+  holder: null
+  name: worn cuisse of envy
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 25
+    strength: 11
+    weight: 31
+  type: armor
 3:
   description: null
-  name: null
+  holder: null
+  name: steel battle axe of suffering
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 12
+    luck: 6
+    weight: 7
+  type: weapon
 4:
   description: null
-  name: null
+  holder: null
+  name: wretched firepit
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 6
+    weight: 46
+  type: common
 5:
   description: null
-  name: null
+  holder: null
+  name: shabby skull
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 4
+    weight: 42
+  type: common
 6:
   description: null
-  name: null
+  holder: null
+  name: broken halberd of fury
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 26
+    luck: 10
+    weight: 15
+  type: weapon
 7:
   description: null
-  name: null
+  holder: null
+  name: adequate dust of dark
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 10
+    attack: 21
+    luck: 12
+  type: magic
 8:
   description: null
-  name: null
+  holder: null
+  name: cobwebbed club of pity
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 29
+    luck: 17
+    weight: 11
+  type: weapon
 9:
   description: null
-  name: null
+  holder: null
+  name: old torch
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -1
+    weight: 39
+  type: common
 10:
   description: null
-  name: null
+  holder: null
+  name: shattered journal
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -3
+    weight: 39
+  type: common
 11:
   description: null
-  name: null
+  holder: null
+  name: ornate sabatons of ruining
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 8
+    strength: 21
+    weight: 18
+  type: armor
 12:
   description: null
-  name: null
+  holder: null
+  name: ruined bowl
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -6
+    weight: 34
+  type: common
 13:
   description: null
-  name: null
+  holder: null
+  name: untouched circlet of governing
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 6
+    attack: 24
+    luck: 6
+  type: magic
 14:
   description: null
-  name: null
+  holder: null
+  name: furious shard of valor
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 9
+    attack: 46
+    luck: 14
+  type: magic
 15:
   description: null
-  name: null
+  holder: null
+  name: ruined pestle
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 8
+    weight: 39
+  type: common
 16:
   description: null
-  name: null
+  holder: null
+  name: friendly scythe of ice
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 11
+    luck: 19
+    weight: 12
+  type: weapon
 17:
   description: null
-  name: null
+  holder: null
+  name: fearful talisman of fury
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 9
+    attack: 44
+    luck: 10
+  type: magic
 18:
   description: null
-  name: null
+  holder: null
+  name: old journal
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -3
+    weight: 37
+  type: common
 19:
   description: null
-  name: null
+  holder: null
+  name: blunderous longbow of extraction
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 26
+    luck: 9
+    weight: 13
+  type: weapon
 20:
   description: null
-  name: null
+  holder: null
+  name: intact cup
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 3
+    weight: 24
+  type: common
 21:
   description: null
-  name: null
+  holder: null
+  name: ruined claymore of judgement
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 19
+    luck: 26
+    weight: 14
+  type: weapon
 22:
   description: null
-  name: null
+  holder: null
+  name: burning philter of firestorms
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 11
+    attack: 26
+    luck: 13
+  type: magic
 23:
   description: null
-  name: null
+  holder: null
+  name: horrible halberd of brutality
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 21
+    luck: 17
+    weight: 14
+  type: weapon
 24:
   description: null
-  name: null
+  holder: null
+  name: savage cuirass of extraction
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 15
+    strength: 29
+    weight: 37
+  type: armor
 25:
   description: null
-  name: null
+  holder: null
+  name: unblemished mortar
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -4
+    weight: 23
+  type: common
 26:
   description: null
-  name: null
+  holder: null
+  name: shameful gorget of fury
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 19
+    strength: 20
+    weight: 28
+  type: armor
 27:
   description: null
-  name: null
+  holder: null
+  name: rusty cinders
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 8
+    weight: 24
+  type: common
 28:
   description: null
-  name: null
+  holder: null
+  name: volcanic stone of smite
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 11
+    attack: 41
+    luck: 13
+  type: magic
 29:
   description: null
-  name: null
+  holder: null
+  name: shattered straw
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -5
+    weight: 43
+  type: common
 30:
   description: null
-  name: null
+  holder: null
+  name: broken firepit
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -9
+    weight: 28
+  type: common
 31:
   description: null
-  name: null
+  holder: null
+  name: worn cowter of ruining
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 14
+    strength: 15
+    weight: 33
+  type: armor
 32:
   description: null
-  name: null
+  holder: null
+  name: graceful scythe of judgement
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 25
+    luck: 11
+    weight: 20
+  type: weapon
 33:
   description: null
-  name: null
+  holder: null
+  name: cobwebbed firepit
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 0
+    weight: 38
+  type: common
 34:
   description: null
-  name: null
+  holder: null
+  name: gilded sabatons of disintegrating
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 24
+    strength: 25
+    weight: 37
+  type: armor
 35:
   description: null
-  name: null
+  holder: null
+  name: shameful potion of ice
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 7
+    attack: 41
+    luck: 11
+  type: magic
 36:
   description: null
-  name: null
+  holder: null
+  name: weakened war hammer of misery
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 27
+    luck: 10
+    weight: 7
+  type: weapon
 37:
   description: null
-  name: null
+  holder: null
+  name: copper shortsword of grace
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 18
+    luck: 19
+    weight: 11
+  type: weapon
 38:
   description: null
-  name: null
+  holder: null
+  name: shameful shard of pity
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 10
+    attack: 38
+    luck: 15
+  type: magic
 39:
   description: null
-  name: null
+  holder: null
+  name: onyx dagger of ruining
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 28
+    luck: 9
+    weight: 16
+  type: weapon
 40:
   description: null
-  name: null
+  holder: null
+  name: turquoise gousset of envy
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 17
+    strength: 18
+    weight: 29
+  type: armor
 41:
   description: null
-  name: null
+  holder: null
+  name: leather circlet of reckoning
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 11
+    attack: 17
+    luck: 15
+  type: magic
 42:
   description: null
-  name: null
+  holder: null
+  name: cobwebbed dust of thorns
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 7
+    attack: 41
+    luck: 10
+  type: magic
 43:
   description: null
-  name: null
+  holder: null
+  name: shiny pauldrons of dusk
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 8
+    strength: 24
+    weight: 19
+  type: armor
 44:
   description: null
-  name: null
+  holder: null
+  name: fearful morning star of misery
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 14
+    luck: 15
+    weight: 17
+  type: weapon
 45:
   description: null
-  name: null
+  holder: null
+  name: untouched gauntlets of firestorms
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 15
+    strength: 30
+    weight: 27
+  type: armor
 46:
   description: null
-  name: null
+  holder: null
+  name: luminous scroll of terror
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 9
+    attack: 49
+    luck: 7
+  type: magic
 47:
   description: null
-  name: null
+  holder: null
+  name: mended faulds of savagery
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 16
+    strength: 19
+    weight: 24
+  type: armor
 48:
   description: null
-  name: null
+  holder: null
+  name: rotted urn
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 1
+    weight: 22
+  type: common
 49:
   description: null
-  name: null
+  holder: null
+  name: wood blade of hatred
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 20
+    luck: 26
+    weight: 5
+  type: weapon
+50:
+  description: null
+  holder: null
+  name: broken spaulders of ruin
+  stats:
+    luck: 22
+    strength: 27
+    weight: 35
+  type: armor
+51:
+  description: null
+  holder: null
+  name: wretched candle
+  stats:
+    luck: 2
+    weight: 23
+  type: common
+52:
+  description: null
+  holder: null
+  name: piteous tome of destruction
+  stats:
+    amount: 11
+    attack: 48
+    luck: 6
+  type: magic
+53:
+  description: null
+  holder: null
+  name: chipped talisman of valor
+  stats:
+    amount: 12
+    attack: 49
+    luck: 7
+  type: magic
+54:
+  description: null
+  holder: null
+  name: leather graves of contempt
+  stats:
+    luck: 19
+    strength: 27
+    weight: 40
+  type: armor
+55:
+  description: null
+  holder: null
+  name: magnetic cuirass of valor
+  stats:
+    luck: 21
+    strength: 27
+    weight: 18
+  type: armor
+56:
+  description: null
+  holder: null
+  name: amethyst faulds of weeping
+  stats:
+    luck: 11
+    strength: 26
+    weight: 30
+  type: armor
+57:
+  description: null
+  holder: null
+  name: decrepit mortar
+  stats:
+    luck: 10
+    weight: 22
+  type: common
+58:
+  description: null
+  holder: null
+  name: cobwebbed mortar
+  stats:
+    luck: 9
+    weight: 16
+  type: common
+59:
+  description: null
+  holder: null
+  name: decrepit candle
+  stats:
+    luck: 2
+    weight: 49
+  type: common
+60:
+  description: null
+  holder: null
+  name: worn wood
+  stats:
+    luck: 3
+    weight: 31
+  type: common
+61:
+  description: null
+  holder: null
+  name: dirty spear of reckoning
+  stats:
+    attack: 13
+    luck: 18
+    weight: 7
+  type: weapon
+62:
+  description: null
+  holder: null
+  name: ivory graves of battering
+  stats:
+    luck: 17
+    strength: 13
+    weight: 33
+  type: armor
+63:
+  description: null
+  holder: null
+  name: magnetic crossbow of fury
+  stats:
+    attack: 27
+    luck: 5
+    weight: 7
+  type: weapon
+64:
+  description: null
+  holder: null
+  name: intact teeth
+  stats:
+    luck: 8
+    weight: 20
+  type: common
+65:
+  description: null
+  holder: null
+  name: copper dust of destruction
+  stats:
+    amount: 6
+    attack: 36
+    luck: 5
+  type: magic
+66:
+  description: null
+  holder: null
+  name: gilded falchion of battering
+  stats:
+    attack: 12
+    luck: 20
+    weight: 14
+  type: weapon
+67:
+  description: null
+  holder: null
+  name: splendid plackart of envy
+  stats:
+    luck: 18
+    strength: 22
+    weight: 34
+  type: armor
+68:
+  description: null
+  holder: null
+  name: weakened scroll of misery
+  stats:
+    amount: 14
+    attack: 15
+    luck: 10
+  type: magic
+69:
+  description: null
+  holder: null
+  name: ancient blade of blooding
+  stats:
+    attack: 13
+    luck: 16
+    weight: 8
+  type: weapon
+70:
+  description: null
+  holder: null
+  name: shattered cinders
+  stats:
+    luck: -9
+    weight: 19
+  type: common
+71:
+  description: null
+  holder: null
+  name: shabby funnel
+  stats:
+    luck: 9
+    weight: 21
+  type: common
+72:
+  description: null
+  holder: null
+  name: ruined claymore of brutality
+  stats:
+    attack: 21
+    luck: 23
+    weight: 6
+  type: weapon
+73:
+  description: null
+  holder: null
+  name: fine ring of quickening
+  stats:
+    amount: 15
+    attack: 40
+    luck: 12
+  type: magic
+74:
+  description: null
+  holder: null
+  name: fur sabatons of dark
+  stats:
+    luck: 9
+    strength: 24
+    weight: 25
+  type: armor
+75:
+  description: null
+  holder: null
+  name: valorous spear of ice
+  stats:
+    attack: 17
+    luck: 27
+    weight: 14
+  type: weapon
+76:
+  description: null
+  holder: null
+  name: friendly ring of light
+  stats:
+    amount: 9
+    attack: 34
+    luck: 7
+  type: magic
+77:
+  description: null
+  holder: null
+  name: decrepit pot
+  stats:
+    luck: 3
+    weight: 21
+  type: common
+78:
+  description: null
+  holder: null
+  name: piteous talisman of icestorms
+  stats:
+    amount: 14
+    attack: 31
+    luck: 11
+  type: magic
+79:
+  description: null
+  holder: null
+  name: fine plackart of disintegrating
+  stats:
+    luck: 14
+    strength: 16
+    weight: 23
+  type: armor
+80:
+  description: null
+  holder: null
+  name: glass morning star of envy
+  stats:
+    attack: 30
+    luck: 6
+    weight: 14
+  type: weapon
+81:
+  description: null
+  holder: null
+  name: shabby shelves
+  stats:
+    luck: -10
+    weight: 44
+  type: common
+82:
+  description: null
+  holder: null
+  name: turquoise gauntlets of disintegrating
+  stats:
+    luck: 17
+    strength: 17
+    weight: 32
+  type: armor
+83:
+  description: null
+  holder: null
+  name: friendly war hammer of contempt
+  stats:
+    attack: 25
+    luck: 25
+    weight: 19
+  type: weapon
+84:
+  description: null
+  holder: null
+  name: fur shortsword of thunder
+  stats:
+    attack: 30
+    luck: 26
+    weight: 18
+  type: weapon
+85:
+  description: null
+  holder: null
+  name: gilded cuirass of disdain
+  stats:
+    luck: 25
+    strength: 22
+    weight: 30
+  type: armor
+86:
+  description: null
+  holder: null
+  name: fine amulet of darkness
+  stats:
+    amount: 8
+    attack: 30
+    luck: 6
+  type: magic
+87:
+  description: null
+  holder: null
+  name: untouched journal
+  stats:
+    luck: -2
+    weight: 22
+  type: common
+88:
+  description: null
+  holder: null
+  name: copper blade of calming
+  stats:
+    attack: 25
+    luck: 17
+    weight: 19
+  type: weapon
+89:
+  description: null
+  holder: null
+  name: luminous shard of fear
+  stats:
+    amount: 14
+    attack: 49
+    luck: 11
+  type: magic
+90:
+  description: null
+  holder: null
+  name: dusty cloak of fury
+  stats:
+    amount: 11
+    attack: 36
+    luck: 10
+  type: magic
+91:
+  description: null
+  holder: null
+  name: beautiful cowter of blooding
+  stats:
+    luck: 17
+    strength: 15
+    weight: 23
+  type: armor
+92:
+  description: null
+  holder: null
+  name: bone plackart of grace
+  stats:
+    luck: 24
+    strength: 22
+    weight: 38
+  type: armor
+93:
+  description: null
+  holder: null
+  name: fur gem of envy
+  stats:
+    amount: 10
+    attack: 38
+    luck: 9
+  type: magic
+94:
+  description: null
+  holder: null
+  name: wretched funnel
+  stats:
+    luck: -6
+    weight: 6
+  type: common
+95:
+  description: null
+  holder: null
+  name: burning staff of thunder
+  stats:
+    attack: 23
+    luck: 29
+    weight: 12
+  type: weapon
+96:
+  description: null
+  holder: null
+  name: worn ring of quickening
+  stats:
+    amount: 15
+    attack: 36
+    luck: 13
+  type: magic
+97:
+  description: null
+  holder: null
+  name: ancient war hammer of light
+  stats:
+    attack: 20
+    luck: 7
+    weight: 18
+  type: weapon
+98:
+  description: null
+  holder: null
+  name: shiny scythe of friendship
+  stats:
+    attack: 13
+    luck: 7
+    weight: 18
+  type: weapon
+99:
+  description: null
+  holder: null
+  name: worn gorget of mediocrity
+  stats:
+    luck: 22
+    strength: 22
+    weight: 29
+  type: armor
+100:
+  description: null
+  holder: null
+  name: electric scythe of embalming
+  stats:
+    attack: 22
+    luck: 16
+    weight: 16
+  type: weapon
+101:
+  description: null
+  holder: null
+  name: dusty gauntlets of thorns
+  stats:
+    luck: 11
+    strength: 20
+    weight: 16
+  type: armor
+102:
+  description: null
+  holder: null
+  name: burning shortsword of savagery
+  stats:
+    attack: 22
+    luck: 12
+    weight: 8
+  type: weapon
+103:
+  description: null
+  holder: null
+  name: old gorget of valor
+  stats:
+    luck: 14
+    strength: 12
+    weight: 21
+  type: armor
+104:
+  description: null
+  holder: null
+  name: dusty urn
+  stats:
+    luck: -8
+    weight: 11
+  type: common
+105:
+  description: null
+  holder: null
+  name: untouched rope
+  stats:
+    luck: -1
+    weight: 12
+  type: common
+106:
+  description: null
+  holder: null
+  name: turquoise dust of lightning
+  stats:
+    amount: 7
+    attack: 34
+    luck: 7
+  type: magic
+107:
+  description: null
+  holder: null
+  name: strange mace of contempt
+  stats:
+    attack: 15
+    luck: 17
+    weight: 14
+  type: weapon
+108:
+  description: null
+  holder: null
+  name: iron mace of hatred
+  stats:
+    attack: 17
+    luck: 9
+    weight: 5
+  type: weapon
+109:
+  description: null
+  holder: null
+  name: worn club of lightning
+  stats:
+    attack: 24
+    luck: 9
+    weight: 12
+  type: weapon
+110:
+  description: null
+  holder: null
+  name: ghastly war hammer of scorching
+  stats:
+    attack: 11
+    luck: 5
+    weight: 9
+  type: weapon
+111:
+  description: null
+  holder: null
+  name: damaged claymore of extraction
+  stats:
+    attack: 17
+    luck: 17
+    weight: 12
+  type: weapon
+112:
+  description: null
+  holder: null
+  name: adequate cloak of smite
+  stats:
+    amount: 8
+    attack: 17
+    luck: 13
+  type: magic
+113:
+  description: null
+  holder: null
+  name: rusty journal
+  stats:
+    luck: -8
+    weight: 33
+  type: common
+114:
+  description: null
+  holder: null
+  name: rare graves of hatred
+  stats:
+    luck: 20
+    strength: 19
+    weight: 29
+  type: armor
+115:
+  description: null
+  holder: null
+  name: onyx claymore of friendship
+  stats:
+    attack: 29
+    luck: 13
+    weight: 11
+  type: weapon
+116:
+  description: null
+  holder: null
+  name: jade gem of judgement
+  stats:
+    amount: 14
+    attack: 18
+    luck: 15
+  type: magic
+117:
+  description: null
+  holder: null
+  name: savage vambraces of thorns
+  stats:
+    luck: 9
+    strength: 25
+    weight: 20
+  type: armor
+118:
+  description: null
+  holder: null
+  name: magnificent gem of shame
+  stats:
+    amount: 6
+    attack: 49
+    luck: 12
+  type: magic
+119:
+  description: null
+  holder: null
+  name: brutal gauntlets of reckoning
+  stats:
+    luck: 22
+    strength: 17
+    weight: 28
+  type: armor
+120:
+  description: null
+  holder: null
+  name: worn crate
+  stats:
+    luck: -1
+    weight: 18
+  type: common
+121:
+  description: null
+  holder: null
+  name: broken vambraces of smite
+  stats:
+    luck: 25
+    strength: 25
+    weight: 24
+  type: armor
+122:
+  description: null
+  holder: null
+  name: tattered stool
+  stats:
+    luck: 9
+    weight: 41
+  type: common
+123:
+  description: null
+  holder: null
+  name: bone circlet of disgust
+  stats:
+    amount: 15
+    attack: 43
+    luck: 9
+  type: magic
+124:
+  description: null
+  holder: null
+  name: barbed recurve bow of mediocrity
+  stats:
+    attack: 26
+    luck: 5
+    weight: 13
+  type: weapon
+125:
+  description: null
+  holder: null
+  name: untouched dust
+  stats:
+    luck: 4
+    weight: 17
+  type: common
+126:
+  description: null
+  holder: null
+  name: shattered bandages
+  stats:
+    luck: 7
+    weight: 44
+  type: common
+127:
+  description: null
+  holder: null
+  name: ghastly ring of destruction
+  stats:
+    amount: 6
+    attack: 41
+    luck: 15
+  type: magic
+128:
+  description: null
+  holder: null
+  name: electric orb of misery
+  stats:
+    amount: 9
+    attack: 30
+    luck: 6
+  type: magic
+129:
+  description: null
+  holder: null
+  name: horrible crossbow of dusk
+  stats:
+    attack: 28
+    luck: 28
+    weight: 10
+  type: weapon
+130:
+  description: null
+  holder: null
+  name: fur staff of weeping
+  stats:
+    attack: 30
+    luck: 25
+    weight: 5
+  type: weapon
+131:
+  description: null
+  holder: null
+  name: iron crossbow of contempt
+  stats:
+    attack: 29
+    luck: 12
+    weight: 14
+  type: weapon
+132:
+  description: null
+  holder: null
+  name: shameful dagger of thorns
+  stats:
+    attack: 15
+    luck: 21
+    weight: 11
+  type: weapon
+133:
+  description: null
+  holder: null
+  name: strange cloak of envy
+  stats:
+    amount: 7
+    attack: 26
+    luck: 5
+  type: magic
+134:
+  description: null
+  holder: null
+  name: meteorite claymore of crushing
+  stats:
+    attack: 28
+    luck: 28
+    weight: 19
+  type: weapon
+135:
+  description: null
+  holder: null
+  name: magnetic stone of terror
+  stats:
+    amount: 12
+    attack: 25
+    luck: 8
+  type: magic
+136:
+  description: null
+  holder: null
+  name: old spear of disgust
+  stats:
+    attack: 13
+    luck: 21
+    weight: 6
+  type: weapon
+137:
+  description: null
+  holder: null
+  name: dusty vambraces of disgust
+  stats:
+    luck: 22
+    strength: 25
+    weight: 25
+  type: armor
+138:
+  description: null
+  holder: null
+  name: ornate graves of disdain
+  stats:
+    luck: 21
+    strength: 29
+    weight: 20
+  type: armor
+139:
+  description: null
+  holder: null
+  name: adamantine dust of light
+  stats:
+    amount: 14
+    attack: 26
+    luck: 5
+  type: magic
+140:
+  description: null
+  holder: null
+  name: worn firepit
+  stats:
+    luck: -6
+    weight: 26
+  type: common
+141:
+  description: null
+  holder: null
+  name: wretched rags
+  stats:
+    luck: -3
+    weight: 23
+  type: common
+142:
+  description: null
+  holder: null
+  name: cobwebbed book
+  stats:
+    luck: 1
+    weight: 35
+  type: common
+143:
+  description: null
+  holder: null
+  name: strange ring of fury
+  stats:
+    amount: 12
+    attack: 30
+    luck: 9
+  type: magic
+144:
+  description: null
+  holder: null
+  name: flawless scimitar of battering
+  stats:
+    attack: 19
+    luck: 11
+    weight: 15
+  type: weapon
+145:
+  description: null
+  holder: null
+  name: shabby candle
+  stats:
+    luck: -8
+    weight: 25
+  type: common
+146:
+  description: null
+  holder: null
+  name: rusty war hammer of calming
+  stats:
+    attack: 17
+    luck: 28
+    weight: 19
+  type: weapon
+147:
+  description: null
+  holder: null
+  name: emerald staff of thorns
+  stats:
+    attack: 14
+    luck: 6
+    weight: 5
+  type: weapon
+148:
+  description: null
+  holder: null
+  name: wretched cauldron
+  stats:
+    luck: 2
+    weight: 27
+  type: common
+149:
+  description: null
+  holder: null
+  name: polished vambraces of battering
+  stats:
+    luck: 14
+    strength: 25
+    weight: 32
+  type: armor
+150:
+  description: null
+  holder: null
+  name: furious pauldrons of dark
+  stats:
+    luck: 5
+    strength: 19
+    weight: 34
+  type: armor
+151:
+  description: null
+  holder: null
+  name: fearful ring of fear
+  stats:
+    amount: 9
+    attack: 26
+    luck: 8
+  type: magic
+152:
+  description: null
+  holder: null
+  name: unblemished blanket
+  stats:
+    luck: 9
+    weight: 12
+  type: common
+153:
+  description: null
+  holder: null
+  name: decrepit ash
+  stats:
+    luck: -10
+    weight: 38
+  type: common
+154:
+  description: null
+  holder: null
+  name: dusty faulds of pity
+  stats:
+    luck: 18
+    strength: 28
+    weight: 30
+  type: armor
+155:
+  description: null
+  holder: null
+  name: iron cuirass of disintegration
+  stats:
+    luck: 12
+    strength: 21
+    weight: 21
+  type: armor
+156:
+  description: null
+  holder: null
+  name: fur cloak of fury
+  stats:
+    amount: 7
+    attack: 33
+    luck: 10
+  type: magic
+157:
+  description: null
+  holder: null
+  name: magnetic plackart of disintegrating
+  stats:
+    luck: 12
+    strength: 28
+    weight: 34
+  type: armor
+158:
+  description: null
+  holder: null
+  name: fearful pauldrons of grace
+  stats:
+    luck: 14
+    strength: 29
+    weight: 22
+  type: armor
+159:
+  description: null
+  holder: null
+  name: silver cloak of quickening
+  stats:
+    amount: 13
+    attack: 16
+    luck: 13
+  type: magic
+160:
+  description: null
+  holder: null
+  name: stone mace of crushing
+  stats:
+    attack: 13
+    luck: 9
+    weight: 7
+  type: weapon
+161:
+  description: null
+  holder: null
+  name: bronze falchion of battering
+  stats:
+    attack: 12
+    luck: 16
+    weight: 18
+  type: weapon
+162:
+  description: null
+  holder: null
+  name: splendiferous scimitar of fear
+  stats:
+    attack: 25
+    luck: 8
+    weight: 9
+  type: weapon
+163:
+  description: null
+  holder: null
+  name: broken cup
+  stats:
+    luck: -7
+    weight: 5
+  type: common
+164:
+  description: null
+  holder: null
+  name: decrepit candle
+  stats:
+    luck: -8
+    weight: 42
+  type: common
+165:
+  description: null
+  holder: null
+  name: ancient gauntlets of battering
+  stats:
+    luck: 5
+    strength: 15
+    weight: 31
+  type: armor
+166:
+  description: null
+  holder: null
+  name: ruined pestle
+  stats:
+    luck: 6
+    weight: 8
+  type: common
+167:
+  description: null
+  holder: null
+  name: polished shard of icestorms
+  stats:
+    amount: 5
+    attack: 26
+    luck: 5
+  type: magic
+168:
+  description: null
+  holder: null
+  name: shattered journal
+  stats:
+    luck: 4
+    weight: 10
+  type: common
+169:
+  description: null
+  holder: null
+  name: ornate graves of ruin
+  stats:
+    luck: 15
+    strength: 21
+    weight: 33
+  type: armor
+170:
+  description: null
+  holder: null
+  name: shiny crystal of smiting
+  stats:
+    amount: 10
+    attack: 48
+    luck: 5
+  type: magic
+171:
+  description: null
+  holder: null
+  name: horrible dagger of lightning
+  stats:
+    attack: 21
+    luck: 10
+    weight: 12
+  type: weapon
+172:
+  description: null
+  holder: null
+  name: blunderous crossbow of dawn
+  stats:
+    attack: 15
+    luck: 14
+    weight: 10
+  type: weapon
+173:
+  description: null
+  holder: null
+  name: obsidian cloak of quickening
+  stats:
+    amount: 7
+    attack: 27
+    luck: 8
+  type: magic
+174:
+  description: null
+  holder: null
+  name: gilded falchion of fury
+  stats:
+    attack: 18
+    luck: 9
+    weight: 20
+  type: weapon
+175:
+  description: null
+  holder: null
+  name: decayed crate
+  stats:
+    luck: -5
+    weight: 25
+  type: common
+176:
+  description: null
+  holder: null
+  name: stone cowter of firestorms
+  stats:
+    luck: 20
+    strength: 12
+    weight: 29
+  type: armor
+177:
+  description: null
+  holder: null
+  name: ivory cowter of thunder
+  stats:
+    luck: 7
+    strength: 21
+    weight: 30
+  type: armor
+178:
+  description: null
+  holder: null
+  name: tattered parchment
+  stats:
+    luck: 5
+    weight: 6
+  type: common
+179:
+  description: null
+  holder: null
+  name: strange gauntlets of ruining
+  stats:
+    luck: 24
+    strength: 14
+    weight: 22
+  type: armor
+180:
+  description: null
+  holder: null
+  name: mended bandages
+  stats:
+    luck: -8
+    weight: 23
+  type: common
+181:
+  description: null
+  holder: null
+  name: onyx shortsword of suffering
+  stats:
+    attack: 18
+    luck: 12
+    weight: 18
+  type: weapon
+182:
+  description: null
+  holder: null
+  name: splendiferous club of ruining
+  stats:
+    attack: 16
+    luck: 15
+    weight: 18
+  type: weapon
+183:
+  description: null
+  holder: null
+  name: meteorite philter of extraction
+  stats:
+    amount: 12
+    attack: 23
+    luck: 10
+  type: magic
+184:
+  description: null
+  holder: null
+  name: bloody graves of thunder
+  stats:
+    luck: 13
+    strength: 15
+    weight: 34
+  type: armor
+185:
+  description: null
+  holder: null
+  name: decrepit cup
+  stats:
+    luck: -10
+    weight: 43
+  type: common
+186:
+  description: null
+  holder: null
+  name: shameful blade of ruining
+  stats:
+    attack: 19
+    luck: 30
+    weight: 8
+  type: weapon
+187:
+  description: null
+  holder: null
+  name: ancient orb of pity
+  stats:
+    amount: 10
+    attack: 29
+    luck: 9
+  type: magic
+188:
+  description: null
+  holder: null
+  name: bronze club of pity
+  stats:
+    attack: 13
+    luck: 23
+    weight: 16
+  type: weapon
+189:
+  description: null
+  holder: null
+  name: ruined cup
+  stats:
+    luck: 3
+    weight: 29
+  type: common
+190:
+  description: null
+  holder: null
+  name: magnetic spaulders of dusk
+  stats:
+    luck: 18
+    strength: 29
+    weight: 29
+  type: armor
+191:
+  description: null
+  holder: null
+  name: flawless scimitar of ruin
+  stats:
+    attack: 28
+    luck: 16
+    weight: 20
+  type: weapon
+192:
+  description: null
+  holder: null
+  name: gilded morning star of twilight
+  stats:
+    attack: 25
+    luck: 7
+    weight: 12
+  type: weapon
+193:
+  description: null
+  holder: null
+  name: rotted ash
+  stats:
+    luck: -9
+    weight: 50
+  type: common
+194:
+  description: null
+  holder: null
+  name: splendid cloak of pity
+  stats:
+    amount: 14
+    attack: 25
+    luck: 13
+  type: magic
+195:
+  description: null
+  holder: null
+  name: fragile gauntlets of fear
+  stats:
+    luck: 5
+    strength: 14
+    weight: 35
+  type: armor
+196:
+  description: null
+  holder: null
+  name: fine shard of lightning
+  stats:
+    amount: 10
+    attack: 41
+    luck: 11
+  type: magic
+197:
+  description: null
+  holder: null
+  name: decrepit charcoal
+  stats:
+    luck: 3
+    weight: 49
+  type: common
+198:
+  description: null
+  holder: null
+  name: obsidian gousset of darkness
+  stats:
+    luck: 5
+    strength: 22
+    weight: 38
+  type: armor
+199:
+  description: null
+  holder: null
+  name: shabby bones
+  stats:
+    luck: -7
+    weight: 37
+  type: common
+200:
+  description: null
+  holder: null
+  name: dusty torch
+  stats:
+    luck: 10
+    weight: 5
+  type: common
+201:
+  description: null
+  holder: null
+  name: dirty cuisse of darkness
+  stats:
+    luck: 9
+    strength: 20
+    weight: 16
+  type: armor
+202:
+  description: null
+  holder: null
+  name: derelict charcoal
+  stats:
+    luck: -2
+    weight: 50
+  type: common
+203:
+  description: null
+  holder: null
+  name: brutal vambraces of friendship
+  stats:
+    luck: 13
+    strength: 25
+    weight: 24
+  type: armor
+204:
+  description: null
+  holder: null
+  name: cobwebbed cuffs
+  stats:
+    luck: -3
+    weight: 42
+  type: common
+205:
+  description: null
+  holder: null
+  name: flawless gauntlets of misery
+  stats:
+    luck: 13
+    strength: 22
+    weight: 36
+  type: armor
+206:
+  description: null
+  holder: null
+  name: weakened scimitar of grace
+  stats:
+    attack: 15
+    luck: 17
+    weight: 8
+  type: weapon
+207:
+  description: null
+  holder: null
+  name: burning cloak of dawn
+  stats:
+    amount: 5
+    attack: 32
+    luck: 15
+  type: magic
+208:
+  description: null
+  holder: null
+  name: splendid claymore of disdain
+  stats:
+    attack: 11
+    luck: 11
+    weight: 10
+  type: weapon
+209:
+  description: null
+  holder: null
+  name: thorny talisman of mediocrity
+  stats:
+    amount: 12
+    attack: 40
+    luck: 6
+  type: magic
+210:
+  description: null
+  holder: null
+  name: valorous club of pity
+  stats:
+    attack: 20
+    luck: 22
+    weight: 10
+  type: weapon
+211:
+  description: null
+  holder: null
+  name: strange shard of scorching
+  stats:
+    amount: 11
+    attack: 42
+    luck: 13
+  type: magic
+212:
+  description: null
+  holder: null
+  name: worn skull
+  stats:
+    luck: -5
+    weight: 15
+  type: common
+213:
+  description: null
+  holder: null
+  name: steel plackart of fury
+  stats:
+    luck: 21
+    strength: 23
+    weight: 19
+  type: armor
+214:
+  description: null
+  holder: null
+  name: polished recurve bow of judgement
+  stats:
+    attack: 14
+    luck: 24
+    weight: 6
+  type: weapon
+215:
+  description: null
+  holder: null
+  name: steel scythe of brutality
+  stats:
+    attack: 19
+    luck: 29
+    weight: 19
+  type: weapon
+216:
+  description: null
+  holder: null
+  name: brutal battle axe of dark
+  stats:
+    attack: 15
+    luck: 12
+    weight: 20
+  type: weapon
+217:
+  description: null
+  holder: null
+  name: rare vambraces of ice
+  stats:
+    luck: 17
+    strength: 29
+    weight: 28
+  type: armor
+218:
+  description: null
+  holder: null
+  name: barbed staff of thorns
+  stats:
+    attack: 16
+    luck: 30
+    weight: 12
+  type: weapon
+219:
+  description: null
+  holder: null
+  name: graceful blade of pity
+  stats:
+    attack: 30
+    luck: 5
+    weight: 16
+  type: weapon
+220:
+  description: null
+  holder: null
+  name: dusty cuffs
+  stats:
+    luck: -1
+    weight: 29
+  type: common
+221:
+  description: null
+  holder: null
+  name: polished orb of twilight
+  stats:
+    amount: 11
+    attack: 43
+    luck: 11
+  type: magic
+222:
+  description: null
+  holder: null
+  name: ivory gousset of hatred
+  stats:
+    luck: 15
+    strength: 13
+    weight: 15
+  type: armor
+223:
+  description: null
+  holder: null
+  name: splendiferous claymore of reckoning
+  stats:
+    attack: 15
+    luck: 5
+    weight: 11
+  type: weapon
+224:
+  description: null
+  holder: null
+  name: piteous plackart of disintegrating
+  stats:
+    luck: 22
+    strength: 26
+    weight: 22
+  type: armor
+225:
+  description: null
+  holder: null
+  name: durable war hammer of quickening
+  stats:
+    attack: 15
+    luck: 23
+    weight: 9
+  type: weapon
+226:
+  description: null
+  holder: null
+  name: ornate stone of terror
+  stats:
+    amount: 9
+    attack: 35
+    luck: 12
+  type: magic
+227:
+  description: null
+  holder: null
+  name: adequate sabatons of calming
+  stats:
+    luck: 18
+    strength: 20
+    weight: 20
+  type: armor
+228:
+  description: null
+  holder: null
+  name: dusty wood
+  stats:
+    luck: -3
+    weight: 15
+  type: common
+229:
+  description: null
+  holder: null
+  name: luminous scroll of envy
+  stats:
+    amount: 7
+    attack: 23
+    luck: 6
+  type: magic
+230:
+  description: null
+  holder: null
+  name: intact ash
+  stats:
+    luck: -1
+    weight: 50
+  type: common
+231:
+  description: null
+  holder: null
+  name: decayed wood
+  stats:
+    luck: 3
+    weight: 48
+  type: common
+232:
+  description: null
+  holder: null
+  name: wood orb of pity
+  stats:
+    amount: 13
+    attack: 23
+    luck: 13
+  type: magic
+233:
+  description: null
+  holder: null
+  name: old alembic
+  stats:
+    luck: 5
+    weight: 6
+  type: common
+234:
+  description: null
+  holder: null
+  name: wood graves of pity
+  stats:
+    luck: 14
+    strength: 30
+    weight: 29
+  type: armor
+235:
+  description: null
+  holder: null
+  name: untouched mortar
+  stats:
+    luck: -3
+    weight: 20
+  type: common
+236:
+  description: null
+  holder: null
+  name: common ring of crushing
+  stats:
+    amount: 8
+    attack: 36
+    luck: 13
+  type: magic
+237:
+  description: null
+  holder: null
+  name: cobwebbed shard of dark
+  stats:
+    amount: 13
+    attack: 28
+    luck: 12
+  type: magic
+238:
+  description: null
+  holder: null
+  name: shiny stone of disintegration
+  stats:
+    amount: 12
+    attack: 18
+    luck: 5
+  type: magic
+239:
+  description: null
+  holder: null
+  name: derelict chains
+  stats:
+    luck: -2
+    weight: 36
+  type: common
+240:
+  description: null
+  holder: null
+  name: weakened dust of crushing
+  stats:
+    amount: 6
+    attack: 35
+    luck: 6
+  type: magic
+241:
+  description: null
+  holder: null
+  name: magnetic dust of terror
+  stats:
+    amount: 8
+    attack: 25
+    luck: 15
+  type: magic
+242:
+  description: null
+  holder: null
+  name: untouched pauldrons of dawn
+  stats:
+    luck: 5
+    strength: 17
+    weight: 19
+  type: armor
+243:
+  description: null
+  holder: null
+  name: polished blade of judgement
+  stats:
+    attack: 22
+    luck: 25
+    weight: 5
+  type: weapon
+244:
+  description: null
+  holder: null
+  name: strange staff of calming
+  stats:
+    attack: 17
+    luck: 24
+    weight: 19
+  type: weapon
+245:
+  description: null
+  holder: null
+  name: chipped staff of dusk
+  stats:
+    attack: 14
+    luck: 15
+    weight: 14
+  type: weapon
+246:
+  description: null
+  holder: null
+  name: meteorite scimitar of reckoning
+  stats:
+    attack: 23
+    luck: 9
+    weight: 7
+  type: weapon
+247:
+  description: null
+  holder: null
+  name: dirty shard of lightning
+  stats:
+    amount: 8
+    attack: 37
+    luck: 12
+  type: magic
+248:
+  description: null
+  holder: null
+  name: silver cuisse of suffering
+  stats:
+    luck: 16
+    strength: 23
+    weight: 29
+  type: armor
+249:
+  description: null
+  holder: null
+  name: weeping potion of crushing
+  stats:
+    amount: 7
+    attack: 25
+    luck: 8
+  type: magic
+250:
+  description: null
+  holder: null
+  name: decayed chair
+  stats:
+    luck: 8
+    weight: 19
+  type: common
+251:
+  description: null
+  holder: null
+  name: dirty ash
+  stats:
+    luck: -1
+    weight: 31
+  type: common
+252:
+  description: null
+  holder: null
+  name: worn parchment
+  stats:
+    luck: -8
+    weight: 37
+  type: common
+253:
+  description: null
+  holder: null
+  name: friendly sabatons of thunder
+  stats:
+    luck: 15
+    strength: 21
+    weight: 29
+  type: armor
+254:
+  description: null
+  holder: null
+  name: amethyst ring of battering
+  stats:
+    amount: 15
+    attack: 41
+    luck: 5
+  type: magic
+255:
+  description: null
+  holder: null
+  name: bronze crystal of fear
+  stats:
+    amount: 6
+    attack: 23
+    luck: 14
+  type: magic
+256:
+  description: null
+  holder: null
+  name: fur horn of smite
+  stats:
+    amount: 13
+    attack: 35
+    luck: 5
+  type: magic
+257:
+  description: null
+  holder: null
+  name: silver gem of reckoning
+  stats:
+    amount: 6
+    attack: 44
+    luck: 11
+  type: magic
+258:
+  description: null
+  holder: null
+  name: beautiful morning star of blooding
+  stats:
+    attack: 29
+    luck: 16
+    weight: 8
+  type: weapon
+259:
+  description: null
+  holder: null
+  name: burning cuirass of hatred
+  stats:
+    luck: 7
+    strength: 23
+    weight: 23
+  type: armor
+260:
+  description: null
+  holder: null
+  name: decayed ash
+  stats:
+    luck: 9
+    weight: 17
+  type: common
+261:
+  description: null
+  holder: null
+  name: leather ring of embalming
+  stats:
+    amount: 11
+    attack: 32
+    luck: 9
+  type: magic
+262:
+  description: null
+  holder: null
+  name: shameful ring of shame
+  stats:
+    amount: 8
+    attack: 26
+    luck: 5
+  type: magic
+263:
+  description: null
+  holder: null
+  name: gilded war hammer of dark
+  stats:
+    attack: 16
+    luck: 6
+    weight: 18
+  type: weapon
+264:
+  description: null
+  holder: null
+  name: meteorite shard of mediocrity
+  stats:
+    amount: 13
+    attack: 37
+    luck: 14
+  type: magic
+265:
+  description: null
+  holder: null
+  name: chipped dagger of contempt
+  stats:
+    attack: 10
+    luck: 24
+    weight: 17
+  type: weapon
+266:
+  description: null
+  holder: null
+  name: wretched cauldron
+  stats:
+    luck: -3
+    weight: 21
+  type: common
+267:
+  description: null
+  holder: null
+  name: savage ring of battering
+  stats:
+    amount: 8
+    attack: 40
+    luck: 15
+  type: magic
+268:
+  description: null
+  holder: null
+  name: savage plackart of embalming
+  stats:
+    luck: 23
+    strength: 17
+    weight: 33
+  type: armor
+269:
+  description: null
+  holder: null
+  name: amethyst horn of hatred
+  stats:
+    amount: 15
+    attack: 36
+    luck: 8
+  type: magic
+270:
+  description: null
+  holder: null
+  name: stone spaulders of disgust
+  stats:
+    luck: 23
+    strength: 15
+    weight: 19
+  type: armor
+271:
+  description: null
+  holder: null
+  name: burning cuirass of scorching
+  stats:
+    luck: 25
+    strength: 18
+    weight: 38
+  type: armor
+272:
+  description: null
+  holder: null
+  name: ghastly ring of scorching
+  stats:
+    amount: 6
+    attack: 31
+    luck: 14
+  type: magic
+273:
+  description: null
+  holder: null
+  name: onyx staff of fury
+  stats:
+    attack: 30
+    luck: 24
+    weight: 6
+  type: weapon
+274:
+  description: null
+  holder: null
+  name: glass gorget of destruction
+  stats:
+    luck: 15
+    strength: 27
+    weight: 15
+  type: armor
+275:
+  description: null
+  holder: null
+  name: rusty pauldrons of blooding
+  stats:
+    luck: 22
+    strength: 10
+    weight: 19
+  type: armor
+276:
+  description: null
+  holder: null
+  name: fearful battle axe of valor
+  stats:
+    attack: 15
+    luck: 14
+    weight: 7
+  type: weapon
+277:
+  description: null
+  holder: null
+  name: untouched spaulders of misery
+  stats:
+    luck: 11
+    strength: 29
+    weight: 26
+  type: armor
+278:
+  description: null
+  holder: null
+  name: obsidian shard of smite
+  stats:
+    amount: 12
+    attack: 34
+    luck: 12
+  type: magic
+279:
+  description: null
+  holder: null
+  name: bone crossbow of terror
+  stats:
+    attack: 15
+    luck: 23
+    weight: 6
+  type: weapon
+280:
+  description: null
+  holder: null
+  name: cobwebbed rope
+  stats:
+    luck: 3
+    weight: 14
+  type: common
+281:
+  description: null
+  holder: null
+  name: splendid morning star of battering
+  stats:
+    attack: 18
+    luck: 13
+    weight: 20
+  type: weapon
+282:
+  description: null
+  holder: null
+  name: fearful dust of reckoning
+  stats:
+    amount: 8
+    attack: 31
+    luck: 10
+  type: magic
+283:
+  description: null
+  holder: null
+  name: strange pauldrons of dark
+  stats:
+    luck: 14
+    strength: 20
+    weight: 38
+  type: armor
+284:
+  description: null
+  holder: null
+  name: chipped halberd of fury
+  stats:
+    attack: 15
+    luck: 10
+    weight: 9
+  type: weapon
+285:
+  description: null
+  holder: null
+  name: glass gauntlets of valor
+  stats:
+    luck: 5
+    strength: 12
+    weight: 28
+  type: armor
+286:
+  description: null
+  holder: null
+  name: durable spear of terror
+  stats:
+    attack: 13
+    luck: 11
+    weight: 6
+  type: weapon
+287:
+  description: null
+  holder: null
+  name: decayed alembic
+  stats:
+    luck: 8
+    weight: 48
+  type: common
+288:
+  description: null
+  holder: null
+  name: cobwebbed wood
+  stats:
+    luck: 3
+    weight: 17
+  type: common
+289:
+  description: null
+  holder: null
+  name: thorny cuirass of governing
+  stats:
+    luck: 24
+    strength: 24
+    weight: 35
+  type: armor
+290:
+  description: null
+  holder: null
+  name: burning cowter of governing
+  stats:
+    luck: 24
+    strength: 12
+    weight: 18
+  type: armor
+291:
+  description: null
+  holder: null
+  name: jade dust of firestorms
+  stats:
+    amount: 11
+    attack: 48
+    luck: 13
+  type: magic
+292:
+  description: null
+  holder: null
+  name: shiny amulet of thunder
+  stats:
+    amount: 6
+    attack: 17
+    luck: 6
+  type: magic
+293:
+  description: null
+  holder: null
+  name: fragile recurve bow of dark
+  stats:
+    attack: 28
+    luck: 9
+    weight: 20
+  type: weapon
+294:
+  description: null
+  holder: null
+  name: splendiferous potion of disintegration
+  stats:
+    amount: 11
+    attack: 49
+    luck: 10
+  type: magic
+295:
+  description: null
+  holder: null
+  name: ruined horn of crushing
+  stats:
+    amount: 9
+    attack: 36
+    luck: 7
+  type: magic
+296:
+  description: null
+  holder: null
+  name: piteous sabatons of extraction
+  stats:
+    luck: 12
+    strength: 11
+    weight: 32
+  type: armor
+297:
+  description: null
+  holder: null
+  name: decrepit cuffs
+  stats:
+    luck: 7
+    weight: 6
+  type: common
+298:
+  description: null
+  holder: null
+  name: ancient philter of fear
+  stats:
+    amount: 14
+    attack: 16
+    luck: 8
+  type: magic
+299:
+  description: null
+  holder: null
+  name: copper gorget of thorns
+  stats:
+    luck: 24
+    strength: 30
+    weight: 29
+  type: armor
+300:
+  description: null
+  holder: null
+  name: intact alembic
+  stats:
+    luck: 6
+    weight: 49
+  type: common
+301:
+  description: null
+  holder: null
+  name: weakened spaulders of savagery
+  stats:
+    luck: 13
+    strength: 24
+    weight: 35
+  type: armor
+302:
+  description: null
+  holder: null
+  name: dirty cuffs
+  stats:
+    luck: 4
+    weight: 46
+  type: common
+303:
+  description: null
+  holder: null
+  name: worn blanket
+  stats:
+    luck: -8
+    weight: 21
+  type: common
+304:
+  description: null
+  holder: null
+  name: valorous scythe of ruin
+  stats:
+    attack: 16
+    luck: 27
+    weight: 18
+  type: weapon
+305:
+  description: null
+  holder: null
+  name: pristine stone of smite
+  stats:
+    amount: 12
+    attack: 38
+    luck: 11
+  type: magic
+306:
+  description: null
+  holder: null
+  name: copper crossbow of envy
+  stats:
+    attack: 23
+    luck: 27
+    weight: 12
+  type: weapon
+307:
+  description: null
+  holder: null
+  name: onyx battle axe of firestorms
+  stats:
+    attack: 17
+    luck: 9
+    weight: 18
+  type: weapon
+308:
+  description: null
+  holder: null
+  name: damaged crossbow of crushing
+  stats:
+    attack: 10
+    luck: 13
+    weight: 7
+  type: weapon
+309:
+  description: null
+  holder: null
+  name: worn graves of shame
+  stats:
+    luck: 19
+    strength: 25
+    weight: 21
+  type: armor
+310:
+  description: null
+  holder: null
+  name: dirty candle
+  stats:
+    luck: -8
+    weight: 6
+  type: common
+311:
+  description: null
+  holder: null
+  name: shiny faulds of quickening
+  stats:
+    luck: 13
+    strength: 18
+    weight: 34
+  type: armor
+312:
+  description: null
+  holder: null
+  name: burnt bandages
+  stats:
+    luck: 6
+    weight: 5
+  type: common
+313:
+  description: null
+  holder: null
+  name: luminous war hammer of suffering
+  stats:
+    attack: 15
+    luck: 8
+    weight: 5
+  type: weapon
+314:
+  description: null
+  holder: null
+  name: strange plackart of battering
+  stats:
+    luck: 7
+    strength: 29
+    weight: 19
+  type: armor
+315:
+  description: null
+  holder: null
+  name: blunderous cuirass of darkness
+  stats:
+    luck: 6
+    strength: 13
+    weight: 17
+  type: armor
+316:
+  description: null
+  holder: null
+  name: iron war hammer of disgust
+  stats:
+    attack: 19
+    luck: 21
+    weight: 8
+  type: weapon
+317:
+  description: null
+  holder: null
+  name: wood scimitar of weeping
+  stats:
+    attack: 16
+    luck: 8
+    weight: 10
+  type: weapon
+318:
+  description: null
+  holder: null
+  name: old alembic
+  stats:
+    luck: 3
+    weight: 36
+  type: common
+319:
+  description: null
+  holder: null
+  name: graceful gauntlets of extraction
+  stats:
+    luck: 11
+    strength: 15
+    weight: 23
+  type: armor
+320:
+  description: null
+  holder: null
+  name: derelict rubble
+  stats:
+    luck: -6
+    weight: 20
+  type: common
+321:
+  description: null
+  holder: null
+  name: thorny ring of grace
+  stats:
+    amount: 14
+    attack: 36
+    luck: 12
+  type: magic
+322:
+  description: null
+  holder: null
+  name: decrepit incense
+  stats:
+    luck: 4
+    weight: 28
+  type: common
+323:
+  description: null
+  holder: null
+  name: shabby parchment
+  stats:
+    luck: 4
+    weight: 27
+  type: common
+324:
+  description: null
+  holder: null
+  name: ruined pestle
+  stats:
+    luck: 3
+    weight: 28
+  type: common
+325:
+  description: null
+  holder: null
+  name: fur shortsword of grace
+  stats:
+    attack: 13
+    luck: 24
+    weight: 18
+  type: weapon
+326:
+  description: null
+  holder: null
+  name: wood cloak of destruction
+  stats:
+    amount: 6
+    attack: 23
+    luck: 15
+  type: magic
+327:
+  description: null
+  holder: null
+  name: magnetic spaulders of crushing
+  stats:
+    luck: 16
+    strength: 24
+    weight: 34
+  type: armor
+328:
+  description: null
+  holder: null
+  name: friendly scimitar of lightning
+  stats:
+    attack: 27
+    luck: 19
+    weight: 20
+  type: weapon
+329:
+  description: null
+  holder: null
+  name: electric gorget of valor
+  stats:
+    luck: 16
+    strength: 24
+    weight: 34
+  type: armor
+330:
+  description: null
+  holder: null
+  name: bone scythe of thunder
+  stats:
+    attack: 14
+    luck: 29
+    weight: 7
+  type: weapon
+331:
+  description: null
+  holder: null
+  name: shiny gem of dusk
+  stats:
+    amount: 15
+    attack: 25
+    luck: 15
+  type: magic
+332:
+  description: null
+  holder: null
+  name: fragile battle axe of governing
+  stats:
+    attack: 21
+    luck: 27
+    weight: 8
+  type: weapon
+333:
+  description: null
+  holder: null
+  name: magnificent spear of ruining
+  stats:
+    attack: 18
+    luck: 21
+    weight: 5
+  type: weapon
+334:
+  description: null
+  holder: null
+  name: volcanic battle axe of disintegration
+  stats:
+    attack: 26
+    luck: 12
+    weight: 17
+  type: weapon
+335:
+  description: null
+  holder: null
+  name: bronze orb of fear
+  stats:
+    amount: 13
+    attack: 30
+    luck: 15
+  type: magic
+336:
+  description: null
+  holder: null
+  name: rusty pottery
+  stats:
+    luck: -8
+    weight: 10
+  type: common
+337:
+  description: null
+  holder: null
+  name: silver ring of smiting
+  stats:
+    amount: 10
+    attack: 16
+    luck: 7
+  type: magic
+338:
+  description: null
+  holder: null
+  name: valorous blade of ice
+  stats:
+    attack: 19
+    luck: 16
+    weight: 14
+  type: weapon
+339:
+  description: null
+  holder: null
+  name: burning spaulders of dark
+  stats:
+    luck: 16
+    strength: 12
+    weight: 36
+  type: armor
+340:
+  description: null
+  holder: null
+  name: rotted incense
+  stats:
+    luck: -2
+    weight: 17
+  type: common
+341:
+  description: null
+  holder: null
+  name: tattered flask
+  stats:
+    luck: 8
+    weight: 26
+  type: common
+342:
+  description: null
+  holder: null
+  name: bloody cuirass of smite
+  stats:
+    luck: 5
+    strength: 14
+    weight: 38
+  type: armor
+343:
+  description: null
+  holder: null
+  name: weakened spaulders of judgement
+  stats:
+    luck: 11
+    strength: 13
+    weight: 24
+  type: armor
+344:
+  description: null
+  holder: null
+  name: electric scimitar of ruining
+  stats:
+    attack: 21
+    luck: 30
+    weight: 16
+  type: weapon
+345:
+  description: null
+  holder: null
+  name: rusty pauldrons of disintegration
+  stats:
+    luck: 9
+    strength: 23
+    weight: 28
+  type: armor
+346:
+  description: null
+  holder: null
+  name: ruined recurve bow of light
+  stats:
+    attack: 30
+    luck: 29
+    weight: 8
+  type: weapon
+347:
+  description: null
+  holder: null
+  name: polished plackart of thorns
+  stats:
+    luck: 10
+    strength: 28
+    weight: 26
+  type: armor
+348:
+  description: null
+  holder: null
+  name: fragile orb of disintegration
+  stats:
+    amount: 12
+    attack: 31
+    luck: 8
+  type: magic
+349:
+  description: null
+  holder: null
+  name: ivory gorget of dawn
+  stats:
+    luck: 8
+    strength: 28
+    weight: 35
+  type: armor
+350:
+  description: null
+  holder: null
+  name: gilded staff of extraction
+  stats:
+    attack: 13
+    luck: 11
+    weight: 17
+  type: weapon
+351:
+  description: null
+  holder: null
+  name: common cowter of smite
+  stats:
+    luck: 6
+    strength: 30
+    weight: 32
+  type: armor
+352:
+  description: null
+  holder: null
+  name: adamantine graves of suffering
+  stats:
+    luck: 13
+    strength: 16
+    weight: 29
+  type: armor
+353:
+  description: null
+  holder: null
+  name: shattered mortar
+  stats:
+    luck: 8
+    weight: 47
+  type: common
+354:
+  description: null
+  holder: null
+  name: strange gousset of grace
+  stats:
+    luck: 23
+    strength: 26
+    weight: 37
+  type: armor
+355:
+  description: null
+  holder: null
+  name: old spaulders of fury
+  stats:
+    luck: 23
+    strength: 25
+    weight: 29
+  type: armor
+356:
+  description: null
+  holder: null
+  name: durable talisman of disdain
+  stats:
+    amount: 13
+    attack: 47
+    luck: 9
+  type: magic
+357:
+  description: null
+  holder: null
+  name: fragile halberd of fear
+  stats:
+    attack: 11
+    luck: 11
+    weight: 5
+  type: weapon
+358:
+  description: null
+  holder: null
+  name: valorous scimitar of thunder
+  stats:
+    attack: 22
+    luck: 19
+    weight: 14
+  type: weapon
+359:
+  description: null
+  holder: null
+  name: graceful halberd of pity
+  stats:
+    attack: 22
+    luck: 9
+    weight: 5
+  type: weapon
+360:
+  description: null
+  holder: null
+  name: ornate halberd of thorns
+  stats:
+    attack: 26
+    luck: 20
+    weight: 10
+  type: weapon
+361:
+  description: null
+  holder: null
+  name: dirty decanter
+  stats:
+    luck: -5
+    weight: 44
+  type: common
+362:
+  description: null
+  holder: null
+  name: fur glaive of destruction
+  stats:
+    attack: 18
+    luck: 20
+    weight: 7
+  type: weapon
+363:
+  description: null
+  holder: null
+  name: chipped tome of valor
+  stats:
+    amount: 14
+    attack: 36
+    luck: 11
+  type: magic
+364:
+  description: null
+  holder: null
+  name: fragile horn of disintegration
+  stats:
+    amount: 10
+    attack: 15
+    luck: 7
+  type: magic
+365:
+  description: null
+  holder: null
+  name: beautiful spaulders of blooding
+  stats:
+    luck: 12
+    strength: 28
+    weight: 37
+  type: armor
+366:
+  description: null
+  holder: null
+  name: shameful scroll of shame
+  stats:
+    amount: 5
+    attack: 30
+    luck: 9
+  type: magic
+367:
+  description: null
+  holder: null
+  name: ruined incense
+  stats:
+    luck: -4
+    weight: 7
+  type: common
+368:
+  description: null
+  holder: null
+  name: stone ring of valor
+  stats:
+    amount: 14
+    attack: 46
+    luck: 9
+  type: magic
+369:
+  description: null
+  holder: null
+  name: fearful gauntlets of twilight
+  stats:
+    luck: 17
+    strength: 30
+    weight: 39
+  type: armor
+370:
+  description: null
+  holder: null
+  name: durable longbow of light
+  stats:
+    attack: 14
+    luck: 27
+    weight: 11
+  type: weapon
+371:
+  description: null
+  holder: null
+  name: bloody staff of crushing
+  stats:
+    attack: 15
+    luck: 26
+    weight: 13
+  type: weapon
+372:
+  description: null
+  holder: null
+  name: silver graves of dawn
+  stats:
+    luck: 18
+    strength: 28
+    weight: 26
+  type: armor
+373:
+  description: null
+  holder: null
+  name: tattered chair
+  stats:
+    luck: 6
+    weight: 27
+  type: common
+374:
+  description: null
+  holder: null
+  name: horrible claymore of grace
+  stats:
+    attack: 29
+    luck: 8
+    weight: 11
+  type: weapon
+375:
+  description: null
+  holder: null
+  name: ruined bones
+  stats:
+    luck: 2
+    weight: 13
+  type: common
+376:
+  description: null
+  holder: null
+  name: polished shard of fear
+  stats:
+    amount: 12
+    attack: 24
+    luck: 8
+  type: magic
+377:
+  description: null
+  holder: null
+  name: shameful halberd of ice
+  stats:
+    attack: 28
+    luck: 8
+    weight: 13
+  type: weapon
+378:
+  description: null
+  holder: null
+  name: intact crate
+  stats:
+    luck: 6
+    weight: 30
+  type: common
+379:
+  description: null
+  holder: null
+  name: broken cuffs
+  stats:
+    luck: -4
+    weight: 24
+  type: common
+380:
+  description: null
+  holder: null
+  name: weeping gousset of valor
+  stats:
+    luck: 22
+    strength: 25
+    weight: 38
+  type: armor
+381:
+  description: null
+  holder: null
+  name: barbed stone of judgement
+  stats:
+    amount: 5
+    attack: 30
+    luck: 5
+  type: magic
+382:
+  description: null
+  holder: null
+  name: bloody scimitar of smite
+  stats:
+    attack: 14
+    luck: 28
+    weight: 15
+  type: weapon
+383:
+  description: null
+  holder: null
+  name: luminous spaulders of extraction
+  stats:
+    luck: 13
+    strength: 22
+    weight: 19
+  type: armor
+384:
+  description: null
+  holder: null
+  name: worn sabatons of envy
+  stats:
+    luck: 24
+    strength: 11
+    weight: 25
+  type: armor
+385:
+  description: null
+  holder: null
+  name: magnificent dust of smiting
+  stats:
+    amount: 14
+    attack: 19
+    luck: 13
+  type: magic
+386:
+  description: null
+  holder: null
+  name: bone scythe of dusk
+  stats:
+    attack: 19
+    luck: 20
+    weight: 7
+  type: weapon
+387:
+  description: null
+  holder: null
+  name: ornate mace of weeping
+  stats:
+    attack: 22
+    luck: 9
+    weight: 10
+  type: weapon
+388:
+  description: null
+  holder: null
+  name: broken blade of friendship
+  stats:
+    attack: 13
+    luck: 21
+    weight: 8
+  type: weapon
+389:
+  description: null
+  holder: null
+  name: ruined torch
+  stats:
+    luck: -1
+    weight: 24
+  type: common
+390:
+  description: null
+  holder: null
+  name: splendiferous cloak of mediocrity
+  stats:
+    amount: 6
+    attack: 36
+    luck: 14
+  type: magic
+391:
+  description: null
+  holder: null
+  name: magnetic cuisse of contempt
+  stats:
+    luck: 19
+    strength: 18
+    weight: 18
+  type: armor
+392:
+  description: null
+  holder: null
+  name: weakened glaive of fear
+  stats:
+    attack: 16
+    luck: 7
+    weight: 19
+  type: weapon
+393:
+  description: null
+  holder: null
+  name: wretched beaker
+  stats:
+    luck: 9
+    weight: 7
+  type: common
+394:
+  description: null
+  holder: null
+  name: dusty torch
+  stats:
+    luck: 0
+    weight: 33
+  type: common
+395:
+  description: null
+  holder: null
+  name: cobwebbed longbow of battering
+  stats:
+    attack: 13
+    luck: 9
+    weight: 6
+  type: weapon
+396:
+  description: null
+  holder: null
+  name: meteorite vambraces of blooding
+  stats:
+    luck: 19
+    strength: 27
+    weight: 27
+  type: armor
+397:
+  description: null
+  holder: null
+  name: broken cinders
+  stats:
+    luck: 6
+    weight: 9
+  type: common
+398:
+  description: null
+  holder: null
+  name: cobwebbed shortsword of ruin
+  stats:
+    attack: 15
+    luck: 29
+    weight: 17
+  type: weapon
+399:
+  description: null
+  holder: null
+  name: brutal crossbow of weeping
+  stats:
+    attack: 10
+    luck: 29
+    weight: 13
+  type: weapon
+400:
+  description: null
+  holder: null
+  name: valorous potion of firestorms
+  stats:
+    amount: 12
+    attack: 44
+    luck: 5
+  type: magic
+401:
+  description: null
+  holder: null
+  name: emerald staff of suffering
+  stats:
+    attack: 27
+    luck: 13
+    weight: 13
+  type: weapon
+402:
+  description: null
+  holder: null
+  name: decrepit beaker
+  stats:
+    luck: -4
+    weight: 45
+  type: common
+403:
+  description: null
+  holder: null
+  name: untouched bowl
+  stats:
+    luck: -7
+    weight: 42
+  type: common
+404:
+  description: null
+  holder: null
+  name: shameful spear of suffering
+  stats:
+    attack: 11
+    luck: 13
+    weight: 12
+  type: weapon
+405:
+  description: null
+  holder: null
+  name: ruined beaker
+  stats:
+    luck: 9
+    weight: 42
+  type: common
+406:
+  description: null
+  holder: null
+  name: glass scythe of lightning
+  stats:
+    attack: 19
+    luck: 11
+    weight: 19
+  type: weapon
+407:
+  description: null
+  holder: null
+  name: adamantine spaulders of smiting
+  stats:
+    luck: 11
+    strength: 29
+    weight: 21
+  type: armor
+408:
+  description: null
+  holder: null
+  name: mended cuirass of disintegrating
+  stats:
+    luck: 7
+    strength: 10
+    weight: 23
+  type: armor
+409:
+  description: null
+  holder: null
+  name: shattered book
+  stats:
+    luck: 1
+    weight: 28
+  type: common
+410:
+  description: null
+  holder: null
+  name: ghastly sabatons of disdain
+  stats:
+    luck: 9
+    strength: 21
+    weight: 26
+  type: armor
+411:
+  description: null
+  holder: null
+  name: cobwebbed club of brutality
+  stats:
+    attack: 24
+    luck: 25
+    weight: 6
+  type: weapon
+412:
+  description: null
+  holder: null
+  name: weeping plackart of calming
+  stats:
+    luck: 20
+    strength: 10
+    weight: 24
+  type: armor
+413:
+  description: null
+  holder: null
+  name: piteous shard of twilight
+  stats:
+    amount: 5
+    attack: 18
+    luck: 13
+  type: magic
+414:
+  description: null
+  holder: null
+  name: jade dust of valor
+  stats:
+    amount: 13
+    attack: 21
+    luck: 11
+  type: magic
+415:
+  description: null
+  holder: null
+  name: weeping cuisse of valor
+  stats:
+    luck: 10
+    strength: 30
+    weight: 29
+  type: armor
+416:
+  description: null
+  holder: null
+  name: untouched recurve bow of envy
+  stats:
+    attack: 10
+    luck: 6
+    weight: 13
+  type: weapon
+417:
+  description: null
+  holder: null
+  name: splendid spaulders of ruin
+  stats:
+    luck: 22
+    strength: 20
+    weight: 22
+  type: armor
+418:
+  description: null
+  holder: null
+  name: savage graves of firestorms
+  stats:
+    luck: 15
+    strength: 19
+    weight: 32
+  type: armor
+419:
+  description: null
+  holder: null
+  name: rusty pauldrons of ruining
+  stats:
+    luck: 9
+    strength: 16
+    weight: 22
+  type: armor
+420:
+  description: null
+  holder: null
+  name: worn decanter
+  stats:
+    luck: 10
+    weight: 47
+  type: common
+421:
+  description: null
+  holder: null
+  name: obsidian crossbow of battering
+  stats:
+    attack: 22
+    luck: 16
+    weight: 8
+  type: weapon
+422:
+  description: null
+  holder: null
+  name: graceful halberd of pity
+  stats:
+    attack: 14
+    luck: 18
+    weight: 6
+  type: weapon
+423:
+  description: null
+  holder: null
+  name: ruined faulds of terror
+  stats:
+    luck: 5
+    strength: 18
+    weight: 27
+  type: armor
+424:
+  description: null
+  holder: null
+  name: cobwebbed vambraces of dusk
+  stats:
+    luck: 23
+    strength: 15
+    weight: 33
+  type: armor
+425:
+  description: null
+  holder: null
+  name: piteous spaulders of governing
+  stats:
+    luck: 15
+    strength: 11
+    weight: 29
+  type: armor
+426:
+  description: null
+  holder: null
+  name: barbed spaulders of fear
+  stats:
+    luck: 11
+    strength: 20
+    weight: 40
+  type: armor
+427:
+  description: null
+  holder: null
+  name: fragile blade of scorching
+  stats:
+    attack: 17
+    luck: 18
+    weight: 12
+  type: weapon
+428:
+  description: null
+  holder: null
+  name: worn flask
+  stats:
+    luck: 10
+    weight: 48
+  type: common
+429:
+  description: null
+  holder: null
+  name: fearful circlet of thorns
+  stats:
+    amount: 14
+    attack: 38
+    luck: 6
+  type: magic
+430:
+  description: null
+  holder: null
+  name: rare recurve bow of smite
+  stats:
+    attack: 22
+    luck: 30
+    weight: 6
+  type: weapon
+431:
+  description: null
+  holder: null
+  name: fragile horn of dawn
+  stats:
+    amount: 12
+    attack: 37
+    luck: 14
+  type: magic
+432:
+  description: null
+  holder: null
+  name: broken scroll of contempt
+  stats:
+    amount: 12
+    attack: 17
+    luck: 6
+  type: magic
+433:
+  description: null
+  holder: null
+  name: untouched pail
+  stats:
+    luck: 7
+    weight: 20
+  type: common
+434:
+  description: null
+  holder: null
+  name: unblemished stool
+  stats:
+    luck: 1
+    weight: 39
+  type: common
+435:
+  description: null
+  holder: null
+  name: gilded stone of disdain
+  stats:
+    amount: 11
+    attack: 48
+    luck: 15
+  type: magic
+436:
+  description: null
+  holder: null
+  name: burning gorget of scorching
+  stats:
+    luck: 17
+    strength: 24
+    weight: 29
+  type: armor
+437:
+  description: null
+  holder: null
+  name: splendid gousset of destruction
+  stats:
+    luck: 5
+    strength: 22
+    weight: 16
+  type: armor
+438:
+  description: null
+  holder: null
+  name: turquoise glaive of destruction
+  stats:
+    attack: 18
+    luck: 19
+    weight: 11
+  type: weapon
+439:
+  description: null
+  holder: null
+  name: friendly war hammer of lightning
+  stats:
+    attack: 25
+    luck: 19
+    weight: 14
+  type: weapon
+440:
+  description: null
+  holder: null
+  name: furious cuisse of ruin
+  stats:
+    luck: 19
+    strength: 12
+    weight: 16
+  type: armor
+441:
+  description: null
+  holder: null
+  name: ancient club of light
+  stats:
+    attack: 16
+    luck: 6
+    weight: 5
+  type: weapon
+442:
+  description: null
+  holder: null
+  name: mended halberd of thunder
+  stats:
+    attack: 24
+    luck: 28
+    weight: 7
+  type: weapon
+443:
+  description: null
+  holder: null
+  name: volcanic cowter of fear
+  stats:
+    luck: 9
+    strength: 30
+    weight: 32
+  type: armor
+444:
+  description: null
+  holder: null
+  name: tattered mortar
+  stats:
+    luck: -4
+    weight: 35
+  type: common
+445:
+  description: null
+  holder: null
+  name: stone spaulders of lightning
+  stats:
+    luck: 18
+    strength: 22
+    weight: 29
+  type: armor
+446:
+  description: null
+  holder: null
+  name: furious recurve bow of dark
+  stats:
+    attack: 21
+    luck: 30
+    weight: 18
+  type: weapon
+447:
+  description: null
+  holder: null
+  name: horrible cowter of grace
+  stats:
+    luck: 5
+    strength: 20
+    weight: 15
+  type: armor
+448:
+  description: null
+  holder: null
+  name: shiny claymore of ruining
+  stats:
+    attack: 12
+    luck: 8
+    weight: 18
+  type: weapon
+449:
+  description: null
+  holder: null
+  name: shattered journal
+  stats:
+    luck: 2
+    weight: 39
+  type: common
+450:
+  description: null
+  holder: null
+  name: mended faulds of icestorms
+  stats:
+    luck: 18
+    strength: 11
+    weight: 28
+  type: armor
+451:
+  description: null
+  holder: null
+  name: weeping glaive of valor
+  stats:
+    attack: 22
+    luck: 19
+    weight: 18
+  type: weapon
+452:
+  description: null
+  holder: null
+  name: silver halberd of disdain
+  stats:
+    attack: 19
+    luck: 20
+    weight: 12
+  type: weapon
+453:
+  description: null
+  holder: null
+  name: common scimitar of blooding
+  stats:
+    attack: 23
+    luck: 27
+    weight: 16
+  type: weapon
+454:
+  description: null
+  holder: null
+  name: golden battle axe of destruction
+  stats:
+    attack: 27
+    luck: 23
+    weight: 18
+  type: weapon
+455:
+  description: null
+  holder: null
+  name: ivory gorget of thorns
+  stats:
+    luck: 16
+    strength: 27
+    weight: 18
+  type: armor
+456:
+  description: null
+  holder: null
+  name: valorous halberd of contempt
+  stats:
+    attack: 16
+    luck: 15
+    weight: 15
+  type: weapon
+457:
+  description: null
+  holder: null
+  name: blunderous recurve bow of extraction
+  stats:
+    attack: 25
+    luck: 24
+    weight: 17
+  type: weapon
+458:
+  description: null
+  holder: null
+  name: bloody cuirass of twilight
+  stats:
+    luck: 6
+    strength: 28
+    weight: 32
+  type: armor
+459:
+  description: null
+  holder: null
+  name: strange gorget of ruining
+  stats:
+    luck: 22
+    strength: 23
+    weight: 34
+  type: armor
+460:
+  description: null
+  holder: null
+  name: burnt pail
+  stats:
+    luck: -1
+    weight: 33
+  type: common
+461:
+  description: null
+  holder: null
+  name: magnificent talisman of lightning
+  stats:
+    amount: 9
+    attack: 32
+    luck: 7
+  type: magic
+462:
+  description: null
+  holder: null
+  name: bloody horn of thunder
+  stats:
+    amount: 9
+    attack: 43
+    luck: 6
+  type: magic
+463:
+  description: null
+  holder: null
+  name: copper blade of dusk
+  stats:
+    attack: 19
+    luck: 25
+    weight: 8
+  type: weapon
+464:
+  description: null
+  holder: null
+  name: unblemished flask
+  stats:
+    luck: 2
+    weight: 27
+  type: common
+465:
+  description: null
+  holder: null
+  name: rusty potion of disintegrating
+  stats:
+    amount: 10
+    attack: 28
+    luck: 9
+  type: magic
+466:
+  description: null
+  holder: null
+  name: mended talisman of suffering
+  stats:
+    amount: 11
+    attack: 26
+    luck: 7
+  type: magic
+467:
+  description: null
+  holder: null
+  name: shattered pot
+  stats:
+    luck: 1
+    weight: 39
+  type: common
+468:
+  description: null
+  holder: null
+  name: burning cowter of battering
+  stats:
+    luck: 23
+    strength: 18
+    weight: 39
+  type: armor
+469:
+  description: null
+  holder: null
+  name: burning amulet of quickening
+  stats:
+    amount: 12
+    attack: 42
+    luck: 6
+  type: magic
+470:
+  description: null
+  holder: null
+  name: ancient staff of disdain
+  stats:
+    attack: 19
+    luck: 5
+    weight: 9
+  type: weapon
+471:
+  description: null
+  holder: null
+  name: decrepit cinders
+  stats:
+    luck: -1
+    weight: 24
+  type: common
+472:
+  description: null
+  holder: null
+  name: shiny sabatons of destruction
+  stats:
+    luck: 21
+    strength: 25
+    weight: 36
+  type: armor
+473:
+  description: null
+  holder: null
+  name: decayed beaker
+  stats:
+    luck: -8
+    weight: 12
+  type: common
+474:
+  description: null
+  holder: null
+  name: untouched cowter of disgust
+  stats:
+    luck: 18
+    strength: 18
+    weight: 27
+  type: armor
+475:
+  description: null
+  holder: null
+  name: obsidian stone of terror
+  stats:
+    amount: 15
+    attack: 43
+    luck: 7
+  type: magic
+476:
+  description: null
+  holder: null
+  name: ruined cinders
+  stats:
+    luck: -3
+    weight: 47
+  type: common
+477:
+  description: null
+  holder: null
+  name: cobwebbed shelves
+  stats:
+    luck: -5
+    weight: 14
+  type: common
+478:
+  description: null
+  holder: null
+  name: derelict wood
+  stats:
+    luck: 2
+    weight: 28
+  type: common
+479:
+  description: null
+  holder: null
+  name: worn faulds of suffering
+  stats:
+    luck: 24
+    strength: 13
+    weight: 27
+  type: armor
+480:
+  description: null
+  holder: null
+  name: untouched flagon
+  stats:
+    luck: 10
+    weight: 47
+  type: common
+481:
+  description: null
+  holder: null
+  name: shattered torch
+  stats:
+    luck: 9
+    weight: 30
+  type: common
+482:
+  description: null
+  holder: null
+  name: gilded shard of twilight
+  stats:
+    amount: 8
+    attack: 18
+    luck: 8
+  type: magic
+483:
+  description: null
+  holder: null
+  name: flawless spaulders of grace
+  stats:
+    luck: 24
+    strength: 21
+    weight: 16
+  type: armor
+484:
+  description: null
+  holder: null
+  name: splendid cloak of disintegrating
+  stats:
+    amount: 13
+    attack: 24
+    luck: 15
+  type: magic
+485:
+  description: null
+  holder: null
+  name: chipped gousset of disintegrating
+  stats:
+    luck: 9
+    strength: 16
+    weight: 30
+  type: armor
+486:
+  description: null
+  holder: null
+  name: strange war hammer of fury
+  stats:
+    attack: 29
+    luck: 9
+    weight: 10
+  type: weapon
+487:
+  description: null
+  holder: null
+  name: fur philter of calming
+  stats:
+    amount: 7
+    attack: 16
+    luck: 13
+  type: magic
+488:
+  description: null
+  holder: null
+  name: weeping stone of hatred
+  stats:
+    amount: 10
+    attack: 18
+    luck: 5
+  type: magic
+489:
+  description: null
+  holder: null
+  name: wretched pail
+  stats:
+    luck: -6
+    weight: 6
+  type: common
+490:
+  description: null
+  holder: null
+  name: broken torch
+  stats:
+    luck: 7
+    weight: 19
+  type: common
+491:
+  description: null
+  holder: null
+  name: copper battle axe of disgust
+  stats:
+    attack: 18
+    luck: 16
+    weight: 20
+  type: weapon
+492:
+  description: null
+  holder: null
+  name: mended ash
+  stats:
+    luck: -3
+    weight: 45
+  type: common
+493:
+  description: null
+  holder: null
+  name: valorous dagger of disintegrating
+  stats:
+    attack: 26
+    luck: 28
+    weight: 15
+  type: weapon
+494:
+  description: null
+  holder: null
+  name: shiny orb of dark
+  stats:
+    amount: 11
+    attack: 27
+    luck: 6
+  type: magic
+495:
+  description: null
+  holder: null
+  name: gilded spaulders of disintegrating
+  stats:
+    luck: 25
+    strength: 12
+    weight: 33
+  type: armor
+496:
+  description: null
+  holder: null
+  name: ruined glaive of suffering
+  stats:
+    attack: 17
+    luck: 20
+    weight: 14
+  type: weapon
+497:
+  description: null
+  holder: null
+  name: burnt parchment
+  stats:
+    luck: -8
+    weight: 10
+  type: common
+498:
+  description: null
+  holder: null
+  name: meteorite gem of destruction
+  stats:
+    amount: 6
+    attack: 15
+    luck: 12
+  type: magic
+499:
+  description: null
+  holder: null
+  name: shattered dust
+  stats:
+    luck: -3
+    weight: 32
+  type: common
+500:
+  description: null
+  holder: null
+  name: shameful orb of thunder
+  stats:
+    amount: 7
+    attack: 32
+    luck: 8
+  type: magic
+501:
+  description: null
+  holder: null
+  name: bronze battle axe of icestorms
+  stats:
+    attack: 18
+    luck: 13
+    weight: 15
+  type: weapon
+502:
+  description: null
+  holder: null
+  name: tattered flagon
+  stats:
+    luck: -6
+    weight: 49
+  type: common
+503:
+  description: null
+  holder: null
+  name: gilded scythe of friendship
+  stats:
+    attack: 16
+    luck: 11
+    weight: 12
+  type: weapon
+504:
+  description: null
+  holder: null
+  name: burnt cuffs
+  stats:
+    luck: -1
+    weight: 31
+  type: common
+505:
+  description: null
+  holder: null
+  name: shameful cowter of disintegration
+  stats:
+    luck: 24
+    strength: 19
+    weight: 28
+  type: armor
+506:
+  description: null
+  holder: null
+  name: onyx philter of shame
+  stats:
+    amount: 10
+    attack: 45
+    luck: 7
+  type: magic
+507:
+  description: null
+  holder: null
+  name: broken potion of friendship
+  stats:
+    amount: 9
+    attack: 39
+    luck: 10
+  type: magic
+508:
+  description: null
+  holder: null
+  name: adamantine battle axe of light
+  stats:
+    attack: 23
+    luck: 17
+    weight: 6
+  type: weapon
+509:
+  description: null
+  holder: null
+  name: horrible halberd of embalming
+  stats:
+    attack: 22
+    luck: 15
+    weight: 19
+  type: weapon
+510:
+  description: null
+  holder: null
+  name: valorous philter of fear
+  stats:
+    amount: 14
+    attack: 24
+    luck: 15
+  type: magic
+511:
+  description: null
+  holder: null
+  name: untouched potion of reckoning
+  stats:
+    amount: 6
+    attack: 34
+    luck: 10
+  type: magic
+512:
+  description: null
+  holder: null
+  name: onyx cuisse of reckoning
+  stats:
+    luck: 17
+    strength: 10
+    weight: 20
+  type: armor
+513:
+  description: null
+  holder: null
+  name: rotted torch
+  stats:
+    luck: 7
+    weight: 33
+  type: common
+514:
+  description: null
+  holder: null
+  name: magnificent halberd of embalming
+  stats:
+    attack: 23
+    luck: 14
+    weight: 15
+  type: weapon
+515:
+  description: null
+  holder: null
+  name: pristine scythe of embalming
+  stats:
+    attack: 18
+    luck: 22
+    weight: 5
+  type: weapon
+516:
+  description: null
+  holder: null
+  name: wretched teeth
+  stats:
+    luck: -2
+    weight: 26
+  type: common
+517:
+  description: null
+  holder: null
+  name: magnetic horn of thorns
+  stats:
+    amount: 13
+    attack: 17
+    luck: 8
+  type: magic
+518:
+  description: null
+  holder: null
+  name: cobwebbed talisman of smite
+  stats:
+    amount: 10
+    attack: 25
+    luck: 10
+  type: magic
+519:
+  description: null
+  holder: null
+  name: leather recurve bow of ice
+  stats:
+    attack: 27
+    luck: 8
+    weight: 11
+  type: weapon
+520:
+  description: null
+  holder: null
+  name: fearful blade of weeping
+  stats:
+    attack: 25
+    luck: 13
+    weight: 6
+  type: weapon
+521:
+  description: null
+  holder: null
+  name: steel orb of dusk
+  stats:
+    amount: 8
+    attack: 25
+    luck: 13
+  type: magic
+522:
+  description: null
+  holder: null
+  name: splendiferous scythe of disintegrating
+  stats:
+    attack: 26
+    luck: 21
+    weight: 10
+  type: weapon
+523:
+  description: null
+  holder: null
+  name: brutal club of firestorms
+  stats:
+    attack: 19
+    luck: 5
+    weight: 8
+  type: weapon
+524:
+  description: null
+  holder: null
+  name: untouched pottery
+  stats:
+    luck: 10
+    weight: 28
+  type: common
+525:
+  description: null
+  holder: null
+  name: magnetic morning star of dark
+  stats:
+    attack: 15
+    luck: 13
+    weight: 18
+  type: weapon
+526:
+  description: null
+  holder: null
+  name: intact pottery
+  stats:
+    luck: -5
+    weight: 10
+  type: common
+527:
+  description: null
+  holder: null
+  name: silver crossbow of savagery
+  stats:
+    attack: 24
+    luck: 19
+    weight: 14
+  type: weapon
+528:
+  description: null
+  holder: null
+  name: polished cuisse of reckoning
+  stats:
+    luck: 9
+    strength: 15
+    weight: 38
+  type: armor
+529:
+  description: null
+  holder: null
+  name: old cauldron
+  stats:
+    luck: 3
+    weight: 37
+  type: common
+530:
+  description: null
+  holder: null
+  name: splendid spaulders of ice
+  stats:
+    luck: 10
+    strength: 27
+    weight: 38
+  type: armor
+531:
+  description: null
+  holder: null
+  name: mended shard of icestorms
+  stats:
+    amount: 5
+    attack: 35
+    luck: 12
+  type: magic
+532:
+  description: null
+  holder: null
+  name: thorny battle axe of fury
+  stats:
+    attack: 25
+    luck: 30
+    weight: 18
+  type: weapon
+533:
+  description: null
+  holder: null
+  name: ornate pauldrons of thunder
+  stats:
+    luck: 10
+    strength: 22
+    weight: 17
+  type: armor
+534:
+  description: null
+  holder: null
+  name: weeping claymore of light
+  stats:
+    attack: 21
+    luck: 14
+    weight: 7
+  type: weapon
+535:
+  description: null
+  holder: null
+  name: old claymore of embalming
+  stats:
+    attack: 27
+    luck: 21
+    weight: 20
+  type: weapon
+536:
+  description: null
+  holder: null
+  name: broken ring of terror
+  stats:
+    amount: 10
+    attack: 46
+    luck: 13
+  type: magic
+537:
+  description: null
+  holder: null
+  name: ruined gauntlets of dusk
+  stats:
+    luck: 20
+    strength: 11
+    weight: 22
+  type: armor
+538:
+  description: null
+  holder: null
+  name: broken decanter
+  stats:
+    luck: 5
+    weight: 24
+  type: common
+539:
+  description: null
+  holder: null
+  name: splendiferous scimitar of embalming
+  stats:
+    attack: 29
+    luck: 20
+    weight: 17
+  type: weapon
+540:
+  description: null
+  holder: null
+  name: derelict chair
+  stats:
+    luck: 5
+    weight: 33
+  type: common
+541:
+  description: null
+  holder: null
+  name: barbed gem of ruining
+  stats:
+    amount: 9
+    attack: 44
+    luck: 8
+  type: magic
+542:
+  description: null
+  holder: null
+  name: damaged longbow of thorns
+  stats:
+    attack: 27
+    luck: 7
+    weight: 20
+  type: weapon
+543:
+  description: null
+  holder: null
+  name: dusty potion of disgust
+  stats:
+    amount: 9
+    attack: 47
+    luck: 11
+  type: magic
+544:
+  description: null
+  holder: null
+  name: emerald dagger of suffering
+  stats:
+    attack: 19
+    luck: 27
+    weight: 8
+  type: weapon
+545:
+  description: null
+  holder: null
+  name: old stone of thorns
+  stats:
+    amount: 7
+    attack: 29
+    luck: 12
+  type: magic
+546:
+  description: null
+  holder: null
+  name: blunderous gem of battering
+  stats:
+    amount: 8
+    attack: 23
+    luck: 12
+  type: magic
+547:
+  description: null
+  holder: null
+  name: shattered beaker
+  stats:
+    luck: 8
+    weight: 49
+  type: common
+548:
+  description: null
+  holder: null
+  name: common gauntlets of weeping
+  stats:
+    luck: 9
+    strength: 24
+    weight: 39
+  type: armor
+549:
+  description: null
+  holder: null
+  name: obsidian staff of blooding
+  stats:
+    attack: 30
+    luck: 9
+    weight: 5
+  type: weapon
+550:
+  description: null
+  holder: null
+  name: weeping stone of disintegrating
+  stats:
+    amount: 6
+    attack: 46
+    luck: 12
+  type: magic
+551:
+  description: null
+  holder: null
+  name: untouched bandages
+  stats:
+    luck: 4
+    weight: 25
+  type: common
+552:
+  description: null
+  holder: null
+  name: ghastly plackart of disintegrating
+  stats:
+    luck: 19
+    strength: 17
+    weight: 29
+  type: armor
+553:
+  description: null
+  holder: null
+  name: rusty candle
+  stats:
+    luck: 8
+    weight: 38
+  type: common
+554:
+  description: null
+  holder: null
+  name: thorny dust of savagery
+  stats:
+    amount: 14
+    attack: 33
+    luck: 14
+  type: magic
+555:
+  description: null
+  holder: null
+  name: wood glaive of icestorms
+  stats:
+    attack: 30
+    luck: 19
+    weight: 12
+  type: weapon
+556:
+  description: null
+  holder: null
+  name: bone cuisse of ruining
+  stats:
+    luck: 12
+    strength: 10
+    weight: 21
+  type: armor
+557:
+  description: null
+  holder: null
+  name: iron pauldrons of valor
+  stats:
+    luck: 19
+    strength: 28
+    weight: 28
+  type: armor
+558:
+  description: null
+  holder: null
+  name: ruined glaive of destruction
+  stats:
+    attack: 27
+    luck: 8
+    weight: 9
+  type: weapon
+559:
+  description: null
+  holder: null
+  name: ancient dust of friendship
+  stats:
+    amount: 15
+    attack: 34
+    luck: 15
+  type: magic
+560:
+  description: null
+  holder: null
+  name: mended wood
+  stats:
+    luck: 10
+    weight: 6
+  type: common
+561:
+  description: null
+  holder: null
+  name: flawless plackart of blooding
+  stats:
+    luck: 16
+    strength: 10
+    weight: 26
+  type: armor
+562:
+  description: null
+  holder: null
+  name: decrepit bowl
+  stats:
+    luck: 0
+    weight: 8
+  type: common
+563:
+  description: null
+  holder: null
+  name: dirty pot
+  stats:
+    luck: -7
+    weight: 22
+  type: common
+564:
+  description: null
+  holder: null
+  name: cobwebbed graves of envy
+  stats:
+    luck: 23
+    strength: 16
+    weight: 39
+  type: armor
+565:
+  description: null
+  holder: null
+  name: untouched halberd of valor
+  stats:
+    attack: 11
+    luck: 11
+    weight: 11
+  type: weapon
+566:
+  description: null
+  holder: null
+  name: bronze pauldrons of smiting
+  stats:
+    luck: 8
+    strength: 11
+    weight: 21
+  type: armor
+567:
+  description: null
+  holder: null
+  name: fragile pauldrons of contempt
+  stats:
+    luck: 6
+    strength: 29
+    weight: 29
+  type: armor
+568:
+  description: null
+  holder: null
+  name: mended recurve bow of battering
+  stats:
+    attack: 24
+    luck: 6
+    weight: 7
+  type: weapon
+569:
+  description: null
+  holder: null
+  name: ruined journal
+  stats:
+    luck: -3
+    weight: 28
+  type: common
+570:
+  description: null
+  holder: null
+  name: shabby incense
+  stats:
+    luck: 10
+    weight: 43
+  type: common
+571:
+  description: null
+  holder: null
+  name: durable falchion of fear
+  stats:
+    attack: 16
+    luck: 11
+    weight: 17
+  type: weapon
+572:
+  description: null
+  holder: null
+  name: wretched chair
+  stats:
+    luck: 4
+    weight: 33
+  type: common
+573:
+  description: null
+  holder: null
+  name: graceful battle axe of brutality
+  stats:
+    attack: 18
+    luck: 11
+    weight: 16
+  type: weapon
+574:
+  description: null
+  holder: null
+  name: brutal tome of suffering
+  stats:
+    amount: 10
+    attack: 48
+    luck: 8
+  type: magic
+575:
+  description: null
+  holder: null
+  name: horrible halberd of reckoning
+  stats:
+    attack: 14
+    luck: 15
+    weight: 17
+  type: weapon
+576:
+  description: null
+  holder: null
+  name: magnetic crystal of valor
+  stats:
+    amount: 6
+    attack: 28
+    luck: 12
+  type: magic
+577:
+  description: null
+  holder: null
+  name: burnt wood
+  stats:
+    luck: 4
+    weight: 22
+  type: common
+578:
+  description: null
+  holder: null
+  name: shabby stool
+  stats:
+    luck: -4
+    weight: 49
+  type: common
+579:
+  description: null
+  holder: null
+  name: splendiferous circlet of shame
+  stats:
+    amount: 14
+    attack: 34
+    luck: 12
+  type: magic
+580:
+  description: null
+  holder: null
+  name: graceful staff of misery
+  stats:
+    attack: 16
+    luck: 27
+    weight: 12
+  type: weapon
+581:
+  description: null
+  holder: null
+  name: dirty cowter of thunder
+  stats:
+    luck: 21
+    strength: 10
+    weight: 29
+  type: armor
+582:
+  description: null
+  holder: null
+  name: luminous tome of disintegration
+  stats:
+    amount: 9
+    attack: 35
+    luck: 7
+  type: magic
+583:
+  description: null
+  holder: null
+  name: obsidian stone of quickening
+  stats:
+    amount: 6
+    attack: 19
+    luck: 8
+  type: magic
+584:
+  description: null
+  holder: null
+  name: worn orb of governing
+  stats:
+    amount: 14
+    attack: 43
+    luck: 12
+  type: magic
+585:
+  description: null
+  holder: null
+  name: jade mace of pity
+  stats:
+    attack: 22
+    luck: 15
+    weight: 6
+  type: weapon
+586:
+  description: null
+  holder: null
+  name: burnt bones
+  stats:
+    luck: 8
+    weight: 34
+  type: common
+587:
+  description: null
+  holder: null
+  name: jade battle axe of hatred
+  stats:
+    attack: 16
+    luck: 29
+    weight: 15
+  type: weapon
+588:
+  description: null
+  holder: null
+  name: derelict stool
+  stats:
+    luck: 8
+    weight: 14
+  type: common
+589:
+  description: null
+  holder: null
+  name: rotted skull
+  stats:
+    luck: -10
+    weight: 39
+  type: common
+590:
+  description: null
+  holder: null
+  name: shabby bowl
+  stats:
+    luck: -6
+    weight: 46
+  type: common
+591:
+  description: null
+  holder: null
+  name: emerald circlet of ruin
+  stats:
+    amount: 8
+    attack: 15
+    luck: 7
+  type: magic
+592:
+  description: null
+  holder: null
+  name: electric cowter of suffering
+  stats:
+    luck: 17
+    strength: 15
+    weight: 21
+  type: armor
+593:
+  description: null
+  holder: null
+  name: piteous faulds of destruction
+  stats:
+    luck: 9
+    strength: 17
+    weight: 40
+  type: armor
+594:
+  description: null
+  holder: null
+  name: adequate vambraces of quickening
+  stats:
+    luck: 8
+    strength: 24
+    weight: 22
+  type: armor
+595:
+  description: null
+  holder: null
+  name: old talisman of ruining
+  stats:
+    amount: 12
+    attack: 44
+    luck: 5
+  type: magic
+596:
+  description: null
+  holder: null
+  name: polished faulds of crushing
+  stats:
+    luck: 25
+    strength: 20
+    weight: 27
+  type: armor
+597:
+  description: null
+  holder: null
+  name: copper dagger of twilight
+  stats:
+    attack: 23
+    luck: 19
+    weight: 6
+  type: weapon
+598:
+  description: null
+  holder: null
+  name: shiny graves of thunder
+  stats:
+    luck: 5
+    strength: 10
+    weight: 24
+  type: armor
+599:
+  description: null
+  holder: null
+  name: worn dagger of disdain
+  stats:
+    attack: 22
+    luck: 12
+    weight: 11
+  type: weapon
+600:
+  description: null
+  holder: null
+  name: fearful shard of hatred
+  stats:
+    amount: 12
+    attack: 48
+    luck: 13
+  type: magic
+601:
+  description: null
+  holder: null
+  name: steel dust of smite
+  stats:
+    amount: 14
+    attack: 27
+    luck: 14
+  type: magic
+602:
+  description: null
+  holder: null
+  name: golden ring of darkness
+  stats:
+    amount: 14
+    attack: 34
+    luck: 11
+  type: magic
+603:
+  description: null
+  holder: null
+  name: untouched shard of ruin
+  stats:
+    amount: 14
+    attack: 44
+    luck: 13
+  type: magic
+604:
+  description: null
+  holder: null
+  name: obsidian gem of crushing
+  stats:
+    amount: 10
+    attack: 28
+    luck: 7
+  type: magic
+605:
+  description: null
+  holder: null
+  name: brutal shortsword of firestorms
+  stats:
+    attack: 21
+    luck: 12
+    weight: 16
+  type: weapon
+606:
+  description: null
+  holder: null
+  name: rare club of thunder
+  stats:
+    attack: 21
+    luck: 22
+    weight: 20
+  type: weapon
+607:
+  description: null
+  holder: null
+  name: adequate spaulders of judgement
+  stats:
+    luck: 20
+    strength: 16
+    weight: 36
+  type: armor
+608:
+  description: null
+  holder: null
+  name: cobwebbed ring of grace
+  stats:
+    amount: 9
+    attack: 16
+    luck: 12
+  type: magic
+609:
+  description: null
+  holder: null
+  name: derelict pottery
+  stats:
+    luck: 0
+    weight: 13
+  type: common
+610:
+  description: null
+  holder: null
+  name: burning gorget of weeping
+  stats:
+    luck: 18
+    strength: 22
+    weight: 34
+  type: armor
+611:
+  description: null
+  holder: null
+  name: magnetic falchion of smiting
+  stats:
+    attack: 28
+    luck: 17
+    weight: 18
+  type: weapon
+612:
+  description: null
+  holder: null
+  name: friendly ring of disintegration
+  stats:
+    amount: 6
+    attack: 41
+    luck: 12
+  type: magic
+613:
+  description: null
+  holder: null
+  name: shattered candle
+  stats:
+    luck: -8
+    weight: 23
+  type: common
+614:
+  description: null
+  holder: null
+  name: silver faulds of disgust
+  stats:
+    luck: 20
+    strength: 22
+    weight: 24
+  type: armor
+615:
+  description: null
+  holder: null
+  name: ornate spear of crushing
+  stats:
+    attack: 15
+    luck: 15
+    weight: 15
+  type: weapon
+616:
+  description: null
+  holder: null
+  name: shabby firepit
+  stats:
+    luck: -1
+    weight: 49
+  type: common
+617:
+  description: null
+  holder: null
+  name: untouched circlet of embalming
+  stats:
+    amount: 15
+    attack: 20
+    luck: 13
+  type: magic
+618:
+  description: null
+  holder: null
+  name: addictive graves of misery
+  stats:
+    luck: 18
+    strength: 18
+    weight: 40
+  type: armor
+619:
+  description: null
+  holder: null
+  name: unblemished incense
+  stats:
+    luck: -7
+    weight: 39
+  type: common
+620:
+  description: null
+  holder: null
+  name: meteorite staff of reckoning
+  stats:
+    attack: 29
+    luck: 29
+    weight: 15
+  type: weapon
+621:
+  description: null
+  holder: null
+  name: dirty shortsword of fury
+  stats:
+    attack: 30
+    luck: 15
+    weight: 6
+  type: weapon
+622:
+  description: null
+  holder: null
+  name: volcanic gousset of extraction
+  stats:
+    luck: 10
+    strength: 26
+    weight: 36
+  type: armor
+623:
+  description: null
+  holder: null
+  name: bone tome of disdain
+  stats:
+    amount: 9
+    attack: 45
+    luck: 14
+  type: magic
+624:
+  description: null
+  holder: null
+  name: wretched beaker
+  stats:
+    luck: -6
+    weight: 7
+  type: common
+625:
+  description: null
+  holder: null
+  name: bloody dust of icestorms
+  stats:
+    amount: 12
+    attack: 43
+    luck: 6
+  type: magic
+626:
+  description: null
+  holder: null
+  name: shabby pail
+  stats:
+    luck: -2
+    weight: 30
+  type: common
+627:
+  description: null
+  holder: null
+  name: leather mace of ice
+  stats:
+    attack: 19
+    luck: 13
+    weight: 16
+  type: weapon
+628:
+  description: null
+  holder: null
+  name: unblemished funnel
+  stats:
+    luck: -8
+    weight: 7
+  type: common
+629:
+  description: null
+  holder: null
+  name: piteous falchion of terror
+  stats:
+    attack: 22
+    luck: 26
+    weight: 12
+  type: weapon
+630:
+  description: null
+  holder: null
+  name: copper cuirass of disintegration
+  stats:
+    luck: 19
+    strength: 29
+    weight: 28
+  type: armor
+631:
+  description: null
+  holder: null
+  name: ruined bandages
+  stats:
+    luck: 0
+    weight: 31
+  type: common
+632:
+  description: null
+  holder: null
+  name: weakened staff of misery
+  stats:
+    attack: 21
+    luck: 21
+    weight: 11
+  type: weapon
+633:
+  description: null
+  holder: null
+  name: decrepit mortar
+  stats:
+    luck: -3
+    weight: 32
+  type: common
+634:
+  description: null
+  holder: null
+  name: magnificent scroll of brutality
+  stats:
+    amount: 15
+    attack: 15
+    luck: 15
+  type: magic
+635:
+  description: null
+  holder: null
+  name: graceful pauldrons of embalming
+  stats:
+    luck: 8
+    strength: 21
+    weight: 39
+  type: armor
+636:
+  description: null
+  holder: null
+  name: shabby rope
+  stats:
+    luck: -3
+    weight: 25
+  type: common
+637:
+  description: null
+  holder: null
+  name: shattered alembic
+  stats:
+    luck: 5
+    weight: 15
+  type: common
+638:
+  description: null
+  holder: null
+  name: burnt bandages
+  stats:
+    luck: 4
+    weight: 16
+  type: common
+639:
+  description: null
+  holder: null
+  name: derelict journal
+  stats:
+    luck: 9
+    weight: 25
+  type: common
+640:
+  description: null
+  holder: null
+  name: old urn
+  stats:
+    luck: -5
+    weight: 49
+  type: common
+641:
+  description: null
+  holder: null
+  name: old rope
+  stats:
+    luck: 5
+    weight: 40
+  type: common
+642:
+  description: null
+  holder: null
+  name: meteorite gousset of grace
+  stats:
+    luck: 7
+    strength: 19
+    weight: 40
+  type: armor
+643:
+  description: null
+  holder: null
+  name: horrible vambraces of ice
+  stats:
+    luck: 15
+    strength: 25
+    weight: 23
+  type: armor
+644:
+  description: null
+  holder: null
+  name: ornate battle axe of smite
+  stats:
+    attack: 12
+    luck: 7
+    weight: 8
+  type: weapon
+645:
+  description: null
+  holder: null
+  name: wretched firepit
+  stats:
+    luck: 7
+    weight: 19
+  type: common
+646:
+  description: null
+  holder: null
+  name: steel scythe of brutality
+  stats:
+    attack: 16
+    luck: 10
+    weight: 10
+  type: weapon
+647:
+  description: null
+  holder: null
+  name: beautiful gauntlets of savagery
+  stats:
+    luck: 5
+    strength: 25
+    weight: 21
+  type: armor
+648:
+  description: null
+  holder: null
+  name: dirty blanket
+  stats:
+    luck: 7
+    weight: 35
+  type: common
+649:
+  description: null
+  holder: null
+  name: cobwebbed shelves
+  stats:
+    luck: 0
+    weight: 27
+  type: common
+650:
+  description: null
+  holder: null
+  name: cobwebbed pestle
+  stats:
+    luck: 10
+    weight: 19
+  type: common
+651:
+  description: null
+  holder: null
+  name: worn cauldron
+  stats:
+    luck: 4
+    weight: 26
+  type: common
+652:
+  description: null
+  holder: null
+  name: dusty torch
+  stats:
+    luck: -10
+    weight: 24
+  type: common
+653:
+  description: null
+  holder: null
+  name: cobwebbed mortar
+  stats:
+    luck: 0
+    weight: 24
+  type: common
+654:
+  description: null
+  holder: null
+  name: mended amulet of judgement
+  stats:
+    amount: 8
+    attack: 22
+    luck: 8
+  type: magic
+655:
+  description: null
+  holder: null
+  name: steel faulds of pity
+  stats:
+    luck: 12
+    strength: 11
+    weight: 15
+  type: armor
+656:
+  description: null
+  holder: null
+  name: splendid ring of destruction
+  stats:
+    amount: 15
+    attack: 49
+    luck: 9
+  type: magic
+657:
+  description: null
+  holder: null
+  name: dusty urn
+  stats:
+    luck: -9
+    weight: 11
+  type: common
+658:
+  description: null
+  holder: null
+  name: brutal cowter of mediocrity
+  stats:
+    luck: 15
+    strength: 20
+    weight: 30
+  type: armor
+659:
+  description: null
+  holder: null
+  name: barbed sabatons of smiting
+  stats:
+    luck: 16
+    strength: 24
+    weight: 35
+  type: armor
+660:
+  description: null
+  holder: null
+  name: magnificent shortsword of hatred
+  stats:
+    attack: 30
+    luck: 20
+    weight: 17
+  type: weapon
+661:
+  description: null
+  holder: null
+  name: broken staff of misery
+  stats:
+    attack: 30
+    luck: 12
+    weight: 9
+  type: weapon
+662:
+  description: null
+  holder: null
+  name: ancient halberd of ruining
+  stats:
+    attack: 18
+    luck: 7
+    weight: 5
+  type: weapon
+663:
+  description: null
+  holder: null
+  name: adequate blade of darkness
+  stats:
+    attack: 29
+    luck: 20
+    weight: 13
+  type: weapon
+664:
+  description: null
+  holder: null
+  name: strange sabatons of firestorms
+  stats:
+    luck: 16
+    strength: 27
+    weight: 37
+  type: armor
+665:
+  description: null
+  holder: null
+  name: weakened dust of grace
+  stats:
+    amount: 14
+    attack: 42
+    luck: 8
+  type: magic
+666:
+  description: null
+  holder: null
+  name: strange spear of firestorms
+  stats:
+    attack: 23
+    luck: 12
+    weight: 8
+  type: weapon
+667:
+  description: null
+  holder: null
+  name: shabby lamp
+  stats:
+    luck: 3
+    weight: 14
+  type: common
+668:
+  description: null
+  holder: null
+  name: steel orb of ruining
+  stats:
+    amount: 12
+    attack: 43
+    luck: 12
+  type: magic
+669:
+  description: null
+  holder: null
+  name: shabby journal
+  stats:
+    luck: 10
+    weight: 36
+  type: common
+670:
+  description: null
+  holder: null
+  name: jade ring of destruction
+  stats:
+    amount: 9
+    attack: 35
+    luck: 15
+  type: magic
+671:
+  description: null
+  holder: null
+  name: old glaive of weeping
+  stats:
+    attack: 30
+    luck: 26
+    weight: 15
+  type: weapon
+672:
+  description: null
+  holder: null
+  name: bronze recurve bow of hatred
+  stats:
+    attack: 17
+    luck: 13
+    weight: 7
+  type: weapon
+673:
+  description: null
+  holder: null
+  name: adequate falchion of dark
+  stats:
+    attack: 28
+    luck: 8
+    weight: 11
+  type: weapon
+674:
+  description: null
+  holder: null
+  name: amethyst cowter of envy
+  stats:
+    luck: 7
+    strength: 24
+    weight: 35
+  type: armor
+675:
+  description: null
+  holder: null
+  name: turquoise faulds of disintegrating
+  stats:
+    luck: 25
+    strength: 27
+    weight: 37
+  type: armor
+676:
+  description: null
+  holder: null
+  name: weakened cuisse of pity
+  stats:
+    luck: 15
+    strength: 29
+    weight: 32
+  type: armor
+677:
+  description: null
+  holder: null
+  name: rusty halberd of smiting
+  stats:
+    attack: 25
+    luck: 15
+    weight: 18
+  type: weapon
+678:
+  description: null
+  holder: null
+  name: strange vambraces of fury
+  stats:
+    luck: 16
+    strength: 11
+    weight: 36
+  type: armor
+679:
+  description: null
+  holder: null
+  name: decayed decanter
+  stats:
+    luck: -8
+    weight: 46
+  type: common
+680:
+  description: null
+  holder: null
+  name: fine cowter of disdain
+  stats:
+    luck: 21
+    strength: 25
+    weight: 29
+  type: armor
+681:
+  description: null
+  holder: null
+  name: valorous shortsword of icestorms
+  stats:
+    attack: 29
+    luck: 29
+    weight: 15
+  type: weapon
+682:
+  description: null
+  holder: null
+  name: mended mace of quickening
+  stats:
+    attack: 15
+    luck: 24
+    weight: 19
+  type: weapon
+683:
+  description: null
+  holder: null
+  name: chipped cuirass of contempt
+  stats:
+    luck: 18
+    strength: 20
+    weight: 17
+  type: armor
+684:
+  description: null
+  holder: null
+  name: adequate gorget of darkness
+  stats:
+    luck: 15
+    strength: 24
+    weight: 16
+  type: armor
+685:
+  description: null
+  holder: null
+  name: flawless cuisse of blooding
+  stats:
+    luck: 24
+    strength: 14
+    weight: 21
+  type: armor
+686:
+  description: null
+  holder: null
+  name: mended gorget of governing
+  stats:
+    luck: 18
+    strength: 27
+    weight: 20
+  type: armor
+687:
+  description: null
+  holder: null
+  name: dusty vambraces of light
+  stats:
+    luck: 12
+    strength: 21
+    weight: 17
+  type: armor
+688:
+  description: null
+  holder: null
+  name: bloody morning star of grace
+  stats:
+    attack: 18
+    luck: 8
+    weight: 9
+  type: weapon
+689:
+  description: null
+  holder: null
+  name: fine tome of blooding
+  stats:
+    amount: 8
+    attack: 19
+    luck: 15
+  type: magic
+690:
+  description: null
+  holder: null
+  name: weakened cowter of extraction
+  stats:
+    luck: 21
+    strength: 29
+    weight: 16
+  type: armor
+691:
+  description: null
+  holder: null
+  name: addictive war hammer of icestorms
+  stats:
+    attack: 28
+    luck: 18
+    weight: 14
+  type: weapon
+692:
+  description: null
+  holder: null
+  name: intact firepit
+  stats:
+    luck: -7
+    weight: 48
+  type: common
+693:
+  description: null
+  holder: null
+  name: onyx shard of disdain
+  stats:
+    amount: 14
+    attack: 31
+    luck: 13
+  type: magic
+694:
+  description: null
+  holder: null
+  name: adequate crystal of light
+  stats:
+    amount: 13
+    attack: 36
+    luck: 12
+  type: magic
+695:
+  description: null
+  holder: null
+  name: shameful gauntlets of blooding
+  stats:
+    luck: 5
+    strength: 30
+    weight: 21
+  type: armor
+696:
+  description: null
+  holder: null
+  name: old ring of misery
+  stats:
+    amount: 13
+    attack: 30
+    luck: 12
+  type: magic
+697:
+  description: null
+  holder: null
+  name: ghastly staff of destruction
+  stats:
+    attack: 23
+    luck: 9
+    weight: 20
+  type: weapon
+698:
+  description: null
+  holder: null
+  name: bone gorget of contempt
+  stats:
+    luck: 25
+    strength: 21
+    weight: 33
+  type: armor
+699:
+  description: null
+  holder: null
+  name: adamantine mace of contempt
+  stats:
+    attack: 17
+    luck: 17
+    weight: 12
+  type: weapon
+700:
+  description: null
+  holder: null
+  name: broken pauldrons of dusk
+  stats:
+    luck: 19
+    strength: 14
+    weight: 28
+  type: armor
+701:
+  description: null
+  holder: null
+  name: bronze philter of suffering
+  stats:
+    amount: 8
+    attack: 45
+    luck: 10
+  type: magic
+702:
+  description: null
+  holder: null
+  name: mended flask
+  stats:
+    luck: 6
+    weight: 21
+  type: common
+703:
+  description: null
+  holder: null
+  name: emerald talisman of reckoning
+  stats:
+    amount: 13
+    attack: 29
+    luck: 6
+  type: magic
+704:
+  description: null
+  holder: null
+  name: burnt cinders
+  stats:
+    luck: -3
+    weight: 19
+  type: common
+705:
+  description: null
+  holder: null
+  name: untouched claymore of valor
+  stats:
+    attack: 17
+    luck: 23
+    weight: 18
+  type: weapon
+706:
+  description: null
+  holder: null
+  name: brutal faulds of terror
+  stats:
+    luck: 23
+    strength: 17
+    weight: 23
+  type: armor
+707:
+  description: null
+  holder: null
+  name: fur scroll of extraction
+  stats:
+    amount: 8
+    attack: 21
+    luck: 5
+  type: magic
+708:
+  description: null
+  holder: null
+  name: magnetic dagger of destruction
+  stats:
+    attack: 23
+    luck: 22
+    weight: 5
+  type: weapon
+709:
+  description: null
+  holder: null
+  name: adequate vambraces of ruin
+  stats:
+    luck: 10
+    strength: 19
+    weight: 38
+  type: armor
+710:
+  description: null
+  holder: null
+  name: mended teeth
+  stats:
+    luck: 8
+    weight: 49
+  type: common
+711:
+  description: null
+  holder: null
+  name: silver cloak of blooding
+  stats:
+    amount: 14
+    attack: 46
+    luck: 5
+  type: magic
+712:
+  description: null
+  holder: null
+  name: piteous war hammer of fury
+  stats:
+    attack: 30
+    luck: 27
+    weight: 17
+  type: weapon
+713:
+  description: null
+  holder: null
+  name: unblemished cauldron
+  stats:
+    luck: 10
+    weight: 27
+  type: common
+714:
+  description: null
+  holder: null
+  name: splendiferous vambraces of dusk
+  stats:
+    luck: 5
+    strength: 12
+    weight: 15
+  type: armor
+715:
+  description: null
+  holder: null
+  name: wretched cinders
+  stats:
+    luck: -1
+    weight: 32
+  type: common
+716:
+  description: null
+  holder: null
+  name: wretched flagon
+  stats:
+    luck: -1
+    weight: 25
+  type: common
+717:
+  description: null
+  holder: null
+  name: luminous pauldrons of shame
+  stats:
+    luck: 15
+    strength: 30
+    weight: 33
+  type: armor
+718:
+  description: null
+  holder: null
+  name: ruined pottery
+  stats:
+    luck: -10
+    weight: 8
+  type: common
+719:
+  description: null
+  holder: null
+  name: flawless halberd of extraction
+  stats:
+    attack: 19
+    luck: 5
+    weight: 18
+  type: weapon
+720:
+  description: null
+  holder: null
+  name: shabby flagon
+  stats:
+    luck: -9
+    weight: 23
+  type: common
+721:
+  description: null
+  holder: null
+  name: wood scythe of weeping
+  stats:
+    attack: 22
+    luck: 19
+    weight: 7
+  type: weapon
+722:
+  description: null
+  holder: null
+  name: graceful cuisse of disintegration
+  stats:
+    luck: 5
+    strength: 13
+    weight: 22
+  type: armor
+723:
+  description: null
+  holder: null
+  name: stone gorget of disintegration
+  stats:
+    luck: 10
+    strength: 10
+    weight: 30
+  type: armor
+724:
+  description: null
+  holder: null
+  name: old dust
+  stats:
+    luck: -5
+    weight: 24
+  type: common
+725:
+  description: null
+  holder: null
+  name: damaged crystal of weeping
+  stats:
+    amount: 14
+    attack: 50
+    luck: 6
+  type: magic
+726:
+  description: null
+  holder: null
+  name: fur gauntlets of thorns
+  stats:
+    luck: 20
+    strength: 23
+    weight: 26
+  type: armor
+727:
+  description: null
+  holder: null
+  name: rotted dust
+  stats:
+    luck: -6
+    weight: 38
+  type: common
+728:
+  description: null
+  holder: null
+  name: tattered shelves
+  stats:
+    luck: 2
+    weight: 27
+  type: common
+729:
+  description: null
+  holder: null
+  name: worn charcoal
+  stats:
+    luck: 0
+    weight: 17
+  type: common
+730:
+  description: null
+  holder: null
+  name: rare vambraces of dusk
+  stats:
+    luck: 12
+    strength: 12
+    weight: 30
+  type: armor
+731:
+  description: null
+  holder: null
+  name: magnificent spaulders of ice
+  stats:
+    luck: 10
+    strength: 24
+    weight: 33
+  type: armor
+732:
+  description: null
+  holder: null
+  name: rusty staff of disintegrating
+  stats:
+    attack: 18
+    luck: 27
+    weight: 18
+  type: weapon
+733:
+  description: null
+  holder: null
+  name: tattered urn
+  stats:
+    luck: 9
+    weight: 49
+  type: common
+734:
+  description: null
+  holder: null
+  name: untouched cauldron
+  stats:
+    luck: -9
+    weight: 25
+  type: common
+735:
+  description: null
+  holder: null
+  name: meteorite circlet of quickening
+  stats:
+    amount: 9
+    attack: 38
+    luck: 7
+  type: magic
+736:
+  description: null
+  holder: null
+  name: chipped gauntlets of envy
+  stats:
+    luck: 9
+    strength: 20
+    weight: 31
+  type: armor
+737:
+  description: null
+  holder: null
+  name: chipped gousset of reckoning
+  stats:
+    luck: 16
+    strength: 29
+    weight: 17
+  type: armor
+738:
+  description: null
+  holder: null
+  name: burnt bedroll
+  stats:
+    luck: 2
+    weight: 34
+  type: common
+739:
+  description: null
+  holder: null
+  name: bronze glaive of battering
+  stats:
+    attack: 19
+    luck: 25
+    weight: 5
+  type: weapon
+740:
+  description: null
+  holder: null
+  name: ivory vambraces of dusk
+  stats:
+    luck: 13
+    strength: 21
+    weight: 39
+  type: armor
+741:
+  description: null
+  holder: null
+  name: luminous scimitar of misery
+  stats:
+    attack: 22
+    luck: 29
+    weight: 6
+  type: weapon
+742:
+  description: null
+  holder: null
+  name: broken teeth
+  stats:
+    luck: 4
+    weight: 5
+  type: common
+743:
+  description: null
+  holder: null
+  name: steel shortsword of crushing
+  stats:
+    attack: 20
+    luck: 11
+    weight: 9
+  type: weapon
+744:
+  description: null
+  holder: null
+  name: luminous stone of valor
+  stats:
+    amount: 10
+    attack: 23
+    luck: 7
+  type: magic
+745:
+  description: null
+  holder: null
+  name: onyx scythe of misery
+  stats:
+    attack: 30
+    luck: 13
+    weight: 19
+  type: weapon
+746:
+  description: null
+  holder: null
+  name: volcanic morning star of lightning
+  stats:
+    attack: 11
+    luck: 12
+    weight: 19
+  type: weapon
+747:
+  description: null
+  holder: null
+  name: worn pot
+  stats:
+    luck: -4
+    weight: 19
+  type: common
+748:
+  description: null
+  holder: null
+  name: chipped circlet of blooding
+  stats:
+    amount: 9
+    attack: 47
+    luck: 11
+  type: magic
+749:
+  description: null
+  holder: null
+  name: brutal talisman of friendship
+  stats:
+    amount: 6
+    attack: 29
+    luck: 10
+  type: magic
+750:
+  description: null
+  holder: null
+  name: ruined claymore of hatred
+  stats:
+    attack: 27
+    luck: 25
+    weight: 9
+  type: weapon
+751:
+  description: null
+  holder: null
+  name: dirty circlet of quickening
+  stats:
+    amount: 5
+    attack: 38
+    luck: 5
+  type: magic
+752:
+  description: null
+  holder: null
+  name: savage orb of terror
+  stats:
+    amount: 6
+    attack: 16
+    luck: 15
+  type: magic
+753:
+  description: null
+  holder: null
+  name: wretched shelves
+  stats:
+    luck: 10
+    weight: 36
+  type: common
+754:
+  description: null
+  holder: null
+  name: shabby pottery
+  stats:
+    luck: -6
+    weight: 15
+  type: common
+755:
+  description: null
+  holder: null
+  name: mended cuirass of friendship
+  stats:
+    luck: 25
+    strength: 27
+    weight: 39
+  type: armor
+756:
+  description: null
+  holder: null
+  name: cobwebbed cup
+  stats:
+    luck: 1
+    weight: 25
+  type: common
+757:
+  description: null
+  holder: null
+  name: polished stone of light
+  stats:
+    amount: 15
+    attack: 23
+    luck: 14
+  type: magic
+758:
+  description: null
+  holder: null
+  name: mended battle axe of grace
+  stats:
+    attack: 30
+    luck: 13
+    weight: 13
+  type: weapon
+759:
+  description: null
+  holder: null
+  name: valorous cowter of firestorms
+  stats:
+    luck: 11
+    strength: 14
+    weight: 30
+  type: armor
+760:
+  description: null
+  holder: null
+  name: dirty scythe of crushing
+  stats:
+    attack: 28
+    luck: 20
+    weight: 15
+  type: weapon
+761:
+  description: null
+  holder: null
+  name: magnificent gauntlets of icestorms
+  stats:
+    luck: 13
+    strength: 29
+    weight: 35
+  type: armor
+762:
+  description: null
+  holder: null
+  name: ornate ring of disintegration
+  stats:
+    amount: 13
+    attack: 37
+    luck: 5
+  type: magic
+763:
+  description: null
+  holder: null
+  name: dusty cauldron
+  stats:
+    luck: 9
+    weight: 21
+  type: common
+764:
+  description: null
+  holder: null
+  name: shiny gousset of reckoning
+  stats:
+    luck: 13
+    strength: 20
+    weight: 40
+  type: armor
+765:
+  description: null
+  holder: null
+  name: damaged dust of battering
+  stats:
+    amount: 10
+    attack: 16
+    luck: 7
+  type: magic
+766:
+  description: null
+  holder: null
+  name: common cowter of envy
+  stats:
+    luck: 25
+    strength: 14
+    weight: 25
+  type: armor
+767:
+  description: null
+  holder: null
+  name: fearful staff of calming
+  stats:
+    attack: 20
+    luck: 17
+    weight: 11
+  type: weapon
+768:
+  description: null
+  holder: null
+  name: shiny gorget of contempt
+  stats:
+    luck: 22
+    strength: 27
+    weight: 38
+  type: armor
+769:
+  description: null
+  holder: null
+  name: ancient halberd of light
+  stats:
+    attack: 29
+    luck: 17
+    weight: 16
+  type: weapon
+770:
+  description: null
+  holder: null
+  name: untouched morning star of valor
+  stats:
+    attack: 18
+    luck: 21
+    weight: 13
+  type: weapon
+771:
+  description: null
+  holder: null
+  name: fine gousset of weeping
+  stats:
+    luck: 24
+    strength: 11
+    weight: 33
+  type: armor
+772:
+  description: null
+  holder: null
+  name: dirty journal
+  stats:
+    luck: -7
+    weight: 46
+  type: common
+773:
+  description: null
+  holder: null
+  name: fur gousset of valor
+  stats:
+    luck: 5
+    strength: 15
+    weight: 35
+  type: armor
+774:
+  description: null
+  holder: null
+  name: burnt pot
+  stats:
+    luck: 6
+    weight: 45
+  type: common
+775:
+  description: null
+  holder: null
+  name: durable cuisse of destruction
+  stats:
+    luck: 5
+    strength: 16
+    weight: 40
+  type: armor
+776:
+  description: null
+  holder: null
+  name: bloody scimitar of reckoning
+  stats:
+    attack: 12
+    luck: 27
+    weight: 10
+  type: weapon
+777:
+  description: null
+  holder: null
+  name: ghastly ring of savagery
+  stats:
+    amount: 10
+    attack: 18
+    luck: 8
+  type: magic
+778:
+  description: null
+  holder: null
+  name: burning dagger of smiting
+  stats:
+    attack: 12
+    luck: 10
+    weight: 10
+  type: weapon
+779:
+  description: null
+  holder: null
+  name: broken tome of darkness
+  stats:
+    amount: 7
+    attack: 30
+    luck: 15
+  type: magic
+780:
+  description: null
+  holder: null
+  name: piteous spear of shame
+  stats:
+    attack: 27
+    luck: 28
+    weight: 13
+  type: weapon
+781:
+  description: null
+  holder: null
+  name: broken war hammer of fear
+  stats:
+    attack: 14
+    luck: 9
+    weight: 19
+  type: weapon
+782:
+  description: null
+  holder: null
+  name: pristine cuirass of mediocrity
+  stats:
+    luck: 22
+    strength: 30
+    weight: 22
+  type: armor
+783:
+  description: null
+  holder: null
+  name: ancient philter of friendship
+  stats:
+    amount: 8
+    attack: 49
+    luck: 13
+  type: magic
+784:
+  description: null
+  holder: null
+  name: unblemished pestle
+  stats:
+    luck: 9
+    weight: 13
+  type: common
+785:
+  description: null
+  holder: null
+  name: furious crystal of grace
+  stats:
+    amount: 8
+    attack: 45
+    luck: 9
+  type: magic
+786:
+  description: null
+  holder: null
+  name: glass glaive of battering
+  stats:
+    attack: 21
+    luck: 10
+    weight: 11
+  type: weapon
+787:
+  description: null
+  holder: null
+  name: magnificent crossbow of misery
+  stats:
+    attack: 16
+    luck: 19
+    weight: 15
+  type: weapon
+788:
+  description: null
+  holder: null
+  name: burnt rope
+  stats:
+    luck: -7
+    weight: 35
+  type: common
+789:
+  description: null
+  holder: null
+  name: ruined dust
+  stats:
+    luck: 6
+    weight: 32
+  type: common
+790:
+  description: null
+  holder: null
+  name: golden scroll of disintegration
+  stats:
+    amount: 9
+    attack: 30
+    luck: 7
+  type: magic
+791:
+  description: null
+  holder: null
+  name: obsidian philter of fury
+  stats:
+    amount: 10
+    attack: 24
+    luck: 6
+  type: magic
+792:
+  description: null
+  holder: null
+  name: broken shard of battering
+  stats:
+    amount: 7
+    attack: 48
+    luck: 9
+  type: magic
+793:
+  description: null
+  holder: null
+  name: old charcoal
+  stats:
+    luck: -5
+    weight: 45
+  type: common
+794:
+  description: null
+  holder: null
+  name: wretched pestle
+  stats:
+    luck: 9
+    weight: 42
+  type: common
+795:
+  description: null
+  holder: null
+  name: shameful circlet of mediocrity
+  stats:
+    amount: 14
+    attack: 29
+    luck: 14
+  type: magic
+796:
+  description: null
+  holder: null
+  name: worn club of thorns
+  stats:
+    attack: 13
+    luck: 13
+    weight: 13
+  type: weapon
+797:
+  description: null
+  holder: null
+  name: ghastly glaive of suffering
+  stats:
+    attack: 10
+    luck: 25
+    weight: 18
+  type: weapon
+798:
+  description: null
+  holder: null
+  name: ivory mace of firestorms
+  stats:
+    attack: 16
+    luck: 7
+    weight: 13
+  type: weapon
+799:
+  description: null
+  holder: null
+  name: shiny halberd of darkness
+  stats:
+    attack: 16
+    luck: 6
+    weight: 9
+  type: weapon
+800:
+  description: null
+  holder: null
+  name: mended wood
+  stats:
+    luck: -3
+    weight: 38
+  type: common
+801:
+  description: null
+  holder: null
+  name: jade spaulders of ruining
+  stats:
+    luck: 19
+    strength: 25
+    weight: 25
+  type: armor
+802:
+  description: null
+  holder: null
+  name: rotted chair
+  stats:
+    luck: -9
+    weight: 28
+  type: common
+803:
+  description: null
+  holder: null
+  name: ruined cup
+  stats:
+    luck: 5
+    weight: 40
+  type: common
+804:
+  description: null
+  holder: null
+  name: steel cuisse of lightning
+  stats:
+    luck: 13
+    strength: 27
+    weight: 18
+  type: armor
+805:
+  description: null
+  holder: null
+  name: horrible faulds of judgement
+  stats:
+    luck: 20
+    strength: 29
+    weight: 36
+  type: armor
+806:
+  description: null
+  holder: null
+  name: intact rubble
+  stats:
+    luck: -4
+    weight: 33
+  type: common
+807:
+  description: null
+  holder: null
+  name: barbed faulds of blooding
+  stats:
+    luck: 14
+    strength: 26
+    weight: 38
+  type: armor
+808:
+  description: null
+  holder: null
+  name: intact pottery
+  stats:
+    luck: 9
+    weight: 42
+  type: common
+809:
+  description: null
+  holder: null
+  name: volcanic cowter of misery
+  stats:
+    luck: 8
+    strength: 12
+    weight: 19
+  type: armor
+810:
+  description: null
+  holder: null
+  name: rusty dagger of destruction
+  stats:
+    attack: 11
+    luck: 9
+    weight: 8
+  type: weapon
+811:
+  description: null
+  holder: null
+  name: fur scroll of thorns
+  stats:
+    amount: 5
+    attack: 41
+    luck: 13
+  type: magic
+812:
+  description: null
+  holder: null
+  name: magnificent crystal of crushing
+  stats:
+    amount: 9
+    attack: 16
+    luck: 9
+  type: magic
+813:
+  description: null
+  holder: null
+  name: jade cuisse of smite
+  stats:
+    luck: 23
+    strength: 26
+    weight: 36
+  type: armor
+814:
+  description: null
+  holder: null
+  name: polished recurve bow of embalming
+  stats:
+    attack: 17
+    luck: 17
+    weight: 15
+  type: weapon
+815:
+  description: null
+  holder: null
+  name: ancient cuirass of dark
+  stats:
+    luck: 16
+    strength: 15
+    weight: 21
+  type: armor
+816:
+  description: null
+  holder: null
+  name: old shard of firestorms
+  stats:
+    amount: 9
+    attack: 20
+    luck: 11
+  type: magic
+817:
+  description: null
+  holder: null
+  name: magnetic cloak of envy
+  stats:
+    amount: 11
+    attack: 30
+    luck: 6
+  type: magic
+818:
+  description: null
+  holder: null
+  name: luminous dust of embalming
+  stats:
+    amount: 11
+    attack: 23
+    luck: 9
+  type: magic
+819:
+  description: null
+  holder: null
+  name: blunderous dagger of dawn
+  stats:
+    attack: 16
+    luck: 18
+    weight: 9
+  type: weapon
+820:
+  description: null
+  holder: null
+  name: iron gem of savagery
+  stats:
+    amount: 12
+    attack: 48
+    luck: 10
+  type: magic
+821:
+  description: null
+  holder: null
+  name: cobwebbed amulet of envy
+  stats:
+    amount: 8
+    attack: 16
+    luck: 10
+  type: magic
+822:
+  description: null
+  holder: null
+  name: wretched rubble
+  stats:
+    luck: 10
+    weight: 22
+  type: common
+823:
+  description: null
+  holder: null
+  name: luminous pauldrons of terror
+  stats:
+    luck: 17
+    strength: 27
+    weight: 24
+  type: armor
+824:
+  description: null
+  holder: null
+  name: intact torch
+  stats:
+    luck: 6
+    weight: 41
+  type: common
+825:
+  description: null
+  holder: null
+  name: bloody tome of fury
+  stats:
+    amount: 12
+    attack: 33
+    luck: 14
+  type: magic
+826:
+  description: null
+  holder: null
+  name: stone dagger of extraction
+  stats:
+    attack: 23
+    luck: 7
+    weight: 5
+  type: weapon
+827:
+  description: null
+  holder: null
+  name: derelict rope
+  stats:
+    luck: 10
+    weight: 43
+  type: common
+828:
+  description: null
+  holder: null
+  name: bronze scimitar of twilight
+  stats:
+    attack: 20
+    luck: 28
+    weight: 20
+  type: weapon
+829:
+  description: null
+  holder: null
+  name: adamantine staff of fear
+  stats:
+    attack: 26
+    luck: 27
+    weight: 13
+  type: weapon
+830:
+  description: null
+  holder: null
+  name: strange glaive of terror
+  stats:
+    attack: 11
+    luck: 20
+    weight: 13
+  type: weapon
+831:
+  description: null
+  holder: null
+  name: piteous orb of friendship
+  stats:
+    amount: 15
+    attack: 35
+    luck: 11
+  type: magic
+832:
+  description: null
+  holder: null
+  name: chipped gorget of ruining
+  stats:
+    luck: 5
+    strength: 14
+    weight: 28
+  type: armor
+833:
+  description: null
+  holder: null
+  name: rare gorget of governing
+  stats:
+    luck: 24
+    strength: 10
+    weight: 36
+  type: armor
+834:
+  description: null
+  holder: null
+  name: pristine ring of light
+  stats:
+    amount: 7
+    attack: 42
+    luck: 10
+  type: magic
+835:
+  description: null
+  holder: null
+  name: dusty pestle
+  stats:
+    luck: 5
+    weight: 34
+  type: common
+836:
+  description: null
+  holder: null
+  name: beautiful longbow of battering
+  stats:
+    attack: 10
+    luck: 24
+    weight: 10
+  type: weapon
+837:
+  description: null
+  holder: null
+  name: silver cowter of pity
+  stats:
+    luck: 21
+    strength: 24
+    weight: 40
+  type: armor
+838:
+  description: null
+  holder: null
+  name: unblemished mortar
+  stats:
+    luck: 10
+    weight: 48
+  type: common
+839:
+  description: null
+  holder: null
+  name: fur graves of friendship
+  stats:
+    luck: 22
+    strength: 26
+    weight: 26
+  type: armor
+840:
+  description: null
+  holder: null
+  name: adequate philter of icestorms
+  stats:
+    amount: 9
+    attack: 23
+    luck: 5
+  type: magic
+841:
+  description: null
+  holder: null
+  name: beautiful vambraces of disintegrating
+  stats:
+    luck: 23
+    strength: 11
+    weight: 28
+  type: armor
+842:
+  description: null
+  holder: null
+  name: barbed faulds of brutality
+  stats:
+    luck: 21
+    strength: 14
+    weight: 25
+  type: armor
+843:
+  description: null
+  holder: null
+  name: shattered flagon
+  stats:
+    luck: 7
+    weight: 35
+  type: common
+844:
+  description: null
+  holder: null
+  name: mended book
+  stats:
+    luck: -6
+    weight: 35
+  type: common
+845:
+  description: null
+  holder: null
+  name: fragile ring of calming
+  stats:
+    amount: 9
+    attack: 43
+    luck: 6
+  type: magic
+846:
+  description: null
+  holder: null
+  name: burnt ash
+  stats:
+    luck: -3
+    weight: 12
+  type: common
+847:
+  description: null
+  holder: null
+  name: ruined straw
+  stats:
+    luck: -10
+    weight: 20
+  type: common
+848:
+  description: null
+  holder: null
+  name: onyx recurve bow of fear
+  stats:
+    attack: 10
+    luck: 5
+    weight: 6
+  type: weapon
+849:
+  description: null
+  holder: null
+  name: broken wood
+  stats:
+    luck: 2
+    weight: 26
+  type: common
+850:
+  description: null
+  holder: null
+  name: gilded vambraces of thorns
+  stats:
+    luck: 10
+    strength: 27
+    weight: 34
+  type: armor
+851:
+  description: null
+  holder: null
+  name: ruined bedroll
+  stats:
+    luck: 10
+    weight: 37
+  type: common
+852:
+  description: null
+  holder: null
+  name: meteorite halberd of icestorms
+  stats:
+    attack: 27
+    luck: 14
+    weight: 16
+  type: weapon
+853:
+  description: null
+  holder: null
+  name: jade spaulders of brutality
+  stats:
+    luck: 24
+    strength: 13
+    weight: 20
+  type: armor
+854:
+  description: null
+  holder: null
+  name: fragile vambraces of twilight
+  stats:
+    luck: 14
+    strength: 11
+    weight: 19
+  type: armor
+855:
+  description: null
+  holder: null
+  name: worn claymore of smiting
+  stats:
+    attack: 16
+    luck: 17
+    weight: 17
+  type: weapon
+856:
+  description: null
+  holder: null
+  name: splendid club of reckoning
+  stats:
+    attack: 23
+    luck: 13
+    weight: 5
+  type: weapon
+857:
+  description: null
+  holder: null
+  name: stone halberd of twilight
+  stats:
+    attack: 29
+    luck: 24
+    weight: 5
+  type: weapon
+858:
+  description: null
+  holder: null
+  name: rusty battle axe of dusk
+  stats:
+    attack: 25
+    luck: 22
+    weight: 14
+  type: weapon
+859:
+  description: null
+  holder: null
+  name: silver shortsword of ice
+  stats:
+    attack: 23
+    luck: 18
+    weight: 11
+  type: weapon
+860:
+  description: null
+  holder: null
+  name: shiny cloak of dark
+  stats:
+    amount: 7
+    attack: 44
+    luck: 8
+  type: magic
+861:
+  description: null
+  holder: null
+  name: gilded cuisse of lightning
+  stats:
+    luck: 24
+    strength: 27
+    weight: 20
+  type: armor
+862:
+  description: null
+  holder: null
+  name: cobwebbed graves of icestorms
+  stats:
+    luck: 22
+    strength: 11
+    weight: 30
+  type: armor
+863:
+  description: null
+  holder: null
+  name: shabby bowl
+  stats:
+    luck: 9
+    weight: 23
+  type: common
+864:
+  description: null
+  holder: null
+  name: golden spaulders of twilight
+  stats:
+    luck: 13
+    strength: 26
+    weight: 33
+  type: armor
+865:
+  description: null
+  holder: null
+  name: shattered charcoal
+  stats:
+    luck: 6
+    weight: 6
+  type: common
+866:
+  description: null
+  holder: null
+  name: amethyst circlet of thunder
+  stats:
+    amount: 11
+    attack: 15
+    luck: 6
+  type: magic
+867:
+  description: null
+  holder: null
+  name: derelict rubble
+  stats:
+    luck: -10
+    weight: 5
+  type: common
+868:
+  description: null
+  holder: null
+  name: turquoise glaive of disgust
+  stats:
+    attack: 17
+    luck: 20
+    weight: 17
+  type: weapon
+869:
+  description: null
+  holder: null
+  name: valorous falchion of savagery
+  stats:
+    attack: 29
+    luck: 11
+    weight: 13
+  type: weapon
+870:
+  description: null
+  holder: null
+  name: copper potion of darkness
+  stats:
+    amount: 9
+    attack: 35
+    luck: 8
+  type: magic
+871:
+  description: null
+  holder: null
+  name: steel gauntlets of firestorms
+  stats:
+    luck: 7
+    strength: 16
+    weight: 33
+  type: armor
+872:
+  description: null
+  holder: null
+  name: shattered incense
+  stats:
+    luck: -2
+    weight: 23
+  type: common
+873:
+  description: null
+  holder: null
+  name: intact straw
+  stats:
+    luck: -1
+    weight: 20
+  type: common
+874:
+  description: null
+  holder: null
+  name: dusty decanter
+  stats:
+    luck: -3
+    weight: 34
+  type: common
+875:
+  description: null
+  holder: null
+  name: blunderous faulds of misery
+  stats:
+    luck: 12
+    strength: 28
+    weight: 28
+  type: armor
+876:
+  description: null
+  holder: null
+  name: ornate gousset of pity
+  stats:
+    luck: 5
+    strength: 25
+    weight: 28
+  type: armor
+877:
+  description: null
+  holder: null
+  name: derelict dust
+  stats:
+    luck: 9
+    weight: 15
+  type: common
+878:
+  description: null
+  holder: null
+  name: unblemished cinders
+  stats:
+    luck: 7
+    weight: 13
+  type: common
+879:
+  description: null
+  holder: null
+  name: flawless gousset of judgement
+  stats:
+    luck: 8
+    strength: 19
+    weight: 28
+  type: armor
+880:
+  description: null
+  holder: null
+  name: adequate cloak of misery
+  stats:
+    amount: 13
+    attack: 35
+    luck: 9
+  type: magic
+881:
+  description: null
+  holder: null
+  name: fragile ring of shame
+  stats:
+    amount: 13
+    attack: 50
+    luck: 15
+  type: magic
+882:
+  description: null
+  holder: null
+  name: amethyst scimitar of darkness
+  stats:
+    attack: 30
+    luck: 15
+    weight: 11
+  type: weapon
+883:
+  description: null
+  holder: null
+  name: rotted funnel
+  stats:
+    luck: -4
+    weight: 9
+  type: common
+884:
+  description: null
+  holder: null
+  name: graceful spear of hatred
+  stats:
+    attack: 27
+    luck: 19
+    weight: 20
+  type: weapon
+885:
+  description: null
+  holder: null
+  name: meteorite recurve bow of fury
+  stats:
+    attack: 11
+    luck: 8
+    weight: 17
+  type: weapon
+886:
+  description: null
+  holder: null
+  name: cobwebbed vambraces of battering
+  stats:
+    luck: 8
+    strength: 23
+    weight: 15
+  type: armor
+887:
+  description: null
+  holder: null
+  name: ivory orb of misery
+  stats:
+    amount: 15
+    attack: 22
+    luck: 13
+  type: magic
+888:
+  description: null
+  holder: null
+  name: intact wood
+  stats:
+    luck: 0
+    weight: 49
+  type: common
+889:
+  description: null
+  holder: null
+  name: intact dust
+  stats:
+    luck: -1
+    weight: 35
+  type: common
+890:
+  description: null
+  holder: null
+  name: fur spaulders of shame
+  stats:
+    luck: 10
+    strength: 17
+    weight: 34
+  type: armor
+891:
+  description: null
+  holder: null
+  name: silver shard of smiting
+  stats:
+    amount: 5
+    attack: 24
+    luck: 5
+  type: magic
+892:
+  description: null
+  holder: null
+  name: magnificent amulet of shame
+  stats:
+    amount: 7
+    attack: 40
+    luck: 12
+  type: magic
+893:
+  description: null
+  holder: null
+  name: gilded crossbow of grace
+  stats:
+    attack: 13
+    luck: 27
+    weight: 10
+  type: weapon
+894:
+  description: null
+  holder: null
+  name: common ring of twilight
+  stats:
+    amount: 14
+    attack: 29
+    luck: 13
+  type: magic
+895:
+  description: null
+  holder: null
+  name: rotted rope
+  stats:
+    luck: 1
+    weight: 46
+  type: common
+896:
+  description: null
+  holder: null
+  name: unblemished cauldron
+  stats:
+    luck: 4
+    weight: 10
+  type: common
+897:
+  description: null
+  holder: null
+  name: barbed vambraces of light
+  stats:
+    luck: 18
+    strength: 23
+    weight: 15
+  type: armor
+898:
+  description: null
+  holder: null
+  name: onyx tome of darkness
+  stats:
+    amount: 13
+    attack: 42
+    luck: 9
+  type: magic
+899:
+  description: null
+  holder: null
+  name: fragile sabatons of fury
+  stats:
+    luck: 23
+    strength: 18
+    weight: 33
+  type: armor
+900:
+  description: null
+  holder: null
+  name: fur cuirass of shame
+  stats:
+    luck: 21
+    strength: 23
+    weight: 22
+  type: armor
+901:
+  description: null
+  holder: null
+  name: iron shortsword of darkness
+  stats:
+    attack: 28
+    luck: 25
+    weight: 18
+  type: weapon
+902:
+  description: null
+  holder: null
+  name: mended pestle
+  stats:
+    luck: -1
+    weight: 19
+  type: common
+903:
+  description: null
+  holder: null
+  name: shameful recurve bow of grace
+  stats:
+    attack: 22
+    luck: 21
+    weight: 11
+  type: weapon
+904:
+  description: null
+  holder: null
+  name: intact rubble
+  stats:
+    luck: -10
+    weight: 23
+  type: common
+905:
+  description: null
+  holder: null
+  name: broken spaulders of savagery
+  stats:
+    luck: 23
+    strength: 25
+    weight: 33
+  type: armor
+906:
+  description: null
+  holder: null
+  name: amethyst club of darkness
+  stats:
+    attack: 12
+    luck: 5
+    weight: 8
+  type: weapon
+907:
+  description: null
+  holder: null
+  name: shiny graves of light
+  stats:
+    luck: 16
+    strength: 24
+    weight: 26
+  type: armor
+908:
+  description: null
+  holder: null
+  name: shattered wood
+  stats:
+    luck: 0
+    weight: 18
+  type: common
+909:
+  description: null
+  holder: null
+  name: golden vambraces of brutality
+  stats:
+    luck: 23
+    strength: 15
+    weight: 17
+  type: armor
+910:
+  description: null
+  holder: null
+  name: untouched falchion of weeping
+  stats:
+    attack: 18
+    luck: 23
+    weight: 19
+  type: weapon
+911:
+  description: null
+  holder: null
+  name: weakened shortsword of lightning
+  stats:
+    attack: 19
+    luck: 23
+    weight: 19
+  type: weapon
+912:
+  description: null
+  holder: null
+  name: bone mace of ruin
+  stats:
+    attack: 23
+    luck: 11
+    weight: 10
+  type: weapon
+913:
+  description: null
+  holder: null
+  name: shattered straw
+  stats:
+    luck: 6
+    weight: 20
+  type: common
+914:
+  description: null
+  holder: null
+  name: flawless scroll of misery
+  stats:
+    amount: 11
+    attack: 39
+    luck: 6
+  type: magic
+915:
+  description: null
+  holder: null
+  name: dirty tome of pity
+  stats:
+    amount: 12
+    attack: 47
+    luck: 5
+  type: magic
+916:
+  description: null
+  holder: null
+  name: decrepit straw
+  stats:
+    luck: -4
+    weight: 31
+  type: common
+917:
+  description: null
+  holder: null
+  name: silver morning star of suffering
+  stats:
+    attack: 20
+    luck: 15
+    weight: 8
+  type: weapon
+918:
+  description: null
+  holder: null
+  name: shattered parchment
+  stats:
+    luck: -9
+    weight: 34
+  type: common
+919:
+  description: null
+  holder: null
+  name: golden vambraces of scorching
+  stats:
+    luck: 21
+    strength: 21
+    weight: 39
+  type: armor
+920:
+  description: null
+  holder: null
+  name: glass gousset of battering
+  stats:
+    luck: 21
+    strength: 13
+    weight: 18
+  type: armor
+921:
+  description: null
+  holder: null
+  name: broken club of smite
+  stats:
+    attack: 16
+    luck: 8
+    weight: 14
+  type: weapon
+922:
+  description: null
+  holder: null
+  name: untouched cowter of mediocrity
+  stats:
+    luck: 17
+    strength: 29
+    weight: 38
+  type: armor
+923:
+  description: null
+  holder: null
+  name: splendiferous pauldrons of smiting
+  stats:
+    luck: 5
+    strength: 19
+    weight: 26
+  type: armor
+924:
+  description: null
+  holder: null
+  name: rare sabatons of grace
+  stats:
+    luck: 17
+    strength: 18
+    weight: 37
+  type: armor
+925:
+  description: null
+  holder: null
+  name: shattered charcoal
+  stats:
+    luck: -8
+    weight: 26
+  type: common
+926:
+  description: null
+  holder: null
+  name: splendid scythe of smite
+  stats:
+    attack: 23
+    luck: 16
+    weight: 13
+  type: weapon
+927:
+  description: null
+  holder: null
+  name: iron blade of dawn
+  stats:
+    attack: 23
+    luck: 8
+    weight: 16
+  type: weapon
+928:
+  description: null
+  holder: null
+  name: ancient falchion of light
+  stats:
+    attack: 27
+    luck: 18
+    weight: 13
+  type: weapon
+929:
+  description: null
+  holder: null
+  name: flawless spaulders of suffering
+  stats:
+    luck: 6
+    strength: 13
+    weight: 39
+  type: armor
+930:
+  description: null
+  holder: null
+  name: tattered pestle
+  stats:
+    luck: 5
+    weight: 25
+  type: common
+931:
+  description: null
+  holder: null
+  name: burning morning star of ruin
+  stats:
+    attack: 17
+    luck: 26
+    weight: 7
+  type: weapon
+932:
+  description: null
+  holder: null
+  name: splendiferous halberd of smite
+  stats:
+    attack: 26
+    luck: 5
+    weight: 10
+  type: weapon
+933:
+  description: null
+  holder: null
+  name: weakened cowter of destruction
+  stats:
+    luck: 20
+    strength: 22
+    weight: 39
+  type: armor
+934:
+  description: null
+  holder: null
+  name: splendid ring of terror
+  stats:
+    amount: 15
+    attack: 44
+    luck: 5
+  type: magic
+935:
+  description: null
+  holder: null
+  name: chipped staff of embalming
+  stats:
+    attack: 30
+    luck: 9
+    weight: 20
+  type: weapon
+936:
+  description: null
+  holder: null
+  name: dusty longbow of smite
+  stats:
+    attack: 15
+    luck: 13
+    weight: 10
+  type: weapon
+937:
+  description: null
+  holder: null
+  name: beautiful dust of disintegration
+  stats:
+    amount: 12
+    attack: 31
+    luck: 10
+  type: magic
+938:
+  description: null
+  holder: null
+  name: ornate orb of pity
+  stats:
+    amount: 14
+    attack: 26
+    luck: 5
+  type: magic
+939:
+  description: null
+  holder: null
+  name: splendid morning star of thunder
+  stats:
+    attack: 22
+    luck: 26
+    weight: 8
+  type: weapon
+940:
+  description: null
+  holder: null
+  name: fur potion of disgust
+  stats:
+    amount: 11
+    attack: 20
+    luck: 14
+  type: magic
+941:
+  description: null
+  holder: null
+  name: mended pestle
+  stats:
+    luck: 8
+    weight: 38
+  type: common
+942:
+  description: null
+  holder: null
+  name: fine club of ice
+  stats:
+    attack: 14
+    luck: 21
+    weight: 16
+  type: weapon
+943:
+  description: null
+  holder: null
+  name: steel circlet of smiting
+  stats:
+    amount: 7
+    attack: 23
+    luck: 13
+  type: magic
+944:
+  description: null
+  holder: null
+  name: valorous talisman of battering
+  stats:
+    amount: 5
+    attack: 29
+    luck: 14
+  type: magic
+945:
+  description: null
+  holder: null
+  name: common sabatons of ice
+  stats:
+    luck: 9
+    strength: 26
+    weight: 16
+  type: armor
+946:
+  description: null
+  holder: null
+  name: rusty pottery
+  stats:
+    luck: -9
+    weight: 6
+  type: common
+947:
+  description: null
+  holder: null
+  name: volcanic halberd of twilight
+  stats:
+    attack: 11
+    luck: 10
+    weight: 15
+  type: weapon
+948:
+  description: null
+  holder: null
+  name: intact bandages
+  stats:
+    luck: -10
+    weight: 19
+  type: common
+949:
+  description: null
+  holder: null
+  name: mended scroll of misery
+  stats:
+    amount: 5
+    attack: 48
+    luck: 6
+  type: magic
+950:
+  description: null
+  holder: null
+  name: furious halberd of blooding
+  stats:
+    attack: 24
+    luck: 22
+    weight: 5
+  type: weapon
+951:
+  description: null
+  holder: null
+  name: adamantine tome of contempt
+  stats:
+    amount: 15
+    attack: 40
+    luck: 10
+  type: magic
+952:
+  description: null
+  holder: null
+  name: glass halberd of ice
+  stats:
+    attack: 11
+    luck: 19
+    weight: 5
+  type: weapon
+953:
+  description: null
+  holder: null
+  name: bone cuisse of fury
+  stats:
+    luck: 24
+    strength: 19
+    weight: 36
+  type: armor
+954:
+  description: null
+  holder: null
+  name: ornate spear of darkness
+  stats:
+    attack: 18
+    luck: 15
+    weight: 10
+  type: weapon
+955:
+  description: null
+  holder: null
+  name: mended recurve bow of valor
+  stats:
+    attack: 22
+    luck: 23
+    weight: 16
+  type: weapon
+956:
+  description: null
+  holder: null
+  name: leather glaive of dark
+  stats:
+    attack: 28
+    luck: 22
+    weight: 8
+  type: weapon
+957:
+  description: null
+  holder: null
+  name: rotted beaker
+  stats:
+    luck: 9
+    weight: 45
+  type: common
+958:
+  description: null
+  holder: null
+  name: untouched pail
+  stats:
+    luck: 9
+    weight: 45
+  type: common
+959:
+  description: null
+  holder: null
+  name: horrible scimitar of fury
+  stats:
+    attack: 17
+    luck: 30
+    weight: 8
+  type: weapon
+960:
+  description: null
+  holder: null
+  name: unblemished torch
+  stats:
+    luck: -8
+    weight: 41
+  type: common
+961:
+  description: null
+  holder: null
+  name: ivory spaulders of smiting
+  stats:
+    luck: 12
+    strength: 11
+    weight: 37
+  type: armor
+962:
+  description: null
+  holder: null
+  name: luminous philter of misery
+  stats:
+    amount: 15
+    attack: 29
+    luck: 15
+  type: magic
+963:
+  description: null
+  holder: null
+  name: old wood
+  stats:
+    luck: 3
+    weight: 17
+  type: common
+964:
+  description: null
+  holder: null
+  name: derelict teeth
+  stats:
+    luck: -1
+    weight: 20
+  type: common
+965:
+  description: null
+  holder: null
+  name: shiny gorget of dawn
+  stats:
+    luck: 17
+    strength: 27
+    weight: 17
+  type: armor
+966:
+  description: null
+  holder: null
+  name: golden graves of envy
+  stats:
+    luck: 15
+    strength: 27
+    weight: 32
+  type: armor
+967:
+  description: null
+  holder: null
+  name: mended cuirass of dusk
+  stats:
+    luck: 10
+    strength: 13
+    weight: 32
+  type: armor
+968:
+  description: null
+  holder: null
+  name: strange ring of disgust
+  stats:
+    amount: 11
+    attack: 26
+    luck: 12
+  type: magic
+969:
+  description: null
+  holder: null
+  name: weakened plackart of weeping
+  stats:
+    luck: 17
+    strength: 15
+    weight: 22
+  type: armor
+970:
+  description: null
+  holder: null
+  name: broken circlet of smite
+  stats:
+    amount: 10
+    attack: 34
+    luck: 9
+  type: magic
+971:
+  description: null
+  holder: null
+  name: onyx vambraces of judgement
+  stats:
+    luck: 14
+    strength: 15
+    weight: 18
+  type: armor
+972:
+  description: null
+  holder: null
+  name: worn torch
+  stats:
+    luck: 1
+    weight: 33
+  type: common
+973:
+  description: null
+  holder: null
+  name: savage faulds of contempt
+  stats:
+    luck: 15
+    strength: 23
+    weight: 32
+  type: armor
+974:
+  description: null
+  holder: null
+  name: dirty cowter of judgement
+  stats:
+    luck: 15
+    strength: 21
+    weight: 28
+  type: armor
+975:
+  description: null
+  holder: null
+  name: iron staff of friendship
+  stats:
+    attack: 14
+    luck: 14
+    weight: 17
+  type: weapon
+976:
+  description: null
+  holder: null
+  name: shabby parchment
+  stats:
+    luck: 0
+    weight: 43
+  type: common
+977:
+  description: null
+  holder: null
+  name: pristine potion of smite
+  stats:
+    amount: 6
+    attack: 44
+    luck: 14
+  type: magic
+978:
+  description: null
+  holder: null
+  name: ornate gauntlets of reckoning
+  stats:
+    luck: 22
+    strength: 22
+    weight: 28
+  type: armor
+979:
+  description: null
+  holder: null
+  name: strange graves of icestorms
+  stats:
+    luck: 15
+    strength: 24
+    weight: 21
+  type: armor
+980:
+  description: null
+  holder: null
+  name: bloody crystal of twilight
+  stats:
+    amount: 5
+    attack: 21
+    luck: 5
+  type: magic
+981:
+  description: null
+  holder: null
+  name: ruined firepit
+  stats:
+    luck: -8
+    weight: 23
+  type: common
+982:
+  description: null
+  holder: null
+  name: dirty dust of terror
+  stats:
+    amount: 11
+    attack: 34
+    luck: 9
+  type: magic
+983:
+  description: null
+  holder: null
+  name: turquoise vambraces of calming
+  stats:
+    luck: 17
+    strength: 26
+    weight: 39
+  type: armor
+984:
+  description: null
+  holder: null
+  name: intact lamp
+  stats:
+    luck: -3
+    weight: 11
+  type: common
+985:
+  description: null
+  holder: null
+  name: valorous dust of disintegration
+  stats:
+    amount: 5
+    attack: 32
+    luck: 10
+  type: magic
+986:
+  description: null
+  holder: null
+  name: rusty gousset of destruction
+  stats:
+    luck: 9
+    strength: 24
+    weight: 35
+  type: armor
+987:
+  description: null
+  holder: null
+  name: adequate tome of extraction
+  stats:
+    amount: 13
+    attack: 24
+    luck: 7
+  type: magic
+988:
+  description: null
+  holder: null
+  name: ivory scimitar of dawn
+  stats:
+    attack: 15
+    luck: 26
+    weight: 8
+  type: weapon
+989:
+  description: null
+  holder: null
+  name: bone ring of reckoning
+  stats:
+    amount: 12
+    attack: 47
+    luck: 9
+  type: magic
+990:
+  description: null
+  holder: null
+  name: dusty cauldron
+  stats:
+    luck: 9
+    weight: 5
+  type: common
+991:
+  description: null
+  holder: null
+  name: unblemished pottery
+  stats:
+    luck: 8
+    weight: 47
+  type: common
+992:
+  description: null
+  holder: null
+  name: blunderous scimitar of savagery
+  stats:
+    attack: 24
+    luck: 18
+    weight: 9
+  type: weapon
+993:
+  description: null
+  holder: null
+  name: splendid mace of smiting
+  stats:
+    attack: 13
+    luck: 27
+    weight: 7
+  type: weapon
+994:
+  description: null
+  holder: null
+  name: decayed lamp
+  stats:
+    luck: -3
+    weight: 5
+  type: common
+995:
+  description: null
+  holder: null
+  name: dusty blanket
+  stats:
+    luck: 6
+    weight: 27
+  type: common
+996:
+  description: null
+  holder: null
+  name: decrepit incense
+  stats:
+    luck: 2
+    weight: 19
+  type: common
+997:
+  description: null
+  holder: null
+  name: decayed pestle
+  stats:
+    luck: -10
+    weight: 14
+  type: common
+998:
+  description: null
+  holder: null
+  name: untouched shard of ice
+  stats:
+    amount: 11
+    attack: 29
+    luck: 6
+  type: magic
+999:
+  description: null
+  holder: null
+  name: mended orb of valor
+  stats:
+    amount: 12
+    attack: 28
+    luck: 11
+  type: magic
