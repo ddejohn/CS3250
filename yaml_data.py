@@ -260,6 +260,7 @@ DESCRIPTORS = {
         "of suffering",
         "of weeping",
         "of disdain",
+        "of putrification",
         "of contempt",
         "of mediocrity",
         "of misery",
