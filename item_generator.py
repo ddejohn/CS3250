@@ -7,7 +7,7 @@ from pprint import pprint
 
 
 def _load():
-    file_path = f"./new_word_bank.yml"
+    file_path = f"./item_word_bank.yml"
     with open(file_path) as file:
         data = yaml.safe_load(file.read())
     return data
