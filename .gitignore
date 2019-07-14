@@ -24,6 +24,12 @@ ehthumbs_vista.db
 # Pyplot outputs
 *.png
 
+# vscode CodeRunner files
+*.python
+
+# pycache
+*.pyc
+
 # Dump file
 *.stackdump
 

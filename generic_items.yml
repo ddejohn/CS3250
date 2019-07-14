@@ -1,500 +1,7461 @@
 0:
-  description: null
-  name: null
+  description: ''
+  name: etched torch
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -9
+    weight: 45
+  type: filler
 1:
-  description: null
-  name: null
+  description: ''
+  name: greater scroll of waning
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 5
+    attack: 30
+    luck: 2
+  type: magic consumables
 2:
-  description: null
-  name: null
+  description: ''
+  name: damaged urn
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -1
+    weight: 11
+  type: filler
 3:
-  description: null
-  name: null
+  description: ''
+  name: etched beaker
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 10
+    weight: 41
+  type: filler
 4:
-  description: null
-  name: null
+  description: ''
+  name: greater emerald dust
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 9
+    attack: 22
+    luck: -2
+  type: magic items
 5:
-  description: null
-  name: null
+  description: ''
+  name: moldy mortar
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 4
+    weight: 20
+  type: filler
 6:
-  description: null
-  name: null
+  description: ''
+  name: grand onyx dust
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 14
+    attack: 20
+    luck: -3
+  type: magic items
 7:
-  description: null
-  name: null
+  description: ''
+  name: adequate iron pauldrons
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 5
+    strength: 11
+    weight: 17
+  type: armor
 8:
-  description: null
-  name: null
+  description: club
+  name: trollbruiser
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 60
+    luck: 23
+    weight: 14
+  type: legendary
 9:
-  description: null
-  name: null
+  description: ''
+  name: dusty dust
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 8
+    weight: 40
+  type: filler
 10:
-  description: null
-  name: null
+  description: ''
+  name: mended onyx circlet
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 7
+    luck: 0
+    strength: 7
+  type: jewelry
 11:
-  description: null
-  name: null
+  description: ''
+  name: etched bones
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 5
+    weight: 29
+  type: filler
 12:
-  description: null
-  name: null
+  description: ''
+  name: adequate plate bascinet
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 1
+    strength: 12
+    weight: 36
+  type: armor
 13:
-  description: null
-  name: null
+  description: ''
+  name: bewildering ruby talisman
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 6
+    luck: 3
+    strength: 4
+  type: jewelry
 14:
-  description: null
-  name: null
+  description: ''
+  name: putrid tome of screams
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 5
+    attack: 40
+    luck: 6
+  type: magic consumables
 15:
-  description: null
-  name: null
+  description: ''
+  name: damaged stool
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -6
+    weight: 7
+  type: filler
 16:
-  description: null
-  name: null
+  description: scythe
+  name: heartadder
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 65
+    luck: 80
+    weight: 7
+  type: legendary
 17:
-  description: null
-  name: null
+  description: ''
+  name: chipped chains
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -7
+    weight: 12
+  type: filler
 18:
-  description: null
-  name: null
+  description: ''
+  name: decrepit leather hood of brutality
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 0
+    strength: 21
+    weight: 26
+  type: armor
 19:
-  description: null
-  name: null
+  description: ''
+  name: magnetic copper shard
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 10
+    attack: 28
+    luck: -3
+  type: magic items
 20:
-  description: null
-  name: null
+  description: ''
+  name: volcanic longsword of vengeance
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 12
+    luck: -6
+    weight: 12
+  type: weapon
 21:
-  description: null
-  name: null
+  description: ''
+  name: adequate dragonscale gauntlets of embalming
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 3
+    strength: 19
+    weight: 16
+  type: armor
 22:
-  description: null
-  name: null
+  description: ''
+  name: rusty steel spear
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 27
+    luck: 1
+    weight: 15
+  type: weapon
 23:
-  description: null
-  name: null
+  description: ''
+  name: etched pail
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -9
+    weight: 37
+  type: filler
 24:
-  description: null
-  name: null
+  description: ''
+  name: grand emerald orb
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 5
+    attack: 15
+    luck: -9
+  type: magic items
 25:
-  description: null
-  name: null
+  description: ''
+  name: lesser emerald horn
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 5
+    attack: 43
+    luck: -9
+  type: magic items
 26:
-  description: null
-  name: null
+  description: ''
+  name: chewed stool
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 5
+    weight: 39
+  type: filler
 27:
-  description: null
-  name: null
+  description: ''
+  name: bewitched gambeson
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -10
+    strength: 23
+    weight: 35
+  type: armor
 28:
-  description: null
-  name: null
+  description: ''
+  name: carved pail
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 2
+    weight: 37
+  type: filler
 29:
-  description: null
-  name: null
+  description: ''
+  name: old mail vest
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 1
+    strength: 25
+    weight: 39
+  type: armor
 30:
-  description: null
-  name: null
+  description: ''
+  name: chipped funnel
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 6
+    weight: 15
+  type: filler
 31:
-  description: null
-  name: null
+  description: ''
+  name: cobwebbed pot
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 4
+    weight: 31
+  type: filler
 32:
-  description: null
-  name: null
+  description: ''
+  name: ruined dragonscale vest
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -6
+    strength: 16
+    weight: 16
+  type: armor
 33:
-  description: null
-  name: null
+  description: ''
+  name: common scroll of disgust
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 12
+    attack: 27
+    luck: -8
+  type: magic consumables
 34:
-  description: null
-  name: null
+  description: ''
+  name: rusty bone glaive of lies
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 30
+    luck: 9
+    weight: 19
+  type: weapon
 35:
-  description: null
-  name: null
+  description: ''
+  name: damaged silver dagger of joy
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 28
+    luck: -5
+    weight: 10
+  type: weapon
 36:
-  description: null
-  name: null
+  description: ''
+  name: envious scroll of lust
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 5
+    attack: 43
+    luck: 5
+  type: magic consumables
 37:
-  description: null
-  name: null
+  description: ''
+  name: ornate ivory talisman
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 2
+    luck: 0
+    strength: 8
+  type: jewelry
 38:
-  description: null
-  name: null
+  description: ''
+  name: grand copper gem of the stars
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    amount: 8
+    attack: 33
+    luck: 8
+  type: magic items
 39:
-  description: null
-  name: null
+  description: ''
+  name: burnt chair
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -9
+    weight: 39
+  type: filler
 40:
-  description: null
-  name: null
+  description: ''
+  name: elegant dagger
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 17
+    luck: 4
+    weight: 16
+  type: weapon
 41:
-  description: null
-  name: null
+  description: ''
+  name: dusty blanket
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -3
+    weight: 41
+  type: filler
 42:
-  description: null
-  name: null
+  description: ''
+  name: burnt decanter
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 0
+    weight: 46
+  type: filler
 43:
-  description: null
-  name: null
+  description: ''
+  name: dirty bronze circlet
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    attack: 6
+    luck: -4
+    strength: 3
+  type: jewelry
 44:
-  description: null
-  name: null
+  description: ''
+  name: moldy pot
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -5
+    weight: 41
+  type: filler
 45:
-  description: null
-  name: null
+  description: ''
+  name: moldy rope
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 9
+    weight: 39
+  type: filler
 46:
-  description: null
-  name: null
+  description: ''
+  name: damaged parchment
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -4
+    weight: 24
+  type: filler
 47:
-  description: null
-  name: null
+  description: ''
+  name: insideous brigandine
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 1
+    strength: 10
+    weight: 39
+  type: armor
 48:
-  description: null
-  name: null
+  description: ''
+  name: ruined parchment
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: -5
+    weight: 45
+  type: filler
 49:
-  description: null
-  name: null
+  description: ''
+  name: dirty funnel
   stats:
-    amount: null
-    attack: null
-    equipable: null
-    strength: null
-    type: null
-    weight: null
+    luck: 10
+    weight: 36
+  type: filler
+50:
+  description: ''
+  name: mended charcoal
+  stats:
+    luck: -8
+    weight: 45
+  type: filler
+51:
+  description: ''
+  name: chewed chair
+  stats:
+    luck: 2
+    weight: 18
+  type: filler
+52:
+  description: ''
+  name: petty copper shard
+  stats:
+    amount: 9
+    attack: 28
+    luck: 3
+  type: magic items
+53:
+  description: ''
+  name: dazzling obsidian amulet
+  stats:
+    attack: 8
+    luck: 1
+    strength: 9
+  type: jewelry
+54:
+  description: ''
+  name: mended cauldron
+  stats:
+    luck: 0
+    weight: 31
+  type: filler
+55:
+  description: ''
+  name: dirty meteorite shortsword
+  stats:
+    attack: 13
+    luck: 6
+    weight: 5
+  type: weapon
+56:
+  description: ''
+  name: dusty pottery
+  stats:
+    luck: 3
+    weight: 25
+  type: filler
+57:
+  description: ''
+  name: dirty alembic
+  stats:
+    luck: 10
+    weight: 14
+  type: filler
+58:
+  description: ''
+  name: derelict mortar
+  stats:
+    luck: 5
+    weight: 35
+  type: filler
+59:
+  description: ''
+  name: dirty cup
+  stats:
+    luck: -4
+    weight: 41
+  type: filler
+60:
+  description: ''
+  name: pristine hide gorget of governing
+  stats:
+    luck: -5
+    strength: 19
+    weight: 39
+  type: armor
+61:
+  description: ''
+  name: lesser potion of thorns
+  stats:
+    amount: 6
+    attack: 35
+    luck: 0
+  type: magic consumables
+62:
+  description: ''
+  name: burnt bowl
+  stats:
+    luck: 3
+    weight: 22
+  type: filler
+63:
+  description: ''
+  name: dirty torch
+  stats:
+    luck: 5
+    weight: 24
+  type: filler
+64:
+  description: ''
+  name: fair hide brigandine
+  stats:
+    luck: 5
+    strength: 29
+    weight: 38
+  type: armor
+65:
+  description: ''
+  name: uncanny vambrace
+  stats:
+    luck: -6
+    strength: 28
+    weight: 39
+  type: armor
+66:
+  description: ''
+  name: dirty plate gloves
+  stats:
+    luck: 2
+    strength: 20
+    weight: 23
+  type: armor
+67:
+  description: ''
+  name: weeping turquoise circlet
+  stats:
+    attack: 1
+    luck: 3
+    strength: 7
+  type: jewelry
+68:
+  description: ''
+  name: damaged incense
+  stats:
+    luck: -5
+    weight: 22
+  type: filler
+69:
+  description: ''
+  name: ruined iron longbow
+  stats:
+    attack: 17
+    luck: -3
+    weight: 9
+  type: weapon
+70:
+  description: ''
+  name: grand ivory gem
+  stats:
+    amount: 13
+    attack: 45
+    luck: 2
+  type: magic items
+71:
+  description: recurve bow
+  name: hatehusher
+  stats:
+    attack: 71
+    luck: 75
+    weight: 14
+  type: legendary
+72:
+  description: ''
+  name: splendiferous meteorite orb
+  stats:
+    amount: 12
+    attack: 45
+    luck: -3
+  type: magic items
+73:
+  description: ''
+  name: carved urn
+  stats:
+    luck: -5
+    weight: 27
+  type: filler
+74:
+  description: ''
+  name: mended crate
+  stats:
+    luck: 5
+    weight: 23
+  type: filler
+75:
+  description: ''
+  name: damaged pail
+  stats:
+    luck: 10
+    weight: 37
+  type: filler
+76:
+  description: ''
+  name: lesser turquoise magestone
+  stats:
+    amount: 13
+    attack: 48
+    luck: -3
+  type: magic items
+77:
+  description: ''
+  name: waterlogged chair
+  stats:
+    luck: -2
+    weight: 26
+  type: filler
+78:
+  description: ''
+  name: grand copper gem
+  stats:
+    amount: 7
+    attack: 19
+    luck: 3
+  type: magic items
+79:
+  description: ''
+  name: noxious vest
+  stats:
+    luck: -2
+    strength: 18
+    weight: 20
+  type: armor
+80:
+  description: ''
+  name: dusty bedroll
+  stats:
+    luck: 1
+    weight: 19
+  type: filler
+81:
+  description: ''
+  name: chipped crate
+  stats:
+    luck: -2
+    weight: 37
+  type: filler
+82:
+  description: ''
+  name: chipped candle
+  stats:
+    luck: 1
+    weight: 23
+  type: filler
+83:
+  description: ''
+  name: barbed potion of diffusion
+  stats:
+    amount: 9
+    attack: 20
+    luck: 4
+  type: magic consumables
+84:
+  description: ''
+  name: greater potion of ice
+  stats:
+    amount: 13
+    attack: 21
+    luck: -5
+  type: magic consumables
+85:
+  description: ''
+  name: dusty pail
+  stats:
+    luck: 9
+    weight: 12
+  type: filler
+86:
+  description: blade
+  name: moongiver
+  stats:
+    attack: 63
+    luck: 43
+    weight: 7
+  type: legendary
+87:
+  description: ''
+  name: damaged bronze morning star
+  stats:
+    attack: 14
+    luck: 10
+    weight: 17
+  type: weapon
+88:
+  description: ''
+  name: adequate hide morion
+  stats:
+    luck: -10
+    strength: 23
+    weight: 22
+  type: armor
+89:
+  description: ''
+  name: chipped lamp
+  stats:
+    luck: -7
+    weight: 37
+  type: filler
+90:
+  description: ''
+  name: moldy incense
+  stats:
+    luck: 4
+    weight: 36
+  type: filler
+91:
+  description: ''
+  name: damaged parchment
+  stats:
+    luck: -1
+    weight: 37
+  type: filler
+92:
+  description: ''
+  name: adequate steel vest of quickening
+  stats:
+    luck: 7
+    strength: 26
+    weight: 18
+  type: armor
+93:
+  description: ''
+  name: burnt stool
+  stats:
+    luck: -4
+    weight: 38
+  type: filler
+94:
+  description: ''
+  name: bewitched falchion
+  stats:
+    attack: 16
+    luck: -1
+    weight: 19
+  type: weapon
+95:
+  description: ''
+  name: mended cup
+  stats:
+    luck: 8
+    weight: 17
+  type: filler
+96:
+  description: ''
+  name: damaged bedroll
+  stats:
+    luck: 4
+    weight: 46
+  type: filler
+97:
+  description: ''
+  name: cobwebbed cuffs
+  stats:
+    luck: 9
+    weight: 31
+  type: filler
+98:
+  description: ''
+  name: waterlogged blanket
+  stats:
+    luck: 4
+    weight: 40
+  type: filler
+99:
+  description: ''
+  name: old dragonscale cuirass
+  stats:
+    luck: -6
+    strength: 19
+    weight: 33
+  type: armor
+100:
+  description: ''
+  name: petty obsidian gem
+  stats:
+    amount: 7
+    attack: 49
+    luck: -5
+  type: magic items
+101:
+  description: ''
+  name: damaged funnel
+  stats:
+    luck: -2
+    weight: 48
+  type: filler
+102:
+  description: ''
+  name: rusty iron gorget
+  stats:
+    luck: -9
+    strength: 16
+    weight: 39
+  type: armor
+103:
+  description: ''
+  name: derelict alembic
+  stats:
+    luck: -9
+    weight: 23
+  type: filler
+104:
+  description: ''
+  name: lesser scroll of carving
+  stats:
+    amount: 15
+    attack: 45
+    luck: -3
+  type: magic consumables
+105:
+  description: ''
+  name: petty philter of envy
+  stats:
+    amount: 9
+    attack: 18
+    luck: 2
+  type: magic consumables
+106:
+  description: ''
+  name: pristine glass mace
+  stats:
+    attack: 10
+    luck: 0
+    weight: 10
+  type: weapon
+107:
+  description: ''
+  name: common gold magestone
+  stats:
+    amount: 5
+    attack: 26
+    luck: 4
+  type: magic items
+108:
+  description: ''
+  name: waterlogged pottery
+  stats:
+    luck: -7
+    weight: 6
+  type: filler
+109:
+  description: ''
+  name: pristine hide spaulders
+  stats:
+    luck: 8
+    strength: 16
+    weight: 18
+  type: armor
+110:
+  description: ''
+  name: filthy adamantine ring
+  stats:
+    attack: 7
+    luck: 2
+    strength: 2
+  type: jewelry
+111:
+  description: ''
+  name: cobwebbed alembic
+  stats:
+    luck: 0
+    weight: 17
+  type: filler
+112:
+  description: ''
+  name: waterlogged funnel
+  stats:
+    luck: 10
+    weight: 40
+  type: filler
+113:
+  description: ''
+  name: etched decanter
+  stats:
+    luck: -7
+    weight: 46
+  type: filler
+114:
+  description: ''
+  name: lesser onyx orb
+  stats:
+    amount: 11
+    attack: 20
+    luck: 9
+  type: magic items
+115:
+  description: ''
+  name: mended pestle
+  stats:
+    luck: 3
+    weight: 7
+  type: filler
+116:
+  description: ''
+  name: damaged chair
+  stats:
+    luck: -8
+    weight: 48
+  type: filler
+117:
+  description: ''
+  name: lesser tome of darkness
+  stats:
+    amount: 14
+    attack: 47
+    luck: -8
+  type: magic consumables
+118:
+  description: ''
+  name: rusty book
+  stats:
+    luck: 2
+    weight: 30
+  type: filler
+119:
+  description: ''
+  name: burnt pail
+  stats:
+    luck: 2
+    weight: 10
+  type: filler
+120:
+  description: ''
+  name: ineffable potion of valor
+  stats:
+    amount: 5
+    attack: 26
+    luck: -8
+  type: magic consumables
+121:
+  description: ''
+  name: electric crossbow of lust
+  stats:
+    attack: 17
+    luck: -3
+    weight: 18
+  type: weapon
+122:
+  description: ''
+  name: worn adamantine war hammer of pity
+  stats:
+    attack: 16
+    luck: -5
+    weight: 19
+  type: weapon
+123:
+  description: ''
+  name: damaged journal
+  stats:
+    luck: 5
+    weight: 6
+  type: filler
+124:
+  description: ''
+  name: crude steel spear of hell
+  stats:
+    attack: 29
+    luck: -7
+    weight: 9
+  type: weapon
+125:
+  description: ''
+  name: carved urn
+  stats:
+    luck: -1
+    weight: 50
+  type: filler
+126:
+  description: ''
+  name: worn glass dagger of starlight
+  stats:
+    attack: 28
+    luck: 4
+    weight: 11
+  type: weapon
+127:
+  description: ''
+  name: vigilant orb of waning
+  stats:
+    amount: 15
+    attack: 29
+    luck: -9
+  type: magic items
+128:
+  description: ''
+  name: derelict parchment
+  stats:
+    luck: -6
+    weight: 45
+  type: filler
+129:
+  description: ''
+  name: petty potion of governing
+  stats:
+    amount: 9
+    attack: 46
+    luck: 5
+  type: magic consumables
+130:
+  description: ''
+  name: cobwebbed pail
+  stats:
+    luck: -8
+    weight: 28
+  type: filler
+131:
+  description: ''
+  name: lesser philter of hubris
+  stats:
+    amount: 5
+    attack: 46
+    luck: 2
+  type: magic consumables
+132:
+  description: ''
+  name: etched pottery
+  stats:
+    luck: 0
+    weight: 48
+  type: filler
+133:
+  description: ''
+  name: derelict torch
+  stats:
+    luck: 10
+    weight: 24
+  type: filler
+134:
+  description: ''
+  name: waterlogged lamp
+  stats:
+    luck: -5
+    weight: 14
+  type: filler
+135:
+  description: ''
+  name: rusty torch
+  stats:
+    luck: 0
+    weight: 36
+  type: filler
+136:
+  description: ''
+  name: insideous gold orb
+  stats:
+    amount: 10
+    attack: 16
+    luck: -1
+  type: magic items
+137:
+  description: ''
+  name: ruined golden halberd of disintegrating
+  stats:
+    attack: 12
+    luck: -4
+    weight: 15
+  type: weapon
+138:
+  description: ''
+  name: adequate hide gorget
+  stats:
+    luck: 6
+    strength: 28
+    weight: 28
+  type: armor
+139:
+  description: ''
+  name: chipped cuffs
+  stats:
+    luck: -2
+    weight: 19
+  type: filler
+140:
+  description: ''
+  name: chosen pauldrons
+  stats:
+    luck: -8
+    strength: 18
+    weight: 16
+  type: armor
+141:
+  description: ''
+  name: dirty onyx talisman
+  stats:
+    attack: 6
+    luck: 3
+    strength: 9
+  type: jewelry
+142:
+  description: ''
+  name: dusty teeth
+  stats:
+    luck: -7
+    weight: 50
+  type: filler
+143:
+  description: ''
+  name: chipped rags
+  stats:
+    luck: -7
+    weight: 9
+  type: filler
+144:
+  description: ''
+  name: damaged beaker
+  stats:
+    luck: -6
+    weight: 7
+  type: filler
+145:
+  description: ''
+  name: cobwebbed urn
+  stats:
+    luck: -7
+    weight: 32
+  type: filler
+146:
+  description: ''
+  name: derelict bowl
+  stats:
+    luck: -7
+    weight: 41
+  type: filler
+147:
+  description: ''
+  name: horrible scroll of embalming
+  stats:
+    amount: 7
+    attack: 18
+    luck: -1
+  type: magic consumables
+148:
+  description: ''
+  name: common copper gem of putrification
+  stats:
+    amount: 14
+    attack: 43
+    luck: 1
+  type: magic items
+149:
+  description: ''
+  name: filthy steel brigandine
+  stats:
+    luck: 3
+    strength: 13
+    weight: 30
+  type: armor
+150:
+  description: ''
+  name: fragile iron pauldrons
+  stats:
+    luck: 10
+    strength: 17
+    weight: 36
+  type: armor
+151:
+  description: ''
+  name: flawed gold circlet
+  stats:
+    attack: 10
+    luck: -1
+    strength: -2
+  type: jewelry
+152:
+  description: ''
+  name: carved decanter
+  stats:
+    luck: 3
+    weight: 18
+  type: filler
+153:
+  description: ''
+  name: chipped cuffs
+  stats:
+    luck: 9
+    weight: 34
+  type: filler
+154:
+  description: ''
+  name: ruined cauldron
+  stats:
+    luck: -7
+    weight: 32
+  type: filler
+155:
+  description: ''
+  name: petty onyx orb
+  stats:
+    amount: 11
+    attack: 29
+    luck: 2
+  type: magic items
+156:
+  description: ''
+  name: chewed blanket
+  stats:
+    luck: -9
+    weight: 11
+  type: filler
+157:
+  description: ''
+  name: crude emerald amulet of starlight
+  stats:
+    attack: -1
+    luck: 1
+    strength: 4
+  type: jewelry
+158:
+  description: ''
+  name: burnt torch
+  stats:
+    luck: -4
+    weight: 15
+  type: filler
+159:
+  description: ''
+  name: adequate iron crossbow of savagery
+  stats:
+    attack: 13
+    luck: 10
+    weight: 20
+  type: weapon
+160:
+  description: ''
+  name: decrepit hide vest
+  stats:
+    luck: 3
+    strength: 16
+    weight: 24
+  type: armor
+161:
+  description: scythe
+  name: widowkiller
+  stats:
+    attack: 63
+    luck: 62
+    weight: 5
+  type: legendary
+162:
+  description: ''
+  name: mended funnel
+  stats:
+    luck: 2
+    weight: 23
+  type: filler
+163:
+  description: ''
+  name: rusty journal
+  stats:
+    luck: -5
+    weight: 6
+  type: filler
+164:
+  description: ''
+  name: chewed chains
+  stats:
+    luck: -1
+    weight: 14
+  type: filler
+165:
+  description: ''
+  name: waterlogged book
+  stats:
+    luck: 1
+    weight: 35
+  type: filler
+166:
+  description: ''
+  name: waterlogged lamp
+  stats:
+    luck: -9
+    weight: 26
+  type: filler
+167:
+  description: ''
+  name: sinister obsidian ring
+  stats:
+    attack: 6
+    luck: 4
+    strength: 10
+  type: jewelry
+168:
+  description: ''
+  name: ashen onyx horn
+  stats:
+    amount: 11
+    attack: 33
+    luck: -4
+  type: magic items
+169:
+  description: ''
+  name: old plate hood
+  stats:
+    luck: -3
+    strength: 13
+    weight: 34
+  type: armor
+170:
+  description: ''
+  name: dusty book
+  stats:
+    luck: -1
+    weight: 15
+  type: filler
+171:
+  description: ''
+  name: chewed parchment
+  stats:
+    luck: 1
+    weight: 45
+  type: filler
+172:
+  description: ''
+  name: damaged pail
+  stats:
+    luck: -5
+    weight: 44
+  type: filler
+173:
+  description: ''
+  name: ruined chains
+  stats:
+    luck: 0
+    weight: 27
+  type: filler
+174:
+  description: ''
+  name: ruined book
+  stats:
+    luck: 4
+    weight: 21
+  type: filler
+175:
+  description: ''
+  name: burnt journal
+  stats:
+    luck: -4
+    weight: 26
+  type: filler
+176:
+  description: ''
+  name: common philter of twilight
+  stats:
+    amount: 8
+    attack: 33
+    luck: -7
+  type: magic consumables
+177:
+  description: ''
+  name: etched parchment
+  stats:
+    luck: -2
+    weight: 22
+  type: filler
+178:
+  description: ''
+  name: greater ruby gem
+  stats:
+    amount: 6
+    attack: 41
+    luck: 9
+  type: magic items
+179:
+  description: ''
+  name: common ruby magestone
+  stats:
+    amount: 5
+    attack: 30
+    luck: 6
+  type: magic items
+180:
+  description: ''
+  name: damaged hide vest
+  stats:
+    luck: -6
+    strength: 16
+    weight: 16
+  type: armor
+181:
+  description: ''
+  name: etched crate
+  stats:
+    luck: -6
+    weight: 36
+  type: filler
+182:
+  description: ''
+  name: waterlogged book
+  stats:
+    luck: -3
+    weight: 30
+  type: filler
+183:
+  description: ''
+  name: cobwebbed parchment
+  stats:
+    luck: 2
+    weight: 7
+  type: filler
+184:
+  description: ''
+  name: burnt blanket
+  stats:
+    luck: -2
+    weight: 45
+  type: filler
+185:
+  description: ''
+  name: ruined note
+  stats:
+    luck: -9
+    weight: 18
+  type: filler
+186:
+  description: ''
+  name: polished copper circlet of poisons
+  stats:
+    attack: 2
+    luck: 0
+    strength: 0
+  type: jewelry
+187:
+  description: ''
+  name: moldy stool
+  stats:
+    luck: 4
+    weight: 33
+  type: filler
+188:
+  description: ''
+  name: eerie staff of suffering
+  stats:
+    attack: 14
+    luck: 8
+    weight: 15
+  type: weapon
+189:
+  description: ''
+  name: mended crate
+  stats:
+    luck: -7
+    weight: 15
+  type: filler
+190:
+  description: ''
+  name: grand silver orb
+  stats:
+    amount: 13
+    attack: 22
+    luck: -10
+  type: magic items
+191:
+  description: ''
+  name: adequate iron morion
+  stats:
+    luck: 4
+    strength: 12
+    weight: 22
+  type: armor
+192:
+  description: ''
+  name: burning talisman of sickness
+  stats:
+    attack: 6
+    luck: 0
+    strength: 6
+  type: jewelry
+193:
+  description: ''
+  name: dirty stool
+  stats:
+    luck: -7
+    weight: 37
+  type: filler
+194:
+  description: ''
+  name: etched book
+  stats:
+    luck: -4
+    weight: 13
+  type: filler
+195:
+  description: ''
+  name: greater ivory magestone
+  stats:
+    amount: 5
+    attack: 32
+    luck: 6
+  type: magic items
+196:
+  description: ''
+  name: lesser scroll of repulsion
+  stats:
+    amount: 12
+    attack: 34
+    luck: 10
+  type: magic consumables
+197:
+  description: ''
+  name: burdensome emerald gem
+  stats:
+    amount: 14
+    attack: 19
+    luck: 3
+  type: magic items
+198:
+  description: ''
+  name: moldy chains
+  stats:
+    luck: -4
+    weight: 15
+  type: filler
+199:
+  description: ''
+  name: ruined bedroll
+  stats:
+    luck: 1
+    weight: 20
+  type: filler
+200:
+  description: ''
+  name: fine glass halberd
+  stats:
+    attack: 29
+    luck: 6
+    weight: 5
+  type: weapon
+201:
+  description: ''
+  name: etched bowl
+  stats:
+    luck: 8
+    weight: 27
+  type: filler
+202:
+  description: ''
+  name: burnt torch
+  stats:
+    luck: -3
+    weight: 33
+  type: filler
+203:
+  description: ''
+  name: damaged plate gloves
+  stats:
+    luck: 9
+    strength: 10
+    weight: 37
+  type: armor
+204:
+  description: ''
+  name: dirty bedroll
+  stats:
+    luck: 10
+    weight: 47
+  type: filler
+205:
+  description: ''
+  name: lesser potion of valor
+  stats:
+    amount: 14
+    attack: 33
+    luck: 2
+  type: magic consumables
+206:
+  description: ''
+  name: moldy bedroll
+  stats:
+    luck: -8
+    weight: 9
+  type: filler
+207:
+  description: ''
+  name: uncanny vest
+  stats:
+    luck: 7
+    strength: 22
+    weight: 28
+  type: armor
+208:
+  description: ''
+  name: damaged funnel
+  stats:
+    luck: -1
+    weight: 49
+  type: filler
+209:
+  description: ''
+  name: piteous onyx gem
+  stats:
+    amount: 11
+    attack: 42
+    luck: -10
+  type: magic items
+210:
+  description: ''
+  name: damaged leather gauntlets
+  stats:
+    luck: -4
+    strength: 27
+    weight: 17
+  type: armor
+211:
+  description: ''
+  name: damaged teeth
+  stats:
+    luck: 8
+    weight: 44
+  type: filler
+212:
+  description: ''
+  name: cobwebbed pestle
+  stats:
+    luck: -3
+    weight: 27
+  type: filler
+213:
+  description: ''
+  name: chipped cuffs
+  stats:
+    luck: 10
+    weight: 6
+  type: filler
+214:
+  description: ''
+  name: grand bronze shard
+  stats:
+    amount: 7
+    attack: 38
+    luck: -10
+  type: magic items
+215:
+  description: ''
+  name: petty obsidian orb
+  stats:
+    amount: 9
+    attack: 40
+    luck: 3
+  type: magic items
+216:
+  description: ''
+  name: lesser jade gem
+  stats:
+    amount: 15
+    attack: 31
+    luck: 10
+  type: magic items
+217:
+  description: ''
+  name: burning silver magestone
+  stats:
+    amount: 8
+    attack: 43
+    luck: 5
+  type: magic items
+218:
+  description: ''
+  name: dusty pestle
+  stats:
+    luck: -8
+    weight: 33
+  type: filler
+219:
+  description: ''
+  name: splendiferous glaive
+  stats:
+    attack: 17
+    luck: -5
+    weight: 14
+  type: weapon
+220:
+  description: ''
+  name: etched decanter
+  stats:
+    luck: 7
+    weight: 11
+  type: filler
+221:
+  description: ''
+  name: waterlogged parchment
+  stats:
+    luck: -4
+    weight: 45
+  type: filler
+222:
+  description: ''
+  name: carved bedroll
+  stats:
+    luck: -9
+    weight: 35
+  type: filler
+223:
+  description: ''
+  name: damaged bones
+  stats:
+    luck: -3
+    weight: 20
+  type: filler
+224:
+  description: ''
+  name: fair iron cloak
+  stats:
+    luck: -4
+    strength: 11
+    weight: 26
+  type: armor
+225:
+  description: ''
+  name: dusty bedroll
+  stats:
+    luck: 5
+    weight: 22
+  type: filler
+226:
+  description: ''
+  name: rusty stool
+  stats:
+    luck: -9
+    weight: 6
+  type: filler
+227:
+  description: ''
+  name: chewed lamp
+  stats:
+    luck: 6
+    weight: 10
+  type: filler
+228:
+  description: ''
+  name: greater gold shard
+  stats:
+    amount: 15
+    attack: 15
+    luck: 10
+  type: magic items
+229:
+  description: ''
+  name: mended bedroll
+  stats:
+    luck: 6
+    weight: 21
+  type: filler
+230:
+  description: ''
+  name: ornate bone circlet
+  stats:
+    attack: 2
+    luck: -4
+    strength: 5
+  type: jewelry
+231:
+  description: ''
+  name: damaged bones
+  stats:
+    luck: -4
+    weight: 30
+  type: filler
+232:
+  description: ''
+  name: waterlogged incense
+  stats:
+    luck: -5
+    weight: 11
+  type: filler
+233:
+  description: ''
+  name: cobwebbed urn
+  stats:
+    luck: -5
+    weight: 7
+  type: filler
+234:
+  description: ''
+  name: waterlogged cuffs
+  stats:
+    luck: -10
+    weight: 39
+  type: filler
+235:
+  description: ''
+  name: ruined iron cuirass of witching
+  stats:
+    luck: 10
+    strength: 28
+    weight: 21
+  type: armor
+236:
+  description: ''
+  name: greater philter of mourning
+  stats:
+    amount: 12
+    attack: 19
+    luck: -1
+  type: magic consumables
+237:
+  description: ''
+  name: ruined dust
+  stats:
+    luck: 6
+    weight: 12
+  type: filler
+238:
+  description: ''
+  name: cobwebbed cauldron
+  stats:
+    luck: 9
+    weight: 26
+  type: filler
+239:
+  description: ''
+  name: burnt chains
+  stats:
+    luck: 5
+    weight: 13
+  type: filler
+240:
+  description: ''
+  name: chewed rope
+  stats:
+    luck: -1
+    weight: 33
+  type: filler
+241:
+  description: ''
+  name: moldy bowl
+  stats:
+    luck: -2
+    weight: 26
+  type: filler
+242:
+  description: ''
+  name: ruined lantern
+  stats:
+    luck: 4
+    weight: 13
+  type: filler
+243:
+  description: ''
+  name: burnt pestle
+  stats:
+    luck: 6
+    weight: 47
+  type: filler
+244:
+  description: ''
+  name: fragile glass war hammer
+  stats:
+    attack: 16
+    luck: 9
+    weight: 9
+  type: weapon
+245:
+  description: ''
+  name: mirthful obsidian amulet
+  stats:
+    attack: 9
+    luck: -2
+    strength: 5
+  type: jewelry
+246:
+  description: ''
+  name: etched bowl
+  stats:
+    luck: -3
+    weight: 7
+  type: filler
+247:
+  description: ''
+  name: chewed beaker
+  stats:
+    luck: -7
+    weight: 39
+  type: filler
+248:
+  description: ''
+  name: fragile steel halberd
+  stats:
+    attack: 19
+    luck: -3
+    weight: 16
+  type: weapon
+249:
+  description: ''
+  name: damaged iron cloak
+  stats:
+    luck: -6
+    strength: 13
+    weight: 19
+  type: armor
+250:
+  description: ''
+  name: waterlogged decanter
+  stats:
+    luck: -8
+    weight: 11
+  type: filler
+251:
+  description: ''
+  name: rusty steel bascinet
+  stats:
+    luck: -10
+    strength: 26
+    weight: 33
+  type: armor
+252:
+  description: ''
+  name: old glass crossbow
+  stats:
+    attack: 14
+    luck: 3
+    weight: 15
+  type: weapon
+253:
+  description: ''
+  name: cobwebbed pot
+  stats:
+    luck: -5
+    weight: 9
+  type: filler
+254:
+  description: ''
+  name: etched funnel
+  stats:
+    luck: -5
+    weight: 34
+  type: filler
+255:
+  description: ''
+  name: ruined cuffs
+  stats:
+    luck: -7
+    weight: 49
+  type: filler
+256:
+  description: ''
+  name: vigilant vambrace
+  stats:
+    luck: -9
+    strength: 11
+    weight: 40
+  type: armor
+257:
+  description: ''
+  name: worn bone recurve bow of souls
+  stats:
+    attack: 17
+    luck: -1
+    weight: 15
+  type: weapon
+258:
+  description: ''
+  name: dusty rope
+  stats:
+    luck: 1
+    weight: 7
+  type: filler
+259:
+  description: ''
+  name: common amethyst shard
+  stats:
+    amount: 10
+    attack: 40
+    luck: -5
+  type: magic items
+260:
+  description: ''
+  name: burnt pail
+  stats:
+    luck: 1
+    weight: 11
+  type: filler
+261:
+  description: ''
+  name: moldy cauldron
+  stats:
+    luck: 10
+    weight: 47
+  type: filler
+262:
+  description: ''
+  name: etched bedroll
+  stats:
+    luck: 6
+    weight: 49
+  type: filler
+263:
+  description: ''
+  name: dusty dust
+  stats:
+    luck: 8
+    weight: 8
+  type: filler
+264:
+  description: ''
+  name: burnt lamp
+  stats:
+    luck: -5
+    weight: 7
+  type: filler
+265:
+  description: ''
+  name: bloody talisman of tragedy
+  stats:
+    attack: -1
+    luck: -3
+    strength: -2
+  type: jewelry
+266:
+  description: ''
+  name: damaged chair
+  stats:
+    luck: -10
+    weight: 36
+  type: filler
+267:
+  description: ''
+  name: corrupted dagger
+  stats:
+    attack: 18
+    luck: 10
+    weight: 8
+  type: weapon
+268:
+  description: ''
+  name: opulent greaves
+  stats:
+    luck: -1
+    strength: 12
+    weight: 22
+  type: armor
+269:
+  description: ''
+  name: ghastly scythe
+  stats:
+    attack: 29
+    luck: 7
+    weight: 19
+  type: weapon
+270:
+  description: ''
+  name: rusty bowl
+  stats:
+    luck: 8
+    weight: 8
+  type: filler
+271:
+  description: ''
+  name: sinister falchion
+  stats:
+    attack: 25
+    luck: -6
+    weight: 13
+  type: weapon
+272:
+  description: ''
+  name: moldy note
+  stats:
+    luck: 7
+    weight: 19
+  type: filler
+273:
+  description: ''
+  name: greater potion of shame
+  stats:
+    amount: 14
+    attack: 34
+    luck: -5
+  type: magic consumables
+274:
+  description: ''
+  name: dusty bedroll
+  stats:
+    luck: -9
+    weight: 24
+  type: filler
+275:
+  description: ''
+  name: ruined glass longsword
+  stats:
+    attack: 20
+    luck: -5
+    weight: 11
+  type: weapon
+276:
+  description: ''
+  name: waterlogged teeth
+  stats:
+    luck: -7
+    weight: 43
+  type: filler
+277:
+  description: ''
+  name: cobwebbed rope
+  stats:
+    luck: -8
+    weight: 45
+  type: filler
+278:
+  description: ''
+  name: moldy mortar
+  stats:
+    luck: 3
+    weight: 26
+  type: filler
+279:
+  description: ''
+  name: burnt cauldron
+  stats:
+    luck: -5
+    weight: 24
+  type: filler
+280:
+  description: ''
+  name: waterlogged pestle
+  stats:
+    luck: -5
+    weight: 48
+  type: filler
+281:
+  description: ''
+  name: etched charcoal
+  stats:
+    luck: 10
+    weight: 27
+  type: filler
+282:
+  description: ''
+  name: waterlogged decanter
+  stats:
+    luck: 1
+    weight: 13
+  type: filler
+283:
+  description: ''
+  name: rusty silver amulet
+  stats:
+    attack: -1
+    luck: 3
+    strength: -1
+  type: jewelry
+284:
+  description: ''
+  name: dirty golden halberd of erosion
+  stats:
+    attack: 29
+    luck: -2
+    weight: 6
+  type: weapon
+285:
+  description: ''
+  name: etched bedroll
+  stats:
+    luck: 2
+    weight: 46
+  type: filler
+286:
+  description: ''
+  name: dirty decanter
+  stats:
+    luck: 4
+    weight: 6
+  type: filler
+287:
+  description: ''
+  name: somnolent copper amulet
+  stats:
+    attack: 10
+    luck: 4
+    strength: 3
+  type: jewelry
+288:
+  description: ''
+  name: burnt funnel
+  stats:
+    luck: 0
+    weight: 23
+  type: filler
+289:
+  description: ''
+  name: greater amethyst orb of pity
+  stats:
+    amount: 11
+    attack: 19
+    luck: 4
+  type: magic items
+290:
+  description: ''
+  name: fine emerald talisman
+  stats:
+    attack: 8
+    luck: 3
+    strength: 9
+  type: jewelry
+291:
+  description: ''
+  name: greater scroll of thorns
+  stats:
+    amount: 12
+    attack: 47
+    luck: 7
+  type: magic consumables
+292:
+  description: ''
+  name: fine steel spear
+  stats:
+    attack: 28
+    luck: -1
+    weight: 19
+  type: weapon
+293:
+  description: ''
+  name: rusty teeth
+  stats:
+    luck: -8
+    weight: 34
+  type: filler
+294:
+  description: ''
+  name: fine leather gauntlets
+  stats:
+    luck: -10
+    strength: 24
+    weight: 18
+  type: armor
+295:
+  description: ''
+  name: ruined steel morion
+  stats:
+    luck: 9
+    strength: 15
+    weight: 40
+  type: armor
+296:
+  description: ''
+  name: mended crate
+  stats:
+    luck: -5
+    weight: 16
+  type: filler
+297:
+  description: ''
+  name: etched mortar
+  stats:
+    luck: -7
+    weight: 19
+  type: filler
+298:
+  description: ''
+  name: greater tome of death
+  stats:
+    amount: 7
+    attack: 24
+    luck: 9
+  type: magic consumables
+299:
+  description: ''
+  name: cobwebbed alembic
+  stats:
+    luck: 9
+    weight: 33
+  type: filler
+300:
+  description: ''
+  name: unpleasant staff
+  stats:
+    attack: 23
+    luck: -6
+    weight: 20
+  type: weapon
+301:
+  description: ''
+  name: decrepit silver shortsword
+  stats:
+    attack: 22
+    luck: 4
+    weight: 13
+  type: weapon
+302:
+  description: ''
+  name: petty meteorite shard
+  stats:
+    amount: 13
+    attack: 37
+    luck: -1
+  type: magic items
+303:
+  description: ''
+  name: filthy glass battle axe
+  stats:
+    attack: 25
+    luck: 4
+    weight: 18
+  type: weapon
+304:
+  description: ''
+  name: adequate bronze amulet
+  stats:
+    attack: 1
+    luck: 0
+    strength: 7
+  type: jewelry
+305:
+  description: ''
+  name: petty meteorite orb
+  stats:
+    amount: 13
+    attack: 44
+    luck: 2
+  type: magic items
+306:
+  description: ''
+  name: ornate gorget
+  stats:
+    luck: 8
+    strength: 18
+    weight: 39
+  type: armor
+307:
+  description: ''
+  name: burnt decanter
+  stats:
+    luck: -8
+    weight: 23
+  type: filler
+308:
+  description: ''
+  name: rusty chair
+  stats:
+    luck: 2
+    weight: 14
+  type: filler
+309:
+  description: ''
+  name: dusty mortar
+  stats:
+    luck: -10
+    weight: 6
+  type: filler
+310:
+  description: ''
+  name: waterlogged lantern
+  stats:
+    luck: -9
+    weight: 27
+  type: filler
+311:
+  description: ''
+  name: dirty teeth
+  stats:
+    luck: 10
+    weight: 45
+  type: filler
+312:
+  description: ''
+  name: dirty iron pauldrons of icestorms
+  stats:
+    luck: -9
+    strength: 25
+    weight: 33
+  type: armor
+313:
+  description: ''
+  name: fine glass blade
+  stats:
+    attack: 22
+    luck: 6
+    weight: 9
+  type: weapon
+314:
+  description: ''
+  name: rusty steel helm
+  stats:
+    luck: 2
+    strength: 18
+    weight: 38
+  type: armor
+315:
+  description: ''
+  name: chewed dust
+  stats:
+    luck: -3
+    weight: 31
+  type: filler
+316:
+  description: ''
+  name: chewed blanket
+  stats:
+    luck: 4
+    weight: 30
+  type: filler
+317:
+  description: ''
+  name: dirty iron vest
+  stats:
+    luck: 7
+    strength: 26
+    weight: 22
+  type: armor
+318:
+  description: ''
+  name: rusty book
+  stats:
+    luck: -5
+    weight: 33
+  type: filler
+319:
+  description: ''
+  name: flawed jade ring
+  stats:
+    attack: -1
+    luck: -1
+    strength: 6
+  type: jewelry
+320:
+  description: ''
+  name: chewed candle
+  stats:
+    luck: -4
+    weight: 35
+  type: filler
+321:
+  description: ''
+  name: burnt rags
+  stats:
+    luck: 1
+    weight: 8
+  type: filler
+322:
+  description: ''
+  name: ruined funnel
+  stats:
+    luck: 1
+    weight: 20
+  type: filler
+323:
+  description: ''
+  name: burnt mortar
+  stats:
+    luck: -3
+    weight: 42
+  type: filler
+324:
+  description: ''
+  name: derelict urn
+  stats:
+    luck: 4
+    weight: 32
+  type: filler
+325:
+  description: shortsword
+  name: godstealer
+  stats:
+    attack: 86
+    luck: 50
+    weight: 6
+  type: legendary
+326:
+  description: ''
+  name: dirty candle
+  stats:
+    luck: -1
+    weight: 37
+  type: filler
+327:
+  description: ''
+  name: lesser potion of the stars
+  stats:
+    amount: 11
+    attack: 32
+    luck: -8
+  type: magic consumables
+328:
+  description: ''
+  name: ruined steel morning star of starlight
+  stats:
+    attack: 26
+    luck: -10
+    weight: 18
+  type: weapon
+329:
+  description: ''
+  name: chipped blanket
+  stats:
+    luck: 10
+    weight: 34
+  type: filler
+330:
+  description: ''
+  name: moldy candle
+  stats:
+    luck: 3
+    weight: 15
+  type: filler
+331:
+  description: ''
+  name: damaged book
+  stats:
+    luck: 1
+    weight: 14
+  type: filler
+332:
+  description: ''
+  name: burnt stool
+  stats:
+    luck: -3
+    weight: 27
+  type: filler
+333:
+  description: ''
+  name: mended cauldron
+  stats:
+    luck: -2
+    weight: 43
+  type: filler
+334:
+  description: ''
+  name: chipped incense
+  stats:
+    luck: -8
+    weight: 39
+  type: filler
+335:
+  description: ''
+  name: mended urn
+  stats:
+    luck: -8
+    weight: 33
+  type: filler
+336:
+  description: ''
+  name: petty philter of judgement
+  stats:
+    amount: 12
+    attack: 18
+    luck: -2
+  type: magic consumables
+337:
+  description: ''
+  name: chewed alembic
+  stats:
+    luck: 10
+    weight: 21
+  type: filler
+338:
+  description: ''
+  name: dusky bronze shard
+  stats:
+    amount: 14
+    attack: 50
+    luck: 1
+  type: magic items
+339:
+  description: ''
+  name: bizarre recurve bow
+  stats:
+    attack: 19
+    luck: 10
+    weight: 5
+  type: weapon
+340:
+  description: ''
+  name: burnt crate
+  stats:
+    luck: 2
+    weight: 26
+  type: filler
+341:
+  description: ''
+  name: damaged steel vambrace of lust
+  stats:
+    luck: -9
+    strength: 20
+    weight: 19
+  type: armor
+342:
+  description: ''
+  name: chipped cuffs
+  stats:
+    luck: 8
+    weight: 20
+  type: filler
+343:
+  description: ''
+  name: etched pot
+  stats:
+    luck: -1
+    weight: 36
+  type: filler
+344:
+  description: ''
+  name: dirty cup
+  stats:
+    luck: 9
+    weight: 32
+  type: filler
+345:
+  description: longbow
+  name: shadowbreaker
+  stats:
+    attack: 68
+    luck: 51
+    weight: 15
+  type: legendary
+346:
+  description: ''
+  name: damaged dragonscale vambrace
+  stats:
+    luck: -8
+    strength: 10
+    weight: 22
+  type: armor
+347:
+  description: dagger
+  name: wraithpreacher
+  stats:
+    attack: 88
+    luck: 41
+    weight: 9
+  type: legendary
+348:
+  description: ''
+  name: etched crate
+  stats:
+    luck: -7
+    weight: 45
+  type: filler
+349:
+  description: ''
+  name: derelict pottery
+  stats:
+    luck: 2
+    weight: 5
+  type: filler
+350:
+  description: ''
+  name: dirty pail
+  stats:
+    luck: 8
+    weight: 13
+  type: filler
+351:
+  description: ''
+  name: filthy leather helm
+  stats:
+    luck: -1
+    strength: 30
+    weight: 22
+  type: armor
+352:
+  description: ''
+  name: damaged bedroll
+  stats:
+    luck: 3
+    weight: 7
+  type: filler
+353:
+  description: ''
+  name: derelict candle
+  stats:
+    luck: 1
+    weight: 14
+  type: filler
+354:
+  description: ''
+  name: mended chair
+  stats:
+    luck: -4
+    weight: 42
+  type: filler
+355:
+  description: ''
+  name: soulless helm
+  stats:
+    luck: 2
+    strength: 18
+    weight: 29
+  type: armor
+356:
+  description: ''
+  name: old silver dagger
+  stats:
+    attack: 20
+    luck: 9
+    weight: 5
+  type: weapon
+357:
+  description: ''
+  name: decrepit golden club
+  stats:
+    attack: 16
+    luck: 0
+    weight: 6
+  type: weapon
+358:
+  description: ''
+  name: dreaded glaive
+  stats:
+    attack: 17
+    luck: -5
+    weight: 14
+  type: weapon
+359:
+  description: ''
+  name: ornate spaulders of hatred
+  stats:
+    luck: 4
+    strength: 12
+    weight: 35
+  type: armor
+360:
+  description: ''
+  name: adequate steel helm
+  stats:
+    luck: -6
+    strength: 20
+    weight: 40
+  type: armor
+361:
+  description: ''
+  name: derelict dust
+  stats:
+    luck: -6
+    weight: 26
+  type: filler
+362:
+  description: ''
+  name: moldy funnel
+  stats:
+    luck: -9
+    weight: 11
+  type: filler
+363:
+  description: ''
+  name: repulsive gem of torpor
+  stats:
+    amount: 9
+    attack: 17
+    luck: 8
+  type: magic items
+364:
+  description: ''
+  name: dirty note
+  stats:
+    luck: -9
+    weight: 31
+  type: filler
+365:
+  description: ''
+  name: grand silver dust
+  stats:
+    amount: 6
+    attack: 37
+    luck: 10
+  type: magic items
+366:
+  description: ''
+  name: chewed torch
+  stats:
+    luck: 10
+    weight: 21
+  type: filler
+367:
+  description: ''
+  name: waterlogged teeth
+  stats:
+    luck: 9
+    weight: 15
+  type: filler
+368:
+  description: ''
+  name: erosive gold amulet
+  stats:
+    attack: 9
+    luck: -1
+    strength: 9
+  type: jewelry
+369:
+  description: ''
+  name: chewed bones
+  stats:
+    luck: 0
+    weight: 27
+  type: filler
+370:
+  description: ''
+  name: dusty bedroll
+  stats:
+    luck: -6
+    weight: 36
+  type: filler
+371:
+  description: ''
+  name: vengeful amethyst dust
+  stats:
+    amount: 11
+    attack: 27
+    luck: 7
+  type: magic items
+372:
+  description: ''
+  name: rusty cauldron
+  stats:
+    luck: -8
+    weight: 50
+  type: filler
+373:
+  description: ''
+  name: pristine iron hood of brutality
+  stats:
+    luck: -6
+    strength: 28
+    weight: 27
+  type: armor
+374:
+  description: ''
+  name: exquisite halberd of friendship
+  stats:
+    attack: 13
+    luck: 7
+    weight: 20
+  type: weapon
+375:
+  description: ''
+  name: fragile meteorite scimitar
+  stats:
+    attack: 26
+    luck: -6
+    weight: 18
+  type: weapon
+376:
+  description: ''
+  name: spiteful copper gem
+  stats:
+    amount: 13
+    attack: 35
+    luck: 8
+  type: magic items
+377:
+  description: ''
+  name: carved alembic
+  stats:
+    luck: 1
+    weight: 14
+  type: filler
+378:
+  description: ''
+  name: dusty cuffs
+  stats:
+    luck: 8
+    weight: 41
+  type: filler
+379:
+  description: ''
+  name: burnt pot
+  stats:
+    luck: 9
+    weight: 26
+  type: filler
+380:
+  description: ''
+  name: grand gold dust
+  stats:
+    amount: 15
+    attack: 17
+    luck: -2
+  type: magic items
+381:
+  description: ''
+  name: dreaded potion of screams
+  stats:
+    amount: 9
+    attack: 48
+    luck: 7
+  type: magic consumables
+382:
+  description: ''
+  name: petty ivory magestone
+  stats:
+    amount: 11
+    attack: 28
+    luck: -2
+  type: magic items
+383:
+  description: halberd
+  name: shadowdefiler
+  stats:
+    attack: 88
+    luck: 67
+    weight: 8
+  type: legendary
+384:
+  description: ''
+  name: damaged parchment
+  stats:
+    luck: 8
+    weight: 36
+  type: filler
+385:
+  description: ''
+  name: ruined golden battle axe of disgust
+  stats:
+    attack: 30
+    luck: -3
+    weight: 18
+  type: weapon
+386:
+  description: ''
+  name: derelict chair
+  stats:
+    luck: 1
+    weight: 47
+  type: filler
+387:
+  description: ''
+  name: carved cauldron
+  stats:
+    luck: -1
+    weight: 38
+  type: filler
+388:
+  description: ''
+  name: corrupted morning star of repulsion
+  stats:
+    attack: 18
+    luck: -10
+    weight: 15
+  type: weapon
+389:
+  description: ''
+  name: splendiferous morion
+  stats:
+    luck: -3
+    strength: 27
+    weight: 37
+  type: armor
+390:
+  description: ''
+  name: carved pot
+  stats:
+    luck: -3
+    weight: 16
+  type: filler
+391:
+  description: ''
+  name: damaged beaker
+  stats:
+    luck: 7
+    weight: 17
+  type: filler
+392:
+  description: ''
+  name: chipped urn
+  stats:
+    luck: -5
+    weight: 35
+  type: filler
+393:
+  description: ''
+  name: blunderous helm
+  stats:
+    luck: -8
+    strength: 13
+    weight: 40
+  type: armor
+394:
+  description: ''
+  name: derelict pestle
+  stats:
+    luck: -4
+    weight: 46
+  type: filler
+395:
+  description: ''
+  name: greater gold horn of hubris
+  stats:
+    amount: 10
+    attack: 24
+    luck: 9
+  type: magic items
+396:
+  description: ''
+  name: moldy chains
+  stats:
+    luck: 10
+    weight: 38
+  type: filler
+397:
+  description: ''
+  name: waterlogged blanket
+  stats:
+    luck: 10
+    weight: 12
+  type: filler
+398:
+  description: ''
+  name: old steel spear
+  stats:
+    attack: 20
+    luck: 8
+    weight: 12
+  type: weapon
+399:
+  description: ''
+  name: ruined cup
+  stats:
+    luck: -3
+    weight: 46
+  type: filler
+400:
+  description: ''
+  name: carved parchment
+  stats:
+    luck: -1
+    weight: 23
+  type: filler
+401:
+  description: ''
+  name: dusty blanket
+  stats:
+    luck: 7
+    weight: 26
+  type: filler
+402:
+  description: ''
+  name: pristine leather gloves
+  stats:
+    luck: 4
+    strength: 22
+    weight: 35
+  type: armor
+403:
+  description: ''
+  name: fair iron recurve bow
+  stats:
+    attack: 22
+    luck: 3
+    weight: 16
+  type: weapon
+404:
+  description: ''
+  name: damaged note
+  stats:
+    luck: -4
+    weight: 16
+  type: filler
+405:
+  description: ''
+  name: etched cuffs
+  stats:
+    luck: -3
+    weight: 30
+  type: filler
+406:
+  description: ''
+  name: derelict pot
+  stats:
+    luck: -2
+    weight: 35
+  type: filler
+407:
+  description: ''
+  name: grand silver orb
+  stats:
+    amount: 6
+    attack: 26
+    luck: -10
+  type: magic items
+408:
+  description: ''
+  name: derelict parchment
+  stats:
+    luck: 2
+    weight: 39
+  type: filler
+409:
+  description: ''
+  name: derelict pail
+  stats:
+    luck: -9
+    weight: 24
+  type: filler
+410:
+  description: ''
+  name: burnt note
+  stats:
+    luck: -8
+    weight: 12
+  type: filler
+411:
+  description: ''
+  name: damaged note
+  stats:
+    luck: 4
+    weight: 26
+  type: filler
+412:
+  description: ''
+  name: etched alembic
+  stats:
+    luck: -1
+    weight: 46
+  type: filler
+413:
+  description: ''
+  name: magnificent recurve bow of breaking
+  stats:
+    attack: 21
+    luck: 5
+    weight: 17
+  type: weapon
+414:
+  description: ''
+  name: waterlogged lantern
+  stats:
+    luck: 0
+    weight: 15
+  type: filler
+415:
+  description: ''
+  name: mended candle
+  stats:
+    luck: 1
+    weight: 48
+  type: filler
+416:
+  description: ''
+  name: chipped journal
+  stats:
+    luck: 4
+    weight: 15
+  type: filler
+417:
+  description: ''
+  name: ghoulish potion of hubris
+  stats:
+    amount: 8
+    attack: 43
+    luck: 4
+  type: magic consumables
+418:
+  description: ''
+  name: grand adamantine magestone
+  stats:
+    amount: 6
+    attack: 24
+    luck: -2
+  type: magic items
+419:
+  description: ''
+  name: mended charcoal
+  stats:
+    luck: -1
+    weight: 32
+  type: filler
+420:
+  description: ''
+  name: filthy copper amulet
+  stats:
+    attack: -2
+    luck: -4
+    strength: 7
+  type: jewelry
+421:
+  description: ''
+  name: damaged lamp
+  stats:
+    luck: -6
+    weight: 26
+  type: filler
+422:
+  description: ''
+  name: grand onyx magestone
+  stats:
+    amount: 15
+    attack: 15
+    luck: -10
+  type: magic items
+423:
+  description: shortsword
+  name: godbringer
+  stats:
+    attack: 66
+    luck: 80
+    weight: 14
+  type: legendary
+424:
+  description: ''
+  name: ruined lamp
+  stats:
+    luck: 3
+    weight: 14
+  type: filler
+425:
+  description: ''
+  name: chipped teeth
+  stats:
+    luck: 3
+    weight: 21
+  type: filler
+426:
+  description: ''
+  name: common bronze horn
+  stats:
+    amount: 12
+    attack: 26
+    luck: -4
+  type: magic items
+427:
+  description: ''
+  name: lesser bronze horn of humiliation
+  stats:
+    amount: 11
+    attack: 19
+    luck: 8
+  type: magic items
+428:
+  description: ''
+  name: noxious scimitar
+  stats:
+    attack: 25
+    luck: 2
+    weight: 7
+  type: weapon
+429:
+  description: ''
+  name: rusty hide bascinet of the prophet
+  stats:
+    luck: -3
+    strength: 20
+    weight: 30
+  type: armor
+430:
+  description: ''
+  name: damaged pail
+  stats:
+    luck: 4
+    weight: 30
+  type: filler
+431:
+  description: ''
+  name: burnt mortar
+  stats:
+    luck: 7
+    weight: 34
+  type: filler
+432:
+  description: ''
+  name: dirty pestle
+  stats:
+    luck: -2
+    weight: 5
+  type: filler
+433:
+  description: ''
+  name: decrepit plate cuirass
+  stats:
+    luck: -8
+    strength: 16
+    weight: 22
+  type: armor
+434:
+  description: ''
+  name: petty obsidian magestone of grieving
+  stats:
+    amount: 7
+    attack: 45
+    luck: 4
+  type: magic items
+435:
+  description: ''
+  name: common turquoise orb
+  stats:
+    amount: 10
+    attack: 44
+    luck: -6
+  type: magic items
+436:
+  description: ''
+  name: loathsome gambeson
+  stats:
+    luck: 2
+    strength: 15
+    weight: 25
+  type: armor
+437:
+  description: ''
+  name: chipped pail
+  stats:
+    luck: -10
+    weight: 11
+  type: filler
+438:
+  description: ''
+  name: damaged incense
+  stats:
+    luck: -2
+    weight: 5
+  type: filler
+439:
+  description: ''
+  name: derelict urn
+  stats:
+    luck: -7
+    weight: 34
+  type: filler
+440:
+  description: ''
+  name: chewed charcoal
+  stats:
+    luck: -7
+    weight: 48
+  type: filler
+441:
+  description: ''
+  name: burnt torch
+  stats:
+    luck: -9
+    weight: 12
+  type: filler
+442:
+  description: ''
+  name: burnt cup
+  stats:
+    luck: 8
+    weight: 27
+  type: filler
+443:
+  description: ''
+  name: ashen horn of smite
+  stats:
+    amount: 13
+    attack: 22
+    luck: -3
+  type: magic items
+444:
+  description: ''
+  name: glittering meteorite horn
+  stats:
+    amount: 7
+    attack: 29
+    luck: -1
+  type: magic items
+445:
+  description: ''
+  name: damaged cup
+  stats:
+    luck: -8
+    weight: 15
+  type: filler
+446:
+  description: ''
+  name: chipped pot
+  stats:
+    luck: -10
+    weight: 31
+  type: filler
+447:
+  description: ''
+  name: waterlogged charcoal
+  stats:
+    luck: 2
+    weight: 27
+  type: filler
+448:
+  description: ''
+  name: dusty urn
+  stats:
+    luck: -1
+    weight: 10
+  type: filler
+449:
+  description: ''
+  name: pristine iron gloves
+  stats:
+    luck: -9
+    strength: 16
+    weight: 15
+  type: armor
+450:
+  description: ''
+  name: burnt dust
+  stats:
+    luck: 1
+    weight: 36
+  type: filler
+451:
+  description: ''
+  name: common onyx dust of terror
+  stats:
+    amount: 8
+    attack: 19
+    luck: 6
+  type: magic items
+452:
+  description: ''
+  name: ruined mortar
+  stats:
+    luck: -9
+    weight: 22
+  type: filler
+453:
+  description: ''
+  name: fair mail cloak
+  stats:
+    luck: -5
+    strength: 25
+    weight: 24
+  type: armor
+454:
+  description: ''
+  name: bloody adamantine magestone
+  stats:
+    amount: 15
+    attack: 16
+    luck: 8
+  type: magic items
+455:
+  description: ''
+  name: mended teeth
+  stats:
+    luck: -10
+    weight: 36
+  type: filler
+456:
+  description: ''
+  name: dirty chains
+  stats:
+    luck: -1
+    weight: 40
+  type: filler
+457:
+  description: ''
+  name: greater scroll of terror
+  stats:
+    amount: 15
+    attack: 21
+    luck: -1
+  type: magic consumables
+458:
+  description: ''
+  name: noxious shard of truth
+  stats:
+    amount: 9
+    attack: 22
+    luck: -3
+  type: magic items
+459:
+  description: ''
+  name: old bronze longsword
+  stats:
+    attack: 18
+    luck: 6
+    weight: 6
+  type: weapon
+460:
+  description: ''
+  name: cobwebbed funnel
+  stats:
+    luck: 5
+    weight: 11
+  type: filler
+461:
+  description: ''
+  name: dirty incense
+  stats:
+    luck: -9
+    weight: 28
+  type: filler
+462:
+  description: ''
+  name: rusty parchment
+  stats:
+    luck: 0
+    weight: 37
+  type: filler
+463:
+  description: ''
+  name: burnt urn
+  stats:
+    luck: -5
+    weight: 5
+  type: filler
+464:
+  description: ''
+  name: grand philter of firestorms
+  stats:
+    amount: 14
+    attack: 47
+    luck: -2
+  type: magic consumables
+465:
+  description: ''
+  name: rusty ivory ring
+  stats:
+    attack: 5
+    luck: 2
+    strength: 6
+  type: jewelry
+466:
+  description: ''
+  name: dirty hide hood of grieving
+  stats:
+    luck: -7
+    strength: 22
+    weight: 30
+  type: armor
+467:
+  description: ''
+  name: dirty beaker
+  stats:
+    luck: 5
+    weight: 5
+  type: filler
+468:
+  description: ''
+  name: dirty bedroll
+  stats:
+    luck: 3
+    weight: 44
+  type: filler
+469:
+  description: ''
+  name: cobwebbed cup
+  stats:
+    luck: -5
+    weight: 25
+  type: filler
+470:
+  description: ''
+  name: mended lamp
+  stats:
+    luck: -2
+    weight: 23
+  type: filler
+471:
+  description: ''
+  name: etched incense
+  stats:
+    luck: -9
+    weight: 44
+  type: filler
+472:
+  description: ''
+  name: mended chains
+  stats:
+    luck: -7
+    weight: 25
+  type: filler
+473:
+  description: ''
+  name: ruined blanket
+  stats:
+    luck: 10
+    weight: 34
+  type: filler
+474:
+  description: ''
+  name: cobwebbed funnel
+  stats:
+    luck: 3
+    weight: 6
+  type: filler
+475:
+  description: ''
+  name: dirty book
+  stats:
+    luck: -3
+    weight: 34
+  type: filler
+476:
+  description: ''
+  name: mended rope
+  stats:
+    luck: 4
+    weight: 26
+  type: filler
+477:
+  description: ''
+  name: chewed lantern
+  stats:
+    luck: -9
+    weight: 25
+  type: filler
+478:
+  description: ''
+  name: old iron falchion
+  stats:
+    attack: 21
+    luck: 4
+    weight: 17
+  type: weapon
+479:
+  description: ''
+  name: chewed candle
+  stats:
+    luck: -3
+    weight: 36
+  type: filler
+480:
+  description: ''
+  name: addictive recurve bow of frenzy
+  stats:
+    attack: 26
+    luck: 0
+    weight: 6
+  type: weapon
+481:
+  description: ''
+  name: crude turquoise circlet
+  stats:
+    attack: 3
+    luck: -3
+    strength: 1
+  type: jewelry
+482:
+  description: ''
+  name: carved beaker
+  stats:
+    luck: 7
+    weight: 12
+  type: filler
+483:
+  description: ''
+  name: waterlogged bedroll
+  stats:
+    luck: -8
+    weight: 33
+  type: filler
+484:
+  description: ''
+  name: adequate hide bascinet of the dusk
+  stats:
+    luck: -5
+    strength: 20
+    weight: 18
+  type: armor
+485:
+  description: ''
+  name: rusty beaker
+  stats:
+    luck: -5
+    weight: 36
+  type: filler
+486:
+  description: ''
+  name: ruined alembic
+  stats:
+    luck: -7
+    weight: 20
+  type: filler
+487:
+  description: ''
+  name: munificent gloves
+  stats:
+    luck: 9
+    strength: 22
+    weight: 34
+  type: armor
+488:
+  description: ''
+  name: rusty pail
+  stats:
+    luck: -8
+    weight: 13
+  type: filler
+489:
+  description: ''
+  name: noxious battle axe of torpor
+  stats:
+    attack: 14
+    luck: 1
+    weight: 10
+  type: weapon
+490:
+  description: ''
+  name: filthy turquoise talisman
+  stats:
+    attack: 1
+    luck: 2
+    strength: -2
+  type: jewelry
+491:
+  description: ''
+  name: splendid falchion
+  stats:
+    attack: 21
+    luck: 9
+    weight: 17
+  type: weapon
+492:
+  description: ''
+  name: chewed dust
+  stats:
+    luck: -4
+    weight: 26
+  type: filler
+493:
+  description: ''
+  name: old meteorite longbow
+  stats:
+    attack: 23
+    luck: -5
+    weight: 16
+  type: weapon
+494:
+  description: ''
+  name: blunderous tome of dread
+  stats:
+    amount: 6
+    attack: 38
+    luck: -9
+  type: magic consumables
+495:
+  description: ''
+  name: ruined bowl
+  stats:
+    luck: -6
+    weight: 16
+  type: filler
+496:
+  description: ''
+  name: greater philter of frenzy
+  stats:
+    amount: 9
+    attack: 45
+    luck: -10
+  type: magic consumables
+497:
+  description: ''
+  name: damaged bone vest of sorrow
+  stats:
+    luck: -4
+    strength: 16
+    weight: 32
+  type: armor
+498:
+  description: ''
+  name: ruined charcoal
+  stats:
+    luck: -9
+    weight: 23
+  type: filler
+499:
+  description: ''
+  name: burnt beaker
+  stats:
+    luck: -1
+    weight: 13
+  type: filler
+500:
+  description: ''
+  name: dirty bedroll
+  stats:
+    luck: -3
+    weight: 46
+  type: filler
+501:
+  description: ''
+  name: burnt note
+  stats:
+    luck: 1
+    weight: 25
+  type: filler
+502:
+  description: ''
+  name: magnetic onyx gem
+  stats:
+    amount: 9
+    attack: 44
+    luck: 5
+  type: magic items
+503:
+  description: ''
+  name: mended pail
+  stats:
+    luck: -4
+    weight: 26
+  type: filler
+504:
+  description: ''
+  name: vengeful bone shard
+  stats:
+    amount: 6
+    attack: 22
+    luck: 4
+  type: magic items
+505:
+  description: ''
+  name: ornate crossbow of suffering
+  stats:
+    attack: 29
+    luck: 7
+    weight: 19
+  type: weapon
+506:
+  description: ''
+  name: mended cup
+  stats:
+    luck: -4
+    weight: 23
+  type: filler
+507:
+  description: ''
+  name: common tome of the morning
+  stats:
+    amount: 6
+    attack: 20
+    luck: -9
+  type: magic consumables
+508:
+  description: ''
+  name: moldy dust
+  stats:
+    luck: 3
+    weight: 7
+  type: filler
+509:
+  description: ''
+  name: crude iron shortsword
+  stats:
+    attack: 14
+    luck: 0
+    weight: 8
+  type: weapon
+510:
+  description: scimitar
+  name: skymutilator
+  stats:
+    attack: 84
+    luck: 55
+    weight: 8
+  type: legendary
+511:
+  description: ''
+  name: damaged crate
+  stats:
+    luck: 8
+    weight: 16
+  type: filler
+512:
+  description: ''
+  name: derelict torch
+  stats:
+    luck: -9
+    weight: 5
+  type: filler
+513:
+  description: ''
+  name: burnt journal
+  stats:
+    luck: -4
+    weight: 22
+  type: filler
+514:
+  description: ''
+  name: waterlogged urn
+  stats:
+    luck: 0
+    weight: 18
+  type: filler
+515:
+  description: ''
+  name: adequate iron mace
+  stats:
+    attack: 16
+    luck: 9
+    weight: 19
+  type: weapon
+516:
+  description: ''
+  name: carved cup
+  stats:
+    luck: 0
+    weight: 29
+  type: filler
+517:
+  description: ''
+  name: lesser amethyst magestone
+  stats:
+    amount: 12
+    attack: 16
+    luck: -2
+  type: magic items
+518:
+  description: ''
+  name: dirty bone battle axe
+  stats:
+    attack: 12
+    luck: 6
+    weight: 9
+  type: weapon
+519:
+  description: ''
+  name: waterlogged journal
+  stats:
+    luck: -1
+    weight: 28
+  type: filler
+520:
+  description: ''
+  name: rusty adamantine amulet of hell
+  stats:
+    attack: 10
+    luck: -3
+    strength: -1
+  type: jewelry
+521:
+  description: ''
+  name: ruined cup
+  stats:
+    luck: -8
+    weight: 25
+  type: filler
+522:
+  description: ''
+  name: burnt urn
+  stats:
+    luck: -5
+    weight: 17
+  type: filler
+523:
+  description: ''
+  name: ruined bowl
+  stats:
+    luck: 4
+    weight: 32
+  type: filler
+524:
+  description: ''
+  name: damaged lamp
+  stats:
+    luck: -5
+    weight: 7
+  type: filler
+525:
+  description: ''
+  name: petty turquoise shard
+  stats:
+    amount: 6
+    attack: 21
+    luck: -1
+  type: magic items
+526:
+  description: ''
+  name: ruined cauldron
+  stats:
+    luck: 10
+    weight: 39
+  type: filler
+527:
+  description: ''
+  name: burning scroll of ecstasy
+  stats:
+    amount: 15
+    attack: 42
+    luck: -9
+  type: magic consumables
+528:
+  description: ''
+  name: chewed parchment
+  stats:
+    luck: -3
+    weight: 32
+  type: filler
+529:
+  description: ''
+  name: petty tome of herecy
+  stats:
+    amount: 6
+    attack: 29
+    luck: -10
+  type: magic consumables
+530:
+  description: ''
+  name: rusty cauldron
+  stats:
+    luck: 5
+    weight: 22
+  type: filler
+531:
+  description: ''
+  name: rusty cauldron
+  stats:
+    luck: 0
+    weight: 7
+  type: filler
+532:
+  description: ''
+  name: horrible gem of fury
+  stats:
+    amount: 10
+    attack: 47
+    luck: -8
+  type: magic items
+533:
+  description: ''
+  name: repugnant turquoise horn
+  stats:
+    amount: 8
+    attack: 27
+    luck: -5
+  type: magic items
+534:
+  description: ''
+  name: chewed blanket
+  stats:
+    luck: -2
+    weight: 8
+  type: filler
+535:
+  description: ''
+  name: chewed alembic
+  stats:
+    luck: -1
+    weight: 27
+  type: filler
+536:
+  description: ''
+  name: spectral longbow
+  stats:
+    attack: 20
+    luck: -8
+    weight: 9
+  type: weapon
+537:
+  description: ''
+  name: derelict cup
+  stats:
+    luck: 7
+    weight: 16
+  type: filler
+538:
+  description: ''
+  name: crude steel cuirass
+  stats:
+    luck: 0
+    strength: 22
+    weight: 17
+  type: armor
+539:
+  description: ''
+  name: common tome of calming
+  stats:
+    amount: 9
+    attack: 29
+    luck: -5
+  type: magic consumables
+540:
+  description: ''
+  name: crude bone spaulders of darkness
+  stats:
+    luck: -10
+    strength: 21
+    weight: 24
+  type: armor
+541:
+  description: ''
+  name: chipped cuffs
+  stats:
+    luck: 10
+    weight: 9
+  type: filler
+542:
+  description: ''
+  name: fair dragonscale cuirass
+  stats:
+    luck: 4
+    strength: 21
+    weight: 40
+  type: armor
+543:
+  description: ''
+  name: waterlogged bowl
+  stats:
+    luck: -8
+    weight: 43
+  type: filler
+544:
+  description: ''
+  name: petty ivory gem
+  stats:
+    amount: 9
+    attack: 49
+    luck: -6
+  type: magic items
+545:
+  description: ''
+  name: waterlogged bowl
+  stats:
+    luck: -3
+    weight: 46
+  type: filler
+546:
+  description: ''
+  name: ruined plate helm
+  stats:
+    luck: -5
+    strength: 28
+    weight: 39
+  type: armor
+547:
+  description: ''
+  name: rusty teeth
+  stats:
+    luck: -8
+    weight: 26
+  type: filler
+548:
+  description: ''
+  name: etched chains
+  stats:
+    luck: -4
+    weight: 28
+  type: filler
+549:
+  description: ''
+  name: gilded gauntlets
+  stats:
+    luck: -10
+    strength: 29
+    weight: 19
+  type: armor
+550:
+  description: ''
+  name: gleaming falchion
+  stats:
+    attack: 23
+    luck: -9
+    weight: 13
+  type: weapon
+551:
+  description: ''
+  name: common silver gem of ecstasy
+  stats:
+    amount: 13
+    attack: 15
+    luck: 7
+  type: magic items
+552:
+  description: ''
+  name: cobwebbed crate
+  stats:
+    luck: -7
+    weight: 14
+  type: filler
+553:
+  description: ''
+  name: derelict note
+  stats:
+    luck: -8
+    weight: 16
+  type: filler
+554:
+  description: ''
+  name: mended alembic
+  stats:
+    luck: 4
+    weight: 42
+  type: filler
+555:
+  description: ''
+  name: chipped book
+  stats:
+    luck: 5
+    weight: 27
+  type: filler
+556:
+  description: ''
+  name: mended funnel
+  stats:
+    luck: 7
+    weight: 11
+  type: filler
+557:
+  description: ''
+  name: adequate adamantine glaive
+  stats:
+    attack: 15
+    luck: -1
+    weight: 17
+  type: weapon
+558:
+  description: ''
+  name: exquisite tome of herecy
+  stats:
+    amount: 13
+    attack: 17
+    luck: -1
+  type: magic consumables
+559:
+  description: ''
+  name: petty tome of quickening
+  stats:
+    amount: 8
+    attack: 50
+    luck: 1
+  type: magic consumables
+560:
+  description: ''
+  name: greater emerald dust of victory
+  stats:
+    amount: 14
+    attack: 35
+    luck: 4
+  type: magic items
+561:
+  description: ''
+  name: lesser turquoise gem
+  stats:
+    amount: 9
+    attack: 41
+    luck: 4
+  type: magic items
+562:
+  description: war hammer
+  name: ravenslayer
+  stats:
+    attack: 90
+    luck: 51
+    weight: 12
+  type: legendary
+563:
+  description: ''
+  name: etched note
+  stats:
+    luck: -3
+    weight: 40
+  type: filler
+564:
+  description: ''
+  name: dusty lantern
+  stats:
+    luck: 0
+    weight: 40
+  type: filler
+565:
+  description: ''
+  name: worn bone morion
+  stats:
+    luck: 3
+    strength: 29
+    weight: 27
+  type: armor
+566:
+  description: ''
+  name: petty silver orb
+  stats:
+    amount: 7
+    attack: 33
+    luck: 10
+  type: magic items
+567:
+  description: ''
+  name: waterlogged parchment
+  stats:
+    luck: 5
+    weight: 38
+  type: filler
+568:
+  description: ''
+  name: dirty stool
+  stats:
+    luck: -9
+    weight: 17
+  type: filler
+569:
+  description: ''
+  name: cobwebbed mortar
+  stats:
+    luck: 0
+    weight: 40
+  type: filler
+570:
+  description: ''
+  name: chipped mortar
+  stats:
+    luck: 0
+    weight: 26
+  type: filler
+571:
+  description: ''
+  name: chipped bedroll
+  stats:
+    luck: -9
+    weight: 41
+  type: filler
+572:
+  description: ''
+  name: bewildering vest
+  stats:
+    luck: -5
+    strength: 15
+    weight: 17
+  type: armor
+573:
+  description: ''
+  name: waterlogged chair
+  stats:
+    luck: 3
+    weight: 42
+  type: filler
+574:
+  description: ''
+  name: pristine bone brigandine
+  stats:
+    luck: -5
+    strength: 23
+    weight: 20
+  type: armor
+575:
+  description: ''
+  name: dusty bowl
+  stats:
+    luck: 7
+    weight: 42
+  type: filler
+576:
+  description: ''
+  name: waterlogged torch
+  stats:
+    luck: -7
+    weight: 25
+  type: filler
+577:
+  description: ''
+  name: petty scroll of scorching
+  stats:
+    amount: 8
+    attack: 18
+    luck: 7
+  type: magic consumables
+578:
+  description: ''
+  name: petty amethyst dust
+  stats:
+    amount: 9
+    attack: 26
+    luck: 4
+  type: magic items
+579:
+  description: ''
+  name: dusty cuffs
+  stats:
+    luck: -7
+    weight: 27
+  type: filler
+580:
+  description: ''
+  name: damaged plate vambrace
+  stats:
+    luck: 2
+    strength: 29
+    weight: 30
+  type: armor
+581:
+  description: ''
+  name: decrepit dragonscale morion
+  stats:
+    luck: 4
+    strength: 18
+    weight: 15
+  type: armor
+582:
+  description: ''
+  name: chewed teeth
+  stats:
+    luck: -7
+    weight: 34
+  type: filler
+583:
+  description: ''
+  name: somnolent copper horn
+  stats:
+    amount: 6
+    attack: 32
+    luck: 5
+  type: magic items
+584:
+  description: ''
+  name: dusty incense
+  stats:
+    luck: 7
+    weight: 15
+  type: filler
+585:
+  description: ''
+  name: moldy lamp
+  stats:
+    luck: 5
+    weight: 23
+  type: filler
+586:
+  description: ''
+  name: fine iron mace of fury
+  stats:
+    attack: 22
+    luck: 5
+    weight: 5
+  type: weapon
+587:
+  description: ''
+  name: derelict blanket
+  stats:
+    luck: 7
+    weight: 8
+  type: filler
+588:
+  description: ''
+  name: fair golden falchion
+  stats:
+    attack: 15
+    luck: -10
+    weight: 16
+  type: weapon
+589:
+  description: ''
+  name: etched pestle
+  stats:
+    luck: 5
+    weight: 20
+  type: filler
+590:
+  description: ''
+  name: fine turquoise talisman
+  stats:
+    attack: 7
+    luck: 0
+    strength: -2
+  type: jewelry
+591:
+  description: ''
+  name: mended book
+  stats:
+    luck: 5
+    weight: 50
+  type: filler
+592:
+  description: ''
+  name: etched chains
+  stats:
+    luck: -2
+    weight: 47
+  type: filler
+593:
+  description: ''
+  name: mended lantern
+  stats:
+    luck: -5
+    weight: 45
+  type: filler
+594:
+  description: ''
+  name: common bronze gem
+  stats:
+    amount: 12
+    attack: 19
+    luck: -4
+  type: magic items
+595:
+  description: ''
+  name: burnt rags
+  stats:
+    luck: 9
+    weight: 46
+  type: filler
+596:
+  description: ''
+  name: derelict parchment
+  stats:
+    luck: 5
+    weight: 12
+  type: filler
+597:
+  description: ''
+  name: adequate dragonscale pauldrons
+  stats:
+    luck: -3
+    strength: 10
+    weight: 27
+  type: armor
+598:
+  description: ''
+  name: common scroll of mummification
+  stats:
+    amount: 5
+    attack: 40
+    luck: -1
+  type: magic consumables
+599:
+  description: ''
+  name: bloody bronze horn
+  stats:
+    amount: 13
+    attack: 33
+    luck: 10
+  type: magic items
+600:
+  description: ''
+  name: dusty chair
+  stats:
+    luck: 3
+    weight: 5
+  type: filler
+601:
+  description: ''
+  name: moldy chains
+  stats:
+    luck: -7
+    weight: 36
+  type: filler
+602:
+  description: ''
+  name: opulent hood
+  stats:
+    luck: -1
+    strength: 10
+    weight: 29
+  type: armor
+603:
+  description: ''
+  name: filthy mail cloak
+  stats:
+    luck: -1
+    strength: 19
+    weight: 16
+  type: armor
+604:
+  description: ''
+  name: chipped mortar
+  stats:
+    luck: 4
+    weight: 34
+  type: filler
+605:
+  description: ''
+  name: common jade magestone
+  stats:
+    amount: 14
+    attack: 44
+    luck: -5
+  type: magic items
+606:
+  description: ''
+  name: derelict candle
+  stats:
+    luck: 0
+    weight: 6
+  type: filler
+607:
+  description: ''
+  name: waterlogged bedroll
+  stats:
+    luck: 4
+    weight: 34
+  type: filler
+608:
+  description: ''
+  name: dirty teeth
+  stats:
+    luck: 1
+    weight: 24
+  type: filler
+609:
+  description: ''
+  name: damaged mortar
+  stats:
+    luck: 1
+    weight: 7
+  type: filler
+610:
+  description: ''
+  name: common jade gem
+  stats:
+    amount: 9
+    attack: 25
+    luck: -2
+  type: magic items
+611:
+  description: ''
+  name: dusty note
+  stats:
+    luck: 2
+    weight: 5
+  type: filler
+612:
+  description: ''
+  name: rusty parchment
+  stats:
+    luck: -3
+    weight: 19
+  type: filler
+613:
+  description: ''
+  name: dirty beaker
+  stats:
+    luck: 9
+    weight: 25
+  type: filler
+614:
+  description: ''
+  name: etched cauldron
+  stats:
+    luck: -2
+    weight: 11
+  type: filler
+615:
+  description: ''
+  name: friendly war hammer
+  stats:
+    attack: 24
+    luck: -3
+    weight: 5
+  type: weapon
+616:
+  description: ''
+  name: moldy pail
+  stats:
+    luck: -9
+    weight: 32
+  type: filler
+617:
+  description: ''
+  name: carved crate
+  stats:
+    luck: 5
+    weight: 33
+  type: filler
+618:
+  description: ''
+  name: carved pottery
+  stats:
+    luck: -4
+    weight: 42
+  type: filler
+619:
+  description: ''
+  name: grand philter of waning
+  stats:
+    amount: 6
+    attack: 29
+    luck: 3
+  type: magic consumables
+620:
+  description: ''
+  name: etched charcoal
+  stats:
+    luck: -10
+    weight: 29
+  type: filler
+621:
+  description: ''
+  name: damaged chair
+  stats:
+    luck: 1
+    weight: 11
+  type: filler
+622:
+  description: ''
+  name: dirty charcoal
+  stats:
+    luck: 9
+    weight: 33
+  type: filler
+623:
+  description: ''
+  name: hideous onyx horn
+  stats:
+    amount: 13
+    attack: 21
+    luck: 1
+  type: magic items
+624:
+  description: ''
+  name: crude adamantine halberd
+  stats:
+    attack: 28
+    luck: 2
+    weight: 15
+  type: weapon
+625:
+  description: ''
+  name: burnt rope
+  stats:
+    luck: 4
+    weight: 18
+  type: filler
+626:
+  description: ''
+  name: ruined urn
+  stats:
+    luck: -2
+    weight: 44
+  type: filler
+627:
+  description: ''
+  name: pristine silver spear
+  stats:
+    attack: 11
+    luck: 8
+    weight: 11
+  type: weapon
+628:
+  description: ''
+  name: burnt note
+  stats:
+    luck: 6
+    weight: 14
+  type: filler
+629:
+  description: ''
+  name: common scroll of embalming
+  stats:
+    amount: 10
+    attack: 47
+    luck: 9
+  type: magic consumables
+630:
+  description: ''
+  name: greater philter of envy
+  stats:
+    amount: 15
+    attack: 18
+    luck: -3
+  type: magic consumables
+631:
+  description: ''
+  name: lustrous amethyst circlet
+  stats:
+    attack: -2
+    luck: 4
+    strength: 0
+  type: jewelry
+632:
+  description: ''
+  name: rusty bronze club
+  stats:
+    attack: 17
+    luck: 9
+    weight: 13
+  type: weapon
+633:
+  description: ''
+  name: cobwebbed crate
+  stats:
+    luck: -9
+    weight: 34
+  type: filler
+634:
+  description: ''
+  name: ruined steel scimitar
+  stats:
+    attack: 13
+    luck: 5
+    weight: 19
+  type: weapon
+635:
+  description: ''
+  name: carved rags
+  stats:
+    luck: -4
+    weight: 42
+  type: filler
+636:
+  description: ''
+  name: chewed funnel
+  stats:
+    luck: 0
+    weight: 42
+  type: filler
+637:
+  description: ''
+  name: worn golden scimitar of spite
+  stats:
+    attack: 18
+    luck: 5
+    weight: 6
+  type: weapon
+638:
+  description: ''
+  name: cobwebbed lamp
+  stats:
+    luck: -1
+    weight: 24
+  type: filler
+639:
+  description: ''
+  name: worn adamantine ring
+  stats:
+    attack: 8
+    luck: -4
+    strength: 0
+  type: jewelry
+640:
+  description: ''
+  name: rusty urn
+  stats:
+    luck: 8
+    weight: 33
+  type: filler
+641:
+  description: ''
+  name: filthy hide pauldrons
+  stats:
+    luck: 6
+    strength: 17
+    weight: 30
+  type: armor
+642:
+  description: ''
+  name: putrid staff
+  stats:
+    attack: 22
+    luck: -5
+    weight: 19
+  type: weapon
+643:
+  description: ''
+  name: ornate meteorite ring
+  stats:
+    attack: 2
+    luck: -4
+    strength: 2
+  type: jewelry
+644:
+  description: ''
+  name: thorny ivory circlet
+  stats:
+    attack: 0
+    luck: -3
+    strength: 7
+  type: jewelry
+645:
+  description: ''
+  name: greater adamantine dust
+  stats:
+    amount: 15
+    attack: 48
+    luck: -4
+  type: magic items
+646:
+  description: ''
+  name: etched chains
+  stats:
+    luck: 3
+    weight: 42
+  type: filler
+647:
+  description: ''
+  name: mended pail
+  stats:
+    luck: -9
+    weight: 34
+  type: filler
+648:
+  description: ''
+  name: adequate silver shortsword of reckoning
+  stats:
+    attack: 15
+    luck: 4
+    weight: 7
+  type: weapon
+649:
+  description: blade
+  name: wraithshredder
+  stats:
+    attack: 81
+    luck: 69
+    weight: 11
+  type: legendary
+650:
+  description: ''
+  name: worn bone shortsword of shame
+  stats:
+    attack: 30
+    luck: -3
+    weight: 18
+  type: weapon
+651:
+  description: ''
+  name: bloody obsidian amulet
+  stats:
+    attack: 7
+    luck: -4
+    strength: 0
+  type: jewelry
+652:
+  description: ''
+  name: dirty ivory amulet of crushing
+  stats:
+    attack: -2
+    luck: 4
+    strength: 1
+  type: jewelry
+653:
+  description: ''
+  name: cobwebbed blanket
+  stats:
+    luck: 7
+    weight: 45
+  type: filler
+654:
+  description: ''
+  name: decrepit hide pauldrons
+  stats:
+    luck: -10
+    strength: 20
+    weight: 28
+  type: armor
+655:
+  description: ''
+  name: crude hide helm
+  stats:
+    luck: 5
+    strength: 28
+    weight: 22
+  type: armor
+656:
+  description: ''
+  name: dirty parchment
+  stats:
+    luck: -4
+    weight: 20
+  type: filler
+657:
+  description: ''
+  name: derelict journal
+  stats:
+    luck: 6
+    weight: 8
+  type: filler
+658:
+  description: ''
+  name: carved bowl
+  stats:
+    luck: 6
+    weight: 7
+  type: filler
+659:
+  description: ''
+  name: fair bone hood
+  stats:
+    luck: 2
+    strength: 14
+    weight: 17
+  type: armor
+660:
+  description: ''
+  name: decrepit iron cuirass
+  stats:
+    luck: 6
+    strength: 11
+    weight: 36
+  type: armor
+661:
+  description: scythe
+  name: heartdestroyer
+  stats:
+    attack: 69
+    luck: 40
+    weight: 13
+  type: legendary
+662:
+  description: ''
+  name: corrupted amethyst shard
+  stats:
+    amount: 10
+    attack: 35
+    luck: 8
+  type: magic items
+663:
+  description: ''
+  name: rusty cuffs
+  stats:
+    luck: -3
+    weight: 44
+  type: filler
+664:
+  description: ''
+  name: adequate meteorite recurve bow
+  stats:
+    attack: 15
+    luck: -10
+    weight: 12
+  type: weapon
+665:
+  description: ''
+  name: rusty crate
+  stats:
+    luck: -4
+    weight: 6
+  type: filler
+666:
+  description: ''
+  name: waterlogged teeth
+  stats:
+    luck: -3
+    weight: 31
+  type: filler
+667:
+  description: ''
+  name: burnt blanket
+  stats:
+    luck: -6
+    weight: 27
+  type: filler
+668:
+  description: ''
+  name: dirty candle
+  stats:
+    luck: 8
+    weight: 33
+  type: filler
+669:
+  description: ''
+  name: waterlogged pottery
+  stats:
+    luck: -7
+    weight: 10
+  type: filler
+670:
+  description: ''
+  name: vengeful gauntlets of surprise
+  stats:
+    luck: 7
+    strength: 10
+    weight: 25
+  type: armor
+671:
+  description: ''
+  name: splendiferous talisman of crushing
+  stats:
+    attack: 3
+    luck: 0
+    strength: 2
+  type: jewelry
+672:
+  description: ''
+  name: petty jade magestone
+  stats:
+    amount: 11
+    attack: 24
+    luck: 1
+  type: magic items
+673:
+  description: ''
+  name: carved lantern
+  stats:
+    luck: -1
+    weight: 5
+  type: filler
+674:
+  description: ''
+  name: damaged torch
+  stats:
+    luck: 9
+    weight: 21
+  type: filler
+675:
+  description: ''
+  name: dusty lamp
+  stats:
+    luck: 2
+    weight: 15
+  type: filler
+676:
+  description: ''
+  name: rusty steel vambrace
+  stats:
+    luck: -9
+    strength: 25
+    weight: 27
+  type: armor
+677:
+  description: ''
+  name: common gold orb
+  stats:
+    amount: 9
+    attack: 44
+    luck: 5
+  type: magic items
+678:
+  description: ''
+  name: chewed candle
+  stats:
+    luck: 1
+    weight: 49
+  type: filler
+679:
+  description: ''
+  name: waterlogged pestle
+  stats:
+    luck: -2
+    weight: 45
+  type: filler
+680:
+  description: ''
+  name: damaged parchment
+  stats:
+    luck: -9
+    weight: 15
+  type: filler
+681:
+  description: ''
+  name: petty turquoise shard
+  stats:
+    amount: 15
+    attack: 18
+    luck: 6
+  type: magic items
+682:
+  description: ''
+  name: grand jade dust
+  stats:
+    amount: 13
+    attack: 29
+    luck: 5
+  type: magic items
+683:
+  description: ''
+  name: horrible scythe of starlight
+  stats:
+    attack: 24
+    luck: -8
+    weight: 15
+  type: weapon
+684:
+  description: ''
+  name: mended pestle
+  stats:
+    luck: 2
+    weight: 14
+  type: filler
+685:
+  description: ''
+  name: fair bronze battle axe
+  stats:
+    attack: 10
+    luck: 7
+    weight: 18
+  type: weapon
+686:
+  description: ''
+  name: unpleasant brigandine
+  stats:
+    luck: 1
+    strength: 23
+    weight: 15
+  type: armor
+687:
+  description: ''
+  name: eldritch scimitar of ruining
+  stats:
+    attack: 16
+    luck: -6
+    weight: 5
+  type: weapon
+688:
+  description: ''
+  name: greater tome of scorching
+  stats:
+    amount: 13
+    attack: 22
+    luck: 5
+  type: magic consumables
+689:
+  description: ''
+  name: burnt parchment
+  stats:
+    luck: 4
+    weight: 7
+  type: filler
+690:
+  description: ''
+  name: uncanny dagger
+  stats:
+    attack: 16
+    luck: 8
+    weight: 9
+  type: weapon
+691:
+  description: ''
+  name: moldy journal
+  stats:
+    luck: -10
+    weight: 7
+  type: filler
+692:
+  description: ''
+  name: dusty journal
+  stats:
+    luck: 4
+    weight: 42
+  type: filler
+693:
+  description: ''
+  name: greater adamantine shard
+  stats:
+    amount: 7
+    attack: 38
+    luck: 3
+  type: magic items
+694:
+  description: ''
+  name: burnt mortar
+  stats:
+    luck: -7
+    weight: 10
+  type: filler
+695:
+  description: ''
+  name: burnt parchment
+  stats:
+    luck: 3
+    weight: 6
+  type: filler
+696:
+  description: ''
+  name: burnt cuffs
+  stats:
+    luck: -7
+    weight: 20
+  type: filler
+697:
+  description: ''
+  name: greater obsidian shard
+  stats:
+    amount: 8
+    attack: 32
+    luck: 10
+  type: magic items
+698:
+  description: ''
+  name: chewed chair
+  stats:
+    luck: 1
+    weight: 30
+  type: filler
+699:
+  description: ''
+  name: ruined pail
+  stats:
+    luck: 9
+    weight: 10
+  type: filler
+700:
+  description: ''
+  name: dirty hide gorget
+  stats:
+    luck: 7
+    strength: 26
+    weight: 36
+  type: armor
+701:
+  description: ''
+  name: rusty leather bascinet of battering
+  stats:
+    luck: 7
+    strength: 17
+    weight: 21
+  type: armor
+702:
+  description: ''
+  name: derelict pestle
+  stats:
+    luck: 0
+    weight: 16
+  type: filler
+703:
+  description: ''
+  name: damaged pail
+  stats:
+    luck: 4
+    weight: 50
+  type: filler
+704:
+  description: ''
+  name: common ruby gem
+  stats:
+    amount: 10
+    attack: 20
+    luck: -1
+  type: magic items
+705:
+  description: ''
+  name: dusty lantern
+  stats:
+    luck: -3
+    weight: 8
+  type: filler
+706:
+  description: ''
+  name: dirty rope
+  stats:
+    luck: 6
+    weight: 48
+  type: filler
+707:
+  description: ''
+  name: moldy incense
+  stats:
+    luck: -8
+    weight: 34
+  type: filler
+708:
+  description: ''
+  name: chipped cauldron
+  stats:
+    luck: -2
+    weight: 16
+  type: filler
+709:
+  description: ''
+  name: adequate bronze talisman
+  stats:
+    attack: 4
+    luck: 2
+    strength: 4
+  type: jewelry
+710:
+  description: ''
+  name: damaged adamantine longbow
+  stats:
+    attack: 17
+    luck: 9
+    weight: 12
+  type: weapon
+711:
+  description: staff
+  name: sunbruiser
+  stats:
+    attack: 60
+    luck: 33
+    weight: 15
+  type: legendary
+712:
+  description: ''
+  name: dusty bowl
+  stats:
+    luck: -1
+    weight: 12
+  type: filler
+713:
+  description: ''
+  name: rusty parchment
+  stats:
+    luck: -10
+    weight: 31
+  type: filler
+714:
+  description: ''
+  name: derelict alembic
+  stats:
+    luck: 2
+    weight: 17
+  type: filler
+715:
+  description: ''
+  name: ruined lamp
+  stats:
+    luck: 10
+    weight: 18
+  type: filler
+716:
+  description: ''
+  name: moldy torch
+  stats:
+    luck: -10
+    weight: 19
+  type: filler
+717:
+  description: ''
+  name: common turquoise dust
+  stats:
+    amount: 6
+    attack: 24
+    luck: 5
+  type: magic items
+718:
+  description: ''
+  name: rusty parchment
+  stats:
+    luck: 7
+    weight: 39
+  type: filler
+719:
+  description: ''
+  name: flawed gold circlet
+  stats:
+    attack: 9
+    luck: 1
+    strength: 10
+  type: jewelry
+720:
+  description: ''
+  name: lesser philter of reckoning
+  stats:
+    amount: 15
+    attack: 27
+    luck: 6
+  type: magic consumables
+721:
+  description: ''
+  name: rusty glass club
+  stats:
+    attack: 21
+    luck: -1
+    weight: 18
+  type: weapon
+722:
+  description: ''
+  name: chipped bowl
+  stats:
+    luck: 4
+    weight: 39
+  type: filler
+723:
+  description: ''
+  name: filthy leather vest
+  stats:
+    luck: 6
+    strength: 20
+    weight: 28
+  type: armor
+724:
+  description: ''
+  name: chewed rags
+  stats:
+    luck: -7
+    weight: 8
+  type: filler
+725:
+  description: ''
+  name: carved mortar
+  stats:
+    luck: 6
+    weight: 33
+  type: filler
+726:
+  description: ''
+  name: derelict decanter
+  stats:
+    luck: 3
+    weight: 47
+  type: filler
+727:
+  description: ''
+  name: chipped candle
+  stats:
+    luck: 0
+    weight: 21
+  type: filler
+728:
+  description: ''
+  name: rusty rags
+  stats:
+    luck: -3
+    weight: 46
+  type: filler
+729:
+  description: ''
+  name: derelict chair
+  stats:
+    luck: -3
+    weight: 13
+  type: filler
+730:
+  description: ''
+  name: common potion of thorns
+  stats:
+    amount: 9
+    attack: 28
+    luck: 9
+  type: magic consumables
+731:
+  description: ''
+  name: dusty pot
+  stats:
+    luck: -10
+    weight: 19
+  type: filler
+732:
+  description: ''
+  name: splendiferous bone ring
+  stats:
+    attack: -2
+    luck: 0
+    strength: 0
+  type: jewelry
+733:
+  description: ''
+  name: dusty chains
+  stats:
+    luck: -9
+    weight: 43
+  type: filler
+734:
+  description: ''
+  name: shameful magestone of battering
+  stats:
+    amount: 14
+    attack: 35
+    luck: -3
+  type: magic items
+735:
+  description: ''
+  name: ruined glass longbow of brutality
+  stats:
+    attack: 22
+    luck: -6
+    weight: 14
+  type: weapon
+736:
+  description: ''
+  name: decrepit leather spaulders of frenzy
+  stats:
+    luck: 6
+    strength: 10
+    weight: 20
+  type: armor
+737:
+  description: ''
+  name: noxious bascinet
+  stats:
+    luck: -5
+    strength: 21
+    weight: 24
+  type: armor
+738:
+  description: ''
+  name: grand philter of misery
+  stats:
+    amount: 5
+    attack: 48
+    luck: -9
+  type: magic consumables
+739:
+  description: ''
+  name: petty tome of repulsion
+  stats:
+    amount: 13
+    attack: 37
+    luck: -7
+  type: magic consumables
+740:
+  description: ''
+  name: decrepit golden mace
+  stats:
+    attack: 16
+    luck: -5
+    weight: 9
+  type: weapon
+741:
+  description: ''
+  name: dusty teeth
+  stats:
+    luck: 6
+    weight: 43
+  type: filler
+742:
+  description: ''
+  name: rusty chains
+  stats:
+    luck: -10
+    weight: 48
+  type: filler
+743:
+  description: ''
+  name: furious ruby magestone
+  stats:
+    amount: 10
+    attack: 19
+    luck: -3
+  type: magic items
+744:
+  description: ''
+  name: ugly gauntlets of diffusion
+  stats:
+    luck: -1
+    strength: 19
+    weight: 33
+  type: armor
+745:
+  description: ''
+  name: moldy rope
+  stats:
+    luck: 1
+    weight: 47
+  type: filler
+746:
+  description: ''
+  name: ugly pauldrons of breaking
+  stats:
+    luck: 2
+    strength: 28
+    weight: 39
+  type: armor
+747:
+  description: ''
+  name: chipped cauldron
+  stats:
+    luck: 8
+    weight: 39
+  type: filler
+748:
+  description: ''
+  name: moldy cuffs
+  stats:
+    luck: 5
+    weight: 29
+  type: filler
+749:
+  description: ''
+  name: old hide spaulders
+  stats:
+    luck: -4
+    strength: 20
+    weight: 34
+  type: armor
+750:
+  description: ''
+  name: damaged rags
+  stats:
+    luck: 1
+    weight: 47
+  type: filler
+751:
+  description: ''
+  name: waterlogged parchment
+  stats:
+    luck: 0
+    weight: 11
+  type: filler
+752:
+  description: ''
+  name: dusty bones
+  stats:
+    luck: 4
+    weight: 6
+  type: filler
+753:
+  description: ''
+  name: nefarious philter of disintegrating
+  stats:
+    amount: 9
+    attack: 49
+    luck: 5
+  type: magic consumables
+754:
+  description: ''
+  name: derelict dust
+  stats:
+    luck: 1
+    weight: 32
+  type: filler
+755:
+  description: ''
+  name: damaged bones
+  stats:
+    luck: -10
+    weight: 18
+  type: filler
+756:
+  description: ''
+  name: damaged iron longsword of witching
+  stats:
+    attack: 29
+    luck: 4
+    weight: 17
+  type: weapon
+757:
+  description: ''
+  name: derelict bedroll
+  stats:
+    luck: 10
+    weight: 48
+  type: filler
+758:
+  description: ''
+  name: untouched silver talisman
+  stats:
+    attack: -2
+    luck: -3
+    strength: 6
+  type: jewelry
+759:
+  description: ''
+  name: weeping bone dust
+  stats:
+    amount: 5
+    attack: 26
+    luck: -4
+  type: magic items
+760:
+  description: ''
+  name: burnt charcoal
+  stats:
+    luck: 5
+    weight: 17
+  type: filler
+761:
+  description: ''
+  name: etched book
+  stats:
+    luck: -8
+    weight: 31
+  type: filler
+762:
+  description: ''
+  name: dusty pottery
+  stats:
+    luck: 10
+    weight: 32
+  type: filler
+763:
+  description: ''
+  name: fine golden shortsword of sickness
+  stats:
+    attack: 26
+    luck: -3
+    weight: 13
+  type: weapon
+764:
+  description: ''
+  name: damaged pottery
+  stats:
+    luck: 3
+    weight: 12
+  type: filler
+765:
+  description: ''
+  name: ruined rope
+  stats:
+    luck: 8
+    weight: 49
+  type: filler
+766:
+  description: ''
+  name: dusty candle
+  stats:
+    luck: -5
+    weight: 33
+  type: filler
+767:
+  description: ''
+  name: dirty teeth
+  stats:
+    luck: 6
+    weight: 21
+  type: filler
+768:
+  description: ''
+  name: damaged pestle
+  stats:
+    luck: 10
+    weight: 14
+  type: filler
+769:
+  description: ''
+  name: grand scroll of valor
+  stats:
+    amount: 13
+    attack: 34
+    luck: -9
+  type: magic consumables
+770:
+  description: ''
+  name: petty philter of mummification
+  stats:
+    amount: 11
+    attack: 41
+    luck: -7
+  type: magic consumables
+771:
+  description: ''
+  name: chipped urn
+  stats:
+    luck: 4
+    weight: 49
+  type: filler
+772:
+  description: ''
+  name: moldy chair
+  stats:
+    luck: 4
+    weight: 9
+  type: filler
+773:
+  description: ''
+  name: pristine dragonscale gauntlets
+  stats:
+    luck: 8
+    strength: 11
+    weight: 34
+  type: armor
+774:
+  description: ''
+  name: cobwebbed chair
+  stats:
+    luck: -2
+    weight: 26
+  type: filler
+775:
+  description: ''
+  name: waterlogged stool
+  stats:
+    luck: -3
+    weight: 9
+  type: filler
+776:
+  description: ''
+  name: filthy iron mace of darkness
+  stats:
+    attack: 16
+    luck: -7
+    weight: 10
+  type: weapon
+777:
+  description: ''
+  name: damaged incense
+  stats:
+    luck: 10
+    weight: 39
+  type: filler
+778:
+  description: ''
+  name: greater potion of pity
+  stats:
+    amount: 6
+    attack: 26
+    luck: 0
+  type: magic consumables
+779:
+  description: ''
+  name: lesser tome of mourning
+  stats:
+    amount: 14
+    attack: 49
+    luck: -8
+  type: magic consumables
+780:
+  description: ''
+  name: lesser ruby dust of vengeance
+  stats:
+    amount: 14
+    attack: 37
+    luck: -8
+  type: magic items
+781:
+  description: ''
+  name: carved bedroll
+  stats:
+    luck: 5
+    weight: 28
+  type: filler
+782:
+  description: ''
+  name: chipped pot
+  stats:
+    luck: 8
+    weight: 36
+  type: filler
+783:
+  description: ''
+  name: moldy chair
+  stats:
+    luck: -5
+    weight: 23
+  type: filler
+784:
+  description: ''
+  name: chewed chair
+  stats:
+    luck: -8
+    weight: 10
+  type: filler
+785:
+  description: ''
+  name: ancient spear of lust
+  stats:
+    attack: 22
+    luck: -1
+    weight: 7
+  type: weapon
+786:
+  description: ''
+  name: lesser meteorite orb
+  stats:
+    amount: 11
+    attack: 50
+    luck: 5
+  type: magic items
+787:
+  description: ''
+  name: chewed note
+  stats:
+    luck: -6
+    weight: 45
+  type: filler
+788:
+  description: ''
+  name: greater scroll of surprise
+  stats:
+    amount: 9
+    attack: 43
+    luck: -10
+  type: magic consumables
+789:
+  description: ''
+  name: greater meteorite dust
+  stats:
+    amount: 9
+    attack: 25
+    luck: -6
+  type: magic items
+790:
+  description: ''
+  name: beautiful scythe
+  stats:
+    attack: 10
+    luck: -6
+    weight: 18
+  type: weapon
+791:
+  description: ''
+  name: untouched onyx amulet of humiliation
+  stats:
+    attack: 4
+    luck: 2
+    strength: 3
+  type: jewelry
+792:
+  description: ''
+  name: crude golden halberd of the hunt
+  stats:
+    attack: 13
+    luck: 7
+    weight: 18
+  type: weapon
+793:
+  description: ''
+  name: carved cuffs
+  stats:
+    luck: -1
+    weight: 26
+  type: filler
+794:
+  description: ''
+  name: fair bone morning star
+  stats:
+    attack: 28
+    luck: 9
+    weight: 5
+  type: weapon
+795:
+  description: ''
+  name: waterlogged chains
+  stats:
+    luck: -5
+    weight: 5
+  type: filler
+796:
+  description: ''
+  name: cobwebbed pot
+  stats:
+    luck: -10
+    weight: 14
+  type: filler
+797:
+  description: ''
+  name: cobwebbed charcoal
+  stats:
+    luck: 8
+    weight: 20
+  type: filler
+798:
+  description: ''
+  name: waterlogged torch
+  stats:
+    luck: 0
+    weight: 34
+  type: filler
+799:
+  description: ''
+  name: untouched bronze amulet of the prophet
+  stats:
+    attack: 2
+    luck: 3
+    strength: 0
+  type: jewelry
+800:
+  description: ''
+  name: brutal recurve bow
+  stats:
+    attack: 14
+    luck: -4
+    weight: 9
+  type: weapon
+801:
+  description: ''
+  name: worn leather gambeson
+  stats:
+    luck: 5
+    strength: 26
+    weight: 33
+  type: armor
+802:
+  description: ''
+  name: blunderous spaulders
+  stats:
+    luck: 4
+    strength: 13
+    weight: 39
+  type: armor
+803:
+  description: ''
+  name: carved chains
+  stats:
+    luck: 10
+    weight: 41
+  type: filler
+804:
+  description: ''
+  name: ruined pestle
+  stats:
+    luck: -4
+    weight: 33
+  type: filler
+805:
+  description: ''
+  name: chewed stool
+  stats:
+    luck: -2
+    weight: 46
+  type: filler
+806:
+  description: ''
+  name: dusty beaker
+  stats:
+    luck: 9
+    weight: 43
+  type: filler
+807:
+  description: ''
+  name: brutal recurve bow
+  stats:
+    attack: 29
+    luck: 6
+    weight: 13
+  type: weapon
+808:
+  description: ''
+  name: ornate greaves
+  stats:
+    luck: -9
+    strength: 13
+    weight: 21
+  type: armor
+809:
+  description: ''
+  name: carved rags
+  stats:
+    luck: -10
+    weight: 19
+  type: filler
+810:
+  description: ''
+  name: moldy mortar
+  stats:
+    luck: -6
+    weight: 39
+  type: filler
+811:
+  description: ''
+  name: moldy pestle
+  stats:
+    luck: 9
+    weight: 9
+  type: filler
+812:
+  description: ''
+  name: bloody copper ring
+  stats:
+    attack: 2
+    luck: 0
+    strength: 8
+  type: jewelry
+813:
+  description: ''
+  name: pristine adamantine halberd
+  stats:
+    attack: 12
+    luck: -3
+    weight: 16
+  type: weapon
+814:
+  description: ''
+  name: adequate bone crossbow
+  stats:
+    attack: 24
+    luck: -9
+    weight: 11
+  type: weapon
+815:
+  description: ''
+  name: greater turquoise orb
+  stats:
+    amount: 11
+    attack: 28
+    luck: 3
+  type: magic items
+816:
+  description: ''
+  name: rusty steel cloak of the heretic
+  stats:
+    luck: 4
+    strength: 11
+    weight: 17
+  type: armor
+817:
+  description: ''
+  name: dusty chains
+  stats:
+    luck: 6
+    weight: 49
+  type: filler
+818:
+  description: ''
+  name: burnt dust
+  stats:
+    luck: -3
+    weight: 42
+  type: filler
+819:
+  description: ''
+  name: dusty chains
+  stats:
+    luck: -2
+    weight: 40
+  type: filler
+820:
+  description: ''
+  name: ruined cauldron
+  stats:
+    luck: 7
+    weight: 13
+  type: filler
+821:
+  description: ''
+  name: adequate steel cloak of quickening
+  stats:
+    luck: -3
+    strength: 30
+    weight: 39
+  type: armor
+822:
+  description: ''
+  name: etched cup
+  stats:
+    luck: 6
+    weight: 5
+  type: filler
+823:
+  description: ''
+  name: chipped rags
+  stats:
+    luck: 10
+    weight: 24
+  type: filler
+824:
+  description: ''
+  name: brutal longbow of grace
+  stats:
+    attack: 24
+    luck: 10
+    weight: 19
+  type: weapon
+825:
+  description: ''
+  name: damaged iron cuirass
+  stats:
+    luck: 8
+    strength: 27
+    weight: 21
+  type: armor
+826:
+  description: ''
+  name: rusty rags
+  stats:
+    luck: -2
+    weight: 46
+  type: filler
+827:
+  description: ''
+  name: cobwebbed blanket
+  stats:
+    luck: 9
+    weight: 5
+  type: filler
+828:
+  description: ''
+  name: decrepit adamantine longsword
+  stats:
+    attack: 20
+    luck: -8
+    weight: 11
+  type: weapon
+829:
+  description: ''
+  name: polished bronze amulet of blooding
+  stats:
+    attack: 5
+    luck: 1
+    strength: 1
+  type: jewelry
+830:
+  description: ''
+  name: cobwebbed journal
+  stats:
+    luck: 3
+    weight: 9
+  type: filler
+831:
+  description: ''
+  name: ruined urn
+  stats:
+    luck: 1
+    weight: 23
+  type: filler
+832:
+  description: ''
+  name: thorny pauldrons
+  stats:
+    luck: 2
+    strength: 23
+    weight: 18
+  type: armor
+833:
+  description: ''
+  name: dusty cuffs
+  stats:
+    luck: 2
+    weight: 43
+  type: filler
+834:
+  description: ''
+  name: mended teeth
+  stats:
+    luck: 3
+    weight: 37
+  type: filler
+835:
+  description: ''
+  name: moldy pot
+  stats:
+    luck: -5
+    weight: 43
+  type: filler
+836:
+  description: ''
+  name: common philter of waning
+  stats:
+    amount: 13
+    attack: 26
+    luck: 0
+  type: magic consumables
+837:
+  description: ''
+  name: petty tome of joy
+  stats:
+    amount: 6
+    attack: 28
+    luck: 6
+  type: magic consumables
+838:
+  description: ''
+  name: burdensome potion of burdens
+  stats:
+    amount: 10
+    attack: 21
+    luck: -9
+  type: magic consumables
+839:
+  description: ''
+  name: beautiful battle axe
+  stats:
+    attack: 17
+    luck: -1
+    weight: 12
+  type: weapon
+840:
+  description: ''
+  name: rusty steel war hammer of ruining
+  stats:
+    attack: 25
+    luck: -8
+    weight: 17
+  type: weapon
+841:
+  description: ''
+  name: petty meteorite gem of the stars
+  stats:
+    amount: 10
+    attack: 44
+    luck: -10
+  type: magic items
+842:
+  description: ''
+  name: burnt chair
+  stats:
+    luck: 0
+    weight: 30
+  type: filler
+843:
+  description: ''
+  name: crude mail cloak
+  stats:
+    luck: -2
+    strength: 20
+    weight: 18
+  type: armor
+844:
+  description: ''
+  name: rusty parchment
+  stats:
+    luck: -7
+    weight: 25
+  type: filler
+845:
+  description: ''
+  name: chipped teeth
+  stats:
+    luck: 5
+    weight: 50
+  type: filler
+846:
+  description: ''
+  name: chipped bones
+  stats:
+    luck: -7
+    weight: 26
+  type: filler
+847:
+  description: ''
+  name: lustrous glaive
+  stats:
+    attack: 14
+    luck: -2
+    weight: 12
+  type: weapon
+848:
+  description: ''
+  name: moldy lantern
+  stats:
+    luck: 4
+    weight: 38
+  type: filler
+849:
+  description: ''
+  name: chewed pot
+  stats:
+    luck: 0
+    weight: 9
+  type: filler
+850:
+  description: ''
+  name: pristine leather helm
+  stats:
+    luck: 5
+    strength: 12
+    weight: 23
+  type: armor
+851:
+  description: ''
+  name: dirty bones
+  stats:
+    luck: -8
+    weight: 36
+  type: filler
+852:
+  description: ''
+  name: ruined bone brigandine of pity
+  stats:
+    luck: 4
+    strength: 15
+    weight: 20
+  type: armor
+853:
+  description: ''
+  name: etched teeth
+  stats:
+    luck: -6
+    weight: 21
+  type: filler
+854:
+  description: ''
+  name: burnt crate
+  stats:
+    luck: -1
+    weight: 35
+  type: filler
+855:
+  description: ''
+  name: etched dust
+  stats:
+    luck: -1
+    weight: 23
+  type: filler
+856:
+  description: ''
+  name: dirty beaker
+  stats:
+    luck: -8
+    weight: 32
+  type: filler
+857:
+  description: ''
+  name: damaged mortar
+  stats:
+    luck: 9
+    weight: 30
+  type: filler
+858:
+  description: ''
+  name: grand jade magestone
+  stats:
+    amount: 14
+    attack: 19
+    luck: 4
+  type: magic items
+859:
+  description: ''
+  name: dirty lantern
+  stats:
+    luck: -2
+    weight: 21
+  type: filler
+860:
+  description: ''
+  name: magnificent meteorite horn
+  stats:
+    amount: 7
+    attack: 34
+    luck: -4
+  type: magic items
+861:
+  description: ''
+  name: decrepit bone cloak
+  stats:
+    luck: 4
+    strength: 24
+    weight: 21
+  type: armor
+862:
+  description: ''
+  name: mended cauldron
+  stats:
+    luck: -3
+    weight: 7
+  type: filler
+863:
+  description: ''
+  name: chipped cauldron
+  stats:
+    luck: -7
+    weight: 47
+  type: filler
+864:
+  description: ''
+  name: dusty pottery
+  stats:
+    luck: 10
+    weight: 10
+  type: filler
+865:
+  description: ''
+  name: dusty note
+  stats:
+    luck: -5
+    weight: 13
+  type: filler
+866:
+  description: ''
+  name: pristine bone war hammer
+  stats:
+    attack: 22
+    luck: 7
+    weight: 17
+  type: weapon
+867:
+  description: ''
+  name: waterlogged lantern
+  stats:
+    luck: 9
+    weight: 19
+  type: filler
+868:
+  description: ''
+  name: petty emerald horn of light
+  stats:
+    amount: 9
+    attack: 36
+    luck: -8
+  type: magic items
+869:
+  description: ''
+  name: waterlogged book
+  stats:
+    luck: 6
+    weight: 11
+  type: filler
+870:
+  description: ''
+  name: fine adamantine falchion
+  stats:
+    attack: 13
+    luck: -7
+    weight: 14
+  type: weapon
+871:
+  description: ''
+  name: fair dragonscale morion
+  stats:
+    luck: 7
+    strength: 28
+    weight: 25
+  type: armor
+872:
+  description: ''
+  name: common scroll of herecy
+  stats:
+    amount: 6
+    attack: 29
+    luck: 5
+  type: magic consumables
+873:
+  description: ''
+  name: mended chair
+  stats:
+    luck: 5
+    weight: 38
+  type: filler
+874:
+  description: ''
+  name: bloody potion of ambition
+  stats:
+    amount: 14
+    attack: 35
+    luck: -8
+  type: magic consumables
+875:
+  description: ''
+  name: mended bedroll
+  stats:
+    luck: 9
+    weight: 19
+  type: filler
+876:
+  description: ''
+  name: worn meteorite war hammer
+  stats:
+    attack: 21
+    luck: -9
+    weight: 9
+  type: weapon
+877:
+  description: ''
+  name: grand scroll of extraction
+  stats:
+    amount: 13
+    attack: 28
+    luck: -7
+  type: magic consumables
+878:
+  description: ''
+  name: electric copper orb
+  stats:
+    amount: 9
+    attack: 41
+    luck: -2
+  type: magic items
+879:
+  description: ''
+  name: ineffable longbow
+  stats:
+    attack: 10
+    luck: 8
+    weight: 15
+  type: weapon
+880:
+  description: ''
+  name: ruined crate
+  stats:
+    luck: 3
+    weight: 27
+  type: filler
+881:
+  description: ''
+  name: lesser turquoise horn
+  stats:
+    amount: 12
+    attack: 20
+    luck: -3
+  type: magic items
+882:
+  description: ''
+  name: filthy dragonscale gauntlets
+  stats:
+    luck: 5
+    strength: 12
+    weight: 17
+  type: armor
+883:
+  description: ''
+  name: dreaded turquoise gem
+  stats:
+    amount: 13
+    attack: 48
+    luck: -9
+  type: magic items
+884:
+  description: ''
+  name: fair bronze club
+  stats:
+    attack: 21
+    luck: 8
+    weight: 9
+  type: weapon
+885:
+  description: ''
+  name: burnt dust
+  stats:
+    luck: 9
+    weight: 15
+  type: filler
+886:
+  description: ''
+  name: fine steel dagger of embalming
+  stats:
+    attack: 18
+    luck: -6
+    weight: 18
+  type: weapon
+887:
+  description: ''
+  name: damaged iron brigandine
+  stats:
+    luck: -6
+    strength: 18
+    weight: 33
+  type: armor
+888:
+  description: ''
+  name: spectral vest
+  stats:
+    luck: -5
+    strength: 12
+    weight: 33
+  type: armor
+889:
+  description: ''
+  name: mended blanket
+  stats:
+    luck: 8
+    weight: 16
+  type: filler
+890:
+  description: ''
+  name: etched candle
+  stats:
+    luck: -7
+    weight: 31
+  type: filler
+891:
+  description: ''
+  name: cobwebbed cauldron
+  stats:
+    luck: 3
+    weight: 16
+  type: filler
+892:
+  description: ''
+  name: carved chains
+  stats:
+    luck: 1
+    weight: 38
+  type: filler
+893:
+  description: ''
+  name: ruined cauldron
+  stats:
+    luck: 6
+    weight: 33
+  type: filler
+894:
+  description: shortsword
+  name: crowstealer
+  stats:
+    attack: 88
+    luck: 27
+    weight: 10
+  type: legendary
+895:
+  description: ''
+  name: derelict cup
+  stats:
+    luck: 1
+    weight: 38
+  type: filler
+896:
+  description: ''
+  name: old mail spaulders of thunder
+  stats:
+    luck: -7
+    strength: 24
+    weight: 18
+  type: armor
+897:
+  description: ''
+  name: chipped pail
+  stats:
+    luck: 2
+    weight: 9
+  type: filler
+898:
+  description: ''
+  name: fair copper amulet
+  stats:
+    attack: 4
+    luck: 2
+    strength: -2
+  type: jewelry
+899:
+  description: ''
+  name: chewed rope
+  stats:
+    luck: -10
+    weight: 23
+  type: filler
+900:
+  description: ''
+  name: dirty charcoal
+  stats:
+    luck: 6
+    weight: 38
+  type: filler
+901:
+  description: ''
+  name: moldy rope
+  stats:
+    luck: 7
+    weight: 32
+  type: filler
+902:
+  description: ''
+  name: mended mortar
+  stats:
+    luck: 1
+    weight: 39
+  type: filler
+903:
+  description: staff
+  name: sunbruiser
+  stats:
+    attack: 89
+    luck: 61
+    weight: 7
+  type: legendary
+904:
+  description: ''
+  name: cobwebbed journal
+  stats:
+    luck: -10
+    weight: 32
+  type: filler
+905:
+  description: ''
+  name: eldritch copper amulet
+  stats:
+    attack: 2
+    luck: -1
+    strength: 2
+  type: jewelry
+906:
+  description: ''
+  name: rusty decanter
+  stats:
+    luck: -7
+    weight: 24
+  type: filler
+907:
+  description: ''
+  name: rusty urn
+  stats:
+    luck: -1
+    weight: 24
+  type: filler
+908:
+  description: ''
+  name: damaged chains
+  stats:
+    luck: 7
+    weight: 38
+  type: filler
+909:
+  description: ''
+  name: waterlogged pestle
+  stats:
+    luck: 1
+    weight: 50
+  type: filler
+910:
+  description: ''
+  name: brutal turquoise circlet
+  stats:
+    attack: -2
+    luck: 2
+    strength: 9
+  type: jewelry
+911:
+  description: ''
+  name: etched dust
+  stats:
+    luck: 9
+    weight: 44
+  type: filler
+912:
+  description: ''
+  name: ruined candle
+  stats:
+    luck: 6
+    weight: 10
+  type: filler
+913:
+  description: ''
+  name: fine steel greaves
+  stats:
+    luck: 9
+    strength: 27
+    weight: 39
+  type: armor
+914:
+  description: ''
+  name: grand turquoise magestone
+  stats:
+    amount: 10
+    attack: 37
+    luck: -2
+  type: magic items
+915:
+  description: ''
+  name: fragile leather vest
+  stats:
+    luck: 3
+    strength: 13
+    weight: 39
+  type: armor
+916:
+  description: ''
+  name: damaged decanter
+  stats:
+    luck: 7
+    weight: 10
+  type: filler
+917:
+  description: ''
+  name: mended ruby ring
+  stats:
+    attack: -1
+    luck: 0
+    strength: 3
+  type: jewelry
+918:
+  description: ''
+  name: dusty cauldron
+  stats:
+    luck: -10
+    weight: 10
+  type: filler
+919:
+  description: ''
+  name: fearful battle axe
+  stats:
+    attack: 13
+    luck: -2
+    weight: 9
+  type: weapon
+920:
+  description: ''
+  name: dirty alembic
+  stats:
+    luck: 2
+    weight: 5
+  type: filler
+921:
+  description: ''
+  name: dirty lantern
+  stats:
+    luck: -10
+    weight: 30
+  type: filler
+922:
+  description: ''
+  name: moldy urn
+  stats:
+    luck: 0
+    weight: 21
+  type: filler
+923:
+  description: ''
+  name: derelict cauldron
+  stats:
+    luck: -2
+    weight: 20
+  type: filler
+924:
+  description: ''
+  name: etched cauldron
+  stats:
+    luck: 10
+    weight: 33
+  type: filler
+925:
+  description: ''
+  name: chipped chains
+  stats:
+    luck: -2
+    weight: 13
+  type: filler
+926:
+  description: ''
+  name: ornate mace
+  stats:
+    attack: 25
+    luck: 2
+    weight: 8
+  type: weapon
+927:
+  description: ''
+  name: cobwebbed note
+  stats:
+    luck: 2
+    weight: 31
+  type: filler
+928:
+  description: ''
+  name: ruined alembic
+  stats:
+    luck: -7
+    weight: 14
+  type: filler
+929:
+  description: ''
+  name: gleaming spaulders
+  stats:
+    luck: 10
+    strength: 29
+    weight: 22
+  type: armor
+930:
+  description: ''
+  name: brutal morion
+  stats:
+    luck: 1
+    strength: 30
+    weight: 25
+  type: armor
+931:
+  description: ''
+  name: mended candle
+  stats:
+    luck: 4
+    weight: 42
+  type: filler
+932:
+  description: ''
+  name: magnificent ruby horn
+  stats:
+    amount: 10
+    attack: 33
+    luck: -9
+  type: magic items
+933:
+  description: ''
+  name: ruined journal
+  stats:
+    luck: -10
+    weight: 28
+  type: filler
+934:
+  description: ''
+  name: cobwebbed teeth
+  stats:
+    luck: 1
+    weight: 22
+  type: filler
+935:
+  description: ''
+  name: carved cup
+  stats:
+    luck: -4
+    weight: 31
+  type: filler
+936:
+  description: ''
+  name: rusty mortar
+  stats:
+    luck: 2
+    weight: 38
+  type: filler
+937:
+  description: ''
+  name: burnt candle
+  stats:
+    luck: -5
+    weight: 9
+  type: filler
+938:
+  description: ''
+  name: derelict dust
+  stats:
+    luck: 4
+    weight: 37
+  type: filler
+939:
+  description: ''
+  name: waterlogged beaker
+  stats:
+    luck: 4
+    weight: 14
+  type: filler
+940:
+  description: ''
+  name: dusty book
+  stats:
+    luck: 10
+    weight: 17
+  type: filler
+941:
+  description: ''
+  name: frenzied hood
+  stats:
+    luck: 4
+    strength: 20
+    weight: 17
+  type: armor
+942:
+  description: ''
+  name: dirty chains
+  stats:
+    luck: -9
+    weight: 9
+  type: filler
+943:
+  description: ''
+  name: ruined chair
+  stats:
+    luck: -10
+    weight: 5
+  type: filler
+944:
+  description: ''
+  name: grand gold gem
+  stats:
+    amount: 7
+    attack: 27
+    luck: -9
+  type: magic items
+945:
+  description: ''
+  name: filthy iron gorget of hell
+  stats:
+    luck: 6
+    strength: 17
+    weight: 38
+  type: armor
+946:
+  description: ''
+  name: stormy shortsword
+  stats:
+    attack: 17
+    luck: 10
+    weight: 11
+  type: weapon
+947:
+  description: ''
+  name: ghastly amethyst amulet
+  stats:
+    attack: 0
+    luck: 0
+    strength: -2
+  type: jewelry
+948:
+  description: ''
+  name: damaged crate
+  stats:
+    luck: 8
+    weight: 22
+  type: filler
+949:
+  description: ''
+  name: burnt teeth
+  stats:
+    luck: -3
+    weight: 22
+  type: filler
+950:
+  description: recurve bow
+  name: sunbreaker
+  stats:
+    attack: 116
+    luck: 57
+    weight: 11
+  type: legendary
+951:
+  description: ''
+  name: cobwebbed journal
+  stats:
+    luck: -6
+    weight: 38
+  type: filler
+952:
+  description: ''
+  name: moldy cuffs
+  stats:
+    luck: 6
+    weight: 33
+  type: filler
+953:
+  description: ''
+  name: mended journal
+  stats:
+    luck: -5
+    weight: 27
+  type: filler
+954:
+  description: ''
+  name: carved blanket
+  stats:
+    luck: 0
+    weight: 22
+  type: filler
+955:
+  description: ''
+  name: filthy golden crossbow of surprise
+  stats:
+    attack: 14
+    luck: -4
+    weight: 19
+  type: weapon
+956:
+  description: ''
+  name: crude bone gloves
+  stats:
+    luck: -1
+    strength: 28
+    weight: 35
+  type: armor
+957:
+  description: ''
+  name: spiteful club
+  stats:
+    attack: 16
+    luck: -1
+    weight: 7
+  type: weapon
+958:
+  description: ''
+  name: derelict lantern
+  stats:
+    luck: -1
+    weight: 35
+  type: filler
+959:
+  description: ''
+  name: mended dust
+  stats:
+    luck: 2
+    weight: 46
+  type: filler
+960:
+  description: ''
+  name: sinister gold magestone
+  stats:
+    amount: 11
+    attack: 22
+    luck: -8
+  type: magic items
+961:
+  description: ''
+  name: petty scroll of calming
+  stats:
+    amount: 11
+    attack: 41
+    luck: -6
+  type: magic consumables
+962:
+  description: ''
+  name: loathsome halberd of dread
+  stats:
+    attack: 28
+    luck: 1
+    weight: 12
+  type: weapon
+963:
+  description: ''
+  name: rusty bedroll
+  stats:
+    luck: -6
+    weight: 26
+  type: filler
+964:
+  description: ''
+  name: dusty bedroll
+  stats:
+    luck: 3
+    weight: 8
+  type: filler
+965:
+  description: ''
+  name: derelict journal
+  stats:
+    luck: 1
+    weight: 23
+  type: filler
+966:
+  description: ''
+  name: burdensome gloves
+  stats:
+    luck: -9
+    strength: 11
+    weight: 27
+  type: armor
+967:
+  description: ''
+  name: chipped cup
+  stats:
+    luck: -1
+    weight: 42
+  type: filler
+968:
+  description: ''
+  name: lesser potion of friendship
+  stats:
+    amount: 5
+    attack: 15
+    luck: -9
+  type: magic consumables
+969:
+  description: ''
+  name: fragile glass falchion
+  stats:
+    attack: 23
+    luck: 10
+    weight: 16
+  type: weapon
+970:
+  description: ''
+  name: dirty lantern
+  stats:
+    luck: 7
+    weight: 38
+  type: filler
+971:
+  description: ''
+  name: chipped blanket
+  stats:
+    luck: 10
+    weight: 23
+  type: filler
+972:
+  description: ''
+  name: lesser silver gem
+  stats:
+    amount: 9
+    attack: 31
+    luck: -2
+  type: magic items
+973:
+  description: ''
+  name: fair adamantine morning star
+  stats:
+    attack: 25
+    luck: -5
+    weight: 16
+  type: weapon
+974:
+  description: ''
+  name: dusty rope
+  stats:
+    luck: -10
+    weight: 18
+  type: filler
+975:
+  description: ''
+  name: waterlogged cuffs
+  stats:
+    luck: 9
+    weight: 37
+  type: filler
+976:
+  description: ''
+  name: moldy pestle
+  stats:
+    luck: -5
+    weight: 24
+  type: filler
+977:
+  description: ''
+  name: damaged mortar
+  stats:
+    luck: 5
+    weight: 32
+  type: filler
+978:
+  description: ''
+  name: ghoulish morion
+  stats:
+    luck: -10
+    strength: 25
+    weight: 28
+  type: armor
+979:
+  description: ''
+  name: waterlogged decanter
+  stats:
+    luck: -5
+    weight: 47
+  type: filler
+980:
+  description: ''
+  name: graceful vest
+  stats:
+    luck: 8
+    strength: 28
+    weight: 21
+  type: armor
+981:
+  description: ''
+  name: mended candle
+  stats:
+    luck: 2
+    weight: 21
+  type: filler
+982:
+  description: ''
+  name: carved note
+  stats:
+    luck: 6
+    weight: 44
+  type: filler
+983:
+  description: ''
+  name: piteous club of the prophet
+  stats:
+    attack: 18
+    luck: -7
+    weight: 6
+  type: weapon
+984:
+  description: ''
+  name: carved cup
+  stats:
+    luck: 5
+    weight: 23
+  type: filler
+985:
+  description: ''
+  name: shameful cloak
+  stats:
+    luck: -9
+    strength: 12
+    weight: 22
+  type: armor
+986:
+  description: ''
+  name: etched bowl
+  stats:
+    luck: 0
+    weight: 15
+  type: filler
+987:
+  description: ''
+  name: derelict parchment
+  stats:
+    luck: 7
+    weight: 23
+  type: filler
+988:
+  description: ''
+  name: moldy parchment
+  stats:
+    luck: -9
+    weight: 49
+  type: filler
+989:
+  description: ''
+  name: common silver orb
+  stats:
+    amount: 8
+    attack: 16
+    luck: 2
+  type: magic items
+990:
+  description: ''
+  name: fair gold talisman
+  stats:
+    attack: -1
+    luck: -2
+    strength: 1
+  type: jewelry
+991:
+  description: ''
+  name: chipped rope
+  stats:
+    luck: -5
+    weight: 38
+  type: filler
+992:
+  description: ''
+  name: derelict candle
+  stats:
+    luck: -7
+    weight: 18
+  type: filler
+993:
+  description: ''
+  name: carved lantern
+  stats:
+    luck: 8
+    weight: 10
+  type: filler
+994:
+  description: ''
+  name: ornate recurve bow of hatred
+  stats:
+    attack: 25
+    luck: -3
+    weight: 6
+  type: weapon
+995:
+  description: ''
+  name: decrepit glass halberd of the hunt
+  stats:
+    attack: 19
+    luck: 10
+    weight: 13
+  type: weapon
+996:
+  description: ''
+  name: greater scroll of putrification
+  stats:
+    amount: 7
+    attack: 25
+    luck: -4
+  type: magic consumables
+997:
+  description: ''
+  name: filthy golden longbow
+  stats:
+    attack: 16
+    luck: 4
+    weight: 18
+  type: weapon
+998:
+  description: ''
+  name: brutal spaulders
+  stats:
+    luck: 7
+    strength: 28
+    weight: 38
+  type: armor
+999:
+  description: ''
+  name: filthy meteorite amulet
+  stats:
+    attack: 6
+    luck: 1
+    strength: 2
+  type: jewelry
