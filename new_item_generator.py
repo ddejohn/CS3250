@@ -1,7 +1,9 @@
 import yaml
 from random import sample
 from random import choices
+from random import choice
 from random import randint
+from pprint import pprint 
 
 
 def _load():
@@ -28,65 +30,133 @@ def _write(make_type, make_num):
 
 class ItemFactory:
     data = _load()
-    names = data["names"]
     types = data["items"]["types"]
     condition = data["items"]["condition"]
-    materials = data["items"]["materials"]
+    material = data["items"]["material"]
+    posessive = data["names"]["posessive"]
+    nonposessive = data["names"]["nonposessive"]
+    suffixes = data["names"]["suffixes"]
+    abstract = data["names"]["abstract"]
+    adjectives = data["names"]["adjectives"]
 
-    # print(types.keys())
-
+    sequence = {
+        "jewelry": {
+            "seq": [
+                [condition, material, ""],
+                [adjectives, material, ""],
+                [condition, material, "", abstract],
+                [adjectives, "", abstract]
+            ],
+            "w": [15, 6, 3, 1]
+        },
+        "magic items": {
+            "seq": [
+                [condition, material, ""],
+                [adjectives, material, ""],
+                [condition, material, "", abstract],
+                [adjectives, "", abstract]
+            ],
+            "w": [15, 6, 3, 1]
+        },
+        "magic consumables": {
+            "seq": [
+                [condition, "", abstract],
+                [adjectives, "", abstract],
+            ],
+            "w": [3, 1]
+        },
+        "weapon": {
+            "seq": [
+                [condition, material, ""],
+                [adjectives, ""],
+                [condition, material, "", abstract],
+                [adjectives, "", abstract],
+                [nonposessive, suffixes],
+                [posessive, suffixes],
+            ],
+            "w": [20, 15, 10, 6, 3, 1]
+        },
+        "armor": {
+            "seq": [
+                [condition, material, ""],
+                [adjectives, ""],
+                [condition, material, "", abstract],
+                [adjectives, "", abstract],
+            ],
+            "w": [10, 6, 3, 1]
+        },
+        "filler": {
+            "seq": [[condition, ""]],
+            "w": [1]
+        }
+    }
+    
     def __init__(self):
         self.item = dict()
 
     def __call__(self):
-        new_item_type = choices(
+        item_type = choice(choices(
             population=list(self.types.keys()),
-            weights=[10, 4, 5, 25],
+            weights=[10, 8, 3, 7, 5, 35],
             k=len(list(self.types.keys()))
-        )
-        new_item_base_name = choices(
-            population=new_item_type,
-            k=len(new_item_type)
-        )
-        self.item = forge(new_item_base_name, new_item_type)
+        ))
+        item_name = choice(choices(
+            population=self.types[item_type],
+            k=len(self.types[item_type])
+        ))
+        self.item = self.forge(item_name, item_type)
+
+    def generate(self, item_name, item_type, unique_type, stats) -> dict:
+        return {
+            "name": item_name,
+            "type": item_type,
+            "description": unique_type,
+            "stats": stats
+        }
+
+    def stats(self, item_name, item_type, unique_type): # -> generate:
+        print(item_name)
+        print(item_type)
+        print(unique_type)
 
     def forge(self, item_name, item_type) -> stats:
-        
-        
-        
-        pass
+        new_name = []
+        unique_type = ""
+        build = self.sequence[item_type]
 
+        seq = choice(choices(
+            population=build["seq"],
+            weights=build["w"],
+            k=len(build["seq"])
+        ))
 
-    def stats(self, item_name, item_type) -> generate:
-        pass
-    
-    def generate(self, item_name, item_type) -> dict:
-        pass
+        for lists in seq:
+            if isinstance(lists, dict):
+                this_list = lists.get(item_type, lists.get("usable", ['']))
+            elif lists:
+                this_list = lists
+            else:
+                this_list = ['']
+
+            this_word = choice(choices(
+                population=this_list,
+                k=len(this_list)
+            ))
+
+            if this_word:
+                if this_word in self.suffixes:
+                    this_word = "\b"+this_word
+                    unique_type = item_name
+                new_name.append(this_word)
+            else:
+                new_name.append(item_name)
+        
+        item_name = " ".join(new_name)
+        self.stats(item_name, item_type, unique_type)
 
 
 if __name__ == "__main__":
-    _write("item", 10)
-
-
-# jewelry:
-#     cond, material (15)
-#     material, adjectives (6)
-#     cond, material, abstract (3)
-#     adjectives, abstract (1)
-# magic:
-#     cond, abstract (2)
-#     adjectives, abstract (1)
-# common:
-#     filler
-# weapon:
-#     cond, material (20)
-#     adjectives (15)
-#     cond, material, abstract (10)
-#     adjectives, abstract (6)
-#     unique, nonpossessive (3)
-#     unique, possessive (1)
-# armor:
-#     cond, material (10)
-#     adjectives (6)
-#     cond, material, abstract (3)
-#     adjectives, abstract (1)
+    # _write("item", 10)
+    i = ItemFactory()
+    for j in range(100):
+        i()
