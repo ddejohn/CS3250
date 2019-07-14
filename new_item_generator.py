@@ -66,3 +66,27 @@ class ItemFactory:
 
 if __name__ == "__main__":
     _write("item", 10)
+
+
+# jewelry:
+#     cond, material (15)
+#     material, adjectives (6)
+#     cond, material, abstract (3)
+#     adjectives, abstract (1)
+# magic:
+#     cond, abstract (2)
+#     adjectives, abstract (1)
+# common:
+#     filler
+# weapon:
+#     cond, material (20)
+#     adjectives (15)
+#     cond, material, abstract (10)
+#     adjectives, abstract (6)
+#     unique, nonpossessive (3)
+#     unique, possessive (1)
+# armor:
+#     cond, material (10)
+#     adjectives (6)
+#     cond, material, abstract (3)
+#     adjectives, abstract (1)
