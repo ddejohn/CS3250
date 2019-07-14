@@ -29,6 +29,7 @@ def _write(make_type, make_num):
 
 
 class ItemFactory:
+    print("loading data")
     data = _load()
     types = data["items"]["types"]
     condition = data["items"]["condition"]
@@ -74,7 +75,7 @@ class ItemFactory:
                 [nonposessive, suffixes],
                 [posessive, suffixes],
             ],
-            "w": [20, 15, 10, 6, 3, 1]
+            "w": [20, 15, 12, 10, 6, 5]
         },
         "armor": {
             "seq": [
@@ -92,9 +93,6 @@ class ItemFactory:
     }
     
     def __init__(self):
-        self.item = dict()
-
-    def __call__(self):
         item_type = choice(choices(
             population=list(self.types.keys()),
             weights=[10, 8, 3, 7, 5, 35],
@@ -114,10 +112,40 @@ class ItemFactory:
             "stats": stats
         }
 
-    def stats(self, item_name, item_type, unique_type): # -> generate:
-        print(item_name)
-        print(item_type)
-        print(unique_type)
+    def stats(self, item_name, item_type, unique_type) -> generate:
+        stats = {
+            "weapon": {
+                "attack": randint(10, 30),
+                "weight": randint(5, 20),
+                "luck": randint(-10, 10),
+            },
+            "armor": {
+                "strength": randint(10, 30),
+                "weight": randint(15, 40),
+                "luck": randint(-10, 10),
+            },
+            "magic": {
+                "attack": randint(15, 50),
+                "amount": randint(5, 15),
+                "luck": randint(-10, 10),
+            },
+            "jewelry": {
+                "strength": randint(-2,10),
+                "attack": randint(-2, 10),
+                "luck": randint(-4, 4),
+            },
+            "filler": {
+                "weight": randint(5, 50),
+                "luck": randint(-10, 10),
+            },
+            "legendary": {
+                "attack": randint(60, 120),
+                "weight": randint(5, 15),
+                "luck": randint(20, 80),
+            }
+        }[item_type.split()[0]]
+
+        return self.generate(item_name, item_type, unique_type, stats)
 
     def forge(self, item_name, item_type) -> stats:
         new_name = []
@@ -145,18 +173,17 @@ class ItemFactory:
 
             if this_word:
                 if this_word in self.suffixes:
-                    this_word = "\b"+this_word
+                    new_name[-1] += this_word
                     unique_type = item_name
-                new_name.append(this_word)
+                    item_type = "legendary"
+                else:
+                    new_name.append(this_word)
             else:
                 new_name.append(item_name)
         
         item_name = " ".join(new_name)
-        self.stats(item_name, item_type, unique_type)
+        return self.stats(item_name, item_type, unique_type)
 
 
 if __name__ == "__main__":
-    # _write("item", 10)
-    i = ItemFactory()
-    for j in range(100):
-        i()
+    _write("item", 1000)
