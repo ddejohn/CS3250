@@ -3,14 +3,6 @@ from random import sample
 from random import choices
 from random import choice
 from random import randint
-from pprint import pprint 
-
-
-def _load():
-    file_path = f"./item_word_bank.yml"
-    with open(file_path) as file:
-        data = yaml.safe_load(file.read())
-    return data
 
 
 def _write(make_type, make_num):
@@ -29,7 +21,13 @@ def _write(make_type, make_num):
 
 
 class ItemFactory:
-    print("loading data")
+    def _load():
+        print("loading data...")
+        file_path = f"./item_word_bank.yml"
+        with open(file_path) as file:
+            data = yaml.safe_load(file.read())
+        return data
+
     data = _load()
     types = data["items"]["types"]
     condition = data["items"]["condition"]
