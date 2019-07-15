@@ -24,6 +24,9 @@ ehthumbs_vista.db
 # Pyplot outputs
 *.png
 
+# pycache
+*.pyc
+
 # Dump file
 *.stackdump
 
