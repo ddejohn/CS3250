@@ -532,3 +532,34 @@ public class Singleton {
 * Try to avoid `protected` as well
 * If a method overrides a superclass method, it must have the same access level
     * Liskov inversion principle
+
+### 7/18/19 class notes
+
+**Prefer class hierarchies to tagged classes**
+
+* Verbose, error-prone, and inefficient
+* imitation of a real class hierarchy
+
+**Favor static member classes over non-static**
+
+* A nested class is defined within another class
+* Only serves the enclosing class
+* Four kinds
+    * static
+    * non-static
+    * anonymous
+    * local
+* Last three are called inner classes
+* Anonymous classes
+    * have no names
+    * not a member of enclosing class
+    * declared and instantiated at the same 
+    
+**Generics**
+
+* Typing
+    * Java's type system is very complex
+    * it adds various mechanism to add "generics"
+    * other languages simply have references to objects and duck typing
+* gereic classes and interfaces are known as generic types
+* generic types define sets of parameterized types
