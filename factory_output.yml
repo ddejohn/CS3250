@@ -1,0 +1,1815 @@
+maze:
+-   - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+-   - -2
+    - 2
+    - -2
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - -2
+-   - -2
+    - 0
+    - -2
+    - 0
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+-   - -2
+    - 1
+    - 0
+    - 1
+    - -2
+    - 1
+    - 0
+    - 1
+    - -2
+-   - -2
+    - 0
+    - -2
+    - -2
+    - -2
+    - 0
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - -2
+    - 0
+    - -2
+-   - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 0
+    - -2
+    - -2
+    - -2
+    - 0
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 0
+    - -2
+    - 1
+    - 0
+    - 1
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 0
+    - -2
+    - -2
+    - -2
+    - 0
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 1
+    - 0
+    - 1
+    - -2
+    - 1
+    - -2
+    - 0
+    - -2
+-   - -2
+    - -2
+    - -2
+    - 0
+    - -2
+    - -2
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 1
+    - 0
+    - 1
+    - -2
+    - 1
+    - 0
+    - 1
+    - -2
+-   - -2
+    - 0
+    - -2
+    - -2
+    - -2
+    - 0
+    - -2
+    - 0
+    - -2
+-   - -2
+    - 1
+    - 0
+    - 1
+    - -2
+    - 0
+    - -2
+    - 1
+    - -2
+-   - -2
+    - 0
+    - -2
+    - 0
+    - -2
+    - 0
+    - -2
+    - -2
+    - -2
+-   - -2
+    - 1
+    - -2
+    - 1
+    - 0
+    - 1
+    - 0
+    - 1
+    - -2
+-   - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+    - -2
+rooms:
+    room 0: &id003
+        adjacent:
+            east: null
+            north: null
+            south: room 1
+            west: null
+        description: room 0 description
+        inventory:
+            dusty journal:
+                description: ''
+                name: dusty journal
+                stats:
+                    equipable: false
+                    luck: -4
+                    weight: 28
+                type: filler
+            fair jade circlet of battering:
+                description: ''
+                name: fair jade circlet of battering
+                stats:
+                    attack: -2
+                    equipable: true
+                    luck: 1
+                    strength: 4
+                type: jewelry
+            gilded longsword:
+                description: ''
+                name: gilded longsword
+                stats:
+                    attack: 29
+                    equipable: true
+                    luck: 4
+                    weight: 13
+                type: weapon
+            grand bone gem of governing:
+                description: ''
+                name: grand bone gem of governing
+                stats:
+                    amount: 12
+                    attack: 28
+                    equipable: true
+                    luck: -9
+                type: magic items
+            lesser tome of fear:
+                description: ''
+                name: lesser tome of fear
+                stats:
+                    amount: 8
+                    attack: 27
+                    equipable: true
+                    luck: -10
+                type: magic consumables
+        name: room 0
+        players:
+            player 0:
+                description: player 0 description
+                equipped:
+                    ornate spear: &id001
+                        description: ''
+                        name: ornate spear
+                        stats:
+                            attack: 15
+                            equipable: true
+                            luck: -7
+                            weight: 12
+                        type: weapon
+                    thorny gambeson: &id002
+                        description: ''
+                        name: thorny gambeson
+                        stats:
+                            equipable: true
+                            luck: 6
+                            strength: 25
+                            weight: 16
+                        type: armor
+                inventory:
+                    ornate spear: *id001
+                    thorny gambeson: *id002
+                locataion: *id003
+                name: player 0
+        x: 1
+        y: 7
+    room 1: &id005
+        adjacent:
+            east: room 2
+            north: room 0
+            south: null
+            west: null
+        description: room 1 description
+        inventory:
+            burnt decanter:
+                description: ''
+                name: burnt decanter
+                stats:
+                    equipable: false
+                    luck: 1
+                    weight: 5
+                type: filler
+            damaged blanket:
+                description: ''
+                name: damaged blanket
+                stats:
+                    equipable: false
+                    luck: -9
+                    weight: 7
+                type: filler
+            furious scythe:
+                description: ''
+                name: furious scythe
+                stats:
+                    attack: 27
+                    equipable: true
+                    luck: 3
+                    weight: 9
+                type: weapon
+            ghoulish meteorite magestone:
+                description: ''
+                name: ghoulish meteorite magestone
+                stats:
+                    amount: 7
+                    attack: 20
+                    equipable: true
+                    luck: 5
+                type: magic items
+        name: room 1
+        players:
+            player 1:
+                description: player 1 description
+                equipped:
+                    greater copper gem: &id004
+                        description: ''
+                        name: greater copper gem
+                        stats:
+                            amount: 7
+                            attack: 16
+                            equipable: true
+                            luck: -8
+                        type: magic items
+                inventory:
+                    greater copper gem: *id004
+                locataion: *id005
+                name: player 1
+        x: 1
+        y: 3
+    room 10: &id009
+        adjacent:
+            east: room 11
+            north: room 8
+            south: null
+            west: null
+        description: room 10 description
+        inventory:
+            mended pestle:
+                description: ''
+                name: mended pestle
+                stats:
+                    equipable: false
+                    luck: 7
+                    weight: 5
+                type: filler
+        name: room 10
+        players:
+            player 10:
+                description: player 10 description
+                equipped:
+                    fragile iron cuirass: &id006
+                        description: ''
+                        name: fragile iron cuirass
+                        stats:
+                            equipable: true
+                            luck: -3
+                            strength: 25
+                            weight: 36
+                        type: armor
+                    grand silver orb of the dusk: &id007
+                        description: ''
+                        name: grand silver orb of the dusk
+                        stats:
+                            amount: 14
+                            attack: 18
+                            equipable: true
+                            luck: -10
+                        type: magic items
+                    vengeful brigandine: &id008
+                        description: ''
+                        name: vengeful brigandine
+                        stats:
+                            equipable: true
+                            luck: -9
+                            strength: 20
+                            weight: 21
+                        type: armor
+                inventory:
+                    fragile iron cuirass: *id006
+                    grand silver orb of the dusk: *id007
+                    vengeful brigandine: *id008
+                locataion: *id009
+                name: player 10
+        x: 13
+        y: 5
+    room 11: &id011
+        adjacent:
+            east: null
+            north: room 25
+            south: room 12
+            west: room 10
+        description: room 11 description
+        inventory:
+            decrepit mail gorget:
+                description: ''
+                name: decrepit mail gorget
+                stats:
+                    equipable: true
+                    luck: 8
+                    strength: 20
+                    weight: 38
+                type: armor
+            mended blanket:
+                description: ''
+                name: mended blanket
+                stats:
+                    equipable: false
+                    luck: 3
+                    weight: 17
+                type: filler
+            petty philter of shame:
+                description: ''
+                name: petty philter of shame
+                stats:
+                    amount: 6
+                    attack: 29
+                    equipable: true
+                    luck: -8
+                type: magic consumables
+            ruined cuffs:
+                description: ''
+                name: ruined cuffs
+                stats:
+                    equipable: false
+                    luck: 6
+                    weight: 40
+                type: filler
+            ruined pail:
+                description: ''
+                name: ruined pail
+                stats:
+                    equipable: false
+                    luck: 2
+                    weight: 46
+                type: filler
+            strange greaves:
+                description: ''
+                name: strange greaves
+                stats:
+                    equipable: true
+                    luck: -6
+                    strength: 10
+                    weight: 27
+                type: armor
+            strange pauldrons of merit:
+                description: ''
+                name: strange pauldrons of merit
+                stats:
+                    equipable: true
+                    luck: -2
+                    strength: 22
+                    weight: 36
+                type: armor
+        name: room 11
+        players:
+            player 11:
+                description: player 11 description
+                equipped:
+                    greater scroll of somnolence: &id010
+                        description: ''
+                        name: greater scroll of somnolence
+                        stats:
+                            amount: 6
+                            attack: 48
+                            equipable: true
+                            luck: 4
+                        type: magic consumables
+                inventory:
+                    greater scroll of somnolence: *id010
+                locataion: *id011
+                name: player 11
+        x: 17
+        y: 5
+    room 12: &id015
+        adjacent:
+            east: null
+            north: room 11
+            south: null
+            west: room 13
+        description: room 12 description
+        inventory:
+            chipped teeth:
+                description: ''
+                name: chipped teeth
+                stats:
+                    equipable: false
+                    luck: 0
+                    weight: 33
+                type: filler
+            ornate meteorite ring:
+                description: ''
+                name: ornate meteorite ring
+                stats:
+                    attack: -2
+                    equipable: true
+                    luck: 4
+                    strength: 3
+                type: jewelry
+        name: room 12
+        players:
+            player 12:
+                description: player 12 description
+                equipped:
+                    dreaded scimitar: &id012
+                        description: ''
+                        name: dreaded scimitar
+                        stats:
+                            attack: 18
+                            equipable: true
+                            luck: -1
+                            weight: 20
+                        type: weapon
+                    sinister falchion of governing: &id013
+                        description: ''
+                        name: sinister falchion of governing
+                        stats:
+                            attack: 25
+                            equipable: true
+                            luck: -6
+                            weight: 12
+                        type: weapon
+                    vengeful blade of sorrow: &id014
+                        description: ''
+                        name: vengeful blade of sorrow
+                        stats:
+                            attack: 26
+                            equipable: true
+                            luck: 2
+                            weight: 6
+                        type: weapon
+                inventory:
+                    dreaded scimitar: *id012
+                    sinister falchion of governing: *id013
+                    vengeful blade of sorrow: *id014
+                locataion: *id015
+                name: player 12
+        x: 17
+        y: 3
+    room 13:
+        adjacent:
+            east: room 12
+            north: null
+            south: room 14
+            west: null
+        description: room 13 description
+        inventory:
+            burnt lamp:
+                description: ''
+                name: burnt lamp
+                stats:
+                    equipable: false
+                    luck: -8
+                    weight: 35
+                type: filler
+            dirty torch:
+                description: ''
+                name: dirty torch
+                stats:
+                    equipable: false
+                    luck: -7
+                    weight: 14
+                type: filler
+            moldy chair:
+                description: ''
+                name: moldy chair
+                stats:
+                    equipable: false
+                    luck: 9
+                    weight: 26
+                type: filler
+        name: room 13
+        players: {}
+        x: 15
+        y: 3
+    room 14: &id017
+        adjacent:
+            east: room 24
+            north: room 13
+            south: null
+            west: room 15
+        description: room 14 description
+        inventory:
+            burnt cauldron:
+                description: ''
+                name: burnt cauldron
+                stats:
+                    equipable: false
+                    luck: 7
+                    weight: 25
+                type: filler
+            derelict bedroll:
+                description: ''
+                name: derelict bedroll
+                stats:
+                    equipable: false
+                    luck: -9
+                    weight: 46
+                type: filler
+            filthy bronze glaive:
+                description: ''
+                name: filthy bronze glaive
+                stats:
+                    attack: 24
+                    equipable: true
+                    luck: 9
+                    weight: 8
+                type: weapon
+            ornate bronze talisman:
+                description: ''
+                name: ornate bronze talisman
+                stats:
+                    attack: 3
+                    equipable: true
+                    luck: 3
+                    strength: -1
+                type: jewelry
+        name: room 14
+        players:
+            player 14:
+                description: player 14 description
+                equipped:
+                    filthy leather gorget: &id016
+                        description: ''
+                        name: filthy leather gorget
+                        stats:
+                            equipable: true
+                            luck: 6
+                            strength: 14
+                            weight: 37
+                        type: armor
+                inventory:
+                    filthy leather gorget: *id016
+                locataion: *id017
+                name: player 14
+        x: 15
+        y: 1
+    room 15:
+        adjacent:
+            east: room 14
+            north: room 16
+            south: null
+            west: null
+        description: room 15 description
+        inventory:
+            chewed torch:
+                description: ''
+                name: chewed torch
+                stats:
+                    equipable: false
+                    luck: 3
+                    weight: 16
+                type: filler
+            fragile leather gambeson:
+                description: ''
+                name: fragile leather gambeson
+                stats:
+                    equipable: true
+                    luck: 5
+                    strength: 30
+                    weight: 38
+                type: armor
+            greater potion of mummification:
+                description: ''
+                name: greater potion of mummification
+                stats:
+                    amount: 15
+                    attack: 22
+                    equipable: true
+                    luck: 3
+                type: magic consumables
+            putrid philter of judgement:
+                description: ''
+                name: putrid philter of judgement
+                stats:
+                    amount: 7
+                    attack: 42
+                    equipable: true
+                    luck: -3
+                type: magic consumables
+        name: room 15
+        players: {}
+        x: 13
+        y: 1
+    room 16:
+        adjacent:
+            east: null
+            north: null
+            south: room 15
+            west: room 17
+        description: room 16 description
+        inventory:
+            greater tome of souls:
+                description: ''
+                name: greater tome of souls
+                stats:
+                    amount: 13
+                    attack: 16
+                    equipable: true
+                    luck: 4
+                type: magic consumables
+            lesser philter of surprise:
+                description: ''
+                name: lesser philter of surprise
+                stats:
+                    amount: 12
+                    attack: 27
+                    equipable: true
+                    luck: 9
+                type: magic consumables
+            petty amethyst shard:
+                description: ''
+                name: petty amethyst shard
+                stats:
+                    amount: 12
+                    attack: 36
+                    equipable: true
+                    luck: -8
+                type: magic items
+            vengeful cloak:
+                description: ''
+                name: vengeful cloak
+                stats:
+                    equipable: true
+                    luck: -2
+                    strength: 12
+                    weight: 18
+                type: armor
+        name: room 16
+        players: {}
+        x: 13
+        y: 3
+    room 17:
+        adjacent:
+            east: room 16
+            north: null
+            south: room 18
+            west: null
+        description: room 17 description
+        inventory:
+            burnt cuffs:
+                description: ''
+                name: burnt cuffs
+                stats:
+                    equipable: false
+                    luck: 7
+                    weight: 24
+                type: filler
+            chewed cauldron:
+                description: ''
+                name: chewed cauldron
+                stats:
+                    equipable: false
+                    luck: 0
+                    weight: 23
+                type: filler
+            greater scroll of judgement:
+                description: ''
+                name: greater scroll of judgement
+                stats:
+                    amount: 11
+                    attack: 18
+                    equipable: true
+                    luck: -7
+                type: magic consumables
+            old dragonscale spaulders:
+                description: ''
+                name: old dragonscale spaulders
+                stats:
+                    equipable: true
+                    luck: -3
+                    strength: 17
+                    weight: 21
+                type: armor
+            rusty bedroll:
+                description: ''
+                name: rusty bedroll
+                stats:
+                    equipable: false
+                    luck: -7
+                    weight: 44
+                type: filler
+        name: room 17
+        players: {}
+        x: 11
+        y: 3
+    room 18: &id021
+        adjacent:
+            east: null
+            north: room 17
+            south: null
+            west: room 19
+        description: room 18 description
+        inventory:
+            etched dragonscale spaulders of friendship:
+                description: ''
+                name: etched dragonscale spaulders of friendship
+                stats:
+                    equipable: true
+                    luck: -7
+                    strength: 23
+                    weight: 22
+                type: armor
+            rusty hide vambrace:
+                description: ''
+                name: rusty hide vambrace
+                stats:
+                    equipable: true
+                    luck: -4
+                    strength: 10
+                    weight: 23
+                type: armor
+        name: room 18
+        players:
+            player 18:
+                description: player 18 description
+                equipped:
+                    envious scroll of breaking: &id018
+                        description: ''
+                        name: envious scroll of breaking
+                        stats:
+                            amount: 7
+                            attack: 47
+                            equipable: true
+                            luck: -5
+                        type: magic consumables
+                    filthy iron halberd: &id019
+                        description: ''
+                        name: filthy iron halberd
+                        stats:
+                            attack: 12
+                            equipable: true
+                            luck: -9
+                            weight: 18
+                        type: weapon
+                    ghastly tome of surprise: &id020
+                        description: ''
+                        name: ghastly tome of surprise
+                        stats:
+                            amount: 10
+                            attack: 33
+                            equipable: true
+                            luck: 1
+                        type: magic consumables
+                inventory:
+                    envious scroll of breaking: *id018
+                    filthy iron halberd: *id019
+                    ghastly tome of surprise: *id020
+                locataion: *id021
+                name: player 18
+        x: 11
+        y: 1
+    room 19: &id025
+        adjacent:
+            east: room 18
+            north: room 20
+            south: null
+            west: null
+        description: room 19 description
+        inventory:
+            chosen turquoise shard:
+                description: ''
+                name: chosen turquoise shard
+                stats:
+                    amount: 13
+                    attack: 28
+                    equipable: true
+                    luck: -3
+                type: magic items
+            dusty book:
+                description: ''
+                name: dusty book
+                stats:
+                    equipable: false
+                    luck: 7
+                    weight: 41
+                type: filler
+            ruined stool:
+                description: ''
+                name: ruined stool
+                stats:
+                    equipable: false
+                    luck: -3
+                    weight: 50
+                type: filler
+            trolldestroyer:
+                description: morning star
+                name: trolldestroyer
+                stats:
+                    attack: 61
+                    equipable: true
+                    luck: 21
+                    weight: 7
+                type: legendary
+        name: room 19
+        players:
+            player 19:
+                description: player 19 description
+                equipped:
+                    etched hide greaves: &id022
+                        description: ''
+                        name: etched hide greaves
+                        stats:
+                            equipable: true
+                            luck: 3
+                            strength: 24
+                            weight: 40
+                        type: armor
+                    hatedefiler: &id023
+                        description: shortsword
+                        name: hatedefiler
+                        stats:
+                            attack: 97
+                            equipable: true
+                            luck: 73
+                            weight: 6
+                        type: legendary
+                    mirthful shortsword: &id024
+                        description: ''
+                        name: mirthful shortsword
+                        stats:
+                            attack: 30
+                            equipable: true
+                            luck: 5
+                            weight: 16
+                        type: weapon
+                inventory:
+                    etched hide greaves: *id022
+                    hatedefiler: *id023
+                    mirthful shortsword: *id024
+                locataion: *id025
+                name: player 19
+        x: 7
+        y: 1
+    room 2:
+        adjacent:
+            east: null
+            north: null
+            south: room 3
+            west: room 1
+        description: room 2 description
+        inventory:
+            burnt pail:
+                description: ''
+                name: burnt pail
+                stats:
+                    equipable: false
+                    luck: 8
+                    weight: 7
+                type: filler
+            chipped parchment:
+                description: ''
+                name: chipped parchment
+                stats:
+                    equipable: false
+                    luck: 10
+                    weight: 48
+                type: filler
+            damaged incense:
+                description: ''
+                name: damaged incense
+                stats:
+                    equipable: false
+                    luck: 3
+                    weight: 31
+                type: filler
+            fair turquoise ring of the hunt:
+                description: ''
+                name: fair turquoise ring of the hunt
+                stats:
+                    attack: 8
+                    equipable: true
+                    luck: 2
+                    strength: 2
+                type: jewelry
+            petty philter of mourning:
+                description: ''
+                name: petty philter of mourning
+                stats:
+                    amount: 7
+                    attack: 23
+                    equipable: true
+                    luck: -5
+                type: magic consumables
+        name: room 2
+        players: {}
+        x: 3
+        y: 3
+    room 20: &id028
+        adjacent:
+            east: room 21
+            north: null
+            south: room 19
+            west: null
+        description: room 20 description
+        inventory:
+            damaged rags:
+                description: ''
+                name: damaged rags
+                stats:
+                    equipable: false
+                    luck: 7
+                    weight: 48
+                type: filler
+            lesser scroll of hell:
+                description: ''
+                name: lesser scroll of hell
+                stats:
+                    amount: 10
+                    attack: 46
+                    equipable: true
+                    luck: 2
+                type: magic consumables
+            moldy cup:
+                description: ''
+                name: moldy cup
+                stats:
+                    equipable: false
+                    luck: -1
+                    weight: 45
+                type: filler
+            shameful potion of confusion:
+                description: ''
+                name: shameful potion of confusion
+                stats:
+                    amount: 9
+                    attack: 37
+                    equipable: true
+                    luck: 2
+                type: magic consumables
+            waterlogged pail:
+                description: ''
+                name: waterlogged pail
+                stats:
+                    equipable: false
+                    luck: 4
+                    weight: 8
+                type: filler
+        name: room 20
+        players:
+            player 20:
+                description: player 20 description
+                equipped:
+                    damaged leather pauldrons: &id026
+                        description: ''
+                        name: damaged leather pauldrons
+                        stats:
+                            equipable: true
+                            luck: -5
+                            strength: 12
+                            weight: 40
+                        type: armor
+                    grand philter of quickening: &id027
+                        description: ''
+                        name: grand philter of quickening
+                        stats:
+                            amount: 11
+                            attack: 19
+                            equipable: true
+                            luck: 8
+                        type: magic consumables
+                inventory:
+                    damaged leather pauldrons: *id026
+                    grand philter of quickening: *id027
+                locataion: *id028
+                name: player 20
+        x: 7
+        y: 5
+    room 21:
+        adjacent:
+            east: room 23
+            north: null
+            south: room 22
+            west: room 20
+        description: room 21 description
+        inventory:
+            cobwebbed incense:
+                description: ''
+                name: cobwebbed incense
+                stats:
+                    equipable: false
+                    luck: -6
+                    weight: 18
+                type: filler
+            filthy turquoise ring:
+                description: ''
+                name: filthy turquoise ring
+                stats:
+                    attack: 10
+                    equipable: true
+                    luck: -1
+                    strength: 1
+                type: jewelry
+            waterlogged bedroll:
+                description: ''
+                name: waterlogged bedroll
+                stats:
+                    equipable: false
+                    luck: -2
+                    weight: 48
+                type: filler
+        name: room 21
+        players: {}
+        x: 9
+        y: 5
+    room 22: &id031
+        adjacent:
+            east: null
+            north: room 21
+            south: null
+            west: null
+        description: room 22 description
+        inventory:
+            dirty parchment:
+                description: ''
+                name: dirty parchment
+                stats:
+                    equipable: false
+                    luck: -9
+                    weight: 46
+                type: filler
+        name: room 22
+        players:
+            player 22:
+                description: player 22 description
+                equipped:
+                    noxious cuirass: &id029
+                        description: ''
+                        name: noxious cuirass
+                        stats:
+                            equipable: true
+                            luck: 5
+                            strength: 26
+                            weight: 17
+                        type: armor
+                    putrid recurve bow of sickness: &id030
+                        description: ''
+                        name: putrid recurve bow of sickness
+                        stats:
+                            attack: 13
+                            equipable: true
+                            luck: -8
+                            weight: 6
+                        type: weapon
+                inventory:
+                    noxious cuirass: *id029
+                    putrid recurve bow of sickness: *id030
+                locataion: *id031
+                name: player 22
+        x: 9
+        y: 3
+    room 23: &id034
+        adjacent:
+            east: null
+            north: null
+            south: null
+            west: room 21
+        description: room 23 description
+        inventory:
+            dusty crate:
+                description: ''
+                name: dusty crate
+                stats:
+                    equipable: false
+                    luck: -10
+                    weight: 25
+                type: filler
+            mended pail:
+                description: ''
+                name: mended pail
+                stats:
+                    equipable: false
+                    luck: 5
+                    weight: 44
+                type: filler
+            waterlogged rags:
+                description: ''
+                name: waterlogged rags
+                stats:
+                    equipable: false
+                    luck: 1
+                    weight: 20
+                type: filler
+        name: room 23
+        players:
+            player 23:
+                description: player 23 description
+                equipped:
+                    grand scroll of death: &id032
+                        description: ''
+                        name: grand scroll of death
+                        stats:
+                            amount: 6
+                            attack: 34
+                            equipable: true
+                            luck: -9
+                        type: magic consumables
+                    ruined plate gorget: &id033
+                        description: ''
+                        name: ruined plate gorget
+                        stats:
+                            equipable: true
+                            luck: -2
+                            strength: 18
+                            weight: 17
+                        type: armor
+                inventory:
+                    grand scroll of death: *id032
+                    ruined plate gorget: *id033
+                locataion: *id034
+                name: player 23
+        x: 11
+        y: 5
+    room 24:
+        adjacent:
+            east: null
+            north: null
+            south: null
+            west: room 14
+        description: room 24 description
+        inventory:
+            adequate hide gauntlets of suffering:
+                description: ''
+                name: adequate hide gauntlets of suffering
+                stats:
+                    equipable: true
+                    luck: -2
+                    strength: 28
+                    weight: 34
+                type: armor
+            chewed stool:
+                description: ''
+                name: chewed stool
+                stats:
+                    equipable: false
+                    luck: -2
+                    weight: 43
+                type: filler
+            damaged beaker:
+                description: ''
+                name: damaged beaker
+                stats:
+                    equipable: false
+                    luck: 8
+                    weight: 29
+                type: filler
+            damaged funnel:
+                description: ''
+                name: damaged funnel
+                stats:
+                    equipable: false
+                    luck: 8
+                    weight: 48
+                type: filler
+            damaged lamp:
+                description: ''
+                name: damaged lamp
+                stats:
+                    equipable: false
+                    luck: -10
+                    weight: 21
+                type: filler
+            fine bone amulet of exsanguination:
+                description: ''
+                name: fine bone amulet of exsanguination
+                stats:
+                    attack: 2
+                    equipable: true
+                    luck: 2
+                    strength: 8
+                type: jewelry
+        name: room 24
+        players: {}
+        x: 17
+        y: 1
+    room 25: &id036
+        adjacent:
+            east: null
+            north: null
+            south: room 11
+            west: null
+        description: room 25 description
+        inventory:
+            damaged crate:
+                description: ''
+                name: damaged crate
+                stats:
+                    equipable: false
+                    luck: 3
+                    weight: 9
+                type: filler
+            waterlogged pot:
+                description: ''
+                name: waterlogged pot
+                stats:
+                    equipable: false
+                    luck: 1
+                    weight: 19
+                type: filler
+        name: room 25
+        players:
+            player 25:
+                description: player 25 description
+                equipped:
+                    carved leather vambrace: &id035
+                        description: ''
+                        name: carved leather vambrace
+                        stats:
+                            equipable: true
+                            luck: 7
+                            strength: 23
+                            weight: 22
+                        type: armor
+                inventory:
+                    carved leather vambrace: *id035
+                locataion: *id036
+                name: player 25
+        x: 17
+        y: 7
+    room 26: &id038
+        adjacent:
+            east: room 3
+            north: null
+            south: null
+            west: null
+        description: room 26 description
+        inventory:
+            dusty funnel:
+                description: ''
+                name: dusty funnel
+                stats:
+                    equipable: false
+                    luck: 4
+                    weight: 50
+                type: filler
+            etched bone brigandine:
+                description: ''
+                name: etched bone brigandine
+                stats:
+                    equipable: true
+                    luck: 7
+                    strength: 13
+                    weight: 22
+                type: armor
+            etched meteorite falchion:
+                description: ''
+                name: etched meteorite falchion
+                stats:
+                    attack: 24
+                    equipable: true
+                    luck: 1
+                    weight: 10
+                type: weapon
+            greater scroll of reckoning:
+                description: ''
+                name: greater scroll of reckoning
+                stats:
+                    amount: 12
+                    attack: 33
+                    equipable: true
+                    luck: 1
+                type: magic consumables
+            lesser amethyst magestone:
+                description: ''
+                name: lesser amethyst magestone
+                stats:
+                    amount: 10
+                    attack: 22
+                    equipable: true
+                    luck: -10
+                type: magic items
+            moldy mortar:
+                description: ''
+                name: moldy mortar
+                stats:
+                    equipable: false
+                    luck: 2
+                    weight: 44
+                type: filler
+        name: room 26
+        players:
+            player 26:
+                description: player 26 description
+                equipped:
+                    eldritch amethyst orb: &id037
+                        description: ''
+                        name: eldritch amethyst orb
+                        stats:
+                            amount: 15
+                            attack: 18
+                            equipable: true
+                            luck: 7
+                        type: magic items
+                inventory:
+                    eldritch amethyst orb: *id037
+                locataion: *id038
+                name: player 26
+        x: 1
+        y: 1
+    room 3: &id042
+        adjacent:
+            east: room 4
+            north: room 2
+            south: null
+            west: null
+        description: room 3 description
+        inventory:
+            filthy iron greaves:
+                description: ''
+                name: filthy iron greaves
+                stats:
+                    equipable: true
+                    luck: 0
+                    strength: 29
+                    weight: 30
+                type: armor
+            lesser tome of exsanguination:
+                description: ''
+                name: lesser tome of exsanguination
+                stats:
+                    amount: 14
+                    attack: 20
+                    equipable: true
+                    luck: -8
+                type: magic consumables
+            moldy rope:
+                description: ''
+                name: moldy rope
+                stats:
+                    equipable: false
+                    luck: -7
+                    weight: 15
+                type: filler
+            weeping potion of poisons:
+                description: ''
+                name: weeping potion of poisons
+                stats:
+                    amount: 8
+                    attack: 48
+                    equipable: true
+                    luck: -6
+                type: magic consumables
+        name: room 3
+        players:
+            player 3:
+                description: player 3 description
+                equipped:
+                    filthy dragonscale cuirass: &id039
+                        description: ''
+                        name: filthy dragonscale cuirass
+                        stats:
+                            equipable: true
+                            luck: 7
+                            strength: 27
+                            weight: 33
+                        type: armor
+                    grand philter of jubilance: &id040
+                        description: ''
+                        name: grand philter of jubilance
+                        stats:
+                            amount: 5
+                            attack: 15
+                            equipable: true
+                            luck: -1
+                        type: magic consumables
+                    greater tome of somnolence: &id041
+                        description: ''
+                        name: greater tome of somnolence
+                        stats:
+                            amount: 9
+                            attack: 36
+                            equipable: true
+                            luck: -9
+                        type: magic consumables
+                inventory:
+                    filthy dragonscale cuirass: *id039
+                    grand philter of jubilance: *id040
+                    greater tome of somnolence: *id041
+                locataion: *id042
+                name: player 3
+        x: 3
+        y: 1
+    room 4: &id045
+        adjacent:
+            east: null
+            north: room 5
+            south: null
+            west: room 3
+        description: room 4 description
+        inventory:
+            burnt decanter:
+                description: ''
+                name: burnt decanter
+                stats:
+                    equipable: false
+                    luck: -8
+                    weight: 11
+                type: filler
+            fair bronze morning star:
+                description: ''
+                name: fair bronze morning star
+                stats:
+                    attack: 27
+                    equipable: true
+                    luck: 4
+                    weight: 10
+                type: weapon
+            filthy bone helm of putrification:
+                description: ''
+                name: filthy bone helm of putrification
+                stats:
+                    equipable: true
+                    luck: -8
+                    strength: 10
+                    weight: 32
+                type: armor
+        name: room 4
+        players:
+            player 4:
+                description: player 4 description
+                equipped:
+                    decrepit bone hood: &id043
+                        description: ''
+                        name: decrepit bone hood
+                        stats:
+                            equipable: true
+                            luck: 7
+                            strength: 24
+                            weight: 40
+                        type: armor
+                    worn silver dagger: &id044
+                        description: ''
+                        name: worn silver dagger
+                        stats:
+                            attack: 21
+                            equipable: true
+                            luck: -5
+                            weight: 19
+                        type: weapon
+                inventory:
+                    decrepit bone hood: *id043
+                    worn silver dagger: *id044
+                locataion: *id045
+                name: player 4
+        x: 5
+        y: 1
+    room 5: &id047
+        adjacent:
+            east: null
+            north: null
+            south: room 4
+            west: room 6
+        description: room 5 description
+        inventory:
+            chewed decanter:
+                description: ''
+                name: chewed decanter
+                stats:
+                    equipable: false
+                    luck: 7
+                    weight: 27
+                type: filler
+            ruined incense:
+                description: ''
+                name: ruined incense
+                stats:
+                    equipable: false
+                    luck: -6
+                    weight: 19
+                type: filler
+        name: room 5
+        players:
+            player 5:
+                description: player 5 description
+                equipped:
+                    carved plate gloves: &id046
+                        description: ''
+                        name: carved plate gloves
+                        stats:
+                            equipable: true
+                            luck: 4
+                            strength: 24
+                            weight: 28
+                        type: armor
+                inventory:
+                    carved plate gloves: *id046
+                locataion: *id047
+                name: player 5
+        x: 5
+        y: 5
+    room 6: &id050
+        adjacent:
+            east: room 5
+            north: room 7
+            south: null
+            west: null
+        description: room 6 description
+        inventory:
+            loathsome halberd:
+                description: ''
+                name: loathsome halberd
+                stats:
+                    attack: 15
+                    equipable: true
+                    luck: -1
+                    weight: 18
+                type: weapon
+            petty emerald horn of ice:
+                description: ''
+                name: petty emerald horn of ice
+                stats:
+                    amount: 15
+                    attack: 29
+                    equipable: true
+                    luck: -4
+                type: magic items
+            trollslayer:
+                description: mace
+                name: trollslayer
+                stats:
+                    attack: 120
+                    equipable: true
+                    luck: 80
+                    weight: 5
+                type: legendary
+        name: room 6
+        players:
+            player 6:
+                description: player 6 description
+                equipped:
+                    lesser potion of humiliation: &id048
+                        description: ''
+                        name: lesser potion of humiliation
+                        stats:
+                            amount: 15
+                            attack: 39
+                            equipable: true
+                            luck: 6
+                        type: magic consumables
+                    munificent recurve bow: &id049
+                        description: ''
+                        name: munificent recurve bow
+                        stats:
+                            attack: 19
+                            equipable: true
+                            luck: 2
+                            weight: 8
+                        type: weapon
+                inventory:
+                    lesser potion of humiliation: *id048
+                    munificent recurve bow: *id049
+                locataion: *id050
+                name: player 6
+        x: 3
+        y: 5
+    room 7:
+        adjacent:
+            east: room 8
+            north: null
+            south: room 6
+            west: null
+        description: room 7 description
+        inventory:
+            etched adamantine scimitar:
+                description: ''
+                name: etched adamantine scimitar
+                stats:
+                    attack: 28
+                    equipable: true
+                    luck: -7
+                    weight: 20
+                type: weapon
+            magnetic gambeson:
+                description: ''
+                name: magnetic gambeson
+                stats:
+                    equipable: true
+                    luck: 1
+                    strength: 28
+                    weight: 36
+                type: armor
+            opulent ring of sorrow:
+                description: ''
+                name: opulent ring of sorrow
+                stats:
+                    attack: 1
+                    equipable: true
+                    luck: -2
+                    strength: 2
+                type: jewelry
+            putrid club:
+                description: ''
+                name: putrid club
+                stats:
+                    attack: 19
+                    equipable: true
+                    luck: -7
+                    weight: 20
+                type: weapon
+            repugnant mace of carving:
+                description: ''
+                name: repugnant mace of carving
+                stats:
+                    attack: 10
+                    equipable: true
+                    luck: 9
+                    weight: 5
+                type: weapon
+            savage gauntlets:
+                description: ''
+                name: savage gauntlets
+                stats:
+                    equipable: true
+                    luck: -3
+                    strength: 15
+                    weight: 40
+                type: armor
+        name: room 7
+        players: {}
+        x: 3
+        y: 7
+    room 8:
+        adjacent:
+            east: room 9
+            north: null
+            south: room 10
+            west: room 7
+        description: room 8 description
+        inventory:
+            cobwebbed blanket:
+                description: ''
+                name: cobwebbed blanket
+                stats:
+                    equipable: false
+                    luck: 5
+                    weight: 9
+                type: filler
+            cobwebbed parchment:
+                description: ''
+                name: cobwebbed parchment
+                stats:
+                    equipable: false
+                    luck: -3
+                    weight: 35
+                type: filler
+            damaged cup:
+                description: ''
+                name: damaged cup
+                stats:
+                    equipable: false
+                    luck: -1
+                    weight: 33
+                type: filler
+            godbreaker:
+                description: spear
+                name: godbreaker
+                stats:
+                    attack: 98
+                    equipable: true
+                    luck: 21
+                    weight: 14
+                type: legendary
+            greater tome of loathing:
+                description: ''
+                name: greater tome of loathing
+                stats:
+                    amount: 9
+                    attack: 29
+                    equipable: true
+                    luck: -6
+                type: magic consumables
+            putrid vambrace:
+                description: ''
+                name: putrid vambrace
+                stats:
+                    equipable: true
+                    luck: -8
+                    strength: 30
+                    weight: 37
+                type: armor
+        name: room 8
+        players: {}
+        x: 13
+        y: 7
+    room 9: &id052
+        adjacent:
+            east: null
+            north: null
+            south: null
+            west: room 8
+        description: room 9 description
+        inventory:
+            cobwebbed cuffs:
+                description: ''
+                name: cobwebbed cuffs
+                stats:
+                    equipable: false
+                    luck: 0
+                    weight: 41
+                type: filler
+            rusty chair:
+                description: ''
+                name: rusty chair
+                stats:
+                    equipable: false
+                    luck: -10
+                    weight: 38
+                type: filler
+        name: room 9
+        players:
+            player 9:
+                description: player 9 description
+                equipped:
+                    goliathbruiser: &id051
+                        description: war hammer
+                        name: goliathbruiser
+                        stats:
+                            attack: 72
+                            equipable: true
+                            luck: 51
+                            weight: 8
+                        type: legendary
+                inventory:
+                    goliathbruiser: *id051
+                locataion: *id052
+                name: player 9
+        x: 15
+        y: 7
