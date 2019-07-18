@@ -489,3 +489,46 @@ public class Singleton {
 * Required parameters passed into constructor
     * Optionals `set()`
     * Other languages have optional parameters instead
+
+### 7/15/19 class notes
+
+**Consistency**
+
+* Do not write an equals method that depends on reliable resources
+
+**equals recipe**
+
+* Check for `object == this`
+* Use `instanceof` to check for type
+* Cast argument to correct type
+* Check `Test ==` for all significant fields
+    * Except for `Float.compare`, `Double.compare`, and `Arrays.equal`
+* Also override `hashCode`
+* use `@Override`
+
+**Creating a hashCode**
+
+* Set `result = 17`
+* For all the fields
+    * bool → `c = f ? 1 : 0`
+    * byte, char, short, int → `c = (int) f`
+    * beaty went to fast
+    .
+    .
+    .
+* Update result = `31 * result + c`
+* Exclude any redundant fields
+    * You shouldn't have any anyway
+* Ignore any fields ignored by `equals`
+
+
+**Classes and Interfaces**
+
+* Minimize the accessibility of classes and members
+* Hide as much as possible
+* Encapsulation
+* Conducive to decoupling
+* If a class is used nowhere else, nest it within its user
+* Try to avoid `protected` as well
+* If a method overrides a superclass method, it must have the same access level
+    * Liskov inversion principle

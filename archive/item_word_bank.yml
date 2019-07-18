@@ -1,3 +1,8 @@
+# TODO--separate items into:
+# big/small (weight)
+# hard/soft (material)
+# rarity (condition)
+
 names:
     posessive: [
         wolf,

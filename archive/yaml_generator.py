@@ -6,6 +6,23 @@ from random import choice
 from random import randint
 
 
+# def _write(make_type, make_num):
+#     make_this = {
+#         # "player": PlayerFactory,
+#         "item": ItemFactory,
+#     }[make_type]
+
+#     fac = ItemFactory()
+
+#     file_name = "./generic_" + make_type + "s.yml"
+#     with open(file_name, "w") as save_file:
+#         yaml.safe_dump(
+#             {i: fac() for i in range(make_num)},
+#             save_file, indent=4, width=80,
+#             default_flow_style=False
+#         )
+
+
 class ItemFactory:
     qualities = yaml_data.QUALITIES
     descriptors = yaml_data.DESCRIPTORS
