@@ -263,10 +263,3 @@ class MazeFactory:
             "maze": maze.tolist(),
             "rooms": RoomFactory.build(maze, rooms)
         }
-
-
-if __name__ == "__main__":
-    for i in range(100000):
-        MazeFactory.build()
-        if i % 1000 == 0:
-            print(f"success {i}")
