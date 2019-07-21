@@ -575,9 +575,9 @@ public class Singleton {
     6. stats(rarity, material)
 
 * dungeon filler generation:
-    1. size
+    1. size + hardness
     2. type(size)
-    3. material(type) → hard/soft
+    3. material(type)
     4. condition(material) → name
 
 * dungeon flavor text generation:
