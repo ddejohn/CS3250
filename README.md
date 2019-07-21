@@ -563,3 +563,26 @@ public class Singleton {
     * other languages simply have references to objects and duck typing
 * gereic classes and interfaces are known as generic types
 * generic types define sets of parameterized types
+
+### Item generation ideas
+
+* item generation:
+    1. size
+    2. type(size)
+    3. rarity(type)
+    4. material(rarity, size)
+    5. condition(rarity, material) → name
+    6. stats(rarity, material)
+
+* dungeon filler generation:
+    1. size
+    2. type(size)
+    3. material(type) → hard/soft
+    4. condition(material) → name
+
+* dungeon flavor text generation:
+    1. size
+    2. type(size)
+    3. material(size)
+    4. condition(material)
+    5. flavor(material, condition)
