@@ -586,3 +586,57 @@ public class Singleton {
     3. material(size)
     4. condition(material)
     5. flavor(material, condition)
+
+### 7/22/19 class notes
+
+* Arrays are covariant
+    * if sub is a subtype of super, sub[] is a subtype of super[]
+* Generics are invariant
+
+**Arrays vs generics**
+
+* Arrays are reified
+    * element types are enforced at *runtime*
+* Generics are implemented by type erasure
+    * types enforced at compile time and erase type at runtime
+* Cannot create arrays of generic types, parameterized types, or type parameters
+* `List<String>` is not a subtype of `List<Object>`
+
+    ```Java
+    public void pushAll(Iterable<? extends E> src) {
+        for (E e : src)
+            push(e);
+    }```
+
+* PECs: producer/extends, consumer/super
+* do not use wildcard return types
+    * client of class shouldn't have to know about wildcards
+
+**Enumerations and annotations**
+
+* Use enumerations instead of integer constants
+    * Java's enumerations are more powerful than other languages'
+    * They're almost classes
+        * can't extend but can implement an interface
+    * Export one instance of each enumeration via a public static final field
+    * provide compile-time type safety
+    * can't pass or assign incorrectly
+    * don't count on ordinal values
+    * use constructor instead
+    * use `EnumSets` instead of bit fields
+
+* prefer annotations to naming patterns
+    * JUnit a major example
+    * consistently use `@override`
+        * makes sure you are actually overriding
+    * ammarker interface is one with no methods
+        * serializable is an example
+        * indicates object can be written via `ObjectOutputStream`
+
+**Reflection**
+
+* examine, introspect, and modify its own structure and behavior at runtime
+    * early programs were self-modifying in order to loop
+* reflection allows inspection of classes, interfacesm fields, and methods at runtime
+* it also allows instantiation of new objects and invocation of methods
+* reflection is often used as part of software testing, such as for the runtime creation/instantiation of mock objects
