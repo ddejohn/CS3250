@@ -640,3 +640,16 @@ public class Singleton {
 * reflection allows inspection of classes, interfacesm fields, and methods at runtime
 * it also allows instantiation of new objects and invocation of methods
 * reflection is often used as part of software testing, such as for the runtime creation/instantiation of mock objects
+
+### 7/24/19 class notes
+
+**most parameters have restrictions on their validity**
+
+* AKA preconditions
+* program defensively
+* catch problems as soon as possible
+* fail fast
+* method may die
+    * or worse, work but in an unexpected way
+* throw an exception
+    * an `IllegalArgumentException`
