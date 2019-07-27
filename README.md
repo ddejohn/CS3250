@@ -653,3 +653,13 @@ public class Singleton {
     * or worse, work but in an unexpected way
 * throw an exception
     * an `IllegalArgumentException`
+
+### 7/25/19 class notes
+
+**Lambdas and streams**
+
+* prefer lambdas to anonymous classes
+* e.g., strategy patterns
+* functional interfaces
+    * lambda expresions
+    * method references
