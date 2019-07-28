@@ -566,26 +566,26 @@ public class Singleton {
 
 ### Item generation ideas
 
-* item generation:
-    1. size
-    2. type(size)
-    3. rarity(type)
-    4. material(rarity, size)
-    5. condition(rarity, material) → name
-    6. stats(rarity, material)
+**item generation:**
+1. size
+2. base_name(size)
+3. rarity(type)
+4. material(rarity, size)
+5. condition(rarity, material) → name
+6. stats(rarity, material)
 
-* dungeon filler generation:
-    1. size + hardness
-    2. type(size)
-    3. material(type)
-    4. condition(material) → name
+**dungeon filler generation:**
+1. size + hardness
+2. base_name(size)
+3. material(type)
+4. condition(material) → name
 
-* dungeon flavor text generation:
-    1. size
-    2. type(size)
-    3. material(size)
-    4. condition(material)
-    5. flavor(material, condition)
+**dungeon flavor text generation:**
+1. size
+2. base_name(size)
+3. material(size)
+4. condition(material)
+5. flavor(material, condition)
 
 ### 7/22/19 class notes
 

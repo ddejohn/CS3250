@@ -2,7 +2,6 @@
 
 from copy import deepcopy
 from random import choices, choice, randint, shuffle
-from operator import add
 from numpy import full as npf
 import matplotlib.pyplot as plt
 import factory_data
@@ -26,28 +25,28 @@ class ItemFactory:
     abstract = names["abstract"]
     adjectives = names["adjectives"]
 
-    @classmethod
-    def build(cls, weights=None):
+    @staticmethod
+    def build(weights=None):
 
         weights = {
             "player": [8, 0, 0, 7, 5, 10]
         }.get(weights, [8, 35, 3, 7, 5, 10])
 
         item_type = choice(choices(
-            population=list(cls.types.keys()),
+            population=list(ItemFactory.types.keys()),
             weights=weights,
-            k=len(list(cls.types.keys()))
+            k=len(list(ItemFactory.types.keys()))
         ))
 
         item_name = choice(choices(
-            population=cls.types[item_type],
-            k=len(cls.types[item_type])
+            population=ItemFactory.types[item_type],
+            k=len(ItemFactory.types[item_type])
         ))
 
-        return cls._forge(item_name, item_type)
+        return ItemFactory._forge(item_name, item_type)
 
-    @classmethod
-    def _generate(cls, unique_type, stats, item_name, item_type):
+    @staticmethod
+    def _generate(unique_type, stats, item_name, item_type):
         return {
             "name": item_name,
             "type": item_type,
@@ -55,16 +54,16 @@ class ItemFactory:
             "stats": stats
         }
 
-    @classmethod
-    def _stats(cls, unique_type, item_name, item_type):
+    @staticmethod
+    def _stats(unique_type, item_name, item_type):
         stats = factory_data.stats(item_type.split()[0])
-        return cls._generate(unique_type, stats, item_name, item_type)
+        return ItemFactory._generate(unique_type, stats, item_name, item_type)
 
-    @classmethod
-    def _forge(cls, item_name, item_type):
+    @staticmethod
+    def _forge(item_name, item_type):
         new_name = []
         unique_type = ""
-        build = cls.sequence[item_type]
+        build = ItemFactory.sequence[item_type]
 
         seq = choice(choices(
             population=build["seq"],
@@ -87,7 +86,7 @@ class ItemFactory:
             ))
 
             if this_word:
-                if this_word in cls.suffixes:
+                if this_word in ItemFactory.suffixes:
                     new_name[-1] += this_word
                     unique_type = item_name
                     item_type = "legendary"
@@ -97,7 +96,7 @@ class ItemFactory:
                 new_name.append(item_name)
 
         item_name = " ".join(new_name)
-        return cls._stats(unique_type, item_name, item_type)
+        return ItemFactory._stats(unique_type, item_name, item_type)
 
 
 class PlayerFactory:
@@ -175,7 +174,9 @@ class RoomFactory:
                 searching = True
                 position = coord
                 while searching:
-                    position = tuple(map(add, position, cls.moves[direction]))
+                    position = tuple(
+                        sum(x) for x in zip(position, cls.moves[direction])
+                    )
                     if position not in cls.rooms or cls.maze[position] == MazeFactory.wall_color:
                         room["adjacent"][direction] = None
                         searching = False
@@ -230,8 +231,8 @@ class MazeFactory:
             n = len(path)
             nsew = []
             for move in MazeFactory.moves:
-                probe = tuple(map(add, move[0], k))
-                link = tuple(map(add, move[1], k))
+                probe = tuple(sum(x) for x in zip(move[0], k))
+                link = tuple(sum(x) for x in zip(move[1], k))
                 nsew.append([probe, link])
             shuffle(nsew)
             for probe in nsew:

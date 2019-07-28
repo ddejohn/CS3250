@@ -130,6 +130,7 @@ ITEMS = {
             "hood",
             "gorget",
             "morion",
+            "coif",
             "brigandine",
             "gambeson",
             "cuirass",

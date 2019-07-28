@@ -126,5 +126,5 @@ def _brief_print(data, calls=0):
             out += spc*calls + f"{key}: {val}\n"
     return out
 
-# print(_verbose_print(d))
+print(_verbose_print(d))
 # print(_brief_print(d))
