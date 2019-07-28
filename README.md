@@ -512,7 +512,7 @@ public class Singleton {
 * For all the fields
     * bool → `c = f ? 1 : 0`
     * byte, char, short, int → `c = (int) f`
-    * beaty went to fast
+    * beaty went too fast
     .
     .
     .
