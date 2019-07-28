@@ -606,7 +606,8 @@ public class Singleton {
     public void pushAll(Iterable<? extends E> src) {
         for (E e : src)
             push(e);
-    }```
+    }
+    ```
 
 * PECs: producer/extends, consumer/super
 * do not use wildcard return types
