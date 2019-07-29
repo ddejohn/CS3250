@@ -664,3 +664,86 @@ public class Singleton {
 * functional interfaces
     * lambda expresions
     * method references
+
+### 7/29/19 class notes
+
+**Exceptions**
+
+* use only for *exceptional* conditions
+* a well-designed API must not force its clients to use exceptions for ordinary control flow
+* three types
+    * checked exceptions (can't ignore)
+        * use for recoverable conditions
+        * avoid unnecessary use
+    * runtime exceptions
+        * can possibly recover from
+        * used for precondition violations and programming errors (array index out of bounds)
+    * errors
+        * resource deficiencies
+        * don't subclass `Error`
+        * don't throw any `AssertionError`
+* Create state-testing methods
+* Favor standard exceptions (avoid creating your own)
+* Match exceptions to the level of abstraction where the error occured
+* Declare all checked exceptions individually
+* document precisely the conditions one is thrown
+* use `@throws` for checked but not for unchecked
+* in exception messages include any values, parameters, and fields that contributed to the error
+* failed method should leave the object in the state it was prior to the invocation
+* check *before* using parameters
+* don't ignore exceptions (no empty catch blocks, you dunce!)
+
+**reg-ex**
+
+```python
+>>> import re
+>>> re.search('a', 'a')
+<re.Match object; span=(0, 1), match='a'>
+>>> re.search('a', 'b')
+>>> re.search('.', 'b')
+<re.Match object; span=(0, 1), match='b'>
+>>> re.search('..', 'b')
+>>> re.search('..', 'ab')
+<re.Match object; span=(0, 2), match='ab'>
+>>> re.search('..', 'abc')
+<re.Match object; span=(0, 2), match='ab'>
+>>> re.search('^.*$', 'abc')
+<re.Match object; span=(0, 3), match='abc'>
+>>> re.search('^.*$', '')
+<re.Match object; span=(0, 0), match=''>
+>>> re.search('^..*$', 'abc')
+<re.Match object; span=(0, 3), match='abc'>
+>>> re.search('^..+$', 'abc')
+<re.Match object; span=(0, 3), match='abc'>
+>>> re.search('^a.+$', 'abc')
+<re.Match object; span=(0, 3), match='abc'>
+>>> re.search('^a+b?$', 'aaaaaaaaaab')
+<re.Match object; span=(0, 11), match='aaaaaaaaaab'>
+>>> re.search('^a+?$', 'aaaaaaaaaa')
+<re.Match object; span=(0, 10), match='aaaaaaaaaa'>
+>>> re.search('a+?', 'aaaaaaaaaa')
+<re.Match object; span=(0, 1), match='a'>
+>>> re.search('a+?b', 'abcaaaa')
+<re.Match object; span=(0, 2), match='ab'>
+>>> re.search('a+?b?c', 'abcaaaa')
+<re.Match object; span=(0, 3), match='abc'>
+>>> re.search('a+?b?c', 'cccabcaabbbaa')
+<re.Match object; span=(3, 6), match='abc'>
+>>> re.search('a+b+c', 'cccabcaabbbaa')
+<re.Match object; span=(3, 6), match='abc'>
+>>> re.search('a+|b+|c', 'cccabcaabbbaa')
+<re.Match object; span=(0, 1), match='c'>
+>>> re.search('a+|b+|c?', 'cccabcaabbbaa')
+<re.Match object; span=(0, 1), match='c'>
+>>> re.search('a+?|b+?|c?', 'cccabcaabbbaa')
+<re.Match object; span=(0, 1), match='c'>
+>>> re.search('a+?|b+?|c+', 'cccabcaabbbaa')
+<re.Match object; span=(0, 3), match='ccc'>
+>>> re.search('[0-9]+', '981365awfwwa')
+<re.Match object; span=(0, 6), match='981365'>
+>>> re.search('[^0-9]+', '981365awfwwa')
+<re.Match object; span=(6, 12), match='awfwwa'>
+>>> re.search(r'(.)(.).\2\1', 'radar')
+<re.Match object; span=(0, 5), match='radar'>
+>>>
+```
