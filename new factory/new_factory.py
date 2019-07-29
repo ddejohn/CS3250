@@ -1,4 +1,4 @@
-import new_factory_data
+from new_factory import new_factory_data
 
 
 _TYPES = new_factory_data.TYPES
