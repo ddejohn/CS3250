@@ -4,7 +4,6 @@
 
 from scipy.special import erf
 
-
 SQ2 = 2**0.5
 
 
@@ -42,7 +41,7 @@ def p_val(H, alpha, T):
 
     return {
         "T": T,
-        "area": phi(T), 
+        "area": phi(T),
         "alpha": alpha,
         "p-value": p,
         "conclusion": conc,
