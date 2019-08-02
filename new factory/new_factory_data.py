@@ -14,7 +14,7 @@ ITEMS = {
     "weapon": {
         "big": [
             "longsword",
-            "claymored,"
+            "claymore,"
             "staff",
             "longbow",
             "recurve bow",
