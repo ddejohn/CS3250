@@ -132,6 +132,7 @@ if __name__ == "__main__":
 
     for _ in range(50):
         item = choice(items)()
-        print(f"{item.rarity} {item.material} {item.item_type}:\n")
-        print(item_description.description(item))
-        print()
+        if item.rarity == "mythical":
+            print(f"{item.rarity} {item.material} {item.item_type}:\n")
+            print(item_description.description(item))
+            print()
