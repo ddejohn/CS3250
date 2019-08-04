@@ -29,6 +29,15 @@ ARMOR_MATERIAL = [
     "meteorite"
 ]
 
+WEAPON_SECONDARY = {
+    "crude": ["splintered wood", "cracked wood", "warped wood"],
+    "common": ["ash", "maple"],
+    "uncommon": ["beech", "mahogany", "hickory", "maple"],
+    "rare": ["hickory", "birch", "cherry"],
+    "legendary": ["walnut", "ebony", "bloodwood", "black oak"],
+    "mythical": ["rosewood", "ebony", "black walnut", "purpleheart"]
+}
+
 def ONE_HANDED():
     return {
         "dagger": [
@@ -142,7 +151,6 @@ GLISTENS = [
     "glitters"
 ]
 
-
 DETAIL_ADJECTIVE = {
     "crude": [
         "scratched",
@@ -252,7 +260,7 @@ DETAIL_VERB = {
         "meticulously",
         "skillfully",
         "precisely",
-        "carefully",
+        "diligently",
         "fastidiously"
     ],
     "legendary": [
@@ -275,6 +283,11 @@ CONDITION = {
         "rusty",
         "marred",
         "deformed",
+        "lousy",
+        "mediocre",
+        "dreadful",
+        "inferior",
+        "substandard",
         "tarnished",
         "blighted",
         "filthy",
@@ -285,18 +298,27 @@ CONDITION = {
         "chipped",
         "blemished",
         "flawed",
+        "mediocre",
+        "common",
+        "middling",
         "tarnished",
         "neglected",
-        "mended",
+        "mended"
     ],
     "uncommon": [
-        "etched",
-        "carved",
+        "fair",
+        "passable",
+        "acceptable",
+        "adequate",
         "blemished",
         "tarnished",
-        "mended",
+        "mended"
     ],
     "rare": [
+        "fine",
+        "exceptional",
+        "refined",
+        "superior",
         "unblemished",
         "faultless",
         "pristine"
@@ -305,43 +327,6 @@ CONDITION = {
         "flawless",
         "immaculate",
         "pristine",
-    ],
-    "mythical": [
-        "flawless",
-        "immaculate",
-        "pristine"
-    ]
-}
-
-QUALITY = {
-    "crude": [
-        "lousy",
-        "mediocre",
-        "dreadful",
-        "inferior",
-        "substandard"
-    ],
-    "common": [
-        "mediocre",
-        "adequate",
-        "common",
-        "middling",
-        "fair"
-    ],
-    "uncommon": [
-        "fair",
-        "suitable",
-        "passable",
-        "acceptable"
-    ],
-    "rare": [
-        "fine",
-        "exceptional",
-        "premium",
-        "refined",
-        "superior"
-    ],
-    "legendary": [
         "exquisite",
         "superior",
         "refined",
@@ -349,9 +334,12 @@ QUALITY = {
         "superb"
     ],
     "mythical": [
+        "flawless",
+        "immaculate",
+        "pristine",
         "exquisite",
         "superior",
         "refined",
-        "impeccable",
+        "impeccable"
     ]
 }

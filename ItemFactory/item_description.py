@@ -3,30 +3,31 @@ import factory_data
 
 
 def description(item):
-    conditions = shuffled(factory_data.CONDITION[item.rarity])
-    adjectives = shuffled(factory_data.DETAIL_ADJECTIVE[item.rarity])
-    nouns = shuffled(factory_data.DETAIL_NOUN[item.rarity])
-    verbs = shuffled(factory_data.DETAIL_VERB[item.rarity])
+    condition = shuffled(factory_data.CONDITION[item.rarity])
+    adjective = shuffled(factory_data.DETAIL_ADJECTIVE[item.rarity])
+    secondary = shuffled(factory_data.WEAPON_SECONDARY[item.rarity])
+    noun = shuffled(factory_data.DETAIL_NOUN[item.rarity])
+    verb = shuffled(factory_data.DETAIL_VERB[item.rarity])
     parts = shuffled(
         factory_data.ONE_HANDED().get(item.item_type,
             factory_data.TWO_HANDED().get(item.item_type))
     )
-    made = shuffled([choice([
-        "formed", "fashioned", "made", "constructed", "assembled"
-    ]), verbs.pop()])
-    quality = factory_data.QUALITY[item.rarity]
-    with_from = choice(["with", "from", "out of"])
-    in_by = choice([
-        "in",
-        "with",
+    made = choice([
+        "shaped",
+        "formed",
+        "fashioned",
+        "made",
+        "constructed",
+        "assembled"
     ])
+    in_by = choice(["in", "with", "by"])
     
     first_sentence = " ".join([
-        f"{a_an(conditions.pop()).capitalize()}",
+        f"{a_an(condition.pop()).capitalize()}",
         f"{set_or_pair(item.item_type)} with",
-        f"{a_an(adjectives.pop())} and {adjectives.pop()} {parts.pop()},",
-        f"{made.pop()} {made.pop()} {with_from}",
-        f"{choice(quality)} {item.material}.",
+        f"{a_an(adjective.pop())} and {adjective.pop()} {parts.pop()},",
+        f"{verb.pop()} {made} from",
+        f"{item.material} and {choice(secondary)}.",
     ])
 
     if item.rarity == "rare":
@@ -45,9 +46,9 @@ def description(item):
         ])
     else:
         last_sentence = " ".join([
-            f"The {is_are(parts.pop())} {adjectives.pop()} and",
-            f"{adjectives.pop()}, and the {is_are(parts.pop())}",
-            f"covered {in_by} {nouns.pop()} and {nouns.pop()}."
+            f"The {is_are(parts.pop())} {adjective.pop()} and",
+            f"{adjective.pop()}, and the {is_are(parts.pop())}",
+            f"covered {in_by} {noun.pop()} and {noun.pop()}."
         ])
     
     return f"{first_sentence}\n{last_sentence}"
