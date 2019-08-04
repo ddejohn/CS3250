@@ -168,7 +168,7 @@ def description(item):
             f"covered {in_by} {nouns.pop()} and {nouns.pop()}."
         ])
     
-    return f"{first_sentence} {last_sentence}"
+    return f"{first_sentence}\n{last_sentence}"
 
 def shuffled(this):
     return sample(this, len(this))

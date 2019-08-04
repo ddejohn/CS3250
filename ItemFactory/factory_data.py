@@ -95,7 +95,6 @@ LUSTERS = [
     "rainbow",
     "verdigris",
     "prismatic",
-    "lustrous",
     "opalescent",
     "nacreous",
     "variegated",
