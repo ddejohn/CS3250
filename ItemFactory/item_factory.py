@@ -20,59 +20,67 @@ class Material(Rarity):
         self.material = {
             WeaponItem: choice(
                 choices(
-                    population=factory_data.MATERIAL["weapon"],
+                    population=factory_data.WEAPON_MATERIAL,
                     weights=factory_data.RARITY[self.rarity],
-                    k=len(factory_data.MATERIAL["weapon"])
+                    k=len(factory_data.WEAPON_MATERIAL)
                 )
             ),
             ArmorItem: choice(
                 choices(
-                    population=factory_data.MATERIAL["armor"],
+                    population=factory_data.ARMOR_MATERIAL,
                     weights=factory_data.RARITY[self.rarity],
-                    k=len(factory_data.MATERIAL["armor"])
+                    k=len(factory_data.ARMOR_MATERIAL)
                 )
             )
         }[type(self).__base__]
 
 
-class WeaponItem(Material):
+class WeaponName:
+    def __init__(self):
+        self.name = str
+
+
+class WeaponStats:
+    def __init__(self):
+        self.damage = int
+        self.range = int
+        self.speed = int
+        self.luck = int
+
+
+class ArmorName:
+    def __init__(self):
+        self.name = str
+
+
+class ArmorStats:
+    def __init__(self):
+        self.protection = int
+        self.noise = int
+        self.movement = int
+        self.luck = int
+
+
+class WeaponItem(WeaponStats, WeaponName, Material):
     def __init__(self):
         super().__init__()
 
 
-class ArmorItem(Material):
+class ArmorItem(ArmorStats, ArmorName, Material):
     def __init__(self):
         super().__init__()
 
 
-class WeaponBlade(WeaponItem):
+class WeaponOneHand(WeaponItem):
     def __init__(self):
         super().__init__()
-        self.item_type = choice(["blade", "dagger", "shortsword", "longsword"])
+        self.item_type = choice(list(factory_data.ONE_HANDED.keys()))
 
 
-class WeaponBow(WeaponItem):
+class WeaponTwoHand(WeaponItem):
     def __init__(self):
         super().__init__()
-        self.item_type = choice(["bow", "recurve bow", "longbow", "flatbow"])
-
-
-class WeaponAxe(WeaponItem):
-    def __init__(self):
-        super().__init__()
-        self.item_type = choice(["axe", "battle axe", "labrys"])
-
-
-class WeaponHammer(WeaponItem):
-    def __init__(self):
-        super().__init__()
-        self.item_type = choice(["hammer", "war hammer", "meteor hammer"])
-
-
-class ArmorChest(ArmorItem):
-    def __init__(self):
-        super().__init__()
-        self.item_type = "armor"
+        self.item_type = choice(list(factory_data.TWO_HANDED.keys()))
 
 
 class ArmorHead(ArmorItem):
@@ -81,25 +89,60 @@ class ArmorHead(ArmorItem):
         self.item_type = "helm"
 
 
+class ArmorChest(ArmorItem):
+    def __init__(self):
+        super().__init__()
+        self.item_type = "armor"
+
+
 class ArmorHands(ArmorItem):
     def __init__(self):
         super().__init__()
         self.item_type = choice(["gloves", "gauntlets"])
 
 
-class ArmorBoots(ArmorItem):
+class ArmorFeet(ArmorItem):
     def __init__(self):
         super().__init__()
         self.item_type = "boots"
 
 
+class ArmorSet:
+    def __init__(self):
+        self.head = ArmorHead
+        self.chest = ArmorChest
+        self.hands = ArmorHands
+        self.feet = ArmorFeet
+
+
+class Player(Holder, ArmorSet):
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     items = [
-        WeaponBlade,
-        WeaponAxe,
-        WeaponBow,
-        WeaponHammer,
-        ArmorBoots,
+        WeaponOneHand,
+        WeaponTwoHand,
+        ArmorFeet,
         ArmorChest,
         ArmorHands,
         ArmorHead
