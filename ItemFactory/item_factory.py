@@ -138,12 +138,13 @@ def description(item):
         "in",
         "with",
     ])
-    if item.rarity in ["legendary", "mythical"]:
-        all_parts = ", ".join([parts[0], parts[1], parts[2]])
-        last_sentence = " ".join([
-            f"The {all_parts}, and {parts[3]}",
-            f"are all inlaid with {inlays()}."
-        ])
+    if item.rarity in ["rare", "legendary", "mythical"]:
+        if item.rarity in ["legendary", "mythical"]:
+            all_parts = ", ".join([parts[0], parts[1], parts[2]])
+            last_sentence = " ".join([
+                f"The {all_parts}, and {parts[3]}",
+                f"are all inlaid with {inlays()}."
+            ])
     else:
         last_sentence = " ".join([
             f"The {is_are(parts[1])} {adjectives.pop()} and",
@@ -202,7 +203,7 @@ if __name__ == "__main__":
 
     for _ in range(50):
         item = choice(items)()
-        if item.rarity in ["legendary", "mythical"]:
+        if item.rarity in ["rare"]:
             print(f"{item.rarity} {item.material} {item.item_type}:\n")
             print(description(item))
             print()

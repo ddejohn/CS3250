@@ -78,6 +78,45 @@ BARBS = [
     "spikes",
 ]
 
+PATINAS = [
+    "rainbow",
+    "verdigris",
+    "prismatic",
+    "lustrous",
+    "opalescent",
+    "nacreous",
+    "variegated",
+    "iridescent"
+]
+
+ETCHINGS = [
+    "intricate",
+    "elaborate",
+    "detailed",
+    "elegant",
+    "sophisticated",
+    "complex",
+    "labyrinthine",
+    "minute",
+]
+
+CARVINGS = [
+    "carvings",
+    "etchings",
+    "patterns",
+    "inscriptions",
+    "engravings"
+]
+
+LUSTERS = [
+    "patina",
+    "shimmer",
+    "luster",
+    "glint",
+    "finish",
+    "gleam"
+]
+
 DETAIL_ADJECTIVE = {
     "crude": [
         "scratched",
@@ -110,8 +149,8 @@ DETAIL_ADJECTIVE = {
     "rare": [
         "polished",
         "smooth",
-        "gleaming",
         "elegant",
+        "immaculate",
         "spotless"
     ],
     "legendary": [
@@ -154,24 +193,16 @@ DETAIL_NOUN = {
         "residue"
     ],
     "rare": [
-        "patina",
-        "etchings",
-        "carvings",
-        "patterns"
+        f"{choice(PATINAS)} {choice(LUSTERS)}",
+        f"{choice(ETCHINGS)} {choice(CARVINGS)}",
     ],
     "legendary": [
-        "etchings",
-        "carvings",
-        "patterns",
-        "inscriptions",
-        "engravings",
+        f"{choice(PATINAS)} {choice(LUSTERS)}",
+        f"{choice(ETCHINGS)} {choice(CARVINGS)}",
     ],
     "mythical": [
-        "etchings",
-        "carvings",
-        "patterns",
-        "inscriptions",
-        "engravings",
+        f"{choice(PATINAS)} {choice(LUSTERS)}",
+        f"{choice(ETCHINGS)} {choice(CARVINGS)}",
     ]
 }
 
