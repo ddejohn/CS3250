@@ -141,12 +141,12 @@ def description(item):
     if item.rarity in ["legendary", "mythical"]:
         all_parts = ", ".join([parts[0], parts[1], parts[2]])
         last_sentence = " ".join([
-            f"\nThe {all_parts}, and {parts[3]}",
+            f"The {all_parts}, and {parts[3]}",
             f"are all inlaid with {inlays()}."
         ])
     else:
         last_sentence = " ".join([
-            f"\nThe {is_are(parts[1])} {adjectives.pop()} and",
+            f"The {is_are(parts[1])} {adjectives.pop()} and",
             f"{adjectives.pop()}, and the {is_are(parts[2])}",
             f"covered {in_by} {nouns.pop()} and {nouns.pop()}."
         ])
@@ -181,11 +181,13 @@ def a_an(this):
 def inlays():
     all_inlays = shuffled(factory_data.INLAYS)
     these_inlays = []
-    for _ in range(randint(2, 4)):
+    for _ in range(randint(1, 3)):
         these_inlays.append(all_inlays.pop())
     last, *rest = these_inlays
     if rest:
-        return ", ".join(rest) + f", and {last}"
+        if len(rest) == 1:
+            return f"{last} and {rest[0]}"
+        return ", ".join(rest) + f", and {last}" 
     return last
 
 if __name__ == "__main__":
@@ -200,6 +202,7 @@ if __name__ == "__main__":
 
     for _ in range(50):
         item = choice(items)()
-        print(f"{item.rarity} {item.material} {item.item_type}:\n")
-        print(description(item))
-        print()
+        if item.rarity in ["legendary", "mythical"]:
+            print(f"{item.rarity} {item.material} {item.item_type}:\n")
+            print(description(item))
+            print()
