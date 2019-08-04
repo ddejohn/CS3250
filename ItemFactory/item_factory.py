@@ -74,13 +74,13 @@ class ArmorItem(Material):
 class WeaponOneHand(WeaponItem):
     def __init__(self):
         super().__init__()
-        self.item_type = choice(list(factory_data.ONE_HANDED.keys()))
+        self.item_type = choice(list(factory_data.ONE_HANDED().keys()))
 
 
 class WeaponTwoHand(WeaponItem):
     def __init__(self):
         super().__init__()
-        self.item_type = choice(list(factory_data.TWO_HANDED.keys()))
+        self.item_type = choice(list(factory_data.TWO_HANDED().keys()))
 
 
 class ArmorHead(ArmorItem):
@@ -126,40 +126,49 @@ def description(item):
     nouns = shuffled(factory_data.DETAIL_NOUN[item.rarity])
     verbs = shuffled(factory_data.DETAIL_VERB[item.rarity])
     parts = shuffled(
-        factory_data.ONE_HANDED.get(item.item_type,
-            factory_data.TWO_HANDED.get(item.item_type))
+        factory_data.ONE_HANDED().get(item.item_type,
+            factory_data.TWO_HANDED().get(item.item_type))
     )
     made = shuffled([choice([
         "formed", "fashioned", "made", "constructed", "assembled"
     ]), verbs.pop()])
     quality = factory_data.QUALITY[item.rarity]
-    with_from = choice(["with", "from", "using", "out of"])
+    with_from = choice(["with", "from", "out of"])
     in_by = choice([
         "in",
         "with",
     ])
-    if item.rarity in ["rare", "legendary", "mythical"]:
-        if item.rarity in ["legendary", "mythical"]:
-            all_parts = ", ".join([parts[0], parts[1], parts[2]])
-            last_sentence = " ".join([
-                f"The {all_parts}, and {parts[3]}",
-                f"are all inlaid with {inlays()}."
-            ])
+    
+    first_sentence = " ".join([
+        f"{a_an(conditions.pop()).capitalize()}",
+        f"{set_or_pair(item.item_type)} with",
+        f"{a_an(adjectives.pop())} and {adjectives.pop()} {parts.pop()},",
+        f"{made.pop()} {made.pop()} {with_from}",
+        f"{choice(quality)} {item.material}.",
+    ])
+
+    if item.rarity == "rare":
+        last, *rest = parts
+        rest = ", ".join(rest)
+        last_sentence = " ".join([
+            f"The {rest}, and {last}",
+            f"are all covered in {patinas_etchings(item.item_type)}."
+        ])
+    elif item.rarity in ["legendary", "mythical"]:
+        last, *rest = parts
+        rest = ", ".join(rest)
+        last_sentence = " ".join([
+            f"The {rest}, and {last}",
+            f"are all inlaid with {inlays()}."
+        ])
     else:
         last_sentence = " ".join([
-            f"The {is_are(parts[1])} {adjectives.pop()} and",
-            f"{adjectives.pop()}, and the {is_are(parts[2])}",
+            f"The {is_are(parts.pop())} {adjectives.pop()} and",
+            f"{adjectives.pop()}, and the {is_are(parts.pop())}",
             f"covered {in_by} {nouns.pop()} and {nouns.pop()}."
         ])
     
-    return " ".join([
-        f"{a_an(conditions.pop()).capitalize()}",
-        f"{set_or_pair(item.item_type)} with",
-        f"{a_an(adjectives.pop())} and {adjectives.pop()} {parts[0]},",
-        f"{made.pop()} {made.pop()} {with_from}",
-        f"{choice(quality)} {item.material}.",
-        last_sentence
-    ])
+    return f"{first_sentence} {last_sentence}"
 
 def shuffled(this):
     return sample(this, len(this))
@@ -191,6 +200,15 @@ def inlays():
         return ", ".join(rest) + f", and {last}" 
     return last
 
+def patinas_etchings(item_type):
+    return " ".join([
+        f"{choice(factory_data.ETCHINGS)} {choice(factory_data.CARVINGS)},",
+        f"and the {choice(['whole', 'entire'])} {item_type.split()[-1]}",
+        f"{choice(factory_data.GLISTENS)}",
+        f"with {a_an(choice(factory_data.LUSTERS))}",
+        f"{choice(factory_data.PATINAS)}"
+    ])
+
 if __name__ == "__main__":
     items = [
         WeaponOneHand,
@@ -200,10 +218,9 @@ if __name__ == "__main__":
         # ArmorHands,
         # ArmorHead
     ]
-
+    from pprint import pprint
     for _ in range(50):
         item = choice(items)()
-        if item.rarity in ["rare"]:
-            print(f"{item.rarity} {item.material} {item.item_type}:\n")
-            print(description(item))
-            print()
+        print(f"{item.rarity} {item.material} {item.item_type}:\n")
+        print(description(item))
+        print()

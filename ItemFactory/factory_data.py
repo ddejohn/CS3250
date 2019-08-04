@@ -5,7 +5,7 @@ RARITY = {
     "common": [50, 100, 50, 10, 0, 0, 0],
     "uncommon": [0, 0, 50, 20, 10, 0, 0],
     "rare": [0, 0, 0, 0, 100, 10, 0],
-    "legendary": [0, 0, 0, 0, 0, 100, 10],
+    "legendary": [0, 0, 0, 0, 30, 100, 10],
     "mythical": [0, 0, 0, 0, 0, 30, 100]
 }
 
@@ -29,24 +29,37 @@ ARMOR_MATERIAL = [
     "meteorite"
 ]
 
-ONE_HANDED = {
-    "dagger": ["fuller", "grip", "pommel", choice(["cross-guard", "quillon"])],
-    "shortsword": [
-        "fuller", "grip", "pommel", choice(["cross-guard", "quillon"])
-    ],
-    "battle axe": ["pommel", "haft", "hook", "beard"],
-    "labrys": ["pommel", "haft", "hook", "beard"]
-}
+def ONE_HANDED():
+    return {
+        "dagger": [
+            "fuller",
+            "pommel",
+            choice(["hilt", "grip"]),
+            choice(["cross-guard", "quillon"])
+        ],
+        "shortsword": [
+            "fuller",
+            "pommel",
+            choice(["hilt", "grip"]),
+            choice(["cross-guard", "quillon"])
+        ],
+        "battle axe": ["pommel", "haft", "hook", "beard"],
+        "labrys": ["pommel", "haft", "hook", "beard"]
+    }
 
-TWO_HANDED = {
-    "longsword": [
-        "fuller", "grip", "pommel", choice(["cross-guard", "quillon"])
-    ],
-    "recurve bow": ["nock", "face", "belly", "grip"],
-    "scythian bow": ["nock", "face", "belly", "grip"],
-    "longbow": ["nock", "face", "belly", "grip"],
-    "war hammer": ["face", "cheek", "throat", choice(["haft", "handle"])],
-}
+def TWO_HANDED():
+    return {
+        "longsword": [
+            "fuller",
+            "pommel",
+            choice(["hilt", "grip"]),
+            choice(["cross-guard", "quillon"])
+        ],
+        "recurve bow": ["nock", "face", "belly", choice(["hilt", "grip"])],
+        "scythian bow": ["nock", "face", "belly", choice(["hilt", "grip"])],
+        "longbow": ["nock", "face", "belly", choice(["hilt", "grip"])],
+        "war hammer": ["face", "cheek", "throat", choice(["haft", "handle"])],
+    }
 
 INLAYS = [
     "bone",
@@ -78,7 +91,7 @@ BARBS = [
     "spikes",
 ]
 
-PATINAS = [
+LUSTERS = [
     "rainbow",
     "verdigris",
     "prismatic",
@@ -108,14 +121,28 @@ CARVINGS = [
     "engravings"
 ]
 
-LUSTERS = [
+PATINAS = [
     "patina",
     "shimmer",
+    "shine",
+    "sheen",
+    "brilliance",
     "luster",
-    "glint",
     "finish",
-    "gleam"
 ]
+
+GLISTENS = [
+    "glistens",
+    "gleams",
+    "glimmers",
+    "twinkles",
+    "flashes",
+    "radiates",
+    "beams",
+    "glows",
+    "glitters"
+]
+
 
 DETAIL_ADJECTIVE = {
     "crude": [
@@ -171,11 +198,12 @@ DETAIL_NOUN = {
     "crude": [
         "dried blood",
         "dirt",
+        "claw marks",
         "scratches",
         "gashes",
         "notches",
         "bits of fur",
-        choice(["teeth marks", "claw marks"])
+        "teeth marks"
     ],
     "common": [
         "dried blood",
@@ -192,18 +220,9 @@ DETAIL_NOUN = {
         "soot",
         "residue"
     ],
-    "rare": [
-        f"{choice(PATINAS)} {choice(LUSTERS)}",
-        f"{choice(ETCHINGS)} {choice(CARVINGS)}",
-    ],
-    "legendary": [
-        f"{choice(PATINAS)} {choice(LUSTERS)}",
-        f"{choice(ETCHINGS)} {choice(CARVINGS)}",
-    ],
-    "mythical": [
-        f"{choice(PATINAS)} {choice(LUSTERS)}",
-        f"{choice(ETCHINGS)} {choice(CARVINGS)}",
-    ]
+    "rare": [],
+    "legendary": [],
+    "mythical": []
 }
 
 DETAIL_VERB = {
@@ -279,9 +298,8 @@ CONDITION = {
         "mended",
     ],
     "rare": [
-        "carved",
-        "polished",
         "unblemished",
+        "faultless",
         "pristine"
     ],
     "legendary": [
