@@ -129,7 +129,7 @@ if __name__ == "__main__":
         # ArmorHands,
         # ArmorHead
     ]
-    from pprint import pprint
+
     for _ in range(50):
         item = choice(items)()
         print(f"{item.rarity} {item.material} {item.item_type}:\n")
