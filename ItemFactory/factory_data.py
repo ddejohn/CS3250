@@ -2,13 +2,14 @@ from random import choice, sample, randint
 
 
 RARITY = {
-    "crude": [100, 70, 0, 0, 0, 0, 0],
-    "common": [40, 100, 50, 10, 0, 0, 0],
-    "uncommon": [0, 50, 60, 40, 5, 0, 0],
-    "rare": [0, 0, 0, 10, 100, 10, 0],
-    "legendary": [0, 0, 0, 0, 30, 100, 10],
-    "mythical": [0, 0, 0, 0, 0, 30, 100]
+    "crude": [50, 50, 0, 0, 0, 0, 0],
+    "common": [10, 50, 50, 10, 0, 0, 0],
+    "uncommon": [0, 50, 50, 10, 5, 0, 0],
+    "rare": [0, 0, 5, 10, 50, 50, 0],
+    "legendary": [0, 0, 0, 0, 50, 100, 10],
+    "mythical": [0, 0, 0, 0, 0, 50, 100]
 }
+
 
 WEAPON_MATERIAL = [
     "iron",
@@ -20,15 +21,41 @@ WEAPON_MATERIAL = [
     "meteorite",
 ]
 
-ARMOR_MATERIAL = [
+
+ARMOR_LIGHT = [
     "hide",
     "leather",
-    "iron",
-    "steel",
+    "obsidian",
+    "electrum",
     "bone",
-    "onyx",
+    "adamantite",
     "meteorite"
 ]
+
+
+ARMOR_HEAVY = [
+    "iron",
+    "steel",
+    "obsidian",
+    "bone",
+    "onyx",
+    "adamantite",
+    "meteorite"
+]
+
+
+LIGHT_ARMOR_CONSTRUCTION = [
+    "mail",
+    "lamellar",
+    "scale"
+]
+
+
+HEAVY_ARMOR_CONSTRUCTION = [
+    "laminar",
+    "plate",
+]
+
 
 WEAPON_SECONDARY = {
     "crude": ["splintered wood", "cracked wood", "warped wood"],
@@ -38,6 +65,7 @@ WEAPON_SECONDARY = {
     "legendary": ["walnut", "ebony", "bloodwood", "black oak"],
     "mythical": ["rosewood", "ebony", "black walnut", "purpleheart"]
 }
+
 
 INLAYS = [
     "bone",
@@ -60,14 +88,6 @@ INLAYS = [
     "pearl"
 ]
 
-BARBS = [
-    "fangs",
-    "claws",
-    "teeth",
-    "thorns",
-    "spines",
-    "spikes",
-]
 
 LUSTERS = [
     "rainbow",
@@ -78,6 +98,7 @@ LUSTERS = [
     "variegated",
     "iridescent"
 ]
+
 
 ETCHINGS = [
     "intricate",
@@ -90,6 +111,7 @@ ETCHINGS = [
     "minute",
 ]
 
+
 CARVINGS = [
     "carvings",
     "etchings",
@@ -97,6 +119,7 @@ CARVINGS = [
     "inscriptions",
     "engravings"
 ]
+
 
 PATINAS = [
     "patina",
@@ -107,6 +130,7 @@ PATINAS = [
     "luster",
     "finish",
 ]
+
 
 GLISTENS = [
     "glistens",
@@ -119,6 +143,7 @@ GLISTENS = [
     "glows",
     "glitters"
 ]
+
 
 DETAIL_ADJECTIVE = {
     "crude": [
@@ -170,6 +195,7 @@ DETAIL_ADJECTIVE = {
     ]
 }
 
+
 DETAIL_NOUN = {
     "crude": [
         "dried blood",
@@ -200,6 +226,7 @@ DETAIL_NOUN = {
     "legendary": [],
     "mythical": []
 }
+
 
 DETAIL_VERB = {
     "crude": [
@@ -245,6 +272,7 @@ DETAIL_VERB = {
         "flawlessly"
     ]
 }
+
 
 CONDITION = {
     "crude": [
@@ -423,6 +451,8 @@ NAMES = {
         "of the night",
         "of the stars",
         "of the storm",
+        "of the shamed",
+        "of the hated",
         "of the dawn",
         "of the dusk",
         "of the morning"
@@ -574,49 +604,142 @@ NAMES = {
 }
 
 
-def ONE_HANDED():
+# def ONE_HANDED():
+#     return {
+#         "dagger": [
+#             "fuller",
+#             "pommel",
+#             choice(["hilt", "grip"]),
+#             choice(["cross-guard", "quillon"])
+#         ],
+#         "shortsword": [
+#             "fuller",
+#             "pommel",
+#             choice(["hilt", "grip"]),
+#             choice(["cross-guard", "quillon"])
+#         ],
+#         "battle axe": ["pommel", "haft", "hook", "beard"],
+#         "labrys": ["pommel", "haft", "hook", "beard"]
+#     }
+
+
+# def TWO_HANDED():
+#     return {
+#         "longsword": [
+#             "fuller",
+#             "pommel",
+#             choice(["hilt", "grip"]),
+#             choice(["cross-guard", "quillon"])
+#         ],
+#         "recurve bow": ["nock", "face", "belly", choice(["hilt", "grip"])],
+#         "scythian bow": ["nock", "face", "belly", choice(["hilt", "grip"])],
+#         "longbow": ["nock", "face", "belly", choice(["hilt", "grip"])],
+#         "war hammer": ["face", "cheek", "throat", choice(["haft", "handle"])],
+#     }
+
+
+def WEAPON_PARTS(item):
     return {
-        "dagger": [
-            "fuller",
-            "pommel",
-            choice(["hilt", "grip"]),
-            choice(["cross-guard", "quillon"])
-        ],
-        "shortsword": [
-            "fuller",
-            "pommel",
-            choice(["hilt", "grip"]),
-            choice(["cross-guard", "quillon"])
-        ],
-        "battle axe": ["pommel", "haft", "hook", "beard"],
-        "labrys": ["pommel", "haft", "hook", "beard"]
-    }
+        "WeaponOneHand": {
+            "dagger": [
+                "fuller",
+                "pommel",
+                choice(["hilt", "grip"]),
+                choice(["cross-guard", "quillon"])
+            ],
+            "shortsword": [
+                "fuller",
+                "pommel",
+                choice(["hilt", "grip"]),
+                choice(["cross-guard", "quillon"])
+            ],
+            "battle axe": ["pommel", "haft", "hook", "beard"],
+            "labrys": ["pommel", "haft", "hook", "beard"]
+            },
+        "WeaponTwoHand": {
+            "longsword": [
+                "fuller",
+                "pommel",
+                choice(["hilt", "grip"]),
+                choice(["cross-guard", "quillon"])
+            ],
+            "recurve bow": [
+                "nock", "face", "belly", choice(["hilt", "grip"])
+            ],
+            "scythian bow": [
+                "nock", "face", "belly", choice(["hilt", "grip"])
+            ],
+            "longbow": [
+                "nock", "face", "belly", choice(["hilt", "grip"])
+            ],
+            "war hammer": [
+                "face", "cheek", "throat", choice(["haft", "handle"])
+            ],
+        }
+    }[item.weapon_type.__name__][type(item).__name__]
 
 
-def TWO_HANDED():
+def ARMOR_PARTS(item):
     return {
-        "longsword": [
-            "fuller",
-            "pommel",
-            choice(["hilt", "grip"]),
-            choice(["cross-guard", "quillon"])
-        ],
-        "recurve bow": ["nock", "face", "belly", choice(["hilt", "grip"])],
-        "scythian bow": ["nock", "face", "belly", choice(["hilt", "grip"])],
-        "longbow": ["nock", "face", "belly", choice(["hilt", "grip"])],
-        "war hammer": ["face", "cheek", "throat", choice(["haft", "handle"])],
-    }
+        "ArmorHead": {
+            "ArmorHeavy": [
+                "visor",
+                "comb",
+                choice(["gorget", "aventail", "camail"])
+            ],
+            "ArmorLight": [
+                "cowl",
+                "gaiter"
+            ],
+        },
+        "ArmorChest": {
+            "ArmorHeavy": [
+                "breastplate",
+                "pauldrons",
+                "faulds",
+                "gardbrace",
+                "bassart"
+            ],
+            "ArmorLight": [
+                "plackard",
+                "spaulders",
+                "gardbrace",
+                "culet",
+            ],
+        },
+        "ArmorHands": {
+            "ArmorHeavy": [
+                "rerebrace",
+                "lower cannon",
+            ],
+            "ArmorLight": [
+                "rerebrace",
+                "vambrace"
+            ],
+        },
+        "ArmorFeet": {
+            "ArmorHeavy": [
+                "cuisse",
+                "greaves",
+                "solleret"
+            ],
+            "ArmorLight": [
+                "cuisse",
+                "greaves",
+                "sabatons"
+            ],
+        },
+    }[item.armor_type.__name__][type(item).__name__]
 
 
-def item_description(item):
+def weapon_description(item):
+    print(type(item).__name__)
     condition = shuffled(CONDITION[item.rarity])
     adjective = shuffled(DETAIL_ADJECTIVE[item.rarity])
     secondary = shuffled(WEAPON_SECONDARY[item.rarity])
     noun = shuffled(DETAIL_NOUN[item.rarity])
     verb = shuffled(DETAIL_VERB[item.rarity])
-    parts = shuffled(
-        ONE_HANDED().get(item.item_type, TWO_HANDED().get(item.item_type))
-    )
+    parts = shuffled(WEAPON_PARTS(item))
     made = choice([
         "shaped",
         "formed",
@@ -657,9 +780,13 @@ def item_description(item):
         ])
 
     if item.rarity in ["crude", "common", "uncommon"]:
-        new_name = " ".join([item.rarity, item.material, item.item_type])
+        chosen_name = choice([
+            [item.rarity, item.material, item.item_type],
+            [choice(CONDITION[item.rarity]), item.material, item.item_type]
+        ])
+        new_name = " ".join(chosen_name)
     else:
-        new_name = item_name(item)
+        new_name = weapon_name(item)
 
     return {
         "name": new_name,
@@ -667,7 +794,7 @@ def item_description(item):
     }
 
 
-def item_name(item):
+def weapon_name(item):
     adjectives = NAMES["adjectives"]
     abstract = NAMES["abstract"]
     prefixes = NAMES["prefixes"]
@@ -697,7 +824,8 @@ def item_name(item):
             [choice(adjectives), choice(nouns), choice(abstract)],
             [choice(adjectives), item.material, choice(nouns)],
             [choice(adjectives), choice(nouns), "of "+item.material],
-            [choice(adjectives), item.material, choice(nouns), choice(abstract)]
+            [choice(adjectives), item.material,
+             choice(nouns), choice(abstract)]
         ]))
     else:
         new_name.extend(choice([
