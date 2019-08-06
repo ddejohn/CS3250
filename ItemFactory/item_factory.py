@@ -1,6 +1,5 @@
 from random import choice, choices
 import factory_data
-import item_description
 
 
 class Rarity:
@@ -36,29 +35,20 @@ class Material(Rarity):
         }[type(self).__base__]
 
 
-class WeaponName:
-    def __init__(self):
-        self.name = str
-
-
 class WeaponStats:
     def __init__(self):
         self.damage = int
         self.range = int
         self.speed = int
         self.luck = int
-
-
-class ArmorName:
-    def __init__(self):
-        self.name = str
+        self.hands = int
 
 
 class ArmorStats:
     def __init__(self):
         self.protection = int
-        self.noise = int
         self.movement = int
+        self.noise = int
         self.luck = int
 
 
@@ -76,12 +66,16 @@ class WeaponOneHand(WeaponItem):
     def __init__(self):
         super().__init__()
         self.item_type = choice(list(factory_data.ONE_HANDED().keys()))
+        for key, val in factory_data.item_description(self).items():
+            setattr(self, key, val)
 
 
 class WeaponTwoHand(WeaponItem):
     def __init__(self):
         super().__init__()
         self.item_type = choice(list(factory_data.TWO_HANDED().keys()))
+        for key, val in factory_data.item_description(self).items():
+            setattr(self, key, val)
 
 
 class ArmorHead(ArmorItem):
@@ -130,9 +124,10 @@ if __name__ == "__main__":
         # ArmorHead
     ]
 
-    for _ in range(50):
+    for _ in range(1000):
         item = choice(items)()
+        # if item.rarity in ["rare", "legendary", "mythical"]:
+            # print(f"{item.name}:\n\n{item.description}\n")
+        # if item.rarity in ["legendary", "mythical"]:
         if item.rarity == "mythical":
-            print(f"{item.rarity} {item.material} {item.item_type}:\n")
-            print(item_description.description(item))
-            print()
+            print(f"{item.name}")

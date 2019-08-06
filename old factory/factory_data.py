@@ -423,7 +423,7 @@ NAMES = {
         "mind",
         "god",
         "star",
-        "shadow"
+        "shadow",
         "sun",
         "moon",
         "storm"
@@ -440,6 +440,7 @@ NAMES = {
         "heart"
     ],
     "suffixes": [
+        "'s eye",
         "sbane",
         "ripper",
         "eater",
