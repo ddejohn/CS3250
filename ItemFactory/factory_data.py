@@ -638,44 +638,72 @@ NAMES = {
 #     }
 
 
+# def WEAPON_PARTS(item):
+#     return {
+#         "WeaponOneHand": {
+#             "dagger": [
+#                 "fuller",
+#                 "pommel",
+#                 choice(["hilt", "grip"]),
+#                 choice(["cross-guard", "quillon"])
+#             ],
+#             "shortsword": [
+#                 "fuller",
+#                 "pommel",
+#                 choice(["hilt", "grip"]),
+#                 choice(["cross-guard", "quillon"])
+#             ],
+#             "battle axe": ["pommel", "haft", "hook", "beard"],
+#             "labrys": ["pommel", "haft", "hook", "beard"]
+#             },
+#         "WeaponTwoHand": {
+#             "longsword": [
+#                 "fuller",
+#                 "pommel",
+#                 choice(["hilt", "grip"]),
+#                 choice(["cross-guard", "quillon"])
+#             ],
+#             "recurve bow": [
+#                 "nock", "face", "belly", choice(["hilt", "grip"])
+#             ],
+#             "scythian bow": [
+#                 "nock", "face", "belly", choice(["hilt", "grip"])
+#             ],
+#             "longbow": [
+#                 "nock", "face", "belly", choice(["hilt", "grip"])
+#             ],
+#             "war hammer": [
+#                 "face", "cheek", "throat", choice(["haft", "handle"])
+#             ],
+#         }
+#     }[item.weapon_type.__name__][type(item).__name__]
+
+
 def WEAPON_PARTS(item):
     return {
-        "WeaponOneHand": {
-            "dagger": [
-                "fuller",
-                "pommel",
-                choice(["hilt", "grip"]),
-                choice(["cross-guard", "quillon"])
-            ],
-            "shortsword": [
-                "fuller",
-                "pommel",
-                choice(["hilt", "grip"]),
-                choice(["cross-guard", "quillon"])
-            ],
-            "battle axe": ["pommel", "haft", "hook", "beard"],
-            "labrys": ["pommel", "haft", "hook", "beard"]
-            },
-        "WeaponTwoHand": {
-            "longsword": [
-                "fuller",
-                "pommel",
-                choice(["hilt", "grip"]),
-                choice(["cross-guard", "quillon"])
-            ],
-            "recurve bow": [
-                "nock", "face", "belly", choice(["hilt", "grip"])
-            ],
-            "scythian bow": [
-                "nock", "face", "belly", choice(["hilt", "grip"])
-            ],
-            "longbow": [
-                "nock", "face", "belly", choice(["hilt", "grip"])
-            ],
-            "war hammer": [
-                "face", "cheek", "throat", choice(["haft", "handle"])
-            ],
-        }
+        "blade": [
+            "fuller",
+            "pommel",
+            choice(["hilt", "grip"]),
+            choice(["cross-guard", "quillon"])
+        ],
+        "axe": [
+            "pommel",
+            "haft",
+            "hook",
+            "beard"
+        ],
+        "bow": [
+            "nock",
+            "face",
+            choice(["hilt", "grip"])
+        ],
+        "blunt": [
+            "throat",
+            choice(["cheek", "flange"]),
+            choice(["face", "crown"]),
+            choice(["haft", "handle", "grip"])
+        ],
     }[item.weapon_type.__name__][type(item).__name__]
 
 

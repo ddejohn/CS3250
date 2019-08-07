@@ -14,33 +14,26 @@ class Rarity:
         )
 
 
-class WeaponMaterial(Rarity):
+class Material(Rarity):
     def __init__(self):
         super().__init__()
-        self.material = choice(
+        self.material = self.choose(self.__class__.__bases__[1])
+
+    def choose(self, item_type):
+        material_list = {
+            WeaponOneHand: factory_data.WEAPON_MATERIAL,
+            WeaponTwoHand: factory_data.WEAPON_MATERIAL,
+            ArmorLight: factory_data.ARMOR_LIGHT,
+            ArmorHeavy: factory_data.ARMOR_HEAVY
+        }[item_type]
+
+        return choice(
             choices(
-                population=factory_data.WEAPON_MATERIAL,
+                population=material_list,
                 weights=factory_data.RARITY[self.rarity],
-                k=len(factory_data.WEAPON_MATERIAL)
+                k=len(material_list)
             )
         )
-
-
-class ArmorMaterial(Rarity):
-    def __init__(self):
-        super().__init__()
-        self.material = {
-            ArmorHeavy: choice(choices(
-                population=factory_data.ARMOR_HEAVY,
-                weights=factory_data.RARITY[self.rarity],
-                k=len(factory_data.ARMOR_HEAVY)
-            )),
-            ArmorLight: choice(choices(
-                population=factory_data.ARMOR_LIGHT,
-                weights=factory_data.RARITY[self.rarity],
-                k=len(factory_data.ARMOR_LIGHT)
-            ))
-        }[type(self.armor_type)]
 
 
 class WeaponStats:
@@ -60,109 +53,153 @@ class ArmorStats:
         self.luck = int
 
 
-class WeaponItem(WeaponMaterial):
+class WeaponItem(Material):
     def __init__(self):
         super().__init__()
-        self.weapon_type = choice([
-            WeaponOneHand, WeaponTwoHand
-        ])()
 
 
-class ArmorItem(ArmorMaterial):
+class ArmorItem(Material):
     def __init__(self):
-        self.base_type = choice([
-            ArmorHead,
-            ArmorChest,
-            ArmorHands,
-            ArmorFeet
-        ])()
-        self.armor_type = choice([
-            ArmorHeavy, ArmorLight
-        ])(type(self.base_type))
         super().__init__()
 
 
 class WeaponOneHand:
     def __init__(self):
-        self.base_name = choice([
-            "dagger",
-            "shortsword",
-            "battle axe",
-            "labrys"
-        ])
+        super().__init__()
+        self.sub_type = self.__class__.__bases__[2]
 
 
 class WeaponTwoHand:
     def __init__(self):
-        self.base_name = choice([
-            "longsword",
-            "recurve bow",
-            "scythian bow",
-            "longbow",
-            "war hammer"
-        ])
+        super().__init__()
+        self.sub_type = self.__class__.__bases__[2]
 
 
 class ArmorHeavy:
-    def __init__(self, base_type):
-        self.base_name = {
-            ArmorHead: choice(["helm", "helmet"]),
-            ArmorChest: "cuirass",
-            ArmorHands: "gauntlets",
-            ArmorFeet: choice(["sabatons", "boots"])
-        }[base_type]
+    def __init__(self):
+        super().__init__()
+        self.sub_type = self.__class__.__bases__[2]
 
 
 class ArmorLight:
-    def __init__(self, base_type):
+    def __init__(self):
+        super().__init__()
+        self.sub_type = self.__class__.__bases__[2]
+
+
+class WeaponRanged:
+    def __init__(self):
+        super().__init__()
+        self.base_type = self.__class__.__bases__[1]
         self.base_name = {
-            ArmorHead: choice(["hood", "coif"]),
-            ArmorChest: choice(["brigandine", "hauberk", "gambeson"]),
-            ArmorHands: "gloves",
-            ArmorFeet: "boots"
-        }[base_type]
+            WeaponOneHand: choice([
+                "throwing knives",
+                "throwing stars",
+                "caltrops"
+            ]),
+            WeaponTwoHand: choice([
+                "recurve bow",
+                "scythian bow",
+                "cross bow",
+                "longbow"
+            ])
+        }[self.base_type]
+
+
+class WeaponMelee:
+    def __init__(self):
+        super().__init__()
+        self.base_type = self.__class__.__bases__[1]
+        self.base_name = {
+            WeaponOneHand: choice([
+                "dagger",
+                "corvo",
+                "stiletto",
+                "blade",
+                "shortsword",
+                "seax",
+                "xiphos",
+                "baselard",
+                "gladius",
+                "morning star",
+                "mace",
+                "club",
+            ]),
+            WeaponTwoHand: choice([
+                "longsword",
+                "claymore",
+                "bastard sword",
+                "broadsword"
+                "battle axe",
+                "labrys",
+                "halberd",
+                "glaive"
+                "war hammer",
+                "dire flail",
+                "war scythe"
+            ])
+        }[self.base_type]
 
 
 class ArmorHead:
-    pass
+    def __init__(self):
+        super().__init__()
+        self.base_type = self.__class__.__bases__[1]
+        self.base_name = {
+            ArmorHeavy: choice(["helm", "helmet"]),
+            ArmorLight: choice(["hood", "coif"]),
+        }[self.base_type]
 
 
 class ArmorChest:
-    pass
+    def __init__(self):
+        super().__init__()
+        self.base_type = self.__class__.__bases__[1]
+        self.base_name = {
+            ArmorHeavy: "cuirass",
+            ArmorLight: choice(["brigandine", "hauberk", "gambeson"])
+        }[self.base_type]
 
 
 class ArmorHands:
-    pass
+    def __init__(self):
+        super().__init__()
+        self.base_type = self.__class__.__bases__[1]
+        self.base_name = {
+            ArmorHeavy: "gauntlets",
+            ArmorLight: "gloves"
+        }[self.base_type]
 
 
 class ArmorFeet:
-    pass
-
-
-class ArmorSet:
     def __init__(self):
-        self.head = ArmorHead
-        self.chest = ArmorChest
-        self.hands = ArmorHands
-        self.feet = ArmorFeet
+        super().__init__()
+        self.base_type = self.__class__.__bases__[1]
+        self.base_name = {
+            ArmorHeavy: choice(["sabatons", "boots"]),
+            ArmorLight: "boots"
+        }[self.base_type]
 
 
-# class Player(Holder, ArmorSet):
-#     pass
+def forge():
+    types = {
+        WeaponItem: [WeaponOneHand, WeaponTwoHand],
+        ArmorItem: [ArmorHeavy, ArmorLight]
+    }
+    subtypes = {
+        WeaponOneHand: [WeaponRanged, WeaponMelee],
+        WeaponTwoHand: [WeaponRanged, WeaponMelee],
+        ArmorHeavy: [ArmorHead, ArmorChest, ArmorHands, ArmorFeet],
+        ArmorLight: [ArmorHead, ArmorChest, ArmorHands, ArmorFeet]
+    }
+    item_class = choice(list(types.keys()))
+    item_type = choice(types[item_class])
+    item_subtype = choice(subtypes[item_type])
+
+    return type('NewItem', (item_class, item_type, item_subtype, ), {})()
 
 
-# if __name__ == "__main__":
-#     items = [
-#         # WeaponOneHand,
-#         # WeaponTwoHand,
-#         ArmorHeavy,
-#         ArmorLight
-#     ]
-
-#     for _ in range(10):
-#         item = choice(items)()
-#         # if item.rarity in ["rare", "legendary", "mythical"]:
-#         # print(f"{item.name}:\n\n{item.description}\n")
-#         # if item.rarity in ["legendary", "mythical"]:
-#         # if item.rarity == "mythical":
-#         # print(f"{item.name}")
+if __name__ == "__main__":
+    for _ in range(100):
+        new_item = forge()
+        print(f"{new_item.rarity} {new_item.material} {new_item.base_name}")
