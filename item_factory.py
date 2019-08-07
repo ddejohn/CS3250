@@ -56,8 +56,8 @@ class ArmorStats:
 class WeaponItem(Material):
     def __init__(self):
         super().__init__()
-        self.name = ""
-        self.description = ""
+        for key, val in factory_data.weapon_description(self).items():
+            setattr(self, key, val)
 
 
 class ArmorItem(Material):
@@ -201,6 +201,4 @@ if __name__ == "__main__":
         new_item = forge()
         # print(f"{new_item.rarity} {new_item.material} {new_item.base_name}")
         if new_item.__class__.__bases__[0] == WeaponItem:
-            for key, val in factory_data.weapon_description(new_item).items():
-                setattr(new_item, key, val)
             print(f"{new_item.name}:\n\n{new_item.description}\n")
