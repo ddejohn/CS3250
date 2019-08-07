@@ -199,6 +199,5 @@ def forge():
 if __name__ == "__main__":
     for _ in range(100):
         new_item = forge()
-        # print(f"{new_item.rarity} {new_item.material} {new_item.base_name}")
-        if new_item.__class__.__bases__[0] == WeaponItem:
+        if new_item.rarity == "rare" and new_item.__class__.__bases__[0] == WeaponItem:
             print(f"{new_item.name}:\n\n{new_item.description}\n")

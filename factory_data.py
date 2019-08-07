@@ -826,9 +826,13 @@ def inlays():
 
 
 def patinas_etchings(base_name):
+    if base_name in ["morning star", "dire flail"]:
+        general_name = "weapon"
+    else:
+        general_name = base_name.split()[-1]
     return " ".join([
         f"{choice(ETCHINGS)} {choice(CARVINGS)},",
-        f"and the {choice(['whole', 'entire'])} {base_name.split()[-1]}",
+        f"and the {choice(['whole', 'entire'])} {general_name}",
         f"{choice(GLISTENS)}",
         f"with {a_an(choice(LUSTERS))}",
         f"{choice(PATINAS)}"
