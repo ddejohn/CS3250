@@ -1,5 +1,6 @@
 from random import choice, choices
 import factory_data
+import dictionary_print
 
 
 class Rarity:
@@ -42,7 +43,6 @@ class WeaponStats:
         self.range = int
         self.speed = int
         self.luck = int
-        self.hands = int
 
 
 class ArmorStats:
@@ -56,28 +56,36 @@ class ArmorStats:
 class WeaponItem(Material):
     def __init__(self):
         super().__init__()
+        self.stats = WeaponStats()
         self.parts = factory_data.WEAPON_PARTS(self)
         for key, val in factory_data.item_description(self).items():
             setattr(self, key, val)
+        for key, val in factory_data.weapon_stats(self).items():
+            setattr(self.stats, key, val)
 
 
 class ArmorItem(Material):
     def __init__(self):
         super().__init__()
+        self.stats = ArmorStats()
         self.parts = factory_data.ARMOR_PARTS(self)
         for key, val in factory_data.item_description(self).items():
             setattr(self, key, val)
+        for key, val in factory_data.armor_stats(self).items():
+            setattr(self.stats, key, val)
 
 
 class WeaponOneHand:
     def __init__(self):
         super().__init__()
+        self.hands = 1
         self.sub_type = self.__class__.__bases__[2]
 
 
 class WeaponTwoHand:
     def __init__(self):
         super().__init__()
+        self.hands = 2
         self.sub_type = self.__class__.__bases__[2]
 
 
@@ -177,4 +185,4 @@ if __name__ == "__main__":
     for _ in range(100):
         new_item = forge()
         print(f"{new_item.name}:\n\n{new_item.description}\n")
-        
+        print(dictionary_print.verbose_print(vars(new_item.stats), calls=1))

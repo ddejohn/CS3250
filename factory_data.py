@@ -1,4 +1,5 @@
-from random import choice, sample, randint
+import numpy as np
+from random import choice, sample, randint, uniform
 
 
 RARITY = {
@@ -56,7 +57,6 @@ WEAPON_SECONDARY = {
 
 ARMOR_SECONDARY = {
     "ArmorLight": [
-        "mail",
         "lamellar",
         "scale"
     ],
@@ -660,6 +660,56 @@ TWO_HANDED_WEAPONS = [
 ]
 
 
+WEAPON_STAT_DATA = {
+    "WeaponMelee": {
+        "WeaponOneHand": {
+            "crude": [6, 4, 4, 2],
+            "common": [10, 4, 8, 4],
+            "uncommon": [20, 4, 8, 6],
+            "rare": [30, 4, 8, 8],
+            "legendary": [50, 6, 10, 10],
+            "mythical": [80, 8, 12, 12]
+        },
+        "WeaponTwoHand": {
+            "crude": [12, 8, 2, 2],
+            "common": [18, 8, 4, 4],
+            "uncommon": [28, 8, 4, 4],
+            "rare": [42, 8, 6, 8],
+            "legendary": [68, 10, 8, 10],
+            "mythical": [100, 12, 10, 12]
+        }
+    },
+    "WeaponRanged": {
+        "crude": [10, 10, 4, 4],
+        "common": [16, 18, 4, 4],
+        "uncommon": [20, 20, 6, 6],
+        "rare": [40, 24, 6, 6],
+        "legendary": [50, 30, 8, 8],
+        "mythical": [80, 30, 12, 10]
+    }
+}
+
+
+ARMOR_STAT_DATA = {
+    "stats": {
+        # protection movement noise luck
+        "crude":        [4, 1, 5, 1],
+        "common":       [8, 1, 3, 2],
+        "uncommon":     [10, 0.5, 2, 4],
+        "rare":         [14, 0.125, 1, 5],
+        "legendary":    [20, 0.025, 0.5, 12],
+        "mythical":     [40, 0, 0.25, 16]
+    },
+    "mults": {
+        # protection movement noise luck
+        "ArmorHead":    [1, -1, 0.5, 1],
+        "ArmorChest":   [3, -1.5, 1.5, 1],
+        "ArmorHands":   [0.5, -0.5, 0.5, 1],
+        "ArmorFeet":    [1.5, -0.5, 0.25, 1]
+    }
+}
+
+
 def WEAPON_PARTS(item):
     return {
         "blade": [
@@ -785,7 +835,11 @@ def item_description(item):
         if item.rarity in ["crude", "common", "uncommon"]:
             chosen_name = choice([
                 [item.rarity, item.material, item.base_name],
-                [choice(CONDITION[item.rarity]), item.material, item.base_name]
+                [
+                    choice(SOFT_ADJECTIVE[item.rarity]),
+                    item.material,
+                    item.base_name
+                ]
             ])
             new_name = " ".join(chosen_name)
         else:
@@ -831,7 +885,7 @@ def item_description(item):
         ])
         new_name = " ".join(chosen_name)
     else:
-        new_name = weapon_name(item)
+        new_name = item_name(item)
 
     return {
         "name": new_name,
@@ -867,7 +921,7 @@ def hood_name(item):
     return " ".join(new_name)
 
 
-def weapon_name(item):
+def item_name(item):
     adjectives = NAMES["adjectives"]
     abstract = NAMES["abstract"]
     prefixes = NAMES["prefixes"]
@@ -1002,3 +1056,49 @@ def patinas_etchings(base_name):
         f"with {a_an(choice(LUSTERS))}",
         f"{choice(PATINAS)}"
     ])
+
+
+def get_melee_stats(item):
+    base = item.base_type.__name__
+    sub = item.sub_type.__name__
+    return WEAPON_STAT_DATA[sub][base][item.rarity]
+
+
+def get_ranged_stats(item):
+    sub = item.sub_type.__name__
+    return WEAPON_STAT_DATA[sub][item.rarity]
+
+
+def weapon_stats(item):
+    stats = {
+        "WeaponMelee": get_melee_stats,
+        "WeaponRanged": get_ranged_stats
+    }[item.sub_type.__name__](item)
+    stats = [round(stdev(x), ndigits=2) for x in stats]
+
+    return {
+        "damage": stats[0],
+        "range": stats[1],
+        "speed": stats[2],
+        "luck": stats[3]
+    }
+
+
+def armor_stats(item):
+    stats = ARMOR_STAT_DATA["stats"][item.rarity]
+    mults = ARMOR_STAT_DATA["mults"][item.sub_type.__name__]
+    wt = {
+        "ArmorHeavy": 2,
+    }.get(item.base_type.__name__, 1)
+    combs = [round(wt*stdev(x*y), ndigits=2) for x, y in zip(stats, mults)]
+
+    return {
+        "protection": combs[0],
+        "movement": combs[1],
+        "noise": combs[2],
+        "luck": combs[3]
+    }
+
+
+def stdev(x):
+    return uniform(x-0.3*x, x+0.3*x)
