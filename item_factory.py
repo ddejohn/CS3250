@@ -56,15 +56,17 @@ class ArmorStats:
 class WeaponItem(Material):
     def __init__(self):
         super().__init__()
-        for key, val in factory_data.weapon_description(self).items():
+        self.parts = factory_data.WEAPON_PARTS(self)
+        for key, val in factory_data.item_description(self).items():
             setattr(self, key, val)
 
 
 class ArmorItem(Material):
     def __init__(self):
         super().__init__()
-        self.name = ""
-        self.description = ""
+        self.parts = factory_data.ARMOR_PARTS(self)
+        for key, val in factory_data.item_description(self).items():
+            setattr(self, key, val)
 
 
 class WeaponOneHand:
@@ -95,12 +97,8 @@ class WeaponRanged:
     def __init__(self):
         super().__init__()
         self.base_type = self.__class__.__bases__[1]
-        self.base_name, self.base_sub_type = choice([
-            ("recurve bow", "bow"),
-            ("scythian bow", "bow"),
-            ("cross bow", "bow"),
-            ("longbow", "bow")
-        ])
+        self.base_name, self.base_sub_type = choice(
+            factory_data.RANGED_WEAPONS)
 
 
 class WeaponMelee:
@@ -108,33 +106,8 @@ class WeaponMelee:
         super().__init__()
         self.base_type = self.__class__.__bases__[1]
         self.base_name, self.base_sub_type = {
-            WeaponOneHand: choice([
-                ("dagger", "blade"),
-                ("corvo", "blade"),
-                ("stiletto", "blade"),
-                ("blade", "blade"),
-                ("shortsword", "blade"),
-                ("seax", "blade"),
-                ("xiphos", "blade"),
-                ("baselard", "blade"),
-                ("gladius", "blade"),
-                ("morning star", "blunt"),
-                ("mace", "blunt"),
-                ("club", "blunt")
-            ]),
-            WeaponTwoHand: choice([
-                ("longsword", "blade"),
-                ("claymore", "blade"),
-                ("bastard sword", "blade"),
-                ("broadsword", "blade"),
-                ("war scythe", "blade"),
-                ("battle axe", "axe"),
-                ("labrys", "axe"),
-                ("halberd", "axe"),
-                ("glaive", "axe"),
-                ("war hammer", "blunt"),
-                ("dire flail", "blunt")
-            ])
+            WeaponOneHand: choice(factory_data.ONE_HANDED_WEAPONS),
+            WeaponTwoHand: choice(factory_data.TWO_HANDED_WEAPONS)
         }[self.base_type]
 
 
@@ -193,11 +166,15 @@ def forge():
     item_type = choice(types[item_class])
     item_subtype = choice(subtypes[item_type])
 
-    return type('NewItem', (item_class, item_type, item_subtype, ), {})()
+    return type(
+        "NewItem",
+        (item_class, item_type, item_subtype, ),
+        {"item_class": item_class}
+    )()
 
 
 if __name__ == "__main__":
     for _ in range(100):
         new_item = forge()
-        if new_item.rarity == "rare" and new_item.__class__.__bases__[0] == WeaponItem:
-            print(f"{new_item.name}:\n\n{new_item.description}\n")
+        print(f"{new_item.name}:\n\n{new_item.description}\n")
+        

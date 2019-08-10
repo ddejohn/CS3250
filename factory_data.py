@@ -4,7 +4,7 @@ from random import choice, sample, randint
 RARITY = {
     "crude": [50, 50, 0, 0, 0, 0, 0],
     "common": [10, 50, 50, 10, 0, 0, 0],
-    "uncommon": [0, 50, 50, 10, 5, 0, 0],
+    "uncommon": [0, 0, 50, 5, 0, 0, 0],
     "rare": [0, 0, 5, 10, 50, 50, 0],
     "legendary": [0, 0, 0, 0, 50, 100, 10],
     "mythical": [0, 0, 0, 0, 0, 50, 100]
@@ -44,19 +44,6 @@ ARMOR_HEAVY = [
 ]
 
 
-LIGHT_ARMOR_CONSTRUCTION = [
-    "mail",
-    "lamellar",
-    "scale"
-]
-
-
-HEAVY_ARMOR_CONSTRUCTION = [
-    "laminar",
-    "plate",
-]
-
-
 WEAPON_SECONDARY = {
     "crude": ["splintered wood", "cracked wood", "warped wood"],
     "common": ["ash", "maple"],
@@ -64,6 +51,19 @@ WEAPON_SECONDARY = {
     "rare": ["hickory", "birch", "cherry"],
     "legendary": ["walnut", "ebony", "bloodwood", "black oak"],
     "mythical": ["rosewood", "ebony", "black walnut", "purpleheart"]
+}
+
+
+ARMOR_SECONDARY = {
+    "ArmorLight": [
+        "mail",
+        "lamellar",
+        "scale"
+    ],
+    "ArmorHeavy": [
+        "laminar",
+        "plate"
+    ]
 }
 
 
@@ -145,6 +145,23 @@ GLISTENS = [
 ]
 
 
+SOFT_ADJECTIVE = {
+    "crude": [
+        "scratched",
+        "distressed",
+        "chewed",
+        "gnarled",
+        "scored",
+    ],
+    "common": [
+        "scratched",
+        "burnished",
+        "scored",
+        "distressed"
+    ],
+}
+
+
 DETAIL_ADJECTIVE = {
     "crude": [
         "scratched",
@@ -200,6 +217,7 @@ DETAIL_NOUN = {
     "crude": [
         "dried blood",
         "dirt",
+        "dust",
         "claw marks",
         "scratches",
         "gashes",
@@ -499,7 +517,6 @@ NAMES = {
         "elegant",
         "exquisite",
         "munificent",
-        "ineffable",
         "mirthful",
         "noxious",
         "nefarious",
@@ -604,6 +621,45 @@ NAMES = {
 }
 
 
+RANGED_WEAPONS = [
+    ("recurve bow", "bow"),
+    ("scythian bow", "bow"),
+    ("cross bow", "bow"),
+    ("longbow", "bow")
+]
+
+
+ONE_HANDED_WEAPONS = [
+    ("dagger", "blade"),
+    ("corvo", "blade"),
+    ("stiletto", "blade"),
+    ("blade", "blade"),
+    ("shortsword", "blade"),
+    ("seax", "blade"),
+    ("xiphos", "blade"),
+    ("baselard", "blade"),
+    ("gladius", "blade"),
+    ("morning star", "blunt"),
+    ("mace", "blunt"),
+    ("club", "blunt")
+]
+
+
+TWO_HANDED_WEAPONS = [
+    ("longsword", "blade"),
+    ("claymore", "blade"),
+    ("bastard sword", "blade"),
+    ("broadsword", "blade"),
+    ("war scythe", "blade"),
+    ("battle axe", "axe"),
+    ("labrys", "axe"),
+    ("halberd", "axe"),
+    ("glaive", "axe"),
+    ("war hammer", "blunt"),
+    ("dire flail", "blunt")
+]
+
+
 def WEAPON_PARTS(item):
     return {
         "blade": [
@@ -642,7 +698,8 @@ def ARMOR_PARTS(item):
             ],
             "ArmorLight": [
                 "cowl",
-                "gaiter"
+                "gaiter",
+                "closure"
             ],
         },
         "ArmorChest": {
@@ -662,12 +719,16 @@ def ARMOR_PARTS(item):
         },
         "ArmorHands": {
             "ArmorHeavy": [
-                "rerebrace",
-                "lower cannon",
+                "rerebraces",
+                choice(["lower cannons", "vambraces"]),
+                choice(["carpal plates", "wrist plates"]),
+                "cuffs"
             ],
             "ArmorLight": [
-                "rerebrace",
-                "vambrace"
+                "rerebraces",
+                choice(["lower cannons", "vambraces"]),
+                choice(["carpal plates", "wrist plates"]),
+                "cuffs"
             ],
         },
         "ArmorFeet": {
@@ -682,16 +743,17 @@ def ARMOR_PARTS(item):
                 "sabatons"
             ],
         },
-    }[item.sub_type][item.base_type]
+    }[item.sub_type.__name__][item.base_type.__name__]
 
 
-def weapon_description(item):
+def item_description(item):
     condition = shuffled(CONDITION[item.rarity])
     adjective = shuffled(DETAIL_ADJECTIVE[item.rarity])
-    secondary = shuffled(WEAPON_SECONDARY[item.rarity])
     noun = shuffled(DETAIL_NOUN[item.rarity])
     verb = shuffled(DETAIL_VERB[item.rarity])
-    parts = shuffled(WEAPON_PARTS(item))
+    parts = shuffled(item.parts)
+    pops = shuffled([0, 1, 2])
+    in_by = choice(["in", "with", "by"])
     made = choice([
         "shaped",
         "formed",
@@ -700,14 +762,45 @@ def weapon_description(item):
         "constructed",
         "assembled"
     ])
-    in_by = choice(["in", "with", "by"])
+
+    def leathers(item):
+        soft_adjectives = shuffled(SOFT_ADJECTIVE[item.rarity])
+        qualities = f"{soft_adjectives.pop()} and {soft_adjectives.pop()}"
+        last, *rest = parts
+        rest = ", ".join(rest)
+        last_sentence = " ".join([
+            f"The {rest}, and {last}",
+            f"are all covered {in_by} {noun.pop()} and {noun.pop()}."
+        ])
+
+        first_sentence = " ".join([
+            f"{(a_an(soft_adjectives.pop()).capitalize())}",
+            f"{set_or_pair(item.base_name)} {verb.pop()} {made}",
+            f"from {qualities} {item.material}."
+        ])
+
+        return f"{first_sentence}\n{last_sentence}"
+
+    if item.material in ["hide", "leather"]:
+        if item.rarity in ["crude", "common", "uncommon"]:
+            chosen_name = choice([
+                [item.rarity, item.material, item.base_name],
+                [choice(CONDITION[item.rarity]), item.material, item.base_name]
+            ])
+            new_name = " ".join(chosen_name)
+        else:
+            new_name = hood_name(item)
+        return {
+            "name": new_name,
+            "description": leathers(item)
+        }
 
     first_sentence = " ".join([
-        f"{a_an(condition.pop()).capitalize()}",
+        f"{(a_an(condition.pop()).capitalize())}",
         f"{set_or_pair(item.base_name)} with",
-        f"{a_an(adjective.pop())} and {adjective.pop()} {parts.pop()},",
+        f"{a_an(adjective.pop(), adjective.pop(), parts[pops.pop()])},",
         f"{verb.pop()} {made} from",
-        f"{item.material} and {choice(secondary)}.",
+        f"{get_secondary(item)}"
     ])
 
     if item.rarity == "rare":
@@ -726,8 +819,8 @@ def weapon_description(item):
         ])
     else:
         last_sentence = " ".join([
-            f"The {is_are(parts.pop())} {adjective.pop()} and",
-            f"{adjective.pop()}, and the {is_are(parts.pop())}",
+            f"The {is_are(parts[pops.pop()])} {adjective.pop()} and",
+            f"{adjective.pop()}, and the {is_are(parts[pops.pop()])}",
             f"covered {in_by} {noun.pop()} and {noun.pop()}."
         ])
 
@@ -744,6 +837,34 @@ def weapon_description(item):
         "name": new_name,
         "description": f"{first_sentence}\n{last_sentence}"
     }
+
+
+def hood_name(item):
+    adjectives = NAMES["adjectives"]
+    abstract = NAMES["abstract"]
+    new_name = []
+    if item.rarity == "rare":
+        new_name.extend(choice([
+            [choice(adjectives), item.material, item.base_name],
+            [
+                choice(CONDITION[item.rarity]),
+                item.material,
+                item.base_name,
+                choice(abstract)
+            ]
+        ]))
+    elif item.rarity == "legendary":
+        new_name.extend(choice([
+            [choice(adjectives), item.base_name, choice(abstract)],
+            [
+                choice(adjectives),
+                item.material,
+                item.base_name,
+                choice(abstract)
+            ]
+        ]))
+
+    return " ".join(new_name)
 
 
 def weapon_name(item):
@@ -775,9 +896,13 @@ def weapon_name(item):
             ],
             [choice(adjectives), choice(nouns), choice(abstract)],
             [choice(adjectives), item.material, choice(nouns)],
-            [choice(adjectives), choice(nouns), "of "+item.material],
-            [choice(adjectives), item.material,
-             choice(nouns), choice(abstract)]
+            [choice(adjectives), choice(nouns), "of " + item.material],
+            [
+                choice(adjectives),
+                item.material,
+                choice(nouns),
+                choice(abstract)
+            ]
         ]))
     else:
         new_name.extend(choice([
@@ -788,6 +913,29 @@ def weapon_name(item):
         ]))
 
     return " ".join(new_name)
+
+
+def get_secondary(item):
+    return {
+        "WeaponItem": weapon_construction,
+        "ArmorItem": armor_construction
+    }[item.item_class.__name__](item)
+
+
+def weapon_construction(item):
+    return " ".join([
+        f"{item.material}",
+        f"and {choice(WEAPON_SECONDARY[item.rarity])}."
+    ])
+
+
+def armor_construction(item):
+    if item.rarity not in ["crude", "common"]:
+        return " ".join([
+            f"{choice(ARMOR_SECONDARY[item.base_type.__name__])}",
+            f"{item.material}."
+        ])
+    return f"{item.material}."
 
 
 def shuffled(this):
@@ -801,15 +949,26 @@ def is_are(this):
 
 
 def set_or_pair(this):
-    if this[-1] == "s" and this[-2] != "y":
+    if this[-1] == "s" and this[-2] != "y" and this[-2:] != "ss":
         return choice(["set", "pair"]) + f" of {this}"
     return this
 
 
-def a_an(this):
-    if this[0] in ["a", "e", "i", "o", "u"]:
-        return f"an {this}"
-    return f"a {this}"
+def a_an(*this):
+    first, *rest = this
+    if rest:
+        rest = " ".join(rest)
+        if " " in rest:
+            rest = f" and {rest}"
+        else:
+            rest = f" {rest}"
+    else:
+        rest = ""
+    if rest and rest[-1] == "s":
+        return f"{first}{rest}"
+    elif first[0] in ["a", "e", "i", "o", "u"]:
+        return f"an {first}{rest}"
+    return f"a {first}{rest}"
 
 
 def inlays():
@@ -830,10 +989,16 @@ def patinas_etchings(base_name):
         general_name = "weapon"
     else:
         general_name = base_name.split()[-1]
+    if base_name[-1] == "s":
+        second_sentence = base_name
+        glisten_choice = choice(GLISTENS).rstrip("s")
+    else:
+        second_sentence = f"{choice(['whole', 'entire'])} {general_name}"
+        glisten_choice = choice(GLISTENS)
     return " ".join([
         f"{choice(ETCHINGS)} {choice(CARVINGS)},",
-        f"and the {choice(['whole', 'entire'])} {general_name}",
-        f"{choice(GLISTENS)}",
+        f"and the {second_sentence}",
+        glisten_choice,
         f"with {a_an(choice(LUSTERS))}",
         f"{choice(PATINAS)}"
     ])
