@@ -109,7 +109,7 @@ def verbose_print(data, calls=0):
     for key, val in data.items():
         if isinstance(val, dict):
             out += spc*calls + f"{key}:\n{verbose_print(val, calls+1)}"
-        elif val not in (0, ''):
+        else:
             out += spc*calls + f"{key}: {val}\n"
     return out
 

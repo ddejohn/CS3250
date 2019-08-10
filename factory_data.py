@@ -685,7 +685,7 @@ WEAPON_STAT_DATA = {
         "uncommon": [20, 20, 6, 6],
         "rare": [40, 24, 6, 6],
         "legendary": [50, 30, 8, 8],
-        "mythical": [80, 30, 12, 10]
+        "mythical": [80, 45, 12, 10]
     }
 }
 
@@ -696,9 +696,9 @@ ARMOR_STAT_DATA = {
         "crude":        [4, 1, 5, 1],
         "common":       [8, 1, 3, 2],
         "uncommon":     [10, 0.5, 2, 4],
-        "rare":         [14, 0.125, 1, 5],
-        "legendary":    [20, 0.025, 0.5, 12],
-        "mythical":     [40, 0, 0.25, 16]
+        "rare":         [14, 0.125, 0.5, 5],
+        "legendary":    [20, 0.025, 0.05, 12],
+        "mythical":     [40, 0.0125, 0.025, 16]
     },
     "mults": {
         # protection movement noise luck
@@ -884,6 +884,8 @@ def item_description(item):
             [choice(CONDITION[item.rarity]), item.material, item.base_name]
         ])
         new_name = " ".join(chosen_name)
+    elif item.item_class.__name__ == "ArmorItem":
+        new_name = hood_name(item)
     else:
         new_name = item_name(item)
 
@@ -907,7 +909,7 @@ def hood_name(item):
                 choice(abstract)
             ]
         ]))
-    elif item.rarity == "legendary":
+    elif item.rarity in ["legendary", "mythical"]:
         new_name.extend(choice([
             [choice(adjectives), item.base_name, choice(abstract)],
             [

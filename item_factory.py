@@ -184,5 +184,7 @@ def forge():
 if __name__ == "__main__":
     for _ in range(100):
         new_item = forge()
-        print(f"{new_item.name}:\n\n{new_item.description}\n")
-        print(dictionary_print.verbose_print(vars(new_item.stats), calls=1))
+        if new_item.item_class.__name__ == "ArmorItem":
+            # print(f"{new_item.name}:\n\n{new_item.description}\n")
+            print(f"{new_item.name}:\n")
+            print(dictionary_print.verbose_print(vars(new_item.stats), calls=1))
