@@ -1,10 +1,41 @@
 from random import choice, choices, sample, uniform, randint
 
 
+#————————————————————————————— base item classes —————————————————————————————#
+
+
+class ItemBase:
+    def __init__(self):
+        super().__init__()
+        self.item_class,\
+            self.base_type,\
+            self.sub_type,\
+            self.item_type = build_item()
+        self.rarity,\
+            self.material_weights = item_rarity()
+
+
+class ItemConstruction:
+    def __init__(self):
+        super().__init__()
+        self.base_name = base_name(self)
+        self.material = item_material(self)
+        self.parts = item_parts(self)
+        self.secondary = item_secondary(self)
+
+
+class NewItem(ItemConstruction, ItemBase):
+    def __init__(self):
+        super().__init__()
+        self.name = item_name(self)
+        self.description = item_description(self)
+        self.stats = item_stats(self)
+
+
 #——————————————————————————————— build sequence ——————————————————————————————#
 
 
-def new_item():
+def build_item():
     item_class, base_type, sub_type, *item_type = choice([
         "weapon " + choice([
             "melee " + choice([
@@ -25,7 +56,7 @@ def new_item():
             "chest",
             "hands",
             "feet",
-            "shield"
+            # "shield"
         ])
     ]).split()
 
@@ -33,7 +64,25 @@ def new_item():
         item_type = " ".join([base_type, sub_type])
     else:
         item_type = item_type.pop()
+
     return item_class, base_type, sub_type, item_type
+
+
+def item_rarity():
+    rarities = {
+        "crude":        [100, 30, 0, 0, 0, 0, 0],
+        "common":       [30, 100, 30, 0, 0, 0, 0],
+        "uncommon":     [0, 30, 100, 30, 0, 0, 0],
+        "rare":         [0, 0, 30, 100, 30, 0, 0],
+        "legendary":    [0, 0, 0, 0, 30, 100, 0],
+        "mythical":     [0, 0, 0, 0, 0, 30, 100]
+    }
+    rarity = _choose(
+        ppl=list(rarities.keys()),
+        wts=[20, 15, 10, 5, 2, 1]
+    )
+    material_weights = rarities[rarity]
+    return rarity, material_weights
 
 
 def base_name(item):
@@ -138,20 +187,6 @@ def base_name(item):
     }[item.item_class][item.sub_type][item.base_type][item.item_type]
 
 
-def item_rarity():
-    rarities = {
-        "crude":        [100, 30, 0, 0, 0, 0, 0],
-        "common":       [30, 100, 30, 0, 0, 0, 0],
-        "uncommon":     [0, 30, 100, 30, 0, 0, 0],
-        "rare":         [0, 0, 30, 100, 30, 0, 0],
-        "legendary":    [0, 0, 0, 0, 30, 100, 0],
-        "mythical":     [0, 0, 0, 0, 0, 30, 100]
-    }
-    rarity = _choose(rarities.keys(), [20, 15, 10, 5, 2, 1])
-    material_weights = rarities[rarity]
-    return rarity, material_weights
-
-
 def item_material(item):
     material_list = {
         "heavy": HEAVY_ARMOR_MATERIAL,
@@ -233,10 +268,10 @@ def item_parts(item):
         ],
         "heavy shield": [],
         "light shield": []
-    }[item.sub_type]
+    }[item.item_type]
 
 
-def get_secondary(item):
+def item_secondary(item):
     return {
         "weapon": _weapon_secondary,
         "armor": _armor_construction
@@ -282,38 +317,49 @@ def set_or_pair(this):
 
 def a_an(*this):
     first, *rest = this
-    rest = " ".join(rest)
-
-    if " " in rest:
-        rest = f"and {rest}"
+    if rest:
+        rest = " ".join(rest)
+        if " " in rest:
+            rest = f" and {rest}"
+        else:
+            rest = f" {rest}"
     else:
         rest = ""
-
-    if not rest:
-        return first
-    elif rest[-1] == "s":
-        return f"{first} {rest}"
+    if rest and rest[-1] == "s":
+        return f"{first}{rest}"
     elif first[0] in ["a", "e", "i", "o", "u"]:
-        return f"an {first} {rest}"
-    return f"a {first} {rest}"
+        return f"an {first}{rest}"
+    return f"a {first}{rest}"
 
 
 def listify_words(this):
     *rest, last = this
     rest = ", ".join(rest)
     if rest:
-        if len(rest) == 1:
+        if " " not in rest:
             return f"{rest} and {last}"
         return f"{rest}, and {last}"
     return last
+
+
+def verbose_print(data, calls=0):
+    out = ""
+    spc = "    "
+    for key, val in data.items():
+        if isinstance(val, dict):
+            out += spc*calls + f"{key}:\n{verbose_print(val, calls+1)}"
+        else:
+            out += spc*calls + f"{key}: {val}\n"
+    return out
 
 
 #———————————————————————————————— description ————————————————————————————————#
 
 
 def item_description(item):
+    softies = ["hide", "leather", "coif", "hood"]
     condition = shuffled(CONDITION[item.rarity])
-    adj = shuffled(ADJECTIVES)
+    adj = shuffled(DETAIL_ADJECTIVE[item.rarity])
     pops = shuffled([0, 1, 2])
     in_by = choice(["in", "with", "by"])
     construction = {
@@ -321,10 +367,10 @@ def item_description(item):
         "armor": f"{item.secondary}{item.material}"
     }[item.item_class]
 
-    if item.material in ["hide", "leather"]:
+    if item.material in softies or item.base_name in softies:
         return soft_description(item, construction, in_by)
     return " ".join([
-        f"{(a_an(condition.pop()).capitalize())}",
+        f"{a_an(condition.pop()).capitalize()}",
         f"{set_or_pair(item.base_name)} with",
         f"{a_an(adj.pop(), adj.pop(), item.parts[pops.pop()])},",
         f"{shuffled(DETAIL_VERB[item.rarity]).pop()}",
@@ -337,13 +383,20 @@ def soft_description(item, construction, in_by):
     verbs = shuffled(DETAIL_VERB[item.rarity])
     nouns = shuffled(DETAIL_NOUN[item.rarity])
     soft_adjectives = shuffled(SOFT_ADJECTIVE[item.rarity])
-    qualities = f"{soft_adjectives.pop()} and {soft_adjectives.pop()}"
+    if item.rarity in ["rare", "legendary", "mythical"]:
+        qualities = ""
+        second_sentence = get_details(item)
+    else:
+        qualities = f"{soft_adjectives.pop()} and {soft_adjectives.pop()} "
+        second_sentence = " ".join([
+            f"The {listify_words(item.parts)} are all covered {in_by}",
+            f"{nouns.pop()} and {nouns.pop()}."
+        ])
     return " ".join([
         f"{(a_an(soft_adjectives.pop()).capitalize())}",
         f"{set_or_pair(item.base_name)} {verbs.pop()}",
-        f"{get_make()} from {qualities} {construction}.",
-        f"The {listify_words(item.parts)} are all covered {in_by}",
-        f"{nouns.pop()} and {nouns.pop()}."
+        f"{get_make()} from {qualities}{construction}.",
+        second_sentence
     ])
 
 
@@ -358,7 +411,10 @@ def inlays(item):
             f"The {is_are(listify_words(parts_one))}",
             f"inlaid with {listify_words(inlays_one)},",
             f"and the {is_are(listify_words(parts_two))} decorated with",
-            f"{listify_words(inlays_two)} insets."
+            choice([
+                f"{listify_words(inlays_two)} insets.",
+                f"insets of {listify_words(inlays_two)}"
+            ])
         ])
     else:
         all_inlays = " ".join([
@@ -369,13 +425,15 @@ def inlays(item):
 
 
 def patinas_etchings(item):
-    if item.base_name in ["morning star", "dire flail", "flail"]:
+    if item.base_name in [
+        "morning star", "dire flail", "flail", "meteor hammer"
+    ]:
         general_name = "weapon"
     else:
         general_name = item.base_name.split()[-1]
-    if item.base_name[-1] == "s":
+    if item.base_name[-1] == "s" and item.base_name[-2] not in ["s", "y"]:
         second_sentence = item.base_name
-        glisten_choice = choice(GLISTENS_VERB).rstrip("s")
+        glisten_choice = choice(GLISTENS_VERB).rstrip("es")
     else:
         second_sentence = f"{choice(['whole', 'entire'])} {general_name}"
         glisten_choice = choice(GLISTENS_VERB)
@@ -390,11 +448,12 @@ def patinas_etchings(item):
 
 def common_details(item):
     details = shuffled(DETAIL_NOUN[item.rarity])
+    adj = shuffled(DETAIL_ADJECTIVE[item.rarity])
     pops = shuffled([0, 1, 2])
     in_by = choice(["in", "with", "by"])
     return " ".join([
         f"The {is_are(item.parts[pops.pop()])}",
-        f"{ADJECTIVES.pop()} and {ADJECTIVES.pop()}, and the",
+        f"{adj.pop()} and {adj.pop()}, and the",
         f"{is_are(item.parts[pops.pop()])}",
         f"covered {in_by} {details.pop()} and {details.pop()}."
     ])
@@ -402,9 +461,9 @@ def common_details(item):
 
 def get_details(item):
     return {
-        "rare": _choose([patinas_etchings, inlays], [10, 1]),
-        "legendary": _choose([patinas_etchings, inlays], [5, 1]),
-        "mythical": _choose([patinas_etchings, inlays], [5, 2])
+        "rare": _choose([patinas_etchings, inlays], [5, 1]),
+        "legendary": _choose([patinas_etchings, inlays], [3, 1]),
+        "mythical": _choose([patinas_etchings, inlays], [2, 1])
     }.get(item.rarity, common_details)(item)
 
 
@@ -425,7 +484,7 @@ def get_make():
 def item_name(item):
     new_name = []
 
-    if item.base_name in ["hood", "coif"]:
+    if item.item_class == "armor":
         new_name.extend(common_name(item))
 
     else:
@@ -517,6 +576,8 @@ def armor_stats(item):
 
 
 #——————————————————————————————————— data ————————————————————————————————————#
+
+
 WEAPON_MATERIAL = [
     "iron",
     "steel",
@@ -561,11 +622,11 @@ WEAPON_SECONDARY = {
 
 
 ARMOR_CONSTRUCTION = {
-    "ArmorLight": [
+    "light": [
         "lamellar",
         "scale"
     ],
-    "ArmorHeavy": [
+    "heavy": [
         "laminar",
         "plate"
     ]
@@ -573,26 +634,26 @@ ARMOR_CONSTRUCTION = {
 
 
 WEAPON_STAT_DATA = {
-    "WeaponMelee": {
-        "WeaponOneHand": {
+    "one-handed": {
+        "melee": {
             "crude": [6, 4, 4, 2],
             "common": [10, 4, 8, 4],
             "uncommon": [20, 4, 8, 6],
             "rare": [30, 4, 8, 8],
             "legendary": [50, 6, 10, 10],
             "mythical": [80, 8, 12, 12]
-        },
-        "WeaponTwoHand": {
+        }
+    },
+    "two-handed": {
+        "melee": {
             "crude": [12, 8, 2, 2],
             "common": [18, 8, 4, 4],
             "uncommon": [28, 8, 4, 4],
             "rare": [42, 8, 6, 8],
             "legendary": [68, 10, 8, 10],
             "mythical": [100, 12, 10, 12]
-        }
-    },
-    "WeaponRanged": {
-        "WeaponTwoHand": {
+        },
+        "ranged": {
             "crude": [10, 10, 4, 4],
             "common": [16, 18, 4, 4],
             "uncommon": [20, 20, 6, 6],
@@ -616,10 +677,11 @@ ARMOR_STAT_DATA = {
     },
     "mults": {
         # protection movement noise luck
-        "ArmorHead":    [1, -1, 0.5, 1],
-        "ArmorChest":   [3, -1.5, 1.5, 1],
-        "ArmorHands":   [0.5, -0.5, 0.5, 1],
-        "ArmorFeet":    [1.5, -0.5, 0.25, 1]
+        "head":    [1, -1, 0.5, 1],
+        "chest":   [3, -1.5, 1.5, 1],
+        "hands":   [0.5, -0.5, 0.5, 1],
+        "feet":    [1.5, -0.5, 0.25, 1],
+        "shield":  [2, -1.2, 1.25, 1]
     }
 }
 

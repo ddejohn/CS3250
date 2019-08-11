@@ -1,4 +1,3 @@
-from random import choice, choices
 import factory_util as util
 
 
@@ -7,30 +6,26 @@ class Item:
 
 
 class ItemBuilder:
-    def __init__(self):
-        self.item_class,\
-            self.base_type,\
-            self.sub_type,\
-            self.item_type = util.new_item()
-        self.base_name = util.base_name(self)
-        self.rarity,\
-            self.material_weights = util.item_rarity()
-        self.material = util.item_material(self)
-        self.parts = util.item_parts(self)
-        self.secondary = util.get_secondary(self)
-        self.forge()
-
-    def forge(self):
+    @staticmethod
+    def forge():
+        new_item = util.NewItem()
         item_data = {
-            "item_class": self.item_class,
-            "base_type": self.base_type,
-            "sub_type": self.sub_type,
-            "name": util.item_name(self),
-            "description": util.item_description(self),
-            "stats": util.item_stats(self)
+            "item_class": new_item.item_class,
+            "base_type": new_item.base_type,
+            "sub_type": new_item.sub_type,
+            "rarity": new_item.rarity,
+            "name": new_item.name,
+            "description": new_item.description,
+            "stats": new_item.stats
         }
 
-        new_item = Item()
+        forged_item = Item()
         for key, val in item_data.items():
-            setattr(new_item, key, val)
-        return new_item
+            setattr(forged_item, key, val)
+        return forged_item
+
+
+if __name__ == "__main__":
+    for _ in range(100):
+        item = ItemBuilder.forge()
+        print(util.verbose_print(vars(item)))

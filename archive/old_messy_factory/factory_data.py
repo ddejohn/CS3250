@@ -904,7 +904,7 @@ def build_item(item):
         }
 
     first_sentence = " ".join([
-        f"{(a_an(condition.pop()).capitalize())}",
+        f"{a_an(condition.pop()).capitalize()}",
         f"{set_or_pair(item.base_name)} with",
         f"{a_an(adjective.pop(), adjective.pop(), parts[pops.pop()])},",
         f"{verb.pop()} {made} from {construction}."
