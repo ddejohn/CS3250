@@ -3,12 +3,12 @@ from random import choice, choices, sample, randint, uniform
 
 
 RARITY = {
-    "crude": [50, 50, 0, 0, 0, 0, 0],
-    "common": [10, 50, 50, 10, 0, 0, 0],
-    "uncommon": [0, 0, 50, 5, 0, 0, 0],
-    "rare": [0, 0, 5, 10, 50, 50, 0],
-    "legendary": [0, 0, 0, 0, 50, 100, 10],
-    "mythical": [0, 0, 0, 0, 0, 50, 100]
+    "crude":        [100, 30, 0, 0, 0, 0, 0],
+    "common":       [30, 100, 30, 0, 0, 0, 0],
+    "uncommon":     [0, 30, 100, 30, 0, 0, 0],
+    "rare":         [0, 0, 30, 100, 30, 0, 0],
+    "legendary":    [0, 0, 0, 0, 30, 100, 0],
+    "mythical":     [0, 0, 0, 0, 0, 30, 100]
 }
 
 
@@ -869,6 +869,8 @@ def build_item(item):
         qualities = f"{soft_adjectives.pop()} and {soft_adjectives.pop()}"
         last, *rest = parts
         rest = ", ".join(rest)
+        
+        
         last_sentence = " ".join([
             f"The {rest}, and {last}",
             f"are all covered {in_by} {noun.pop()} and {noun.pop()}."
@@ -1109,7 +1111,7 @@ def inlays():
     last, *rest = these_inlays
     if rest:
         if len(rest) == 1:
-            return f"{last} and {rest[0]}"
+            return f"{last} and {rest.pop()}"
         return ", ".join(rest) + f", and {last}"
     return last
 
