@@ -318,17 +318,6 @@ def _listify_words(this):
     return last
 
 
-def _verbose_print(data, calls=0):
-    out = ""
-    spc = "    "
-    for key, val in data.items():
-        if isinstance(val, dict):
-            out += spc*calls + f"{key}:\n{_verbose_print(val, calls+1)}"
-        else:
-            out += spc*calls + f"{key}: {val}\n"
-    return out
-
-
 #—————————————————————————————— item description —————————————————————————————#
 
 
@@ -528,23 +517,23 @@ def _item_stats(item):
 
 
 def _weapon_stats(item):
-    stats = _WEAPON_STAT_DATA[item.sub_type][item.base_type][item.rarity]
-    stats = [round(_variance(x), ndigits=2) for x in stats]
+    stats = _WEAPON_STAT_DATA["stats"][item.rarity]
+    mults = _WEAPON_STAT_DATA["mults"][item.item_type]
+    wt = {"one-handed": 0.7}.get(item.sub_type, 1)
+    combs = [round(wt*_variance(x*y), ndigits=2) for x, y in zip(stats, mults)]
 
     return {
-        "damage": stats[0],
-        "range": stats[1],
-        "speed": stats[2],
-        "luck": stats[3]
+        "damage": combs[0],
+        "range": combs[1],
+        "speed": combs[2],
+        "luck": combs[3]
     }
 
 
 def _armor_stats(item):
     stats = _ARMOR_STAT_DATA["stats"][item.rarity]
     mults = _ARMOR_STAT_DATA["mults"][item.sub_type]
-    wt = {
-        "ArmorHeavy": 2,
-    }.get(item.base_type, 1)
+    wt = {"heavy": 2}.get(item.base_type, 1)
     combs = [round(wt*_variance(x*y), ndigits=2) for x, y in zip(stats, mults)]
 
     return {
@@ -614,33 +603,21 @@ _ARMOR_CONSTRUCTION = {
 
 
 _WEAPON_STAT_DATA = {
-    "one-handed": {
-        "melee": {
-            "crude": [6, 4, 4, 2],
-            "common": [10, 4, 8, 4],
-            "uncommon": [20, 4, 8, 6],
-            "rare": [30, 4, 8, 8],
-            "legendary": [50, 6, 10, 10],
-            "mythical": [80, 8, 12, 12]
-        }
+    "stats": {
+        # attack range speed luck
+        "crude":        [6.0, 3.0, 3.0, 2.0],
+        "common":       [10.0, 3.0, 4.0, 3.0],
+        "uncommon":     [20.0, 4.0, 5.0, 5.0],
+        "rare":         [35.0, 5.0, 6.0, 7.0],
+        "legendary":    [50.0, 6.0, 7.0, 7.0],
+        "mythical":     [80.0, 7.0, 7.0, 8.0]
     },
-    "two-handed": {
-        "melee": {
-            "crude": [12, 8, 2, 2],
-            "common": [18, 8, 4, 4],
-            "uncommon": [28, 8, 4, 4],
-            "rare": [42, 8, 6, 8],
-            "legendary": [68, 10, 8, 10],
-            "mythical": [100, 12, 10, 12]
-        },
-        "ranged": {
-            "crude": [10, 10, 4, 4],
-            "common": [16, 18, 4, 4],
-            "uncommon": [20, 20, 6, 6],
-            "rare": [40, 24, 6, 6],
-            "legendary": [50, 30, 8, 8],
-            "mythical": [80, 45, 12, 10]
-        }
+    "mults": {
+        # attack range speed luck
+        "blade":        [1.0, 1.0, 1.0, 1.0],
+        "axe":          [1.2, 0.9, 0.9, 1.3],
+        "blunt":        [0.9, 0.8, 1.3, 1.2],
+        "bow":          [1.3, 3.0, 1.2, 0.7],
     }
 }
 
@@ -648,20 +625,20 @@ _WEAPON_STAT_DATA = {
 _ARMOR_STAT_DATA = {
     "stats": {
         # protection movement noise luck
-        "crude":        [4, 1, 5, 1],
-        "common":       [8, 1, 3, 2],
-        "uncommon":     [10, 0.5, 2, 4],
-        "rare":         [14, 0.125, 0.5, 5],
-        "legendary":    [20, 0.025, 0.05, 12],
-        "mythical":     [40, 0.0125, 0.025, 16]
+        "crude":        [4.0, 1.0, 5.0, 1.0],
+        "common":       [8.0, 1.0, 3.0, 2.0],
+        "uncommon":     [10.0, 0.5, 2.0, 4.0],
+        "rare":         [14.0, 0.125, 0.5, 5.0],
+        "legendary":    [20.0, 0.025, 0.05, 12.0],
+        "mythical":     [40.0, 0.0125, 0.025, 16.0]
     },
     "mults": {
         # protection movement noise luck
-        "head":    [1, -1, 0.5, 1],
-        "chest":   [3, -1.5, 1.5, 1],
-        "hands":   [0.5, -0.5, 0.5, 1],
-        "feet":    [1.5, -0.5, 0.25, 1],
-        "shield":  [2, -1.2, 1.25, 1]
+        "head":         [1.0, -1.0, 0.5, 1.0],
+        "chest":        [3.0, -1.5, 1.5, 1.0],
+        "hands":        [0.5, -0.5, 0.5, 1.0],
+        "feet":         [1.5, -0.5, 0.25, 1.0],
+        "shield":       [2.0, -1.2, 1.25, 1.0]
     }
 }
 
