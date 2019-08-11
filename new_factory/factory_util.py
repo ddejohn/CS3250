@@ -1,11 +1,14 @@
 from random import choice, choices, sample, uniform, randint
 
 
+__all__ = ["build_item"]
+
+
 #——————————————————————————————— build sequence ——————————————————————————————#
 
 
-def build_item():
-    item_class, base_type, sub_type, *item_type = choice([
+def build_item(item):
+    item.item_class, item.base_type, item.sub_type, *item_type = choice([
         "weapon " + choice([
             "melee " + choice([
                 "one-handed ",
@@ -30,14 +33,14 @@ def build_item():
     ]).split()
 
     if not item_type:
-        item_type = " ".join([base_type, sub_type])
+        item.item_type = " ".join([item.base_type, item.sub_type])
     else:
-        item_type = item_type.pop()
+        item.item_type = item_type.pop()
 
-    return item_class, base_type, sub_type, item_type
+    return _item_rarity(item)
 
 
-def item_rarity():
+def _item_rarity(item):
     rarities = {
         "crude":        [100, 30, 0, 0, 0, 0, 0],
         "common":       [30, 100, 30, 0, 0, 0, 0],
@@ -46,16 +49,16 @@ def item_rarity():
         "legendary":    [0, 0, 0, 0, 30, 100, 0],
         "mythical":     [0, 0, 0, 0, 0, 30, 100]
     }
-    rarity = _choose(
+    item.rarity = _choose(
         ppl=list(rarities.keys()),
         wts=[20, 15, 10, 5, 2, 1]
     )
-    material_weights = rarities[rarity]
-    return rarity, material_weights
+    item.material_weights = rarities[item.rarity]
+    return _base_name(item)
 
 
-def base_name(item):
-    return {
+def _base_name(item):
+    item.base_name = {
         "weapon": {
             "one-handed": {
                 "melee": {
@@ -154,19 +157,21 @@ def base_name(item):
             }
         }
     }[item.item_class][item.sub_type][item.base_type][item.item_type]
+    return _item_material(item)
 
 
-def item_material(item):
+def _item_material(item):
     material_list = {
         "heavy": _HEAVY_ARMOR_MATERIAL,
         "light": _LIGHT_ARMOR_MATERIAL
     }.get(item.base_type, _WEAPON_MATERIAL)
 
-    return _choose(material_list, item.material_weights)
+    item.material = _choose(material_list, item.material_weights)
+    return _item_parts(item)
 
 
-def item_parts(item):
-    return {
+def _item_parts(item):
+    item.parts = {
         "blade": [
             "fuller",
             "pommel",
@@ -238,59 +243,15 @@ def item_parts(item):
         "heavy shield": [],
         "light shield": []
     }[item.item_type]
+    return _item_secondary(item)
 
 
-def item_secondary(item):
-    return {
+def _item_secondary(item):
+    item.secondary = {
         "weapon": _weapon_secondary,
         "armor": _armor_construction
     }[item.item_class](item)
-
-
-def item_description(item):
-    softies = ["hide", "leather", "coif", "hood"]
-    condition = _shuffled(_CONDITION[item.rarity])
-    adj = _shuffled(_DETAIL_ADJECTIVE[item.rarity])
-    pops = _shuffled([0, 1, 2])
-    in_by = choice(["in", "with", "by"])
-    construction = {
-        "weapon": f"{item.material} and {item.secondary}",
-        "armor": f"{item.secondary}{item.material}"
-    }[item.item_class]
-
-    if item.material in softies or item.base_name in softies:
-        return _soft_description(item, construction, in_by)
-    return " ".join([
-        f"{_a_an(condition.pop()).capitalize()}",
-        f"{_set_or_pair(item.base_name)} with",
-        f"{_a_an(adj.pop(), adj.pop(), item.parts[pops.pop()])},",
-        f"{_shuffled(_DETAIL_VERB[item.rarity]).pop()}",
-        f"{_get_make()} from {construction}.",
-        _get_details(item)
-    ])
-
-
-def item_name(item):
-    new_name = []
-
-    if item.item_class == "armor":
-        new_name.extend(_common_name(item))
-
-    else:
-        new_name.extend({
-            "rare": _rare_name,
-            "legendary": _legendary_name,
-            "mythical": _mythical_name
-        }.get(item.rarity, _common_name)(item))
-
-    return " ".join(new_name)
-
-
-def item_stats(item):
-    return {
-        "weapon": _weapon_stats,
-        "armor": _armor_stats
-    }[item.item_class](item)
+    return _item_description(item)
 
 
 #—————————————————————————————————— helpers ——————————————————————————————————#
@@ -366,6 +327,33 @@ def _verbose_print(data, calls=0):
         else:
             out += spc*calls + f"{key}: {val}\n"
     return out
+
+
+#—————————————————————————————— item description —————————————————————————————#
+
+
+def _item_description(item):
+    softies = ["hide", "leather", "coif", "hood"]
+    condition = _shuffled(_CONDITION[item.rarity])
+    adj = _shuffled(_DETAIL_ADJECTIVE[item.rarity])
+    pops = _shuffled([0, 1, 2])
+    in_by = choice(["in", "with", "by"])
+    construction = {
+        "weapon": f"{item.material} and {item.secondary}",
+        "armor": f"{item.secondary}{item.material}"
+    }[item.item_class]
+
+    if item.material in softies or item.base_name in softies:
+        item.description = _soft_description(item, construction, in_by)
+    item.description = " ".join([
+        f"{_a_an(condition.pop()).capitalize()}",
+        f"{_set_or_pair(item.base_name)} with",
+        f"{_a_an(adj.pop(), adj.pop(), item.parts[pops.pop()])},",
+        f"{_shuffled(_DETAIL_VERB[item.rarity]).pop()}",
+        f"{_get_make()} from {construction}.",
+        _get_details(item)
+    ])
+    return _item_name(item)
 
 
 def _soft_description(item, construction, in_by):
@@ -467,6 +455,26 @@ def _get_make():
     ])
 
 
+#————————————————————————————————— item name —————————————————————————————————#
+
+
+def _item_name(item):
+    new_name = []
+
+    if item.item_class == "armor":
+        new_name.extend(_common_name(item))
+
+    else:
+        new_name.extend({
+            "rare": _rare_name,
+            "legendary": _legendary_name,
+            "mythical": _mythical_name
+        }.get(item.rarity, _common_name)(item))
+
+    item.name = " ".join(new_name)
+    return _item_stats(item)
+
+
 def _rare_name(item):
     return choice([
         [choice(_ADJECTIVES), item.material, item.base_name],
@@ -478,7 +486,8 @@ def _rare_name(item):
 def _legendary_name(item):
     return choice([
         [choice(_ADJECTIVES), item.base_name, choice(_ABSTRACT)],
-        [choice(_ADJECTIVES), item.material, item.base_name, choice(_ABSTRACT)],
+        [choice(_ADJECTIVES), item.material,
+         item.base_name, choice(_ABSTRACT)],
         [choice(_ADJECTIVES), choice(_NOUNS), choice(_ABSTRACT)],
         [choice(_ADJECTIVES), item.material, choice(_NOUNS)],
         [choice(_ADJECTIVES), choice(_NOUNS), "of " + item.material],
@@ -505,6 +514,17 @@ def _common_name(item):
         [item.rarity, item.material, item.base_name],
         [choice(_SOFT_ADJECTIVE[item.rarity]), item.material, item.base_name]
     ])
+
+
+#———————————————————————————————— item stats —————————————————————————————————#
+
+
+def _item_stats(item):
+    item.stats = {
+        "weapon": _weapon_stats,
+        "armor": _armor_stats
+    }[item.item_class](item)
+    return item
 
 
 def _weapon_stats(item):

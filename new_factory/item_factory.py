@@ -1,4 +1,4 @@
-import factory_util as util
+from factory_util import build_item
 
 
 class Item:
@@ -10,29 +10,30 @@ class Item:
 class ItemBase:
     def __init__(self):
         super().__init__()
-        self.item_class,\
-            self.base_type,\
-            self.sub_type,\
-            self.item_type = util.build_item()
-        self.rarity,\
-            self.material_weights = util.item_rarity()
+        self.item_class = str
+        self.base_type = str
+        self.sub_type = str
+        self.item_type = str
+        self.rarity = str
+        self.material_weights = list
 
 
 class ItemConstruction:
     def __init__(self):
         super().__init__()
-        self.base_name = util.base_name(self)
-        self.material = util.item_material(self)
-        self.parts = util.item_parts(self)
-        self.secondary = util.item_secondary(self)
+        self.base_name = str
+        self.material = str
+        self.secondary = str
+        self.parts = list
 
 
 class NewItem(ItemConstruction, ItemBase):
     def __init__(self):
         super().__init__()
-        self.name = util.item_name(self)
-        self.description = util.item_description(self)
-        self.stats = util.item_stats(self)
+        self.name = str
+        self.description = str
+        self.stats = dict
+        build_item(self)
 
 
 class ItemBuilder:
@@ -55,4 +56,5 @@ class ItemBuilder:
 if __name__ == "__main__":
     for _ in range(100):
         item = ItemBuilder.forge()
-        print(util._verbose_print(vars(item)))
+        print(vars(item))
+    
