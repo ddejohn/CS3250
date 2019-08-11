@@ -2,8 +2,8 @@ import factory_util as util
 
 
 class Item:
-    def __init__(self, **data):
-        for key, val in data.items():
+    def __init__(self, **kwargs):
+        for key, val in kwargs.items():
             setattr(self, key, val)
 
 
