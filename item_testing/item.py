@@ -1,25 +1,25 @@
 """Create an instance of Item with any number of parents to inherit from"""
 
 
-class Weapon(object):
+class Weapon:
     def __init__(self):
         super().__init__()
         self.weapon = "weapon"
 
 
-class DoorKey(object):
+class DoorKey:
     def __init__(self):
         super().__init__()
         self.doorkey = "door key"
 
 
-class Potion(object):
+class Potion:
     def __init__(self):
         super().__init__()
         self.potion = "potion"
 
 
-class Item(object):
+class Item:
     def __init__(self):
         super().__init__()
 

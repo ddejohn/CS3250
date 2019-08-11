@@ -1,5 +1,5 @@
 import numpy as np
-from random import choice, sample, randint, uniform
+from random import choice, choices, sample, randint, uniform
 
 
 RARITY = {
@@ -201,12 +201,14 @@ DETAIL_ADJECTIVE = {
     "legendary": [
         "ornate",
         "engraved",
+        "embossed",
         "gilded",
         "elaborate"
     ],
     "mythical": [
         "ornate",
         "engraved",
+        "embossed",
         "gilded",
         "elaborate"
     ]
@@ -621,45 +623,6 @@ NAMES = {
 }
 
 
-RANGED_WEAPONS = [
-    ("recurve bow", "bow"),
-    ("scythian bow", "bow"),
-    ("cross bow", "bow"),
-    ("longbow", "bow")
-]
-
-
-ONE_HANDED_WEAPONS = [
-    ("dagger", "blade"),
-    ("corvo", "blade"),
-    ("stiletto", "blade"),
-    ("blade", "blade"),
-    ("shortsword", "blade"),
-    ("seax", "blade"),
-    ("xiphos", "blade"),
-    ("baselard", "blade"),
-    ("gladius", "blade"),
-    ("morning star", "blunt"),
-    ("mace", "blunt"),
-    ("club", "blunt")
-]
-
-
-TWO_HANDED_WEAPONS = [
-    ("longsword", "blade"),
-    ("claymore", "blade"),
-    ("bastard sword", "blade"),
-    ("broadsword", "blade"),
-    ("war scythe", "blade"),
-    ("battle axe", "axe"),
-    ("labrys", "axe"),
-    ("halberd", "axe"),
-    ("glaive", "axe"),
-    ("war hammer", "blunt"),
-    ("dire flail", "blunt")
-]
-
-
 WEAPON_STAT_DATA = {
     "WeaponMelee": {
         "WeaponOneHand": {
@@ -680,12 +643,14 @@ WEAPON_STAT_DATA = {
         }
     },
     "WeaponRanged": {
-        "crude": [10, 10, 4, 4],
-        "common": [16, 18, 4, 4],
-        "uncommon": [20, 20, 6, 6],
-        "rare": [40, 24, 6, 6],
-        "legendary": [50, 30, 8, 8],
-        "mythical": [80, 45, 12, 10]
+        "WeaponTwoHand": {
+            "crude": [10, 10, 4, 4],
+            "common": [16, 18, 4, 4],
+            "uncommon": [20, 20, 6, 6],
+            "rare": [40, 24, 6, 6],
+            "legendary": [50, 30, 8, 8],
+            "mythical": [80, 45, 12, 10]
+        }
     }
 }
 
@@ -710,7 +675,96 @@ ARMOR_STAT_DATA = {
 }
 
 
-def WEAPON_PARTS(item):
+def types(item):
+    return {
+        "WeaponOneHand": {
+            "WeaponMelee": choice([
+                ("dagger", "blade"),
+                ("corvo", "blade"),
+                ("stiletto", "blade"),
+                ("blade", "blade"),
+                ("shortsword", "blade"),
+                ("seax", "blade"),
+                ("xiphos", "blade"),
+                ("baselard", "blade"),
+                ("gladius", "blade"),
+                ("morning star", "blunt"),
+                ("mace", "blunt"),
+                ("club", "blunt")
+            ]),
+        },
+        "WeaponTwoHand": {
+            "WeaponMelee": choice([
+                ("longsword", "blade"),
+                ("claymore", "blade"),
+                ("bastard sword", "blade"),
+                ("broadsword", "blade"),
+                ("war scythe", "blade"),
+                ("battle axe", "axe"),
+                ("labrys", "axe"),
+                ("halberd", "axe"),
+                ("glaive", "axe"),
+                ("war hammer", "blunt"),
+                ("dire flail", "blunt")
+            ]),
+            "WeaponRanged": choice([
+                ("recurve bow", "bow"),
+                ("scythian bow", "bow"),
+                ("cross bow", "bow"),
+                ("longbow", "bow")
+            ])
+        },
+        "ArmorHeavy": {
+            "ArmorHead": (choice(["helm", "helmet"]), "heavy head"),
+            "ArmorChest": ("cuirass", "heavy chest"),
+            "ArmorHands": ("gauntlets", "heavy hands"),
+            "ArmorFeet": (choice(["sabatons", "boots"]), "heavy feet"),
+            "ArmorShield": (
+                choice(["pavise shield", "kite shield"]), "heavy shield"
+            )
+        },
+        "ArmorLight": {
+            "ArmorHead": (choice(["hood", "coif"]), "light head"),
+            "ArmorChest": (
+                choice(["brigandine", "hauberk", "gambeson"]), "light chest"
+            ),
+            "ArmorHands": ("gloves", "light hands"),
+            "ArmorFeet": ("boots", "light feet"),
+            "ArmorShield": (
+                choice(["buckler shield", "targe shield"]), "light shield"
+            )
+        }
+    }[item.base_type][item.sub_type]
+
+
+def item_rarity():
+    return choice(
+        choices(
+            population=list(RARITY.keys()),
+            weights=[20, 15, 10, 5, 2, 1],
+            k=len(list(RARITY.keys()))
+        )
+    )
+
+
+def item_material(item):
+    material_list = {
+        "WeaponOneHand": WEAPON_MATERIAL,
+        "WeaponTwoHand": WEAPON_MATERIAL,
+        "ArmorLight": ARMOR_LIGHT,
+        "ArmorHeavy": ARMOR_HEAVY
+    }[item.base_type]
+
+    return choice(
+        choices(
+            population=material_list,
+            weights=RARITY[item.rarity],
+            k=len(material_list)
+        )
+    )
+
+
+def item_parts(item):
     return {
         "blade": [
             "fuller",
@@ -735,68 +789,57 @@ def WEAPON_PARTS(item):
             choice(["face", "crown"]),
             choice(["haft", "handle", "grip"])
         ],
-    }[item.base_sub_type]
+        "heavy head": [
+            "visor",
+            "comb",
+            choice(["gorget", "aventail", "camail"])
+        ],
+        "light head": [
+            "cowl",
+            "gaiter",
+            "closure"
+        ],
+        "heavy chest": [
+            "breastplate",
+            "pauldrons",
+            "faulds",
+            "gardbrace",
+            "bassart"
+        ],
+        "light chest": [
+            "plackard",
+            "spaulders",
+            "gardbrace",
+            "culet",
+        ],
+        "heavy hands": [
+            "rerebraces",
+            choice(["lower cannons", "vambraces"]),
+            choice(["carpal plates", "wrist plates"]),
+            "cuffs"
+        ],
+        "light hands": [
+            "rerebraces",
+            choice(["lower cannons", "vambraces"]),
+            choice(["carpal plates", "wrist plates"]),
+            "cuffs"
+        ],
+        "heavy feet": [
+            "cuisse",
+            "greaves",
+            "solleret"
+        ],
+        "light feet": [
+            "cuisse",
+            "greaves",
+            "sabatons"
+        ],
+        "heavy shield": [],
+        "light shield": []
+    }[item.item_type]
 
 
-def ARMOR_PARTS(item):
-    return {
-        "ArmorHead": {
-            "ArmorHeavy": [
-                "visor",
-                "comb",
-                choice(["gorget", "aventail", "camail"])
-            ],
-            "ArmorLight": [
-                "cowl",
-                "gaiter",
-                "closure"
-            ],
-        },
-        "ArmorChest": {
-            "ArmorHeavy": [
-                "breastplate",
-                "pauldrons",
-                "faulds",
-                "gardbrace",
-                "bassart"
-            ],
-            "ArmorLight": [
-                "plackard",
-                "spaulders",
-                "gardbrace",
-                "culet",
-            ],
-        },
-        "ArmorHands": {
-            "ArmorHeavy": [
-                "rerebraces",
-                choice(["lower cannons", "vambraces"]),
-                choice(["carpal plates", "wrist plates"]),
-                "cuffs"
-            ],
-            "ArmorLight": [
-                "rerebraces",
-                choice(["lower cannons", "vambraces"]),
-                choice(["carpal plates", "wrist plates"]),
-                "cuffs"
-            ],
-        },
-        "ArmorFeet": {
-            "ArmorHeavy": [
-                "cuisse",
-                "greaves",
-                "solleret"
-            ],
-            "ArmorLight": [
-                "cuisse",
-                "greaves",
-                "sabatons"
-            ],
-        },
-    }[item.sub_type.__name__][item.base_type.__name__]
-
-
-def item_description(item):
+def build_item(item):
     condition = shuffled(CONDITION[item.rarity])
     adjective = shuffled(DETAIL_ADJECTIVE[item.rarity])
     noun = shuffled(DETAIL_NOUN[item.rarity])
@@ -812,6 +855,14 @@ def item_description(item):
         "constructed",
         "assembled"
     ])
+    construction = {
+        "WeaponItem": f"{item.material} and {item.secondary}",
+        "ArmorItem": f"{item.secondary}{item.material}"
+    }[item.item_class]
+    item_stats = {
+        "WeaponItem": weapon_stats,
+        "ArmorItem": armor_stats
+    }[item.item_class](item)
 
     def leathers(item):
         soft_adjectives = shuffled(SOFT_ADJECTIVE[item.rarity])
@@ -826,10 +877,10 @@ def item_description(item):
         first_sentence = " ".join([
             f"{(a_an(soft_adjectives.pop()).capitalize())}",
             f"{set_or_pair(item.base_name)} {verb.pop()} {made}",
-            f"from {qualities} {item.material}."
+            f"from {qualities} {construction}."
         ])
 
-        return f"{first_sentence}\n{last_sentence}"
+        return f"{first_sentence} {last_sentence}"
 
     if item.material in ["hide", "leather"]:
         if item.rarity in ["crude", "common", "uncommon"]:
@@ -846,15 +897,15 @@ def item_description(item):
             new_name = hood_name(item)
         return {
             "name": new_name,
-            "description": leathers(item)
+            "description": leathers(item),
+            "stats": item_stats
         }
 
     first_sentence = " ".join([
         f"{(a_an(condition.pop()).capitalize())}",
         f"{set_or_pair(item.base_name)} with",
         f"{a_an(adjective.pop(), adjective.pop(), parts[pops.pop()])},",
-        f"{verb.pop()} {made} from",
-        f"{get_secondary(item)}"
+        f"{verb.pop()} {made} from {construction}."
     ])
 
     if item.rarity == "rare":
@@ -884,14 +935,15 @@ def item_description(item):
             [choice(CONDITION[item.rarity]), item.material, item.base_name]
         ])
         new_name = " ".join(chosen_name)
-    elif item.item_class.__name__ == "ArmorItem":
+    elif item.item_class == "ArmorItem":
         new_name = hood_name(item)
     else:
         new_name = item_name(item)
 
     return {
         "name": new_name,
-        "description": f"{first_sentence}\n{last_sentence}"
+        "description": f"{first_sentence} {last_sentence}",
+        "stats": item_stats
     }
 
 
@@ -971,27 +1023,49 @@ def item_name(item):
     return " ".join(new_name)
 
 
+def weapon_stats(item):
+    stats = WEAPON_STAT_DATA[item.sub_type][item.base_type][item.rarity]
+    stats = [round(stdev(x), ndigits=2) for x in stats]
+
+    return {
+        "damage": stats[0],
+        "range": stats[1],
+        "speed": stats[2],
+        "luck": stats[3]
+    }
+
+
+def armor_stats(item):
+    stats = ARMOR_STAT_DATA["stats"][item.rarity]
+    mults = ARMOR_STAT_DATA["mults"][item.sub_type]
+    wt = {
+        "ArmorHeavy": 2,
+    }.get(item.base_type, 1)
+    combs = [round(wt*stdev(x*y), ndigits=2) for x, y in zip(stats, mults)]
+
+    return {
+        "protection": combs[0],
+        "movement": combs[1],
+        "noise": combs[2],
+        "luck": combs[3]
+    }
+
+
 def get_secondary(item):
     return {
         "WeaponItem": weapon_construction,
         "ArmorItem": armor_construction
-    }[item.item_class.__name__](item)
+    }[item.item_class](item)
 
 
 def weapon_construction(item):
-    return " ".join([
-        f"{item.material}",
-        f"and {choice(WEAPON_SECONDARY[item.rarity])}."
-    ])
+    return choice(WEAPON_SECONDARY[item.rarity])
 
 
 def armor_construction(item):
     if item.rarity not in ["crude", "common"]:
-        return " ".join([
-            f"{choice(ARMOR_SECONDARY[item.base_type.__name__])}",
-            f"{item.material}."
-        ])
-    return f"{item.material}."
+        return f"{choice(ARMOR_SECONDARY[item.base_type])} "
+    return f""
 
 
 def shuffled(this):
@@ -1058,48 +1132,6 @@ def patinas_etchings(base_name):
         f"with {a_an(choice(LUSTERS))}",
         f"{choice(PATINAS)}"
     ])
-
-
-def get_melee_stats(item):
-    base = item.base_type.__name__
-    sub = item.sub_type.__name__
-    return WEAPON_STAT_DATA[sub][base][item.rarity]
-
-
-def get_ranged_stats(item):
-    sub = item.sub_type.__name__
-    return WEAPON_STAT_DATA[sub][item.rarity]
-
-
-def weapon_stats(item):
-    stats = {
-        "WeaponMelee": get_melee_stats,
-        "WeaponRanged": get_ranged_stats
-    }[item.sub_type.__name__](item)
-    stats = [round(stdev(x), ndigits=2) for x in stats]
-
-    return {
-        "damage": stats[0],
-        "range": stats[1],
-        "speed": stats[2],
-        "luck": stats[3]
-    }
-
-
-def armor_stats(item):
-    stats = ARMOR_STAT_DATA["stats"][item.rarity]
-    mults = ARMOR_STAT_DATA["mults"][item.sub_type.__name__]
-    wt = {
-        "ArmorHeavy": 2,
-    }.get(item.base_type.__name__, 1)
-    combs = [round(wt*stdev(x*y), ndigits=2) for x, y in zip(stats, mults)]
-
-    return {
-        "protection": combs[0],
-        "movement": combs[1],
-        "noise": combs[2],
-        "luck": combs[3]
-    }
 
 
 def stdev(x):
