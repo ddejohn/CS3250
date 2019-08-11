@@ -44,7 +44,6 @@ class ItemBuilder:
             "item_class": new_item.item_class,
             "base_type": new_item.base_type,
             "sub_type": new_item.sub_type,
-            "rarity": new_item.rarity,
             "name": new_item.name,
             "description": new_item.description,
             "stats": new_item.stats

@@ -614,7 +614,7 @@ _WEAPON_STAT_DATA = {
     },
     "mults": {
         # attack range speed luck
-        "blade":        [1.0, 1.0, 1.0, 1.0],
+        "blade":        [1.1, 1.1, 0.8, 0.9],
         "axe":          [1.2, 0.9, 0.9, 1.3],
         "blunt":        [0.9, 0.8, 1.3, 1.2],
         "bow":          [1.3, 3.0, 1.2, 0.7],
