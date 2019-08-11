@@ -1,37 +1,6 @@
 from random import choice, choices, sample, uniform, randint
 
 
-#————————————————————————————— base item classes —————————————————————————————#
-
-
-class ItemBase:
-    def __init__(self):
-        super().__init__()
-        self.item_class,\
-            self.base_type,\
-            self.sub_type,\
-            self.item_type = build_item()
-        self.rarity,\
-            self.material_weights = item_rarity()
-
-
-class ItemConstruction:
-    def __init__(self):
-        super().__init__()
-        self.base_name = base_name(self)
-        self.material = item_material(self)
-        self.parts = item_parts(self)
-        self.secondary = item_secondary(self)
-
-
-class NewItem(ItemConstruction, ItemBase):
-    def __init__(self):
-        super().__init__()
-        self.name = item_name(self)
-        self.description = item_description(self)
-        self.stats = item_stats(self)
-
-
 #——————————————————————————————— build sequence ——————————————————————————————#
 
 

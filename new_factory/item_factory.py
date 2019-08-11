@@ -2,13 +2,43 @@ import factory_util as util
 
 
 class Item:
-    pass
+    def __init__(self, **data):
+        for key, val in data.items():
+            setattr(self, key, val)
+
+
+class ItemBase:
+    def __init__(self):
+        super().__init__()
+        self.item_class,\
+            self.base_type,\
+            self.sub_type,\
+            self.item_type = util.build_item()
+        self.rarity,\
+            self.material_weights = util.item_rarity()
+
+
+class ItemConstruction:
+    def __init__(self):
+        super().__init__()
+        self.base_name = util.base_name(self)
+        self.material = util.item_material(self)
+        self.parts = util.item_parts(self)
+        self.secondary = util.item_secondary(self)
+
+
+class NewItem(ItemConstruction, ItemBase):
+    def __init__(self):
+        super().__init__()
+        self.name = util.item_name(self)
+        self.description = util.item_description(self)
+        self.stats = util.item_stats(self)
 
 
 class ItemBuilder:
     @staticmethod
     def forge():
-        new_item = util.NewItem()
+        new_item = NewItem()
         item_data = {
             "item_class": new_item.item_class,
             "base_type": new_item.base_type,
@@ -19,10 +49,7 @@ class ItemBuilder:
             "stats": new_item.stats
         }
 
-        forged_item = Item()
-        for key, val in item_data.items():
-            setattr(forged_item, key, val)
-        return forged_item
+        return Item(**item_data)
 
 
 if __name__ == "__main__":
