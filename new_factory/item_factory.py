@@ -55,4 +55,4 @@ class ItemBuilder:
 if __name__ == "__main__":
     for _ in range(100):
         item = ItemBuilder.forge()
-        print(util.verbose_print(vars(item)))
+        print(util._verbose_print(vars(item)))
