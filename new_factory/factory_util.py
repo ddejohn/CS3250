@@ -286,7 +286,7 @@ def _is_are(this):
 
 
 def _set_or_pair(this):
-    if this[-1] == "s" and this[-2] not in ["s", "y"]:
+    if this[-1] == "s" and this[-2] not in ["u", "o", "s", "y"]:
         return choice(["set", "pair"]) + f" of {this}"
     return this
 
