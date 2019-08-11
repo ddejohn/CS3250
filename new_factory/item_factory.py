@@ -53,8 +53,19 @@ class ItemBuilder:
         return Item(**item_data)
 
 
+def verbose_print(data, calls=0):
+    out = ""
+    spc = "    "
+    for key, val in data.items():
+        if isinstance(val, dict):
+            out += spc*calls + f"{key}:\n{verbose_print(val, calls+1)}"
+        else:
+            out += spc*calls + f"{key}: {val}\n"
+    return out
+
+
 if __name__ == "__main__":
     for _ in range(100):
         item = ItemBuilder.forge()
-        print(vars(item))
+        print(verbose_print(vars(item)))
     
